@@ -7,12 +7,14 @@ import (
 func main() {
 	n, sum := 1, 0
 	for n > 0 {
-		fmt.Printf("Enter a number: ")
+		fmt.Printf("\nEnter a number: ")
 		fmt.Scanln(&n)
-		fmt.Printf("n = %d\n", n)
+		for i := 1; i <= n; i++ {
+			fmt.Printf("%d ", i)
+		}
 		sum += n
 	}
-	fmt.Printf("SUM = %d\n\n", sum)
+	fmt.Printf("\nSUM = %d\n\n", sum)
 
 	// using break
 	sum = 0
@@ -26,4 +28,5 @@ func main() {
 		sum += n
 	}
 	fmt.Printf("SUM = %d\n\n", sum)
+
 }
