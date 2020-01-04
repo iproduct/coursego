@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"time"
 )
 
 var global int
@@ -22,11 +23,12 @@ func main() {
 	fmt.Printf("%v\n", *intPointer)
 	genericChannel := make(chan interface{})
 	go func() {
+		defer close(genericChannel)
 		var i int64
-		for i = 0; i < 5; i++ {
-			genericChannel <- "abcd_" + strconv.FormatInt(i, 10)
+		for i = 0; i < 10; i++ {
+			genericChannel <- "message_" + strconv.FormatInt(i, 10)
+			time.Sleep(time.Second)
 		}
-		close(genericChannel)
 	}()
 	for ok := true; ok; {
 		var result interface{}
