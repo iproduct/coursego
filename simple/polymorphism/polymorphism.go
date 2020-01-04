@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/course-go/simple/interfaces"
+	"github.com/iproduct/coursego/simple/interfaces"
 	"math"
 )
 
