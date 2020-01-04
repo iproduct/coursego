@@ -6,28 +6,18 @@ import (
 	"strings"
 )
 
-// Name type
-type Name string
-
 // ConvertionCase type
 type ConvertionCase int
-
-// User struct models a registered user of the service
-type User struct {
-	id       int
-	Name     Name
-	Username Name
-	Password string
-	Roles    enums.Role
-	Status   enums.Status
-}
 
 // Name case for conversion and printing
 const (
 	UpperCase = iota
-	LowerCase = iota
-	TitleCase = iota
+	LowerCase
+	TitleCase
 )
+
+// Name type
+type Name string
 
 func (name Name) convert(convCase ConvertionCase) Name {
 	var result string
@@ -44,12 +34,26 @@ func (name Name) convert(convCase ConvertionCase) Name {
 	return Name(result)
 }
 
+// User struct models a registered user of the service
+type User struct {
+	id       int
+	Name     Name
+	Username Name
+	Password string
+	Roles    enums.Role
+	Status   enums.Status
+}
+
 func (u *User) String(convCase ConvertionCase) string {
 	return fmt.Sprintf("Name: %s, Username: %s, in Role: %s, Status: %s",
 		u.Name.convert(convCase), u.Username, u.Roles.String(), u.Status.String())
 }
 
+// func (r enums.Role) Valid() bool{
+// 	return r & enums.RoleMask != 0;
+// }
+
 func main() {
 	user := User{1, "John Smith", "john", "john123", enums.Admin, enums.Active}
-	fmt.Printf("%s", user.String(UpperCase))
+	fmt.Printf("%s", user.String(LowerCase))
 }

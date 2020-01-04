@@ -33,8 +33,8 @@ type Status int
 // User statuses enum
 const (
 	Registered = iota
-	Active     = iota
-	Disabled   = iota
+	Active
+	Disabled
 )
 
 // Returns string representation of the Role
