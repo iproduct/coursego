@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/course-go/interfaces"
+	"github.com/iproduct/course-go/simple/interfaces"
 	"math"
 )
 
@@ -23,8 +23,8 @@ func main() {
 	fmt.Printf("\np2 in cartesian coordinates: (%f, %f)\n\n", p2.XCoord(), p2.YCoord())
 
 	points := []interfaces.Point{p1, p2}
-	points = append(points, 
-		interfaces.PolarPoint{R: 5, A: math.Pi / 4}, 
+	points = append(points,
+		interfaces.PolarPoint{R: 5, A: math.Pi / 4},
 		interfaces.PolarPoint{R: 5, A: math.Pi})
 	PrintPoints(points)
 }

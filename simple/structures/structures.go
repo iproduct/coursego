@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/course-go/enums"
+	"github.com/iproduct/course-go/simple/enums"
 	"regexp"
 	"strings"
 )
