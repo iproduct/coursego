@@ -1,4 +1,4 @@
-package enums
+package main
 
 import "fmt"
 
@@ -7,9 +7,9 @@ type Role int
 
 // Roles enum
 const (
-	User     = 1 << iota
-	Manager  = 1 << iota
-	Admin    = 1 << iota
+	User Role = 1 << iota
+	Manager
+	Admin
 	RoleMask = (1 << (iota)) - 1
 )
 
@@ -32,7 +32,7 @@ type Status int
 
 // User statuses enum
 const (
-	Registered = iota
+	Registered Status = iota
 	Active
 	Disabled
 )
@@ -52,7 +52,7 @@ func (r Status) String() string {
 }
 
 func main() {
-	fmt.Printf("Roles: %v, %v, %v\n", User, Manager, Admin)
+	fmt.Printf("Roles[%T]: %[1]v, %v, %v\n", User, Manager, Admin)
 	fmt.Printf("RoleMask: %b \n", RoleMask)
 
 	fmt.Printf("Statuses: %v, %v, %v\n", Registered, Active, Disabled)
