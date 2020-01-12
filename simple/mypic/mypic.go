@@ -5,7 +5,6 @@
 package mypic // import "github.com/iproduct/coursego/simple/mypic"
 
 import (
-	"log"
 	"image"
 	"image/png"
 	"os"
@@ -33,7 +32,7 @@ func Encode(f func(int, int) [][]uint8, file *os.File) {
 }
 
 // EncodeImagePNG encodes the image and writes it to PNG file
-func EncodeImagePNG(m image.Image, file *os.File) {
+func EncodeImagePNG(m image.Image, file *os.File) error {
 	// var buf bytes.Buffer
 	// err := png.Encode(&buf, m)
 	// if err != nil {
@@ -41,8 +40,5 @@ func EncodeImagePNG(m image.Image, file *os.File) {
 	// }
 	// enc := base64.StdEncoding.EncodeToString(buf.Bytes())
 	// fmt.Fprintln(file, "IMAGE:" + enc)
-	err := png.Encode(file, m)
-	if err != nil {
-		log.Fatal(err)
-	}
+	return png.Encode(file, m)
 }

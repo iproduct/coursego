@@ -8,7 +8,7 @@ func main() {
 
 	a := names[1:2]
 	b := a[2:3]
-	fmt.Println(a, b) // [Paul] [XXX]
+	fmt.Println(a, b) // [Paul] [Ringo]
 
 	b[0] = "XXX"
 	fmt.Println(a, b)  // [Paul] [XXX]

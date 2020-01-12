@@ -72,7 +72,7 @@ func loops() {
 
 func loopForMissing() {
 	sum := 1
-	for ; sum < 1000; {
+	for sum < 1000 {
 		sum += sum
 	}
 	fmt.Println(sum)
@@ -166,17 +166,17 @@ func strToBytes(s string) []byte {
 	header := (*reflect.StringHeader)(unsafe.Pointer(&s))
 	bytesHeader := &reflect.SliceHeader{
 		Data: header.Data,
-		Len: header.Len,
-		Cap: header.Len,
+		Len:  2,
+		Cap:  header.Len,
 	}
 	return *(*[]byte)(unsafe.Pointer(bytesHeader))
 }
 
-func bytesToStr(b []byte) string  {
+func bytesToStr(b []byte) string {
 	header := (*reflect.SliceHeader)(unsafe.Pointer(&b))
 	stringHeader := &reflect.StringHeader{
 		Data: header.Data,
-		Len: header.Len,
+		Len:  header.Len,
 	}
 	return *(*string)(unsafe.Pointer(stringHeader))
 }
@@ -188,48 +188,64 @@ func swapRef(x, y *string) {
 	*x, *y = *y, *x
 }
 
-func main() {
-	a, b := swapVal("hello", "world")
-	fmt.Println(a, b)
-	swapRef(&a, &b)
-	fmt.Println(a, b)
-}
+// func main() {
+// 	a, b := swapVal("hello", "world")
+// 	fmt.Println(a, b)
+// 	swapRef(&a, &b)
+// 	fmt.Println(a, b)
+// }
 
-//func main() {
-//	fmt.Println(myString(mystringer{"abcd"}))
-//	fmt.Println(myString("xyz"))
-//	s := Sequence{1, 5, 7, 2, 9, 3}
-//	fmt.Println(myString(s))
-//	fmt.Println(s.Get(1))
-//	loops()
-//	switch1()
-//
-//	a := "hello"
-//	header := (*reflect.StringHeader)(unsafe.Pointer(&a))
-//	header.Len = 100
-//	// cast the header back to 'string' and print it
-//	fmt.Println(*(*string)(unsafe.Pointer(header)))
-//	//v := reflect.ValueOf(a)
-//	fmt.Printf("%#v\n", header)
-//	//s := reflect.ValueOf(&t).Elem()
-//	//typeOfA := v.Type()
-//	//for i := 0; i < v.String(); i++ {
-//	//	f := v.Field(i)
-//	//	fmt.Printf("%d: %s %s = %v\n", i,
-//	//		typeOfA.Field(i).Name, f.Type(), f.Interface())
-//	//}
-//	a = a + " there"
-//	fmt.Printf("%#v\n", (*reflect.StringHeader)(unsafe.Pointer(&a)))
-//	a = "world123"
-//	fmt.Printf("%#v\n", (*reflect.StringHeader)(unsafe.Pointer(&a)))
-//
-//	//b := strToBytes("hello")
-//	//b[0] = 100
-//	//fmt.Print(b)
-//
-//	b := []byte{104, 101, 108, 108, 111}
-//	str := bytesToStr(b)
-//	fmt.Println(str) // "hello"
-//	b[0] = 100
-//	fmt.Println(str) // "dello"
-//}
+func main() {
+	// fmt.Println(myString(mystringer{"abcd"}))
+	// fmt.Println(myString("xyz"))
+	// s := Sequence{1, 5, 7, 2, 9, 3}
+	// fmt.Println(s.String())
+	// fmt.Println(s.Get(1))
+	// loops()
+	// switch1()
+	//
+	//	a := "hello"
+	//	header := (*reflect.StringHeader)(unsafe.Pointer(&a))
+	//	header.Len = 100
+	//	// cast the header back to 'string' and print it
+	//	fmt.Println(*(*string)(unsafe.Pointer(header)))
+	//	//v := reflect.ValueOf(a)
+	//	fmt.Printf("%#v\n", header)
+	//	//s := reflect.ValueOf(&t).Elem()
+	//	//typeOfA := v.Type()
+	//	//for i := 0; i < v.String(); i++ {
+	//	//	f := v.Field(i)
+	//	//	fmt.Printf("%d: %s %s = %v\n", i,
+	//	//		typeOfA.Field(i).Name, f.Type(), f.Interface())
+	//	//}
+	//	a = a + " there"
+	//	fmt.Printf("%#v\n", (*reflect.StringHeader)(unsafe.Pointer(&a)))
+	//	a = "world123"
+	//	fmt.Printf("%#v\n", (*reflect.StringHeader)(unsafe.Pointer(&a)))
+
+	str := "hello"
+	// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str)).Data)
+	str = "hello" + "1"
+	// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str2)).Data)
+	// header := (*reflect.StringHeader)(unsafe.Pointer(&str))
+	// *header.Data = *header.Data + 1
+	slice := strToBytes(str)
+	fmt.Println(string(slice), len(slice), cap(slice))
+	// sliceHeader := (*reflect.SliceHeader)(unsafe.Pointer(&slice))
+	// sliceHeader.Len = 100
+	// sliceHeader.Cap = 100
+	fmt.Println(string(slice), len(slice), cap(slice))
+	// fmt.Println(header.Data, sliceHeader.Data)
+	// slice[1] = byte(100)
+	fmt.Println(str)
+
+	//	//b := strToBytes("hello")
+	//	//b[0] = 100
+	//	//fmt.Print(b)
+	//
+	//	b := []byte{104, 101, 108, 108, 111}
+	//	str := bytesToStr(b)
+	//	fmt.Println(str) // "hello"
+	//	b[0] = 100
+	//	fmt.Println(str) // "dello"
+}
