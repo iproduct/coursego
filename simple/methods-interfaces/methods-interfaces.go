@@ -14,7 +14,7 @@ func main() {
 	f := MyFloat(-math.Sqrt2)
 	v := Vertex{3, 4}
 
-	a = f  // a MyFloat implements Abser
+	a = f // a MyFloat implements Abser
 	fmt.Println(a.Abs())
 
 	a = &v // a *Vertex implements Abser
@@ -42,4 +42,3 @@ type Vertex struct {
 func (v *Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
-

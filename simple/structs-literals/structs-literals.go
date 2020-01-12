@@ -15,7 +15,7 @@ var (
 
 func main() {
 	fmt.Println(v1, p, v2, v3)
-	p := &v1
+	p := v1
 	p.X = 1e9
 	fmt.Println(v1)
 }
