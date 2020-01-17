@@ -58,22 +58,22 @@ type Error string
 func (e Error) Error() string {
 	return string(e)
 }
-
-// error is a method of *Regexp that reports parsing errors by
-// panicking with an Error.
-func (regexp *Regexp) error(err string) {
-	panic(Error(err))
-}
-
-// Compile returns a parsed representation of the regular expression.
-func Compile(str string) (regexp *Regexp, err error) {
-	regexp = new(Regexp)
-	// doParse will panic if there is a parse error.
-	defer func() {
-		if e := recover(); e != nil {
-			regexp = nil    // Clear return value.
-			err = e.(Error) // Will re-panic if not a parse error.
-		}
-	}()
-	return regexp.doParse(str), nil
-}
+//
+//// error is a method of *Regexp that reports parsing errors by
+//// panicking with an Error.
+//func (regexp *Regexp) error(err string) {
+//	panic(Error(err))
+//}
+//
+//// Compile returns a parsed representation of the regular expression.
+//func Compile(str string) (regexp *Regexp, err error) {
+//	regexp = new(Regexp)
+//	// doParse will panic if there is a parse error.
+//	defer func() {
+//		if e := recover(); e != nil {
+//			regexp = nil    // Clear return value.
+//			err = e.(Error) // Will re-panic if not a parse error.
+//		}
+//	}()
+//	return regexp.doParse(str), nil
+//}
