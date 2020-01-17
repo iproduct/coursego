@@ -1,4 +1,4 @@
-// Writing a basic HTTP server is easy using the
+// Writing a basic HTTP simple-server is easy using the
 // `net/http` package.
 package main
 
@@ -39,7 +39,7 @@ func headers(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	// We register our handlers on server routes using the
+	// We register our handlers on simple-server routes using the
 	// `http.HandleFunc` convenience function. It sets up
 	// the *default router* in the `net/http` package and
 	// takes a function as an argument.
