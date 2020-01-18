@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 )
 
 var db database = make(map[string]Book, 10)
+var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
 
 func init() {
 	for _, book := range goBooks {
@@ -15,18 +17,23 @@ func init() {
 }
 
 func main() {
-	mux := http.NewServeMux()
-	mux.HandleFunc("/list", db.list)
-	mux.HandleFunc("/price", db.price)
-	log.Fatal(http.ListenAndServe("localhost:8080", mux))
+	http.HandleFunc("/books", db.books)
+	http.HandleFunc("/price", db.price)
+	log.Println("Starting the HTTP server ...")
+	log.Fatal(http.ListenAndServe("localhost:8080", nil))
 }
 
 type database map[string]Book
 
-func (db database) list(w http.ResponseWriter, req *http.Request) {
-	for _, book := range db {
-		fmt.Fprintf(w, "%s: %s - $%6.2f\n", book.ID, book.Title, book.RetailPrice)
+func (db database) books(w http.ResponseWriter, req *http.Request) {
+	w.Header().Add("Content Type", "text/html")
+	err := tmplAllBooks.Execute(w, goBooks)
+	if err != nil {
+		log.Printf("Error executing template: %v\n", err)
 	}
+	//for _, book := range db {
+	//	fmt.Fprintf(w, "%s: %s - $%6.2f\n", book.ID, book.Title, book.RetailPrice)
+	//}
 }
 
 func (db database) price(w http.ResponseWriter, req *http.Request) {
