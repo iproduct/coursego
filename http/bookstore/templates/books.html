@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookstore</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection"/>
+    <!--Import main.css-->
+    <link type="text/css" rel="stylesheet" href="static/css/main.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        table, th, td {
+            border-collapse: collapse;
+            border: 1px solid lightblue;
+            padding: 3px 5px;
+        }
+    </style>
+</head>
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><i
+                    class="large material-icons">menu_book</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Favourites</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Favourites</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Bookstore</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">Read more for profit and fun: Golang + Materialize demo</h5>
+        </div>
+        <div class="row center">
+            <a href="http://materializecss.com/getting-started.html" id="download-button"
+               class="btn-large waves-effect waves-light orange">Go to Favourites</a>
+        </div>
+        <br><br>
+
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        {{if .}}
+            <!--   Books list section   -->
+            <h5>Books List ({{len .}} books)</h5>
+            <div class="row">
+                {{range .}}
+                    <div class="card-wrapper col s12 l6">
+                        <div class="card horizontal sticky-action">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="{{urlSafe .Thumbnail}}">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{.Title}}<i
+                                class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">{{.Subtitle}}</a></p>
+                                    <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">{{.Title}}<i
+                                                class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked
+                                            on.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Add to Favourites</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{end}}
+            </div>
+            <br>
+            <br>
+            <br>
+        {{end}}
+        <form action="/" name=f method="GET">
+            <input maxLength=1024 size=70 name="bookId" value="" title="Book ID" placeholder="Book ID">
+            <input type="submit" value="Show Details" name="showDetails">
+        </form>
+    </div>
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+</body>
+</html>

@@ -122,103 +122,32 @@ var goBooks = []Book{
 		BuyLink:             parseURL("https://play.google.com/store/books/details?id=xfPEDwAAQBAJ&rdid=book-xfPEDwAAQBAJ&rdot=1&source=gbs_api"),
 		TextSnippet:         "1 a = [1, 2, 3, 4, 5, 0] 2 a.drop(3) #=&gt; [4, 5, 0] And here&#39;s our <b>Golang</b> <br> implementation drop. 1 a := [...]int{1,2,3,4,5,0} 2 drop := a[3:] 3 4 fmt.Println(drop) <br> 8.7 drop_while Similar to drop, drop_while returns the values that satisfy an <br> expression.",
 	},
-	// {
-	// kind: "books#volume",
-	// id: "NvNFDwAAQBAJ",
-	// etag: "AXgOlt0cnI4",
-	// selfLink: "https://www.googleapis.com/books/v1/volumes/NvNFDwAAQBAJ",
-	// volumeInfo: {
-	// title: "Cloud Native Programming with Golang",
-	// subtitle: "Develop microservice-based high performance web apps for the cloud with Go",
-	// authors: [
-	// "Mina Andrawos",
-	// "Martin Helmich"
-	// ],
-	// publisher: "Packt Publishing Ltd",
-	// publishedDate: "2017-12-28",
-	// description: "Discover practical techniques to build cloud-native apps that are scalable, reliable, and always available. Key Features Build well-designed and secure microservices. Enrich your microservices with continous integration and monitoring. Containerize your application with Docker Deploy your application to AWS. Learn how to utilize the powerful AWS services from within your application Book Description Awarded as one of the best books of all time by BookAuthority, Cloud Native Programming with Golang will take you on a journey into the world of microservices and cloud computing with the help of Go. Cloud computing and microservices are two very important concepts in modern software architecture. They represent key skills that ambitious software engineers need to acquire in order to design and build software applications capable of performing and scaling. Go is a modern cross-platform programming language that is very powerful yet simple; it is an excellent choice for microservices and cloud applications. Go is gaining more and more popularity, and becoming a very attractive skill. This book starts by covering the software architectural patterns of cloud applications, as well as practical concepts regarding how to scale, distribute, and deploy those applications. You will also learn how to build a JavaScript-based front-end for your application, using TypeScript and React. From there, we dive into commercial cloud offerings by covering AWS. Finally, we conclude our book by providing some overviews of other concepts and technologies that you can explore, to move from where the book leaves off. What you will learn Understand modern software applications architectures Build secure microservices that can effectively communicate with other services Get to know about event-driven architectures by diving into message queues such as Kafka, Rabbitmq, and AWS SQS. Understand key modern database technologies such as MongoDB, and Amazon’s DynamoDB Leverage the power of containers Explore Amazon cloud services fundamentals Know how to utilize the power of the Go language to access key services in the Amazon cloud such as S3, SQS, DynamoDB and more. Build front-end applications using ReactJS with Go Implement CD for modern applications Who this book is for This book is for developers who want to begin building secure, resilient, robust, and scalable Go applications that are cloud native. Some knowledge of the Go programming language should be sufficient.To build the front-end application, you will also need some knowledge of JavaScript programming.",
-	// industryIDentifiers: [
-	// {
-	// type: "ISBN_13",
-	// identifier: "9781787127968"
-	// },
-	// {
-	// type: "ISBN_10",
-	// identifier: "1787127966"
-	// }
-	// ],
-	// readingModes: {
-	// text: true,
-	// image: true
-	// },
-	// pageCount: 404,
-	// printType: "BOOK",
-	// categories: [
-	// "Computers"
-	// ],
-	// maturityRating: "NOT_MATURE",
-	// allowAnonLogging: true,
-	// contentVersion: "1.4.4.0.preview.3",
-	// panelizationSummary: {
-	// containsEpubBubbles: false,
-	// containsImageBubbles: false
-	// },
-	// imageLinks: {
-	// smallThumbnail: "http://books.google.com/books/content?id=NvNFDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-	// thumbnail: "http://books.google.com/books/content?id=NvNFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-	// },
-	// language: "en",
-	// previewLink: "http://books.google.com/books?id=NvNFDwAAQBAJ&pg=PP3&dq=golang&hl=&cd=4&source=gbs_api",
-	// infoLink: "https://play.google.com/store/books/details?id=NvNFDwAAQBAJ&source=gbs_api",
-	// canonicalVolumeLink: "https://play.google.com/store/books/details?id=NvNFDwAAQBAJ"
-	// },
-	// saleInfo: {
-	// country: "BG",
-	// saleability: "FOR_SALE",
-	// isEbook: true,
-	// listPrice: {
-	// amount: 75.75,
-	// currencyCode: "BGN"
-	// },
-	// retailPrice: {
-	// amount: 75.75,
-	// currencyCode: "BGN"
-	// },
-	// buyLink: "https://play.google.com/store/books/details?id=NvNFDwAAQBAJ&rdid=book-NvNFDwAAQBAJ&rdot=1&source=gbs_api",
-	// offers: [
-	// {
-	// finskyOfferType: 1,
-	// listPrice: {
-	// amountInMicros: 75750000,
-	// currencyCode: "BGN"
-	// },
-	// retailPrice: {
-	// amountInMicros: 75750000,
-	// currencyCode: "BGN"
-	// }
-	// }
-	// ]
-	// },
-	// accessInfo: {
-	// country: "BG",
-	// viewability: "PARTIAL",
-	// embeddable: true,
-	// publicDomain: false,
-	// textToSpeechPermission: "ALLOWED",
-	// epub: {
-	// isAvailable: true
-	// },
-	// pdf: {
-	// isAvailable: true
-	// },
-	// webReaderLink: "http://play.google.com/books/reader?id=NvNFDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
-	// accessViewStatus: "SAMPLE",
-	// quoteSharingAllowed: false
-	// },
-	// searchInfo: {
-	// textSnippet: "<b>Golang</b>. Copyright © 2017 Packt Publishing All rights reserved. No part of this <br> book may be reproduced, stored in a retrieval system, or transmitted in any form <br> or by any means, without the prior written permission of the publisher, except in <br> the&nbsp;..."
-	// }
-	// },
+	{
+		ID:                  "NvNFDwAAQBAJ",
+		SelfLink:            parseURL("https://www.googleapis.com/books/v1/volumes/NvNFDwAAQBAJ"),
+		Title:               "Cloud Native Programming with Golang",
+		Subtitle:            "Develop microservice-based high performance web apps for the cloud with Go",
+		Authors:             []Author{"Mina Andrawos", "Martin Helmich"},
+		Publisher:           "Packt Publishing Ltd",
+		PublishedDate:       "2017-12-28",
+		Description:         "Discover practical techniques to build cloud-native apps that are scalable, reliable, and always available. Key Features Build well-designed and secure microservices. Enrich your microservices with continous integration and monitoring. Containerize your application with Docker Deploy your application to AWS. Learn how to utilize the powerful AWS services from within your application Book Description Awarded as one of the best books of all time by BookAuthority, Cloud Native Programming with Golang will take you on a journey into the world of microservices and cloud computing with the help of Go. Cloud computing and microservices are two very important concepts in modern software architecture. They represent key skills that ambitious software engineers need to acquire in order to design and build software applications capable of performing and scaling. Go is a modern cross-platform programming language that is very powerful yet simple; it is an excellent choice for microservices and cloud applications. Go is gaining more and more popularity, and becoming a very attractive skill. This book starts by covering the software architectural patterns of cloud applications, as well as practical concepts regarding how to scale, distribute, and deploy those applications. You will also learn how to build a JavaScript-based front-end for your application, using TypeScript and React. From there, we dive into commercial cloud offerings by covering AWS. Finally, we conclude our book by providing some overviews of other concepts and technologies that you can explore, to move from where the book leaves off. What you will learn Understand modern software applications architectures Build secure microservices that can effectively communicate with other services Get to know about event-driven architectures by diving into message queues such as Kafka, Rabbitmq, and AWS SQS. Understand key modern database technologies such as MongoDB, and Amazon’s DynamoDB Leverage the power of containers Explore Amazon cloud services fundamentals Know how to utilize the power of the Go language to access key services in the Amazon cloud such as S3, SQS, DynamoDB and more. Build front-end applications using ReactJS with Go Implement CD for modern applications Who this book is for This book is for developers who want to begin building secure, resilient, robust, and scalable Go applications that are cloud native. Some knowledge of the Go programming language should be sufficient.To build the front-end application, you will also need some knowledge of JavaScript programming.",
+		ISBN13:              "9781787127968",
+		ISBN10:              "1787127966",
+		PageCount:           404,
+		PrintType:           "BOOK",
+		Categories:          []Category{"Computers"},
+		SmallThumbnail:      parseURL("http://books.google.com/books/content?id=NvNFDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"),
+		Thumbnail:           parseURL("http://books.google.com/books/content?id=NvNFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"),
+		Language:            "en",
+		PreviewLink:         parseURL("http://books.google.com/books?id=NvNFDwAAQBAJ&pg=PP3&dq=golang&hl=&cd=4&source=gbs_api"),
+		InfoLink:            parseURL("https://play.google.com/store/books/details?id=NvNFDwAAQBAJ&source=gbs_api"),
+		CanonicalVolumeLink: parseURL("https://play.google.com/store/books/details?id=NvNFDwAAQBAJ"),
+		RetailPrice:         75.75,
+		CurrencyCode:        "BGN",
+		BuyLink:             parseURL("https://play.google.com/store/books/details?id=NvNFDwAAQBAJ&rdid=book-NvNFDwAAQBAJ&rdot=1&source=gbs_api"),
+		TextSnippet:         "<b>Golang</b>. Copyright © 2017 Packt Publishing All rights reserved. No part of this <br> book may be reproduced, stored in a retrieval system, or transmitted in any form <br> or by any means, without the prior written permission of the publisher, except in <br> the&nbsp;...",
+	},
+
 	// {
 	// kind: "books#volume",
 	// id: "TxJ9DwAAQBAJ",
