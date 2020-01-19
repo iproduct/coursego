@@ -14,17 +14,34 @@ const ResourcesPath = "D:/CourseGO/workspace/src/github.com/iproduct/coursego/ht
 
 var tmplBase = template.New("base").Funcs(
 	template.FuncMap{
-		"urlSafe": func(url *url.URL) template.HTML {
-			return template.HTML((*url).String())
+		"urlSafe": func(url url.URL) template.HTML {
+			return template.HTML(url.String())
 		},
 	})
 
 var tmplAllBooks, _ = tmplBase.ParseFiles(path.Join(ResourcesPath, "templates", "books.html"))
+//var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
+var db database = make(map[string]Book, 10)
+var favourites database = make(map[string]Book, 10)
+var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
+func init() {
+	for _, book := range goBooks {
+		db[book.ID] = book
+	}
+}
 type database map[string]Book
 
-func (db database) books(w http.ResponseWriter, req *http.Request) {
-	err := tmplAllBooks.ExecuteTemplate(w, "books.html", goBooks)
+type model struct{
+	Db,	Fav database
+}
+
+func books(w http.ResponseWriter, req *http.Request) {
+	addFav := req.FormValue("add")
+	favourites[addFav] = db[addFav]
+	log.Printf("Book ID=%s aded to favourites\n", addFav)
+	data := model{Db: db, Fav: favourites}
+	err := tmplAllBooks.ExecuteTemplate(w, "books.html", data)
 	if err != nil {
 		log.Printf("Error executing template: %v\n", err)
 	}
@@ -33,7 +50,7 @@ func (db database) books(w http.ResponseWriter, req *http.Request) {
 	//}
 }
 
-func (db database) price(w http.ResponseWriter, req *http.Request) {
+func price(w http.ResponseWriter, req *http.Request) {
 	id := req.URL.Query().Get("id")
 	if book, ok := db[id]; ok {
 		fmt.Fprintf(w, "$%6.2f\n", book.RetailPrice)
@@ -43,20 +60,9 @@ func (db database) price(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
-var db database = make(map[string]Book, 10)
-
-//var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
-var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
-
-func init() {
-	for _, book := range goBooks {
-		db[book.ID] = book
-	}
-}
-
 func main() {
-	http.HandleFunc("/books", db.books)
-	http.HandleFunc("/price", db.price)
+	http.HandleFunc("/books", books)
+	http.HandleFunc("/price", price)
 	fs := http.FileServer(http.Dir(path.Join(ResourcesPath, "static")))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	log.Println("Starting the HTTP server ...")

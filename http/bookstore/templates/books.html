@@ -52,9 +52,10 @@
     <div class="section">
         {{if .}}
             <!--   Books list section   -->
-            <h5>Books List ({{len .}} books)</h5>
+            <h5>Books List ({{len .Db}} books)</h5>
             <div class="row">
-                {{range .}}
+                {{$fav := .Fav}}
+                {{range .Db}}
                     <div class="card-wrapper col s12 l6">
                         <div class="card horizontal sticky-action">
                             <div class="card-image waves-effect waves-block waves-light">
@@ -65,15 +66,8 @@
                     <span class="card-title activator grey-text text-darken-4">{{.Title}}<i
                                 class="material-icons right">more_vert</i></span>
                                     <p><a href="#">{{.Subtitle}}</a></p>
-                                    <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">{{.Title}}<i
-                                                class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once
-                                            clicked
-                                            on.</p>
-                                    </div>
                                     <div class="card-action">
-                                        <a href="#">Add to Favourites</a>
+                                        <a href="books?add={{.ID}}">Add to Favourites</a>
                                     </div>
                                 </div>
                             </div>
