@@ -21,6 +21,13 @@ type User struct {
 var database = make(map[int]User)
 var sequence uint64
 
+func SendError(w http.ResponseWriter, status int, err error, message string) {
+	text := fmt.Sprintf("%s: %s", message, err)
+	log.Println(text)
+	w.WriteHeader(http.StatusBadRequest)
+	fmt.Fprintf(w,`{"error": %s}`, text)
+}
+
 func users(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:
@@ -30,15 +37,13 @@ func users(w http.ResponseWriter, r *http.Request) {
 		defer r.Body.Close()
 		body, err := ioutil.ReadAll(r.Body)
 		if err != nil {
-			log.Printf("Error reading request body: %s", err)
-			w.WriteHeader(http.StatusBadRequest)
+			SendError(w, http.StatusBadRequest,  err, "Error reading request body",)
 			return
 		}
 		user := User{}
 		if err := json.Unmarshal(body, &user); err != nil {
 		//if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
-			log.Printf("JSON unmarshaling failed: %s", err)
-			w.WriteHeader(http.StatusBadRequest)
+			SendError(w, http.StatusBadRequest,  err, "JSON unmarshaling failed")
 			return
 		}
 		fmt.Printf("AFTER UNMARSHAL:%#v\n", user)
@@ -51,7 +56,10 @@ func users(w http.ResponseWriter, r *http.Request) {
 
 		data, err := json.MarshalIndent(user, "", "    ")
 		if err != nil {
-			log.Fatalf("JSON marshaling failed: %s", err)
+			text := fmt.Sprintf("JSON marshaling failed: %s", err)
+			log.Println(text)
+			w.WriteHeader(http.StatusBadRequest)
+			fmt.Fprintf(w,`{"error": %s}`, text)
 		}
 		w.Write(data)
 	case http.MethodGet:
