@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
@@ -26,9 +27,16 @@ func users(w http.ResponseWriter, r *http.Request) {
 		//buf := new(bytes.Buffer)
 		//buf.ReadFrom(r.Body)
 		//fmt.Printf("%s\n", buf)
+		defer r.Body.Close()
+		body, err := ioutil.ReadAll(r.Body)
+		if err != nil {
+			log.Printf("Error reading request body: %s", err)
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
 		user := User{}
-		//if err := json.Unmarshal(buf.Bytes(), &user); err != nil {
-		if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
+		if err := json.Unmarshal(body, &user); err != nil {
+		//if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
 			log.Printf("JSON unmarshaling failed: %s", err)
 			w.WriteHeader(http.StatusBadRequest)
 			return
@@ -39,12 +47,13 @@ func users(w http.ResponseWriter, r *http.Request) {
 		database[newID] = user
 		w.Header().Add("Content Type", "application/json")
 		w.Header().Add("Location", r.URL.String()+"/"+strconv.Itoa(newID))
+		w.WriteHeader(http.StatusCreated)
+
 		data, err := json.MarshalIndent(user, "", "    ")
 		if err != nil {
 			log.Fatalf("JSON marshaling failed: %s", err)
 		}
 		w.Write(data)
-		w.WriteHeader(http.StatusCreated)
 	case http.MethodGet:
 		w.Header().Add("Content Type", "application/json")
 		users := make([]User, len(database))
