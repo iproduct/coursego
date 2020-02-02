@@ -14,7 +14,7 @@ func PrintResponse(resp *http.Response) {
 	fmt.Println("\nResponse status:", resp.Status)
 	fmt.Println("Response headers:", resp.Header)
 
-	// Print the first 5 lines of the response body.
+	// Print the the response body.
 	scanner := bufio.NewScanner(resp.Body)
 	for scanner.Scan() {
 		fmt.Println(scanner.Text())

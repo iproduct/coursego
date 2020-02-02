@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
@@ -31,18 +30,19 @@ func SendError(w http.ResponseWriter, status int, err error, message string) {
 func users(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:
+		defer r.Body.Close()
 		//buf := new(bytes.Buffer)
 		//buf.ReadFrom(r.Body)
 		//fmt.Printf("%s\n", buf)
-		defer r.Body.Close()
-		body, err := ioutil.ReadAll(r.Body)
-		if err != nil {
-			SendError(w, http.StatusBadRequest,  err, "Error reading request body",)
-			return
-		}
+
+		//body, err := ioutil.ReadAll(r.Body)
+		//if err != nil {
+		//	SendError(w, http.StatusBadRequest,  err, "Error reading request body",)
+		//	return
+		//}
 		user := User{}
-		if err := json.Unmarshal(body, &user); err != nil {
-		//if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
+		//if err := json.Unmarshal(body, &user); err != nil {
+		if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
 			SendError(w, http.StatusBadRequest,  err, "JSON unmarshaling failed")
 			return
 		}
@@ -56,10 +56,8 @@ func users(w http.ResponseWriter, r *http.Request) {
 
 		data, err := json.MarshalIndent(user, "", "    ")
 		if err != nil {
-			text := fmt.Sprintf("JSON marshaling failed: %s", err)
-			log.Println(text)
-			w.WriteHeader(http.StatusBadRequest)
-			fmt.Fprintf(w,`{"error": %s}`, text)
+			SendError(w, http.StatusBadRequest,  err, "JSON marshaling failed")
+			return
 		}
 		w.Write(data)
 	case http.MethodGet:
@@ -80,6 +78,5 @@ func users(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/users", users)
-	//http.HandleFunc("/headers", headers)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
