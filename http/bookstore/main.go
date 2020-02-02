@@ -23,7 +23,7 @@ var tmplAllBooks, _ = tmplBase.ParseFiles(path.Join(ResourcesPath, "templates", 
 //var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
 var db database = make(map[string]Book, 10)
 var favourites database = make(map[string]Book, 10)
-var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
+var addr = flag.String("addr", ":8088", "http service address") // Q=17, R=18
 
 func init() {
 	for _, book := range goBooks {

@@ -145,5 +145,5 @@ func main() {
 	// HandlerFunc returns a HTTP Handler
 	myHandler := http.HandlerFunc(myHandlerFunc)
 	http.Handle("/my", myMiddleware(myHandler))
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8088", nil))
 }

@@ -154,5 +154,5 @@ func Apply(h AppHandler, adapters ...Adapter) http.Handler {
 
 func main() {
 	http.Handle("/users", Apply(users, setServerTimeHeader, filterPOSTByContentType, myMiddleware))
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8088", nil))
 }

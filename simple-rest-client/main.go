@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-const APIUrl = "http://localhost:8080/users"
+const APIUrl = "http://localhost:8088/users"
 
 func PrintResponse(resp *http.Response) {
 	// Print the HTTP response status.
@@ -30,7 +30,7 @@ func main() {
 	var err error
 
 	// Post new User
-	resp, err = http.Post(APIUrl, "application/json", bytes.NewBuffer([]byte(`{"name":"admin", "email":"admin@gmail.com"}`)))
+	resp, err = http.Post(APIUrl, "text/json", bytes.NewBuffer([]byte(`{"name":"admin", "email":"admin@gmail.com"}`)))
 	defer resp.Body.Close()
 	if err != nil {
 		panic(err)
