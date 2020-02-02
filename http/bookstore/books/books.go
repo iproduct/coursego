@@ -1,4 +1,4 @@
-package main
+package books
 
 import (
 	"log"
@@ -46,7 +46,8 @@ type Book struct {
 	TextSnippet         string
 }
 
-var goBooks = []Book{
+// GoBooks is a sample collection of Golang books
+var GoBooks = []Book{
 	{
 		ID:                  "fmd-DwAAQBAJ",
 		SelfLink:            parseURL("https://www.googleapis.com/books/v1/volumes/fmd-DwAAQBAJ"),

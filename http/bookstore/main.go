@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"fmt"
+	"github.com/iproduct/coursego/http/bookstore/books"
 	"html/template"
 	"log"
 	"net/http"
@@ -10,6 +10,7 @@ import (
 	"path"
 )
 
+// ResourcesPath ia basic path to the project in filesystem
 const ResourcesPath = "D:/CourseGO/workspace/src/github.com/iproduct/coursego/http/bookstore"
 
 var tmplBase = template.New("base").Funcs(
@@ -19,50 +20,62 @@ var tmplBase = template.New("base").Funcs(
 		},
 	})
 
-var tmplAllBooks, _ = tmplBase.ParseFiles(path.Join(ResourcesPath, "templates", "books.html"))
+var tmplAllBooks, _ = tmplBase.ParseFiles(
+	path.Join(ResourcesPath, "templates", "books.html"),
+	path.Join(ResourcesPath, "templates", "favs.html"))
+
 //var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
-var db database = make(map[string]Book, 10)
-var favourites database = make(map[string]Book, 10)
-var addr = flag.String("addr", ":8088", "http service address") // Q=17, R=18
+var db database = make(map[string]books.Book, 10)
+var favourites database = make(map[string]books.Book, 10)
+var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
 func init() {
-	for _, book := range goBooks {
+	for _, book := range books.GoBooks {
 		db[book.ID] = book
 	}
 }
-type database map[string]Book
 
-type model struct{
-	Db,	Fav database
+type database map[string]books.Book
+
+type model struct {
+	Db, Fav database
 }
 
-func books(w http.ResponseWriter, req *http.Request) {
+func showBooks(w http.ResponseWriter, req *http.Request) {
 	addFav := req.FormValue("add")
-	favourites[addFav] = db[addFav]
-	log.Printf("Book ID=%s aded to favourites\n", addFav)
+	removeFav := req.FormValue("remove")
+	if addFav != "" {
+		favourites[addFav] = db[addFav]
+		log.Printf("Book ID=%s aded to favourites\n", addFav)
+	}else if removeFav != "" {
+		delete(favourites, removeFav)
+		log.Printf("Book ID=%s remove from favourites\n", removeFav)
+	}
+
 	data := model{Db: db, Fav: favourites}
 	err := tmplAllBooks.ExecuteTemplate(w, "books.html", data)
 	if err != nil {
 		log.Printf("Error executing template: %v\n", err)
 	}
-	//for _, book := range db {
-	//	fmt.Fprintf(w, "%s: %s - $%6.2f\n", book.ID, book.Title, book.RetailPrice)
-	//}
 }
 
-func price(w http.ResponseWriter, req *http.Request) {
-	id := req.URL.Query().Get("id")
-	if book, ok := db[id]; ok {
-		fmt.Fprintf(w, "$%6.2f\n", book.RetailPrice)
-	} else {
-		w.WriteHeader(http.StatusNotFound) // 404
-		fmt.Fprintf(w, "no book with ID: %q\n", id)
+func showFavs(w http.ResponseWriter, req *http.Request) {
+	removeFav := req.FormValue("remove")
+	if removeFav != "" {
+		delete(favourites, removeFav)
+		log.Printf("Book ID=%s remove from favourites\n", removeFav)
+	}
+	err := tmplAllBooks.ExecuteTemplate(w, "favs.html", favourites)
+	if err != nil {
+		log.Printf("Error executing template: %v\n", err)
 	}
 }
 
+
+
 func main() {
-	http.HandleFunc("/books", books)
-	http.HandleFunc("/price", price)
+	http.HandleFunc("/books", showBooks)
+	http.HandleFunc("/favs", showFavs)
 	fs := http.FileServer(http.Dir(path.Join(ResourcesPath, "static")))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	log.Println("Starting the HTTP server ...")

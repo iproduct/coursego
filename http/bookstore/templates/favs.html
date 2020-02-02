@@ -41,8 +41,8 @@
             <h5 class="header col s12 light">Read more for profit and fun: Golang + Materialize demo</h5>
         </div>
         <div class="row center">
-            <a href="favs" id="action-button"
-               class="btn-large waves-effect waves-light orange">Go to Favourites</a>
+            <a href="books" id="action-button"
+               class="btn-large waves-effect waves-light orange">Go to Books</a>
         </div>
         <br><br>
 
@@ -51,10 +51,9 @@
 <div class="container">
     <div class="section">
         <!--   Books list section   -->
-        <h5>Books List ({{len .Db}} books)</h5>
+        <h5>Selected: ({{len .}} books)</h5>
         <div class="row">
-            {{$fav := .Fav}}
-            {{range .Db}}
+            {{range .}}
                 <div class="card-wrapper col s12 l6">
                     <div class="card horizontal sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -66,11 +65,7 @@
                                 class="material-icons right">more_vert</i></span>
                                 <p><a href="#">{{.Subtitle}}</a></p>
                                 <div class="card-action">
-                                    {{if (index $fav .ID).ID}}
-                                        <a href="books?remove={{.ID}}">Remove from Favourites</a>
-                                    {{else}}
-                                        <a href="books?add={{.ID}}">Add to Favourites</a>
-                                    {{end}}
+                                    <a href="favs?remove={{.ID}}">Remove from Favourites</a>
                                 </div>
                             </div>
                         </div>
