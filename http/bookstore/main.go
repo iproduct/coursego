@@ -22,7 +22,8 @@ var tmplBase = template.New("base").Funcs(
 
 var tmplAllBooks, _ = tmplBase.ParseFiles(
 	path.Join(ResourcesPath, "templates", "books.html"),
-	path.Join(ResourcesPath, "templates", "favs.html"))
+	path.Join(ResourcesPath, "templates", "favs.html"),
+)
 
 //var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
 var db database = make(map[string]books.Book, 10)
@@ -30,6 +31,12 @@ var favourites database = make(map[string]books.Book, 10)
 var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
 func init() {
+	for _, t := range tmplAllBooks.Templates() {
+		t.ParseFiles(
+			path.Join(ResourcesPath, "templates", "head.html"),
+			path.Join(ResourcesPath, "templates", "nav.html"),
+		)
+	}
 	for _, book := range books.GoBooks {
 		db[book.ID] = book
 	}
