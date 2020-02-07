@@ -1,9 +1,8 @@
 package rest
 
 import (
-	"github.com/iproduct/coursego/modules/repository"
-	"database/sql"
-	// import the mysql driver
+	"github.com/iproduct/coursego/modules/dao"
+	// bootstrap the mysql driver
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
 )
@@ -11,8 +10,7 @@ import (
 // App is the top level application
 type App struct {
 	Router *mux.Router
-	
-	Users  repository.UserRepo
+	Users  *dao.UserRepo
 }
 
 // Init method initializes the App
