@@ -1,16 +1,18 @@
 package dao
 
 import (
+	"database/sql"
 	"errors"
 	"github.com/iproduct/coursego/modules/model"
 )
 
 type userRepoMock struct {
 	users map[int]model.User
+	db    *sql.DB
 }
 
 //FindAll returns all users
-func (r *userRepoMock) FindAll() ([]model.User, error) {
+func (r *userRepoMock) Find(start, count int) ([]model.User, error) {
 	return nil, errors.New("Not implemented")
 }
 
@@ -35,8 +37,8 @@ func (r *userRepoMock) DeleteByID(id int) (*model.User, error) {
 }
 
 // NewMock is a UserRepo constructor
-func NewMock() *userRepoMock {
+func NewMock() UserRepo {
 	return &userRepoMock{
-		users: map[int]model.User{},
+		users: make(map[int]model.User),
 	}
 }

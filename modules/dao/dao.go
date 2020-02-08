@@ -6,9 +6,9 @@ import (
 
 // UserRepo is a repository for users
 type UserRepo interface {
-	FindAll() ([]model.User, error)
-	FindById(id int) (*model.User, error)
+	Find(start, count int) ([]model.User, error)
+	FindByID(id int) (*model.User, error)
 	Create(user *model.User) (*model.User, error)
 	Update(user *model.User) (*model.User, error)
-	DeleteById(id int) (*model.User, error)
+	DeleteByID(id int) (*model.User, error)
 }
