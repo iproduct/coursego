@@ -3,15 +3,23 @@ package rest
 import (
 	"database/sql"
 	"encoding/json"
+	"fmt"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/go-playground/locales/en"
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	en_translations "github.com/go-playground/validator/v10/translations/en"
 	"github.com/iproduct/coursego/modules/dao"
 	"github.com/iproduct/coursego/modules/model"
+	"golang.org/x/crypto/bcrypt"
+	"time"
+
+	//"golang.org/x/crypto/bcrypt"
 	"log"
 	"net/http"
 	"strconv"
+	//"time"
+
 	// bootstrap the mysql driver
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -57,11 +65,64 @@ func (a *App) Run(addr string) {
 }
 
 func (a *App) initializeRoutes() {
+	a.Router.StrictSlash(true)
+	//a.Router.Use(CommonMiddleware)
 	a.Router.HandleFunc("/users", a.getUsers).Methods("GET")
 	a.Router.HandleFunc("/users", a.createUser).Methods("POST")
-	a.Router.HandleFunc("/users/{id:[0-9]+}", a.getUser).Methods("GET")
+	a.Router.HandleFunc("/users/{id:[0-9]+}", a.getUserByID).Methods("GET")
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.updateUser).Methods("PUT")
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
+	a.Router.HandleFunc("/login", a.login).Methods("POST")
+}
+
+func (a *App) login(w http.ResponseWriter, r *http.Request) {
+	user := &model.User{}
+	err := json.NewDecoder(r.Body).Decode(user)
+	if err != nil {
+		var resp = map[string]interface{}{"status": false, "message": "Invalid request"}
+		json.NewEncoder(w).Encode(resp)
+		return
+	}
+	resp := a.checkEmailPassword(user.Email, user.Password)
+	json.NewEncoder(w).Encode(resp)
+}
+
+func (a *App) checkEmailPassword(email, password string) map[string]interface{} {
+
+	user, err := a.Users.FindByEmail(email)
+	if err != nil {
+		var resp = map[string]interface{}{"status": false, "message": "Email address not found"}
+		return resp
+	}
+	expiresAt := time.Now().Add(time.Minute * 100000).Unix()
+
+	errf := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
+	if errf != nil && errf == bcrypt.ErrMismatchedHashAndPassword { //Password does not match!
+		var resp = map[string]interface{}{"status": false, "message": "Invalid login credentials. Please try again"}
+		return resp
+	}
+
+	claims := &model.UserToken{
+		UserID: string(user.ID),
+		Name:   user.Name,
+		Email:  user.Email,
+		StandardClaims: jwt.StandardClaims{
+			ExpiresAt: expiresAt,
+			Issuer:    "test",
+		},
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+
+	tokenString, error := token.SignedString([]byte("secret"))
+	if error != nil {
+		fmt.Println(error)
+	}
+
+	var resp = map[string]interface{}{"status": false, "message": "logged in"}
+	resp["token"] = tokenString //Store the token in the response
+	resp["user"] = user
+	return resp
 }
 
 func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
@@ -112,7 +173,7 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 	respondWithJSON(w, http.StatusCreated, u)
 }
 
-func (a *App) getUser(w http.ResponseWriter, r *http.Request) {
+func (a *App) getUserByID(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id, err := strconv.Atoi(vars["id"])
 	if err != nil {
@@ -180,7 +241,7 @@ func respondWithError(w http.ResponseWriter, code int, message string) {
 	respondWithJSON(w, code, map[string]string{"error": message})
 }
 
-func respondWithValidationError(fields  validator.ValidationErrorsTranslations, w http.ResponseWriter) {
+func respondWithValidationError(fields validator.ValidationErrorsTranslations, w http.ResponseWriter) {
 	//Create a new map and fill it
 	response := make(map[string]interface{})
 	response["status"] = "error"
