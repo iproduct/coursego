@@ -73,6 +73,13 @@ func (a *App) initializeRoutes() {
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.updateUser).Methods("PUT")
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
 	a.Router.HandleFunc("/login", a.login).Methods("POST")
+	// Auth route
+	s := a.Router.PathPrefix("/auth").Subrouter()
+	s.Use(JwtVerify)
+	s.HandleFunc("/users", a.createUser).Methods("POST")
+	s.HandleFunc("/users/{id:[0-9]+}", a.getUserByID).Methods("GET")
+	s.HandleFunc("/users/{id:[0-9]+}", a.updateUser).Methods("PUT")
+	s.HandleFunc("/users/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
 }
 
 func (a *App) login(w http.ResponseWriter, r *http.Request) {
@@ -83,23 +90,25 @@ func (a *App) login(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(resp)
 		return
 	}
-	resp := a.checkEmailPassword(user.Email, user.Password)
-	json.NewEncoder(w).Encode(resp)
+	resp, err := a.checkEmailPassword(w, user.Email, user.Password)
+	if err == nil {
+		json.NewEncoder(w).Encode(resp)
+	}
 }
 
-func (a *App) checkEmailPassword(email, password string) map[string]interface{} {
+func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) (map[string]interface{}, error)  {
 
 	user, err := a.Users.FindByEmail(email)
 	if err != nil {
-		var resp = map[string]interface{}{"status": false, "message": "Email address not found"}
-		return resp
+		respondWithError(w, http.StatusUnauthorized, "Email address not found")
+		return nil, err
 	}
 	expiresAt := time.Now().Add(time.Minute * 100000).Unix()
 
-	errf := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
-	if errf != nil && errf == bcrypt.ErrMismatchedHashAndPassword { //Password does not match!
-		var resp = map[string]interface{}{"status": false, "message": "Invalid login credentials. Please try again"}
-		return resp
+	err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
+	if err != nil && err == bcrypt.ErrMismatchedHashAndPassword { //Password does not match!
+		respondWithError(w, http.StatusUnauthorized, "Invalid login credentials. Please try again")
+		return nil, err
 	}
 
 	claims := &model.UserToken{
@@ -122,9 +131,10 @@ func (a *App) checkEmailPassword(email, password string) map[string]interface{} 
 	var resp = map[string]interface{}{"status": false, "message": "logged in"}
 	resp["token"] = tokenString //Store the token in the response
 	resp["user"] = user
-	return resp
+	return resp, nil
 }
 
+// User handlers
 func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 	count, _ := strconv.Atoi(r.FormValue("count"))
 	start, _ := strconv.Atoi(r.FormValue("start"))
@@ -146,18 +156,18 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 }
 
 func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
-	u := &model.User{}
+	user := &model.User{}
 
 	decoder := json.NewDecoder(r.Body)
 	var err error
-	if err = decoder.Decode(u); err != nil {
+	if err = decoder.Decode(user); err != nil {
 		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
 		return
 	}
 	defer r.Body.Close()
 
 	// Validate User struct
-	err = a.Validator.Struct(u)
+	err = a.Validator.Struct(user)
 	if err != nil {
 		// translate all error at once
 		errs := err.(validator.ValidationErrors)
@@ -165,12 +175,21 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if u, err = a.Users.Create(u); err != nil {
+	// Hash the pasword with bcrypt
+	pass, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
+	if err != nil {
+		fmt.Println(err)
+		respondWithError(w, http.StatusInternalServerError, "Password Encryption  failed")
+		return
+	}
+	user.Password = string(pass)
+
+	if user, err = a.Users.Create(user); err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	respondWithJSON(w, http.StatusCreated, u)
+	respondWithJSON(w, http.StatusCreated, user)
 }
 
 func (a *App) getUserByID(w http.ResponseWriter, r *http.Request) {
@@ -237,28 +256,3 @@ func (a *App) deleteUser(w http.ResponseWriter, r *http.Request) {
 	respondWithJSON(w, http.StatusOK, user)
 }
 
-func respondWithError(w http.ResponseWriter, code int, message string) {
-	respondWithJSON(w, code, map[string]string{"error": message})
-}
-
-func respondWithValidationError(fields validator.ValidationErrorsTranslations, w http.ResponseWriter) {
-	//Create a new map and fill it
-	response := make(map[string]interface{})
-	response["status"] = "error"
-	response["message"] = "validation error"
-	response["errors"] = fields
-	respondWithJSON(w, http.StatusUnprocessableEntity, response)
-}
-
-func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
-	response, err := json.Marshal(payload)
-	if err != nil {
-		//An error occurred processing the json
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("An error occured internally"))
-	}
-
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(code)
-	w.Write(response)
-}
