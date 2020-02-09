@@ -17,5 +17,3 @@ type UserToken struct {
 	Email  string `json:"email"`
 	jwt.StandardClaims
 }
-type Token struct {
-}

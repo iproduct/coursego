@@ -13,8 +13,13 @@ func JwtVerify(next http.Handler) http.Handler {
 		const BEARER_SCHEMA = "Bearer "
 		//var header = r.Header.Get("x-access-token") //Grab the token from the header
 		var header = r.Header.Get("Authorization") //Grab the token from the header
-		token := header[len(BEARER_SCHEMA):]
 
+		var token string
+		if header == "" || len(header) <= len(BEARER_SCHEMA) {
+			respondWithError(w, http.StatusForbidden, "Missing auth token")
+			return
+		}
+		token = header[len(BEARER_SCHEMA):]
 		token = strings.TrimSpace(token)
 
 		if token == "" {
