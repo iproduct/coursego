@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"github.com/iproduct/coursego/modules/rest"
-	// "github.com/Pallinder/go-randomdata"
 )
 
 func main() {

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="592c0e96-79d6-4b77-b3bf-a46ef875d50a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../generation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/.idea/generation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/assertions/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/interfaces/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/reflection/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/endtoend_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/golden_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/stringer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/testdata/day.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/testdata/day_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generation/stringer/util_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/.idea/generationlab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/assertions/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/endtoend_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/golden_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/stringer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/testdata/day.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/testdata/day_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/testdata/pill_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/testdata/pills.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/generate/util_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/genny/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/genny/queue/gen-queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/genny/queue/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../generationlab/reflection/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules-auth/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules-auth/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1XZoHOcOyY9qSE2SdSBKcW7gsaP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../workspace/src/github.com/iproduct/coursego/http/bookstore" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="bookstore" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="593" y="133" key="#go_build_main.go" timestamp="1581262918225">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="593" y="133" key="#go_build_main.go/0.0.1707.920@0.0.1707.920" timestamp="1581262918225" />
+    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1581262945684">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1581262945684" />
+  </component>
+</project>
