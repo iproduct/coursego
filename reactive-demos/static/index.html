@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE: Apache CXF example</title>
+    <link rel="stylesheet" href="js/css/highcharts.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/highcharts.js"></script>
+    <script src="./js/exporting.js"></script>
+<!--    <script src="./js/custom.js"></script>-->
+    <style type="text/css">
+.process-info {
+	font-family: sans-serif;
+}
+</style>
+</head>
+
+<body>
+<h1>Golang Reactive Demo</h1>
+<div id="content">
+    <div id="chart"></div>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	const sse = "http://localhost:8080/sse";
+
+	const metrics = ['Temperature', 'Humidity', 'Light', 'Electricity']
+
+    const chart = new Highcharts.Chart( {
+        title: {
+            text: 'IoT Events'
+        },
+        chart : {
+			renderTo : 'chart',
+			defaultSeriesType : 'spline'
+		},
+        yAxis: {
+            title: {
+                text: 'Stock Price'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+        xAxis: {
+            type: 'datetime',
+        },
+        series: metrics.map(m => ({
+            name: m,
+            data: []
+        }))
+
+    });
+
+
+	if (!!window.EventSource) {
+		const eventSource = new EventSource(sse);
+
+		eventSource.onmessage = function(e) {
+			const datapoint = JSON.parse(e.data)
+			console.log(datapoint);
+
+		chart.series
+            .filter(function (serie) {
+                return serie.name == metrics[datapoint.type - 3] // skip first 3 metrics
+            })
+            .forEach(function (serie) {
+                var shift = serie.data.length > 40;
+                serie.addPoint([datapoint.time, datapoint.readings[0]], true, shift);
+            });
+
+
+			//var index = datapoint.id % chart.series.length;
+			//chart.series[index].addPoint({
+			//	x : datapoint.instant,
+			//	y : datapoint.price
+			//}, true, chart.series[index].data.length >= 50);
+
+		};
+
+		eventSource.addEventListener('open', function(e) {
+			console.log('Opened: ', e);
+			}, false);
+		
+		$('#content').bind('unload', function() {
+			eventSource.close();
+		});
+	}
+</script>

@@ -9,7 +9,7 @@ import (
 var db database = make(map[string]Book, 10)
 
 func init() {
-	for _, book := range goBooks {
+	for _, book := range GoBooks {
 		db[book.ID] = book
 	}
 }

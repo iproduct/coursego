@@ -46,7 +46,7 @@ type Book struct {
 	TextSnippet         string
 }
 
-var goBooks = []Book{
+var GoBooks = []Book{
 	{
 		ID:                  "fmd-DwAAQBAJ",
 		SelfLink:            parseURL("https://www.googleapis.com/books/v1/volumes/fmd-DwAAQBAJ"),
