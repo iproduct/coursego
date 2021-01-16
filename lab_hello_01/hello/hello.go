@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"lab_hello_01/stringutil"
+	"github.com/iproduct/coursego/lab_hello_01/stringutil"
 	"rsc.io/quote"
 	"time"
 )
 
 func main() {
 	s := "Hello Go World"
-	fmt.Println(s, time.Now())
+	fmt.Println(s + time.Now().String())
 	quote := quote.Go()
 	fmt.Println(quote)
 	fmt.Println(stringutil.Reverse(quote))
