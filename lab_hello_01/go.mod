@@ -1,4 +1,4 @@
-module lab_hello_01
+module github.com/iproduct/coursego/lab_hello_01
 
 go 1.15
 
