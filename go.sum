@@ -4,6 +4,8 @@ github.com/go-sql-driver/mysql v1.5.0 h1:ozyZYNQW3x3HtqT1jira07DN2PArx2v7/mN66gG
 github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/iproduct/coursego/simple v0.0.0-20210116110814-3325ddc39e73 h1:Cz7Ts91dxPP45pmFyaZdoiSr+Hy2Owup3BvzAdWIPpg=
+github.com/iproduct/coursego/simple v0.0.0-20210116110814-3325ddc39e73/go.mod h1:LPedjG0VPv4XeQSM5FGClgOiHZGk/h/moOF4Ua9HuCg=
 github.com/iproduct/coursego/simple/interfaces v0.0.0-20200213122043-c73c5bef0953 h1:abybhHlXsFDjhn6E3w/dvbJbHYycuIA7ekEQKTXr5ow=
 github.com/iproduct/coursego/simple/interfaces v0.0.0-20200213122043-c73c5bef0953/go.mod h1:VvbeV/8Cx99I6LBZIaqPKr8gUlF3fUDYNwSa8fZFuzE=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=

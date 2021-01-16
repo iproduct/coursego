@@ -11,9 +11,9 @@ import (
 )
 
 func main() {
-	observable := rxgo.Just("Hello", "Reactive", "World", "from", "RxGo", "!", errors.New("Foo Error"))().
-		Map(ToUpper). // map to upper case
-		Filter(LengthGreaterThan4) // greaterThan4 func filters values > 4
+	observable := rxgo.Just("Hello", "Reactive", "World", "from", "RxGo", "!", errors.New("Foo Error"))() //.
+	//	Map(ToUpper). // map to upper case
+	//	Filter(LengthGreaterThan4) // greaterThan4 func filters values > 4
 
 	interval := rxgo.Interval(rxgo.WithDuration(500 * time.Millisecond))
 

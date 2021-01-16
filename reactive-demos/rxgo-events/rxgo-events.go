@@ -34,24 +34,13 @@ func main() {
 			return iotEvent.Type == iot.Distance
 		}).
 		Map(func(_ context.Context, item interface{}) (interface{}, error) {
-				//// Enrich operation
 				iotEvent := item.(iot.IotEvent)
-				//taxNumber, err := getTaxNumber(customer)
-				//if err != nil {
-				//	return nil, err
-				//}
-				//customer.TaxNumber = taxNumber
 				return iotEvent, nil
 			},
 			// Create multiple instances of the map operator
 			rxgo.WithPool(4),
-			////Serialize the items emitted by their Customer.ID
-			//rxgo.Serialize(func(item interface{}) int {
-			//	customer := item.(Customer)
-			//	return customer.ID
-			//}),
 			rxgo.WithBufferedChannel(1),
-			rxgo. WithPublishStrategy(),
+			rxgo.WithPublishStrategy(),
 			rxgo.WithBackPressureStrategy(rxgo.Block))
 
 	//wg.Add(1)
@@ -69,11 +58,11 @@ func main() {
 	}()
 
 	complete := connectable.ForEach(func(v interface{}) {
-		fmt.Printf("Observer 2: %v\n", v)
+		fmt.Printf("Observer 2: %v\n", v) // onNext
 	}, func(err error) {
-		fmt.Printf("Observer 2: Error: %e\n", err)
+		fmt.Printf("Observer 2: Error: %e\n", err) // onError
 	}, func() {
-		fmt.Println("Observer 2: observable is closed")
+		fmt.Println("Observer 2: observable is closed") // onClose
 	})
 	//ctx, cancelFunc := context.WithCancel(context.Background())
 	ctx := context.Background()
@@ -98,10 +87,6 @@ func produceEvents(ch chan<- rxgo.Item,) { //wg *sync.WaitGroup
 	}
 	close(ch)
 }
-
-//func getTaxNumber(customer Customer) (string, error) {
-//	return customer.TaxNumber, nil
-//}
 
 func zipper (_ context.Context, i1 interface{}, i2 interface{}) (interface{}, error) {
 	return i2, nil

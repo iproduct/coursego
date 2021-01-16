@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	mergedEvents := goroutines.FanIn(goroutines.ProduceEvents(iot.Distance, 10), goroutines.ProducePings(1, 15))
+	mergedEvents := goroutines.FanIn(goroutines.ProduceEvents(iot.Distance, 10), goroutines.ProducePings(1, 10))
 	workerChannels := goroutines.FanOut(goroutines.AccumulateDistance(goroutines.FilterDistance(mergedEvents)), 5)
 	var wg sync.WaitGroup
 	wg.Add(len(workerChannels))
