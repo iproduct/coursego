@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcfeeeba-e10e-42ff-9166-4a0c67b720b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../reactive-demos/goroutines-hello/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reactive-demos/qr-code -web/server-web-page.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reactive-demos/rxgo-hello/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/.idea/awesomeProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/stringutil/reverse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/.idea/labs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject01/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject01/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject02/.idea/awesomeProject02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject02/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive-demos/rxgo-reactive/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-demos/rxgo-reactive/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
