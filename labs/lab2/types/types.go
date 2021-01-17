@@ -8,8 +8,8 @@ import (
 type ByteSlice []byte
 
 //Append appends data and returns the new slice
-func (slice ByteSlice) Append(data []byte) []byte {
-	return append([]byte(slice), data...)
+func (slice *ByteSlice) Append(data []byte) {
+	*slice = append([]byte(*slice), data...)
 }
 
 //Append appends data and returns the new slice
@@ -22,6 +22,7 @@ func (slice *ByteSlice) Write(data []byte) (n int, err error) {
 
 func main() {
 	var bs ByteSlice
-	fmt.Fprintf(&bs, "abcd")
-	fmt.Printf("%T -> %#[1]v", bs)
+	bs.Append([]byte("WXYZ"))
+	fmt.Fprintf(&bs, "abcdef")
+	fmt.Printf("%T -> %#[1]v , string: %[1]s", bs)
 }
