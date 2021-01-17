@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/coursego/lab_hello_01/stringutil"
+	"github.com/iproduct/coursego/01-hello-lab/stringutil"
 	"rsc.io/quote"
 	"time"
 )

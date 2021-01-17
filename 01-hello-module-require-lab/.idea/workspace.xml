@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcf813d-0551-4990-9593-7d1347bec3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/awesomeProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab_hello_01/httpclient/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab_hello_01/httpserver/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_hello_01/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/awesomeProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/01-hello-module-require-lab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab_hello_01/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_hello_01/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_hello_01/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_hello_01/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_hello_01/stringutil/reverse.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +51,23 @@
       <method v="2" />
     </configuration>
     <configuration name="go build awesomeProject/hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject" />
+      <module name="01-hello-module-require-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/hello/hello.go" />
       <package value="awesomeProject/hello" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="01-hello-module-require-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="awesomeProject" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
