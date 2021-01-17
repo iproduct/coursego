@@ -13,7 +13,7 @@ func main() {
 	x.Add(120)
 	y.Add(9)
 	y.Add(42)
-	y.Add(144)
+	y.Add(145)
 
 	fmt.Println("42 in x:", x.Has(42))
 	fmt.Println("42 in y:", y.Has(143))

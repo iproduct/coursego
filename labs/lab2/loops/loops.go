@@ -5,10 +5,23 @@ import (
 )
 
 func main() {
+	//var str string
 	n, sum := 1, 0
-	for n > 0 {
-		fmt.Printf("\nEnter a number: ")
-		fmt.Scanln(&n)
+	for ok := true; ok; ok = n > 0 {
+		fmt.Printf("\nEnter a number [Enter or 0 for end]: ")
+		ch, err := fmt.Scanln(&n)
+		if err != nil {
+			fmt.Printf("Error: %s\n", err.Error())
+		}
+		if ch == 0 {
+			break
+		}
+		//n, err := strconv.Atoi(str)
+		//if err != nil {
+		//	//log.Error(err)
+		//	fmt.Printf("Error reading a number: %s\n", err.Error())
+		//
+		//}
 		for i := 1; i <= n; i++ {
 			fmt.Printf("%d ", i)
 		}
@@ -19,7 +32,7 @@ func main() {
 	// using break
 	sum = 0
 	for {
-		fmt.Printf("Enter a number: ")
+		fmt.Printf("Enter a number [Enter for end]: ")
 		fmt.Scanf("%d\n", &n)
 		fmt.Printf("n = %d\n", n)
 		if n <= 0 {

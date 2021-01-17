@@ -1,5 +1,6 @@
-github.com/iproduct/coursego/simple/interfaces v0.0.0-20200213122043-c73c5bef0953 h1:abybhHlXsFDjhn6E3w/dvbJbHYycuIA7ekEQKTXr5ow=
-github.com/iproduct/coursego/simple/interfaces v0.0.0-20200213122043-c73c5bef0953/go.mod h1:VvbeV/8Cx99I6LBZIaqPKr8gUlF3fUDYNwSa8fZFuzE=
+github.com/iproduct/coursego v0.0.0-20210117045544-a64504132343 h1:leLtRbeosoOg+nSUGpr2SC0oNwhBR0YyttNl/kwLCrM=
+github.com/iproduct/coursego/simple/interfaces v0.0.0-20210117045544-a64504132343 h1:5RiP2hcNhWQpXtMC7gHalWij+m225sPXPF8VOqsoMN4=
+github.com/iproduct/coursego/simple/interfaces v0.0.0-20210117045544-a64504132343/go.mod h1:flxgFTTrU2t4HiEdqDJNokuhxzWCuGmhZmfRZdJIExU=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=

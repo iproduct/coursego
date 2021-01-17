@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/02-go-basics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/lab4/intbitset/intbitset-methods.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/copy-map/copymap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/data-race/data-race.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/nillable-value/nillable.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/null-safety/nullsafety.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/slice-copy/slice-copy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/zero-value/zero-value.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/lab2/loops/loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/lab2/loops/loops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/lab4/intbitset/intbitset.go" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/lab4/intbitset/intbitset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/lab4/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/lab4/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/go.sum" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nC2LqclWMdsck4SpRrNO3Hbb7E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build constants.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="02-go-basics" />
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/constants/constants.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build constants.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
