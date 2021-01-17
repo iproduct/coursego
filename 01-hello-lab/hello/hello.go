@@ -13,7 +13,7 @@ func main() {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
 	}
 	fmt.Println(s, time.Now())
-	quote := quote.Go()
-	fmt.Println(quote)
+	goquote := quote.Go()
+	fmt.Println(goquote)
 	fmt.Println(stringutil.Reverse(s))
 }
