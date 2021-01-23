@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="989f7669-d20a-4892-9e0c-f2c4697dfae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/constants2/constants2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/for-break-continue-goroutines/for-break-continue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/for-break-continue/for-break-continue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/functions1/functions1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/loops-do-while/loops.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/loops-for/loops-for.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/03-types-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/type-switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices01/slices01.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/loops-do-while/loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/loops-do-while/loops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/loops-for/loops-for.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/loops-for/loops-for.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1nTLejqplldM76ermvtbCzAl7dX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,11 +47,27 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build tic-tac-toe.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
       <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build slices01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/sloces01/slices01.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build tic-tac-toe.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/tic-tac-toe/tic-tac-toe.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -69,6 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build tic-tac-toe.go" />
+        <item itemvalue="Go Build.go build slices01.go" />
         <item itemvalue="Go Build.go build type-switch.go" />
       </list>
     </recent_temporary>
@@ -76,5 +90,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new demos added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new demos added" />
   </component>
 </project>

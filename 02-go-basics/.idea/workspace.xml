@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants2/constants2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions1/functions1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loops-do-while/loops.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loops-for/loops-for.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operators/operators.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/.idea/03-types-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/type-switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-types-lab/slices01/slices01.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops-do-while/loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-do-while/loops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops-for/loops-for.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-for/loops-for.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +52,7 @@
       <recent name="D:\CourseGO\git\coursego\02-go-basics\functions1" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build for-break-continue.go">
+  <component name="RunManager" selected="Go Build.go build for-break-continue.go (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -72,11 +60,11 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build constants2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build for-break-continue.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="02-go-basics" />
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/constants2/constants2.go" />
+      <filePath value="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -88,19 +76,19 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build functions1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="02-go-basics" />
-      <working_directory value="$PROJECT_DIR$/../../../out" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/functions1/functions1.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build loops-for.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="02-go-basics" />
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/loops-for/loops-for.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build loops.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="02-go-basics" />
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/loops-do-while/loops.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -114,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build for-break-continue.go (1)" />
         <item itemvalue="Go Build.go build for-break-continue.go" />
         <item itemvalue="Go Build.go build loops-for.go" />
+        <item itemvalue="Go Build.go build loops.go (1)" />
         <item itemvalue="Go Build.go build loops.go" />
-        <item itemvalue="Go Build.go build functions1.go" />
-        <item itemvalue="Go Build.go build constants2.go" />
       </list>
     </recent_temporary>
   </component>

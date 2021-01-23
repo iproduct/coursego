@@ -20,7 +20,7 @@ func main() {
 	}
 	fmt.Printf("1) Sum = %d, Avg = %g\n", sum, float64(sum)/size)
 
-	// 2)
+	// 2) while
 	i, sum := 0, 0
 	for i < size {
 		sum += a[i]
@@ -28,7 +28,7 @@ func main() {
 	}
 	fmt.Printf("2) Sum = %d, Avg = %g\n", sum, float64(sum)/size)
 
-	// 3)
+	// 3) while true
 	i, sum = 0, 0
 	for {
 		sum += a[i]
@@ -40,7 +40,7 @@ func main() {
 	fmt.Printf("3) Sum = %d, Avg = %g\n", sum, float64(sum)/size)
 
 	// 4)
-	strings := []string{"hello", "golang", "world"}
+	strings := [...]string{"hello", "golang", "world"}
 	for i, s := range strings {
 		fmt.Printf("4) %d -> %s\n", i, s)
 	}
