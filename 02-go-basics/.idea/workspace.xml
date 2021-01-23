@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/02-go-basics-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/variables/variables.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/lab2/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/lab2/types/types.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
