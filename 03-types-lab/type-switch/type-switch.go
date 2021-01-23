@@ -53,7 +53,7 @@ func main() {
 	}
 	fmt.Printf("test(func() string): %s\n", test(f))
 
-	// 4) Test function type conversion from func(int) string -> MyFunc
+	// 4) Test function type conversion from func(int) string -> MyFunc + error handling
 	f2 := func(n int) string {
 		if n < 0 {
 			panic(fmt.Errorf("Argument should not be negative: %d", n))
@@ -72,5 +72,4 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Printf("\ntest2(func(int) string): %s\n", result)
-
 }
