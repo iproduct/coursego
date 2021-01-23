@@ -50,6 +50,7 @@ func (f MyFunc) Error() string {
 func test2(val func(int) string, n int) (result string, err error) {
 	defer func() {
 		if r := recover(); r != nil {
+			fmt.Println(r)
 			err = MyFunc(val) // conversion to type MyFunc implementing error interface
 		}
 	}()
@@ -75,7 +76,7 @@ func main() {
 	// 4) Test function type conversion from func(int) string -> MyFunc
 	f2 := func(n int) string {
 		if n < 0 {
-			panic("Agument should not be negative")
+			panic(fmt.Errorf("Argument should not be negative: %d", n))
 		}
 		return strconv.Itoa(n)
 	}
