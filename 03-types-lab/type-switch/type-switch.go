@@ -24,13 +24,13 @@ func (slice ByteSlice) String() string { // implements fmt.Stringer
 }
 
 func test(val interface{}) string {
-	switch val.(type) {
+	switch str := val.(type) {
 	case func() string:
-		return val.(func() string)()
+		return str()
 	case string:
-		return val.(string)
+		return str
 	case fmt.Stringer:
-		return val.(fmt.Stringer).String()
+		return str.String()
 	default:
 		return "Type not recognized"
 	}

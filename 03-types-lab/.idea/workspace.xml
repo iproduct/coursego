@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="989f7669-d20a-4892-9e0c-f2c4697dfae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tic-tac-toe/tic-tac-toe.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/slices-of-slice/slices-of-slice.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +89,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new demos added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new demos added" />
+    <MESSAGE value="TicTacToe example better input handling + predicates for finding who wins" />
+    <MESSAGE value="TicTacToe example better input handling + predicates finding winning player" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe example better input handling + predicates finding winning player" />
   </component>
 </project>
