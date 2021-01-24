@@ -5,6 +5,11 @@ import (
 	"strings"
 )
 
+type Move struct {
+	x, y   int
+	player string
+}
+
 type TicTacToe [][]string
 
 func (t *TicTacToe) Init(n int) {
@@ -23,15 +28,15 @@ func (t *TicTacToe) Print() {
 	}
 }
 
-func (t *TicTacToe) Move(x, y int, player string) error {
+func (t *TicTacToe) Play(move Move) error {
 	n := len(*t)
-	if x <= 0 || x > n || y <= 0 || y > n {
+	if move.x <= 0 || move.x > n || move.y <= 0 || move.y > n {
 		return fmt.Errorf("error: Invalid index")
 	}
-	if (*t)[x-1][y-1] != "_" {
+	if (*t)[move.x-1][move.y-1] != "_" {
 		return fmt.Errorf("error: Square not empty")
 	}
-	(*t)[x-1][y-1] = player
+	(*t)[move.x-1][move.y-1] = move.player
 	return nil
 }
 
@@ -130,9 +135,10 @@ func main() {
 			fmt.Printf("Invalid data: %s\n", err)
 			continue
 		}
-		err = ttt.Move(x, y, player)
+		err = ttt.Play(Move{x, y, player})
 		if err != nil {
 			fmt.Printf("Invalid move - try again: %s\n", err)
+			fmt.Errorf("Invalid move - try again: %w", err)
 			continue
 		}
 		ttt.Print()
