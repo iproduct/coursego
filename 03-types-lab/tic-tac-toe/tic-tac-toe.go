@@ -25,11 +25,14 @@ func (t *TicTacToe) Print() {
 
 func (t *TicTacToe) Move(x, y int, player string) error {
 	n := len(*t)
-	if x > 0 && x <= n && y > 0 && y <= n {
-		(*t)[x-1][y-1] = player
-		return nil
+	if x <= 0 || x > n || y <= 0 || y > n {
+		return fmt.Errorf("error: Invalid index")
 	}
-	return fmt.Errorf("Error: Invalid index")
+	if (*t)[x-1][y-1] != "_" {
+		return fmt.Errorf("error: Square not empty")
+	}
+	(*t)[x-1][y-1] = player
+	return nil
 }
 
 func (t *TicTacToe) isRow(n int) (bool, string) {
@@ -124,10 +127,17 @@ func main() {
 		}
 		//_, err := fmt.Sscanf(str, ")
 		if err != nil {
-			fmt.Printf("Invalid data - try again: %s\n", err.Error())
+			fmt.Printf("Invalid data: %s\n", err)
 			continue
 		}
-		ttt.Move(x, y, player)
+		err = ttt.Move(x, y, player)
+		if err != nil {
+			fmt.Printf("Invalid move - try again: %s\n", err)
+			continue
+		}
+		if err != nil {
+			fmt.Printf("%e", err)
+		}
 		ttt.Print()
 		if player == "X" {
 			player = "O"
