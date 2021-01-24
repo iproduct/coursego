@@ -135,9 +135,6 @@ func main() {
 			fmt.Printf("Invalid move - try again: %s\n", err)
 			continue
 		}
-		if err != nil {
-			fmt.Printf("%e", err)
-		}
 		ttt.Print()
 		if player == "X" {
 			player = "O"

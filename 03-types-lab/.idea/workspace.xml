@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="989f7669-d20a-4892-9e0c-f2c4697dfae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tic-tac-toe-minimax/tic-tac-toe-minimax.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/04-structs-methods.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/vcs.xml" afterDir="false" />
@@ -10,11 +9,10 @@
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/go.mod" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/go.sum" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/goframe-chart/goframe-chart.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-structs-methods/tic-tac-toe-minimax/tic-tac-toe-minimax.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../simple/wordcount/wordcount_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices01/slices01.go" beforeDir="false" afterPath="$PROJECT_DIR$/slices01/slices01.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tic-tac-toe/tic-tac-toe.go" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toe/tic-tac-toe.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../simple/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/types/types.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +144,8 @@
     <MESSAGE value="demo extended with function type conversion and error handling" />
     <MESSAGE value="ButeSlice refactored to separate package" />
     <MESSAGE value="wordcount demo + tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="wordcount demo + tests added" />
+    <MESSAGE value="TicTacToe - improved error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe - improved error handling" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
