@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/iproduct/coursego/http/json/books"
+	"github/iproduct/03-types-go/json/books"
 	"log"
 )
 
@@ -22,10 +22,13 @@ func main() {
 	}
 	fmt.Printf("%s\n", data)
 
-	// JSON -> structs
+	//// JSON -> structs
 	var books []books.Book
 	if err := json.Unmarshal(data, &books); err != nil {
 		log.Fatalf("JSON unmarshaling failed: %s", err)
 	}
-	fmt.Println("AFTER UNMARSHAL:\n", books) // "[{Casablanca} {Cool Hand Luke} {Bullitt}]"
+	fmt.Println("AFTER UNMARSHAL:\n")
+	for i, book := range books {
+		fmt.Printf("%d: %#v\n", i, book)
+	}
 }
