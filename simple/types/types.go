@@ -25,6 +25,6 @@ func (slice *ByteSlice) Write(data []byte) (n int, err error) {
 func main() {
 	var b ByteSlice
 	fmt.Fprintf(&b, "This hour has %d days - ", 7)
-	b.AppendPointer([]byte("APPENDED\n"))
+	(*ByteSlice).AppendPointer(&b, []byte("APPENDED\n"))
 	fmt.Printf("%#v", []rune(string(b)))
 }

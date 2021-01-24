@@ -1,0 +1,16 @@
+Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing,[6] and CSP-style concurrency.[15] The language is often referred to as Golang because of its domain name, golang.org, but the proper name is Go.[16]
+
+There are two major implementations:
+
+Google's self-hosting compiler toolchain targeting multiple operating systems, and WebAssembly.
+gccgo, a GCC frontend.
+A third-party transpiler GopherJS compiles Go to JavaScript for front-end web development.
+Go has a number of built-in types, including numeric ones (byte, int64, float32, etc.), booleans, and character strings (string). Strings are immutable; built-in operators and keywords (rather than functions) provide concatenation, comparison, and UTF-8 encoding/decoding.[51] Record types can be defined with the struct keyword.[52]
+
+For each type T and each non-negative integer constant n, there is an array type denoted [n]T; arrays of differing lengths are thus of different types. Dynamic arrays are available as "slices", denoted []T for some type T. These have a length and a capacity specifying when new memory needs to be allocated to expand the array. Several slices may share their underlying memory.[53][54][55]
+
+Pointers are available for all types, and the pointer-to-T type is denoted *T. Address-taking and indirection use the & and * operators, as in C, or happen implicitly through the method call or attribute access syntax.[56] There is no pointer arithmetic,[d] except via the special unsafe.Pointer type in the standard library.[57]
+
+For a pair of types K, V, the type map[K]V is the type of hash tables mapping type-K keys to type-V values. Hash tables are built into the language, with special syntax and built-in functions. chan T is a channel that allows sending values of type T between concurrent Go processes.[citation needed]
+
+Aside from its support for interfaces, Go's type system is nominal: the type keyword can be used to define a new named type, which is distinct from other named types that have the same layout (in the case of a struct, the same members in the same order). Some conversions between types (e.g., between the various integer types) are pre-defined and adding a new type may define additional conversions, but conversions between named types must always be invoked explicitly.[58] For example, the type keyword can be used to define a type for IPv4 addresses, based on 32-bit unsigned integers:

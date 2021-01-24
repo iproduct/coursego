@@ -3,7 +3,17 @@ package main
 import (
 	"fmt"
 	"log"
+	"time"
 )
+
+type MyError struct {
+	 Time time.Time
+	 Reason string
+}
+
+func (myerr *MyError) Error() string {
+	return fmt.Sprintf("[%v] %s", myerr.Time, myerr.Reason)
+}
 
 func badFunction() {
 	fmt.Printf("Select Panic type (0=no panic, 1=int, 2=runtime panic)\n")
@@ -11,7 +21,7 @@ func badFunction() {
 	fmt.Scanf("%d", &choice)
 	switch choice {
 	case 1:
-		panic(0)
+		panic(MyError{time.Now(), "Invalid choice"})
 	case 2:
 		var invalid func()
 		invalid()
@@ -20,12 +30,13 @@ func badFunction() {
 
 func main() {
 	defer func() {
-		if x := recover(); x != nil {
-			switch x.(type) {
+		if pan := recover(); pan != nil {
+			switch err := pan.(type) {
 			default:
-				panic(x)
-			case int:
-				fmt.Printf("Function panicked with an error: %d\n", x)
+				panic(pan)
+			case MyError:
+				fmt.Printf("Function panicked with an error: %s\n", err)
+				fmt.Printf("Timestamp: %v", err.Time)
 			}
 		}
 	}()
