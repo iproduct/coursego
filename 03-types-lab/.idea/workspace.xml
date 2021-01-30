@@ -91,20 +91,11 @@
       <recent name="D:\CourseGO\git\coursego\03-types-lab\type-switch" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github/iproduct/03-types-go/panic">
+  <component name="RunManager" selected="Go Build.go build github/iproduct/03-types-go/slices-image">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github/iproduct/03-types-go/errors-generate" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="03-types-lab" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errors-generate/errors-generate.go" />
-      <package value="github/iproduct/03-types-go/errors-generate" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -144,20 +135,29 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github/iproduct/03-types-go/slices-image" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/slices-image/slices-image.go" />
+      <package value="github/iproduct/03-types-go/slices-image" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors" />
-      <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors-generate" />
       <item itemvalue="Go Build.go build github/iproduct/03-types-go/nillable-value" />
       <item itemvalue="Go Build.go build github/iproduct/03-types-go/map-iter-order" />
       <item itemvalue="Go Build.go build github/iproduct/03-types-go/panic" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/slices-image" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/slices-image" />
         <item itemvalue="Go Build.go build github/iproduct/03-types-go/panic" />
         <item itemvalue="Go Build.go build github/iproduct/03-types-go/map-iter-order" />
         <item itemvalue="Go Build.go build github/iproduct/03-types-go/nillable-value" />
         <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors" />
-        <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors-generate" />
       </list>
     </recent_temporary>
   </component>

@@ -3,5 +3,6 @@ module github/iproduct/03-types-go
 go 1.15
 
 require (
-	github.com/labstack/gommon v0.3.0 // indirect
+	github.com/iproduct/coursego/simple v0.0.0-20210124175100-9dc64707a8a3
+	github.com/labstack/gommon v0.3.0
 )
