@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/04-structs-methods.iml" filepath="$PROJECT_DIR$/.idea/04-structs-methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/04-05-methods-interfaces.iml" filepath="$PROJECT_DIR$/.idea/04-05-methods-interfaces.iml" />
     </modules>
   </component>
 </project>

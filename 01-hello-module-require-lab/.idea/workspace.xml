@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcf813d-0551-4990-9593-7d1347bec3a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-structs-methods/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
