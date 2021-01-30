@@ -25,9 +25,9 @@ func main() {
 	fmt.Println("\nSlice:", slc3)
 	fmt.Println("Total number of elements copied:", copy_2)
 
-	//copy_3 := copy(slc4, slc1)
-	//fmt.Println("\nSlice:", slc4)
-	//fmt.Println("Total number of elements copied:", copy_3)
+	copy_3 := copy(slc4, slc1)
+	fmt.Println("\nSlice:", slc4)
+	fmt.Println("Total number of elements copied:", copy_3)
 
 	// Don't confuse here, because in above
 	// line of code the slc4 has been copied

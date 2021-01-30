@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="446a2694-7e55-41dd-96bc-5d1ae74ca844" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/04-structs-methods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/04-05-methods-interfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/bookstore-simple/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/bookstore-simple/books.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/goframe-chart/goframe-chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/goframe-chart/goframe-chart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-structs-methods/tic-tac-toe-minimax/tic-tac-toe-minimax.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1nmamkNFdcZW0tVuoDEcRvfLYa7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/03-types-lab/slice-copy">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
       <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/03-types-lab/slice-copy" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/slice-copy/slice-copy.go" />
+      <package value="github.com/iproduct/coursego/03-types-lab/slice-copy" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -22,8 +79,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slice-copy" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices-image" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="module name changed" />
+    <MESSAGE value="slices image path changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="slices image path changed" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>
