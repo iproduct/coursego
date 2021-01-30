@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a6afb7-67e9-4bf1-a883-fb85883589ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-structs-methods/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset/intbitset-methods.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset/intbitset.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/polymorphism2/polymorphism2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/stringutil/reverse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-writer/interfaces-writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-writer/interfaces-writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/methods/methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/methods/methods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/polymorphism/polymorphism.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/polymorphism/polymorphism.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +39,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2/countdups" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseGO\git\coursego\labs" />
       <recent name="D:\CourseGO\git\coursego\labs\lab2\countdups" />
     </key>
   </component>

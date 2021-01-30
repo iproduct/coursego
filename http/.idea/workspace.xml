@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcfeeeba-e10e-42ff-9166-4a0c67b720b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/04-structs-methods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/04-05-methods-interfaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/bookstore-simple/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/bookstore-simple/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/goframe-chart/goframe-chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/goframe-chart/goframe-chart.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/tic-tac-toe-minimax/tic-tac-toe-minimax.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/types/types.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
