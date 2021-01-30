@@ -41,9 +41,9 @@ func (lead teamLead) GetDetails() string {
 		lead.name, lead.age, lead.salary, lead.teamSize)
 }
 
-func GetAllEmployeesDetails(Employees []Employee) string {
+func GetAllEmployeesDetails(employees []Employee) string {
 	result := ""
-	for i, emp := range Employees {
+	for i, emp := range employees {
 		result += strconv.Itoa(i+1) + ": " + emp.GetDetails() + "\n"
 	}
 	return result
@@ -54,9 +54,9 @@ type Dossier struct {
 	Qualifications []string
 }
 
-func GetReport(Dossiers []Dossier) string {
+func GetReport(dossiers []Dossier) string {
 	result := ""
-	for i, doss := range Dossiers {
+	for i, doss := range dossiers {
 		result += fmt.Sprintf("%d: %s -> %+v\n", i+1, doss.GetDetails(), doss.Qualifications)
 	}
 	return result
