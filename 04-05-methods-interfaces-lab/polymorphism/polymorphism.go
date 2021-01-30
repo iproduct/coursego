@@ -7,20 +7,20 @@ import (
 
 func main() {
 	var emp1, emp2 employees.Employee
-	emp1 = employees.NewMan{"John Smith", 48, "CEO", 6500}
+	emp1 = employees.NewManager("John Smith", "CEO", 48, 6500)
 	fmt.Printf("manager 1: %s\n", emp1.GetDetails())
-	emp2 = employees.teamLead{"Georgi Petrov", 48, 12, 4500}
+	emp2 = employees.NewTeamLead("Georgi Petrov", 12, 48, 4500)
 	fmt.Printf("Team lead 1: %s\n", emp2.GetDetails())
 
-	employees := []employees.Employee{emp1, emp2}
-	fmt.Printf("\nList of Employees:\n%s\n", employees.GetAllEmployeesDetails(employees))
+	Employees := []employees.Employee{emp1, emp2}
+	fmt.Printf("\nList of Employees:\n%s\n", employees.GetAllEmployeesDetails(Employees))
 
-	dossiers := []employees.Dossier{
+	Dossiers := []employees.Dossier{
 		employees.Dossier{emp1, []string{"project management", "Golang programming", "finace"}},
 		employees.Dossier{emp2,
 			[]string{"Golang programming", "project management", "web developemnt", "javascript"}},
 	}
 
-	fmt.Printf("\nList of Employees:\n%s\n", employees.GetReport(dossiers))
+	fmt.Printf("\nList of Employees:\n%s\n", employees.GetReport(Dossiers))
 
 }
