@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/03-types-lab/byteslice"
+	"github.com/iproduct/coursego/03-types-lab/byteslice"
 	"github.com/labstack/gommon/log"
 	"strconv"
 )

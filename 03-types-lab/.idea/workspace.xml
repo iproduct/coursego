@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="989f7669-d20a-4892-9e0c-f2c4697dfae7" name="Default Changelist" comment="">
+    <list default="true" id="989f7669-d20a-4892-9e0c-f2c4697dfae7" name="Default Changelist" comment="module name corrected">
       <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/type-switch/type-switch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
