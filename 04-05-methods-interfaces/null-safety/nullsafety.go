@@ -19,15 +19,18 @@ func (number *myNumber) plusOne() {
 }
 
 func main() {
-	//type Named interface {
-	//	Name() string
-	//}
-	//greeting := func (thing Named) string {
-	//	return "Hello " + thing.Name()
-	//}
-	//greeting(nil)
+	type Named interface {
+		Name() string
+	}
+	greeting := func(thing Named) string {
+		//if thing == nil {
+		//	return "Hello Anonymous"
+		//}
+		return "Hello " + thing.Name()
+	}
+	fmt.Println(greeting(nil))
 
 	var n *myNumber
-	(*n).plusOne()
-	fmt.Println(n.n)
+	n.plusOne()
+	fmt.Println(n)
 }
