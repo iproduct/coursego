@@ -1,4 +1,4 @@
-module github.com/iproduct/03-types-lab
+module github.com/iproduct/coursego/03-types-lab/
 
 go 1.15
 
