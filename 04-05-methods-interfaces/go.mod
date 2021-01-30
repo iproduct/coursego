@@ -1,4 +1,4 @@
-module github.com/iproduct/coursego/simple/04-05-methods-interfaces
+module github.com/iproduct/coursego/04-05-methods-interfaces
 
 go 1.15
 
