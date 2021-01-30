@@ -16,9 +16,8 @@ func main() {
 	fmt.Printf("\nList of Employees:\n%s\n", employees.GetAllEmployeesDetails(Employees))
 
 	dossiers := []employees.Dossier{
-		employees.Dossier{emp1, []string{"project management", "Golang programming", "finace"}},
-		employees.Dossier{emp2,
-			[]string{"Golang programming", "project management", "web developemnt", "javascript"}},
+		{emp1, []string{"project management", "Golang programming", "finace"}},
+		{emp2, []string{"Golang programming", "project management", "web developemnt", "javascript"}},
 	}
 
 	fmt.Printf("\nList of Dossiers:\n%s\n", employees.GetReport(dossiers))

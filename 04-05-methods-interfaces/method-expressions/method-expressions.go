@@ -36,7 +36,7 @@ func main() {
 	fmt.Println(cv1.Distance(cv2.Vertex)) // 5
 	cv1.Scale(4)
 	cv2.Scale(4)
-	fmt.Println(cv1.Distance(cv2.Vertex)) // 20
+	fmt.Println(cv1.Distance(cv2.Vertex))// 20
 	// cv1.Distance(cv2) // no method cv1.Distance(ColorVertex)
 
 	a := Vertex{2, 7}
