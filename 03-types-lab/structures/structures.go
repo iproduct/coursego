@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/coursego/simple/enums"
+	"github.com/iproduct/coursego/03-types-lab/enums"
 	"regexp"
 	"strings"
 )
