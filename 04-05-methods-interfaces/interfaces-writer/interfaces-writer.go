@@ -121,7 +121,7 @@ var _ io.Writer = (*bytes.Buffer)(nil)
 func main() {
 	var b ByteSlice
 	fmt.Fprintf(&b, "Interfaces in Go are %s\n", "useful")
-	fmt.Printf("%v\n", b)
+	fmt.Printf("%s\n", b)
 	var c ByteCounter
 	fmt.Fprintf(&c, "Interfaces in Go are %s\n", "useful")
 	fmt.Printf("%v\n", c)

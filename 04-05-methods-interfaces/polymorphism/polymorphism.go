@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/iproduct/coursego/simple/interfaces"
+	"github.com/iproduct/coursego/04-05-methods-interfaces/interfaces"
 	"math"
 )
 
