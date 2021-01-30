@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/type-switch/type-switch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
@@ -155,7 +157,8 @@
     <MESSAGE value="more labs added" />
     <MESSAGE value="json example added" />
     <MESSAGE value="more examples added" />
-    <option name="LAST_COMMIT_MESSAGE" value="more examples added" />
+    <MESSAGE value="module name corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="module name corrected" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

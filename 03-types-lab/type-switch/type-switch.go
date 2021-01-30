@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/labstack/gommon/log"
-	"github/iproduct/03-types-go/byteslice"
+	"github/iproduct/03-types-lab/byteslice"
 	"strconv"
 )
 
