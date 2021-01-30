@@ -1,4 +1,4 @@
-module github/iproduct/03-types-go
+module github/iproduct/03-types-lab
 
 go 1.15
 

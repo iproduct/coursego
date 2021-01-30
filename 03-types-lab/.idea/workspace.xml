@@ -6,35 +6,11 @@
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/arrays.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/defer/defer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors-generate/errors-generate.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/errors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/functions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mypic/mypic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nillable-value/nillable.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slice-appending/slice-appending.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slice-copy/slice-copy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slice-literals/slice-literals.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slice-pointers/slices-pointers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slice-range/slice-range.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices-image/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices-image/slices-image.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices-nil/slices-nil.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices-of-slice/slices-of-slice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices/slices.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structs-literals/structs-literals.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structs-methods/structs-methods.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structs/structs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/structures.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../04-structs-methods/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-iter-order/map-iter-order.go" beforeDir="false" afterPath="$PROJECT_DIR$/map-iter-order/map-iter-order.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
@@ -178,7 +154,8 @@
     <MESSAGE value="TicTacToe - improved error handling" />
     <MESSAGE value="more labs added" />
     <MESSAGE value="json example added" />
-    <option name="LAST_COMMIT_MESSAGE" value="json example added" />
+    <MESSAGE value="more examples added" />
+    <option name="LAST_COMMIT_MESSAGE" value="more examples added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
