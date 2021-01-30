@@ -6,22 +6,38 @@
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../labs/lab2/countdups/data2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../labs/lab2/countdups/golang-wiki.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/wordcount/wordcount_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/arrays.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/defer/defer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-generate/errors-generate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/functions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypic/mypic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nillable-value/nillable.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slice-appending/slice-appending.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slice-copy/slice-copy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slice-literals/slice-literals.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slice-pointers/slices-pointers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slice-range/slice-range.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices-image/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices-image/slices-image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices-nil/slices-nil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices-of-slice/slices-of-slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices/slices.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structs-literals/structs-literals.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structs-methods/structs-methods.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structs/structs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structures/structures.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-structs-methods/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/httpclient/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-iter-order/map-iter-order.go" beforeDir="false" afterPath="$PROJECT_DIR$/map-iter-order/map-iter-order.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/lab2/countdups/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/lab2/countdups/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/panic/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/panic/panic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/structs/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/structs/structs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/types/types.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +91,7 @@
       <recent name="D:\CourseGO\git\coursego\03-types-lab\type-switch" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github/iproduct/03-types-go/json">
+  <component name="RunManager" selected="Go Build.go build github/iproduct/03-types-go/panic">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -83,67 +99,65 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github/iproduct/03-types-go/countdups" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="03-types-lab" />
-      <working_directory value="$PROJECT_DIR$" />
-      <parameters value="countdups/golang-wiki.txt" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/countdups/main.go" />
-      <package value="github/iproduct/03-types-go/countdups" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github/iproduct/03-types-go/json" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github/iproduct/03-types-go/errors-generate" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="03-types-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/json/main.go" />
-      <package value="github/iproduct/03-types-go/json" />
+      <filePath value="$PROJECT_DIR$/errors-generate/errors-generate.go" />
+      <package value="github/iproduct/03-types-go/errors-generate" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github/iproduct/03-types-go/slices01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github/iproduct/03-types-go/errors" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="03-types-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/slices01/slices01.go" />
-      <package value="github/iproduct/03-types-go/slices01" />
+      <filePath value="$PROJECT_DIR$/errors/errors.go" />
+      <package value="github/iproduct/03-types-go/errors" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build tic-tac-toe.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github/iproduct/03-types-go/map-iter-order" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="03-types-lab" />
-      <working_directory value="$PROJECT_DIR$/../../../out" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/tic-tac-toe/tic-tac-toe.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestWordCount in github/iproduct/03-types-go/wordcount" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="03-types-lab" />
-      <working_directory value="$PROJECT_DIR$/wordcount" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github/iproduct/03-types-go/wordcount" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestWordCount\E$" />
+      <filePath value="$PROJECT_DIR$/map-iter-order/map-iter-order.go" />
+      <package value="github/iproduct/03-types-go/map-iter-order" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github/iproduct/03-types-go/nillable-value" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/nillable-value/nillable.go" />
+      <package value="github/iproduct/03-types-go/nillable-value" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github/iproduct/03-types-go/panic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/panic/panic.go" />
+      <package value="github/iproduct/03-types-go/panic" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build github/iproduct/03-types-go/countdups" />
-      <item itemvalue="Go Build.go build github/iproduct/03-types-go/slices01" />
-      <item itemvalue="Go Build.go build tic-tac-toe.go" />
-      <item itemvalue="Go Test.TestWordCount in github/iproduct/03-types-go/wordcount" />
-      <item itemvalue="Go Build.go build github/iproduct/03-types-go/json" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors-generate" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/nillable-value" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/map-iter-order" />
+      <item itemvalue="Go Build.go build github/iproduct/03-types-go/panic" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build github/iproduct/03-types-go/json" />
-        <item itemvalue="Go Build.go build github/iproduct/03-types-go/countdups" />
-        <item itemvalue="Go Test.TestWordCount in github/iproduct/03-types-go/wordcount" />
-        <item itemvalue="Go Build.go build github/iproduct/03-types-go/slices01" />
-        <item itemvalue="Go Build.go build tic-tac-toe.go" />
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/panic" />
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/map-iter-order" />
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/nillable-value" />
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors" />
+        <item itemvalue="Go Build.go build github/iproduct/03-types-go/errors-generate" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +177,8 @@
     <MESSAGE value="wordcount demo + tests added" />
     <MESSAGE value="TicTacToe - improved error handling" />
     <MESSAGE value="more labs added" />
-    <option name="LAST_COMMIT_MESSAGE" value="more labs added" />
+    <MESSAGE value="json example added" />
+    <option name="LAST_COMMIT_MESSAGE" value="json example added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

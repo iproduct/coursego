@@ -1,11 +1,6 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"log"
-	"net/http"
-)
+import ("bufio"; "fmt"; "log"; "net/http")
 
 func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
