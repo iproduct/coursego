@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9b676f5-cbc0-41a0-af06-53f7948febae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../labs/stringutil/reverse.go" afterDir="false" />
+    <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structs-methods/structs-methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/structs-methods/structs-methods.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-expressions/method-expressions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
   <component name="Git.Settings">
@@ -30,30 +21,20 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="1nmbpVrDZ2aazWaLTqS73dBH9l6" />
+  <component name="ProjectId" id="1nnKkkXWxEqTch5IIDd1ZZzWkXa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CourseGO\git\coursego\04-05-methods-interfaces" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods">
+  <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -61,70 +42,10 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main/main.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/main" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/method-pointer-receiver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/method-pointer-receiver" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/methods" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/methods/methods.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/methods" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/structs-methods/structs-methods.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/types" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/types/types.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/types" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/types" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/method-pointer-receiver" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="module name corrected" />
-    <MESSAGE value="nullsafety example changed" />
-    <MESSAGE value="more examples added" />
-    <option name="LAST_COMMIT_MESSAGE" value="more examples added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

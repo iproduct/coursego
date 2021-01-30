@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcfeeeba-e10e-42ff-9166-4a0c67b720b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../labs/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/structs-methods/structs-methods.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../labs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
