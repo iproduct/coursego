@@ -8,7 +8,7 @@ import (
 	"path"
 )
 
-const baseDir = "d:/CourseGO/workspace/src/github.com/iproduct/coursego/03-types-lab/slices-image"
+const baseDir = "d:/CourseGO/git/coursego/03-types-lab/slices-image"
 
 // Pic returns a grayscale pic of size dy * dx
 func Pic(dx, dy int) [][]uint8 {
@@ -17,7 +17,7 @@ func Pic(dx, dy int) [][]uint8 {
 	for y := 0; y < dy; y++ {
 		result[y] = make([]uint8, dx)
 		for x := 0; x < dx; x++ {
-			result[y][x] = uint8(x * y)
+			result[y][x] = uint8(x ^ y)
 		}
 	}
 	return result

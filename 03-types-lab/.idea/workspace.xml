@@ -11,5 +11,19 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/iproduct/coursego/03-types-lab/slices-image" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/slices-image/slices-image.go" />
+      <package value="github.com/iproduct/coursego/03-types-lab/slices-image" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices-image" />
+      </list>
+    </recent_temporary>
   </component>
 </project>
