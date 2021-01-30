@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b676f5-cbc0-41a0-af06-53f7948febae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/coursego.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-types-lab/copy-map/copymap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/slice-copy/slice-copy.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slice-copy/slice-copy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/04-structs-methods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/04-05-methods-interfaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/bookstore-simple/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-simple/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/goframe-chart/goframe-chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/goframe-chart/goframe-chart.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-structs-methods/tic-tac-toe-minimax/tic-tac-toe-minimax.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../labs/.idea/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +34,7 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build 04-structs-methods/types">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -72,8 +51,28 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 04-structs-methods/types" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="04-05-methods-interfaces" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/types/types.go" />
+      <package value="04-structs-methods/types" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 04-structs-methods/zero-value" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="04-05-methods-interfaces" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/zero-value/zero-value.go" />
+      <package value="04-structs-methods/zero-value" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 04-structs-methods/types" />
+        <item itemvalue="Go Build.go build 04-structs-methods/zero-value" />
         <item itemvalue="Go Build.go build 04-structs-methods/goframe-chart" />
       </list>
     </recent_temporary>
