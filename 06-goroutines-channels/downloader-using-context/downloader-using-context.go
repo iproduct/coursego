@@ -65,7 +65,7 @@ func DownloadResources(ctx context.Context, cancel context.CancelFunc, urls <-ch
 				case resources <- resource:
 					if resource.err != nil {
 						fmt.Printf("Cancelling the whole pipeline for url: %s\n", url)
-						cancel() // can be called safely from multiple goroutines - after first call it does nothing
+						cancel() //can be called safely from multiple goroutines - after first call it does nothing
 					}
 				case <-ctx.Done():
 					fmt.Printf("Quiting goroutine for url: %s\n", url)
