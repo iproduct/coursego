@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="739cce5c-0d80-4d1c-af76-5c08a0119967" name="Default Changelist" comment="polymorphism demo added">
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polymorphism/polymorphism.go" beforeDir="false" afterPath="$PROJECT_DIR$/polymorphism/polymorphism.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,8 @@
     <MESSAGE value="polymorphism types extracted to separate package + NewEmployee and NewTeamLean factories added" />
     <MESSAGE value="polymorphism demo refactored to separate interface and encapsulated implementation in different package" />
     <MESSAGE value="polymorphism demo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="polymorphism demo added" />
+    <MESSAGE value="polymorphism demo refactored - redundant struct types in composite literal removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="polymorphism demo refactored - redundant struct types in composite literal removed" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

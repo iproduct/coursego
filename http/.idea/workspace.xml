@@ -4,9 +4,7 @@
     <list default="true" id="dcfeeeba-e10e-42ff-9166-4a0c67b720b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/polymorphism/polymorphism.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
