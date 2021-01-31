@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="06-goroutines-channels" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/downloader-using-context/downloader-using-context.go" />
+      <package value="github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/06-coroutines-channels/downloader" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="06-goroutines-channels" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/downloader/downloader.go" />
+      <package value="github.com/iproduct/coursego/06-coroutines-channels/downloader" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="06-goroutines-channels" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/06-coroutines-channels/downloader" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
