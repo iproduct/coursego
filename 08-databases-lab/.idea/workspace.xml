@@ -94,7 +94,8 @@
     <MESSAGE value="entities package added" />
     <MESSAGE value="select demo added" />
     <MESSAGE value="demos added" />
-    <option name="LAST_COMMIT_MESSAGE" value="demos added" />
+    <MESSAGE value="utils refactoring - checking for errors on close - important =&gt; may be rollback" />
+    <option name="LAST_COMMIT_MESSAGE" value="utils refactoring - checking for errors on close - important =&gt; may be rollback" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

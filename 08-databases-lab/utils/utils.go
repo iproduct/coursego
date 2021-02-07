@@ -16,14 +16,14 @@ func init() {
 }
 
 func FindAllProjects(db *sql.DB) (projects []entities.Project, err error) {
-	//stmt, err := db.Prepare("SELECT * FROM projects")
-	//if err != nil {
-	//	return
-	//}
-	//defer stmt.Close()
-	rows, err := db.Query("SELECT * FROM projects")
+	stmt, err := db.Prepare("SELECT * FROM projects")
+	if err != nil {
+		return
+	}
+	defer stmt.Close()
+	//rows, err := db.Query("SELECT * FROM projects")
 
-	//rows, err := stmt.Query()
+	rows, err := stmt.Query()
 	if err != nil {
 		return
 	}
@@ -34,10 +34,11 @@ func FindAllProjects(db *sql.DB) (projects []entities.Project, err error) {
 		if err = rows.Scan(&p.ID, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyID); err != nil {
 			return
 		}
-		userRows, err := db.Query("SELECT user_id FROM projects_users WHERE project_id = ?", p.ID)
-		if err != nil {
-			return nil, err
+		userRows, err2 := db.Query("SELECT user_id FROM projects_users WHERE project_id = ?", p.ID)
+		if err2 != nil {
+			return nil, err2
 		}
+		// defer userRows.Close() - defer in a loop is anti-pattern
 		for userRows.Next() {
 			var userId uint
 			if err = userRows.Scan(&userId); err != nil {

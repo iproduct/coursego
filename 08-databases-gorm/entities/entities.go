@@ -30,7 +30,7 @@ type User struct {
 	Email     string    `header:"Email"`
 	Username  string    `header:"Username"`
 	Password  string    `header:"Password"`
-	Active    bool      `header:"Active" gorm:"'Active' boolean"`
+	Active    bool      `gorm:"'Active' boolean"`
 	Projects  []Project `gorm:"many2many:projects_users;"`
 }
 

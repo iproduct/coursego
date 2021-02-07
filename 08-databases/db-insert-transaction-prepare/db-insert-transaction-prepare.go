@@ -34,7 +34,7 @@ func main() {
 	//
 	// When used in long running service Ping may be part of the health
 	// checking system.
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
 	defer cancel()
 
 	status := "up"

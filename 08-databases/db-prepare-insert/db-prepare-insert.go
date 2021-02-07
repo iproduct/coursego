@@ -109,12 +109,10 @@ func main() {
 		projects[i].Finished = true
 		result, err := stmt.Exec(projects[i].Name, projects[i].Description, projects[i].Budget, projects[i].StartDate,
 			projects[i].Finished, projects[i].CompanyId);
-		if err != nil {
-			log.Fatal(err)
-		}
+		if err != nil {	log.Fatal(err) }
 		numRows, err := result.RowsAffected()
 		if err != nil ||  numRows != 1 {
-			log.Fatal("Error inserting new Company", err)
+			log.Fatal("Error inserting new Project", err)
 		}
 		insId, err := result.LastInsertId()
 		if err != nil {
