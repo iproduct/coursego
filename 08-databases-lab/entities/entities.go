@@ -8,14 +8,14 @@ type Company struct {
 }
 
 type Project struct {
-	ID          uint
-	Name        string
-	Description string
-	Budget      float64
-	StartDate   time.Time
-	Finished    bool
-	CompanyID   uint
-	UserID      []uint
+	ID          uint      `header:"ID"`
+	Name        string    `header:"Name"`
+	Description string    `header:"Description"`
+	Budget      float64   `header:"Budget"`
+	StartDate   time.Time `header:"Start Date"`
+	Finished    bool      `header:"Finished"`
+	CompanyID   uint      `header:"Company ID"`
+	UserID      []uint    `header:"User IDs"`
 }
 
 type User struct {
