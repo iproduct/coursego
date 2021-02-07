@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b197c25b-3aa8-4d82-8ae6-7b54d193ccf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/08-databases-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entities/entities.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db-select/db-select.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/golang_projects.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,13 +40,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CourseGO\git\coursego\08-databases-lab\db-select" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -59,10 +61,28 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/iproduct/coursego/08-databases-lab/db-select" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="08-databases-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/db-select/db-select.go" />
+      <package value="github.com/iproduct/coursego/08-databases-lab/db-select" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/08-databases-lab/db-select" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="entities package added" />
+    <option name="LAST_COMMIT_MESSAGE" value="entities package added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
