@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="gorm_projects@localhost">
+<dataSource name="golang_projects@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.20">
     <root id="1">
       <ServerVersion>8.0.16</ServerVersion>
@@ -56,10 +56,10 @@
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="18" parent="1" name="golang_projects">
+      <Current>1</Current>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="19" parent="1" name="gorm_projects">
-      <Current>1</Current>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="20" parent="1" name="hotel">
@@ -1031,359 +1031,176 @@ APPLICATION_PASSWORD_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTION_ADMIN,CON
     <table id="324" parent="18" name="projects_users"/>
     <table id="325" parent="18" name="user_roles"/>
     <table id="326" parent="18" name="users"/>
-    <table id="327" parent="19" name="companies"/>
-    <table id="328" parent="19" name="projects"/>
-    <table id="329" parent="19" name="projects_users"/>
-    <table id="330" parent="19" name="users"/>
-    <column id="331" parent="322" name="id">
+    <column id="327" parent="322" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="332" parent="322" name="name">
+    <column id="328" parent="322" name="name">
       <Position>2</Position>
       <DataType>varchar(60)|0s</DataType>
     </column>
-    <key id="333" parent="322" name="PRIMARY">
+    <key id="329" parent="322" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="334" parent="323" name="id">
+    <column id="330" parent="323" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="335" parent="323" name="name">
+    <column id="331" parent="323" name="name">
       <Position>2</Position>
       <DataType>varchar(60)|0s</DataType>
     </column>
-    <column id="336" parent="323" name="description">
+    <column id="332" parent="323" name="description">
       <Position>3</Position>
       <DataType>varchar(1024)|0s</DataType>
     </column>
-    <column id="337" parent="323" name="budget">
+    <column id="333" parent="323" name="budget">
       <Position>4</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="338" parent="323" name="finished">
+    <column id="334" parent="323" name="finished">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="339" parent="323" name="start_date">
+    <column id="335" parent="323" name="start_date">
       <Position>6</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="340" parent="323" name="company_id">
+    <column id="336" parent="323" name="company_id">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="341" parent="323" name="FKrvpjk20pqyytvj6m5cutub6iq">
+    <index id="337" parent="323" name="FKrvpjk20pqyytvj6m5cutub6iq">
       <ColNames>company_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="342" parent="323" name="PRIMARY">
+    <key id="338" parent="323" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="343" parent="323" name="FKrvpjk20pqyytvj6m5cutub6iq">
+    <foreign-key id="339" parent="323" name="FKrvpjk20pqyytvj6m5cutub6iq">
       <ColNames>company_id</ColNames>
       <RefTableName>companies</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="344" parent="324" name="project_id">
+    <column id="340" parent="324" name="project_id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="345" parent="324" name="user_id">
+    <column id="341" parent="324" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="346" parent="324" name="FKq2sfpib7vt9mmqkmw4c9rvmca">
+    <index id="342" parent="324" name="FKq2sfpib7vt9mmqkmw4c9rvmca">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="347" parent="324" name="PRIMARY">
+    <key id="343" parent="324" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>project_id
 user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="348" parent="324" name="FKqrnu3d0a4dnxhlpew7f7x90kh">
+    <foreign-key id="344" parent="324" name="FKqrnu3d0a4dnxhlpew7f7x90kh">
       <ColNames>project_id</ColNames>
       <RefTableName>projects</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="349" parent="324" name="FKq2sfpib7vt9mmqkmw4c9rvmca">
+    <foreign-key id="345" parent="324" name="FKq2sfpib7vt9mmqkmw4c9rvmca">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="350" parent="325" name="user_id">
+    <column id="346" parent="325" name="user_id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="351" parent="325" name="role">
+    <column id="347" parent="325" name="role">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <index id="352" parent="325" name="FKhfh9dx7w3ubf1co1vdev94g3f">
+    <index id="348" parent="325" name="FKhfh9dx7w3ubf1co1vdev94g3f">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="353" parent="325" name="FKhfh9dx7w3ubf1co1vdev94g3f">
+    <foreign-key id="349" parent="325" name="FKhfh9dx7w3ubf1co1vdev94g3f">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="354" parent="326" name="id">
+    <column id="350" parent="326" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="355" parent="326" name="first_name">
+    <column id="351" parent="326" name="first_name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="356" parent="326" name="last_name">
+    <column id="352" parent="326" name="last_name">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="357" parent="326" name="email">
+    <column id="353" parent="326" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="358" parent="326" name="username">
+    <column id="354" parent="326" name="username">
       <Position>5</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="359" parent="326" name="password">
+    <column id="355" parent="326" name="password">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="360" parent="326" name="active">
+    <column id="356" parent="326" name="active">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="361" parent="326" name="created">
+    <column id="357" parent="326" name="created">
       <Position>8</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="362" parent="326" name="modified">
+    <column id="358" parent="326" name="modified">
       <Position>9</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="363" parent="326" name="created_at">
-      <Position>10</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="364" parent="326" name="updated_at">
-      <Position>11</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="365" parent="326" name="deleted_at">
-      <Position>12</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <index id="366" parent="326" name="UK_6dotkott2kjsp8vw4d0m25fb7">
+    <index id="359" parent="326" name="UK_6dotkott2kjsp8vw4d0m25fb7">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="367" parent="326" name="UK_r43af9ap4edm43mmtq01oddj6">
+    <index id="360" parent="326" name="UK_r43af9ap4edm43mmtq01oddj6">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="368" parent="326" name="idx_users_deleted_at">
-      <ColNames>deleted_at</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="369" parent="326" name="PRIMARY">
+    <key id="361" parent="326" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="370" parent="326" name="UK_6dotkott2kjsp8vw4d0m25fb7">
+    <key id="362" parent="326" name="UK_6dotkott2kjsp8vw4d0m25fb7">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UK_6dotkott2kjsp8vw4d0m25fb7</UnderlyingIndexName>
     </key>
-    <key id="371" parent="326" name="UK_r43af9ap4edm43mmtq01oddj6">
+    <key id="363" parent="326" name="UK_r43af9ap4edm43mmtq01oddj6">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>UK_r43af9ap4edm43mmtq01oddj6</UnderlyingIndexName>
-    </key>
-    <column id="372" parent="327" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="373" parent="327" name="created_at">
-      <Position>2</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="374" parent="327" name="updated_at">
-      <Position>3</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="375" parent="327" name="deleted_at">
-      <Position>4</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="376" parent="327" name="name">
-      <Position>5</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <index id="377" parent="327" name="idx_companies_deleted_at">
-      <ColNames>deleted_at</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="378" parent="327" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="379" parent="328" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="380" parent="328" name="created_at">
-      <Position>2</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="381" parent="328" name="updated_at">
-      <Position>3</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="382" parent="328" name="deleted_at">
-      <Position>4</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="383" parent="328" name="name">
-      <Position>5</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="384" parent="328" name="description">
-      <Position>6</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="385" parent="328" name="budget">
-      <Position>7</Position>
-      <DataType>double|0s</DataType>
-    </column>
-    <column id="386" parent="328" name="start_date">
-      <Position>8</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="387" parent="328" name="finished">
-      <Position>9</Position>
-      <DataType>tinyint(1)|0s</DataType>
-    </column>
-    <column id="388" parent="328" name="company_id">
-      <Position>10</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-    </column>
-    <index id="389" parent="328" name="idx_projects_deleted_at">
-      <ColNames>deleted_at</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="390" parent="328" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="391" parent="329" name="project_id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="392" parent="329" name="user_id">
-      <Position>2</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="393" parent="329" name="fk_projects_users_user">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="394" parent="329" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>project_id
-user_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="395" parent="329" name="fk_projects_users_project">
-      <ColNames>project_id</ColNames>
-      <RefTableName>projects</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="396" parent="329" name="fk_projects_users_user">
-      <ColNames>user_id</ColNames>
-      <RefTableName>users</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="397" parent="330" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="398" parent="330" name="created_at">
-      <Position>2</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="399" parent="330" name="updated_at">
-      <Position>3</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="400" parent="330" name="deleted_at">
-      <Position>4</Position>
-      <DataType>datetime(3)|0s</DataType>
-    </column>
-    <column id="401" parent="330" name="first_name">
-      <Position>5</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="402" parent="330" name="last_name">
-      <Position>6</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="403" parent="330" name="email">
-      <Position>7</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="404" parent="330" name="username">
-      <Position>8</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="405" parent="330" name="password">
-      <Position>9</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="406" parent="330" name="active">
-      <Position>10</Position>
-      <DataType>tinyint(1)|0s</DataType>
-    </column>
-    <index id="407" parent="330" name="idx_users_deleted_at">
-      <ColNames>deleted_at</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="408" parent="330" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
     </key>
   </database-model>
 </dataSource>
