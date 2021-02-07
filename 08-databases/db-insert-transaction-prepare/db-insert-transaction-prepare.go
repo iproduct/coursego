@@ -57,11 +57,11 @@ func main() {
 	// Update project budgets by 10% increase for project after 2020 in a single transaction
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
-	t0, _ := time.ParseInLocation(shortForm,"1991-Jan-01", loc)
-	t1, _ := time.ParseInLocation(shortForm,"1996-Jan-01", loc)
-	t2, _ := time.ParseInLocation(shortForm,"2009-Jan-01", loc)
-	t3, _ := time.ParseInLocation(shortForm,"2013-Jan-01", loc)
-	projects = []entities.Project {
+	t0, _ := time.ParseInLocation(shortForm, "1991-Jan-01", loc)
+	t1, _ := time.ParseInLocation(shortForm, "1996-Jan-01", loc)
+	t2, _ := time.ParseInLocation(shortForm, "2009-Jan-01", loc)
+	t3, _ := time.ParseInLocation(shortForm, "2013-Jan-01", loc)
+	projects = []entities.Project{
 		{
 			Name:        "tux",
 			Description: "Linux mascot project",
@@ -100,7 +100,7 @@ func main() {
 		},
 	}
 
-	// Brgin transaction
+	// Begin transaction
 	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
 		log.Println(err)
@@ -108,7 +108,7 @@ func main() {
 	}
 	defer tx.Rollback() // The rollback will be ignored if the tx has been committed later in the function.
 
-	stmt, err := db.Prepare(`INSERT INTO projects(name, description , budget, start_date, finished, company_id) VALUES( ?, ?, ?, ?, ?, ? )`)
+	stmt, err := tx.Prepare(`INSERT INTO projects(name, description , budget, start_date, finished, company_id) VALUES( ?, ?, ?, ?, ?, ? )`)
 	if err != nil {
 		log.Println(err)
 		return
@@ -118,13 +118,13 @@ func main() {
 	for i, _ := range projects {
 		projects[i].Finished = true
 		result, err := stmt.Exec(projects[i].Name, projects[i].Description, projects[i].Budget, projects[i].StartDate,
-			projects[i].Finished, projects[i].CompanyId);
+			projects[i].Finished, projects[i].CompanyId)
 		if err != nil {
 			log.Println(err)
 			return
 		}
 		numRows, err := result.RowsAffected()
-		if err != nil ||  numRows != 1 {
+		if err != nil || numRows != 1 {
 			log.Fatalf("Error inserting Project: %s, %s", projects[i], err)
 		}
 		insId, err := result.LastInsertId()
