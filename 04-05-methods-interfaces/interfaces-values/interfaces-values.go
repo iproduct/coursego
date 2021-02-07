@@ -27,11 +27,11 @@ func main() {
 	var i I
 
 	i = &T{"Hello"}
-	describe(i) //(&{Hello}, *main.T)
+	describe(i) //(&{Hello}, *intbitset_main.T)
 	i.M()       //Hello
 
 	i = F(math.Pi)
-	describe(i) //(3.141592653589793, main.F)
+	describe(i) //(3.141592653589793, intbitset_main.F)
 	i.M()       //3.141592653589793
 }
 

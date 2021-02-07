@@ -44,12 +44,12 @@ func main() {
 
 	distance := Vertex.Distance  // method expression
 	fmt.Println(distance(a, b))  // 5
-	fmt.Printf("%T\n", distance) // func(main.Vertex, main.Vertex) float64
+	fmt.Printf("%T\n", distance) // func(intbitset_main.Vertex, intbitset_main.Vertex) float64
 
 	scale := (*Vertex).Scale // method expression
 	scale(&a, 2)
 	fmt.Println(a)            // {4 14}
-	fmt.Printf("%T\n", scale) // func(*main.Vertex, float64)
+	fmt.Printf("%T\n", scale) // func(*intbitset_main.Vertex, float64)
 
 	scaleB := (&b).Scale       // method value
 	fmt.Printf("%T\n", scaleB) // func(float64)

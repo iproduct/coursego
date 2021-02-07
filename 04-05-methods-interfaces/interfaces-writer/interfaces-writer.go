@@ -145,8 +145,9 @@ func main() {
 	//f2 = w  // !!! compile time error: w has no methods Read() and Close()
 
 	// Maps of interfaces
-	var _ map[*Writer]struct{ x, y float64 }
+	m := map[*Writer]struct{ x, y float64 } {&w: {5,3}}
 	var _ map[string]interface{}
+	fmt.Printf("%+v\n", m)
 
 	// Interfaces embedding
 	fb := Football{Ball{Radius: 5, Material: "leather"}}

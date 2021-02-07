@@ -9,9 +9,12 @@ import (
 func main() {
 	userPath := "/users/123?sortBy=name"
 	u, _ := url.Parse(userPath)
-	ps := path.Base(u.Path)
+	p := u.Path
+	lastSegment := path.Base(p)
 	sortBy := u.Query().Get("sortBy")
-	fmt.Printf("UserID: %#v\n", ps)
+	fmt.Printf("Path: %#v\n", p)
+	fmt.Printf("UserID: %#v\n", lastSegment)
+
 	fmt.Printf("Sorting by: %#v\n", sortBy)
 	fmt.Printf("%#v\n", u)
 }

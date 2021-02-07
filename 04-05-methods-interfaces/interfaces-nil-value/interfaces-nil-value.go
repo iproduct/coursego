@@ -23,11 +23,11 @@ func main() {
 
 	var t *T
 	i = t
-	describe(i) //(<nil>, *main.T)
+	describe(i) //(<nil>, *intbitset_main.T)
 	i.M()       //<nil>
 
 	i = &T{"hello"}
-	describe(i) //(&{hello}, *main.T)
+	describe(i) //(&{hello}, *intbitset_main.T)
 	i.M()       //hello
 }
 

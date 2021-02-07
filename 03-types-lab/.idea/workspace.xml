@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446a2694-7e55-41dd-96bc-5d1ae74ca844" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/06-goroutines-channels.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/downloader-using-context/downloader-using-context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/downloader/downloader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
