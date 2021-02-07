@@ -17,7 +17,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	db.AutoMigrate(&entities.User{}, &entities.Project{}, &entities.Company{})
+	db.AutoMigrate(&entities.User{})
+	db.AutoMigrate(&entities.Project{})
+	db.AutoMigrate(&entities.Company{})
 
 	//Get all users
 	users := []entities.User{}
@@ -90,7 +92,7 @@ func main() {
 			Users:      users,
 		},
 	}
-	result = db.Table("projects").Create(&projects) // pass pointer of data to Create
+	result = db.Create(&projects) // pass pointer of data to Create
 	// batch size 100
 	//db.CreateInBatches(users, 100)
 	if result.Error != nil {
@@ -104,19 +106,23 @@ func main() {
 
 	utils.PrintProjects(projects)
 
-	//Get all users
-	//db.Table("projects").Association("Users")
-	//result = db.Joins("Users").Find(&projects)	// SELECT * FROM users;
+	// Get all users
+	// db.Session(&gorm.Session{FullSaveAssociations: true}).Updates(&user)
+	// result = db.Joins("Users").Find(&projects)	// SELECT * FROM users;
 	result = db.Preload(clause.Associations).Find(&projects)	// SELECT * FROM users with associations
-
 	if result.Error != nil {
+		log.Fatal(result.Error) // returns error
+	}
+	err = db.Model(&(projects[0])).Association("Users").Find(&users)
+	if err != nil {
 		log.Fatal(result.Error) // returns error
 	}
 	fmt.Printf("Number of all projects: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
 	utils.PrintProjects(projects)
+	fmt.Printf("Users in Project '%s': %v\n", projects[0].Name, users)
 
-	//Print all companies again - projects should be added
-	result = db.Model(&companies[0]).Table("companies").Find(&companies) 	// SELECT * FROM users;
+	//Print all companies again - projects should be fetched too
+	result = db.Preload(clause.Associations).Find(&companies) 	// SELECT * FROM companies pre-fetching projects;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
