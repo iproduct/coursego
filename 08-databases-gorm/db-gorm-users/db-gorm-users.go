@@ -21,12 +21,6 @@ func main() {
 	//	SkipInitializeWithVersion: false, // auto configure based on currently MySQL version
 	//}), &gorm.Config{})
 
-	//users := []entities.User {
-	//	{FirstName: "Linus", LastName: "Torvalds", Email: "linus@linux.com", Username: "linus", Password: "linus"},
-	//	{FirstName: "James", LastName: "Gosling", Email: "gosling@java.com", Username: "james", Password: "james"},
-	//	{FirstName: "Rob", LastName: "Pike", Email: "pike@golang.com", Username: "rob", Password: "rob"},
-	//	{FirstName: "Kamel", LastName: "Founadi", Email: "kamel@docker.com", Username: "kamel", Password: "kamel"},
-	//}
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -40,7 +34,7 @@ func main() {
 		log.Fatal(result.Error) // returns error
 	}
 	fmt.Printf("New user created with ID: %d -> %+v\nRows afffected: %d\n",
-		user.ID,      		 // returns inserted data's primary key
+		user.ID, // returns inserted data's primary key
 		user,
 		result.RowsAffected, // returns inserted records count
 	)
