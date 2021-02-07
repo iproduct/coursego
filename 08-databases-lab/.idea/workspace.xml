@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b197c25b-3aa8-4d82-8ae6-7b54d193ccf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../08-databases/golang_projects.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-projects-batch/db-gorm-projects-batch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-projects-batch/db-gorm-projects-batch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-select/db-select.go" beforeDir="false" afterPath="$PROJECT_DIR$/db-select/db-select.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/entities/entities.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
@@ -102,7 +96,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="entities package added" />
     <MESSAGE value="select demo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="select demo added" />
+    <MESSAGE value="demos added" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

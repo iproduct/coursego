@@ -21,7 +21,7 @@ func main() {
 
 	//Get all users
 	users := []entities.User{}
-	result := db.Find(&users) 	// SELECT * FROM users;
+	result := db.Preload(clause.Associations).Find(&users) 	// SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
@@ -37,7 +37,7 @@ func main() {
 	}
 	db.Create(&companies)
 	//Get all companies
-	result = db.Table("companies").Find(&companies) 	// SELECT * FROM users;
+	result = db.Preload(clause.Associations).Find(&companies) 	// SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}

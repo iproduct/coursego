@@ -100,16 +100,18 @@ func main() {
 		},
 	}
 
-
+	// Brgin transaction
 	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		return
 	}
 	defer tx.Rollback() // The rollback will be ignored if the tx has been committed later in the function.
 
 	stmt, err := db.Prepare(`INSERT INTO projects(name, description , budget, start_date, finished, company_id) VALUES( ?, ?, ?, ?, ?, ? )`)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
+		return
 	}
 	defer stmt.Close() // Prepared statements take up server resources and should be closed after use.
 
@@ -118,7 +120,8 @@ func main() {
 		result, err := stmt.Exec(projects[i].Name, projects[i].Description, projects[i].Budget, projects[i].StartDate,
 			projects[i].Finished, projects[i].CompanyId);
 		if err != nil {
-			log.Fatal(err)
+			log.Println(err)
+			return
 		}
 		numRows, err := result.RowsAffected()
 		if err != nil ||  numRows != 1 {

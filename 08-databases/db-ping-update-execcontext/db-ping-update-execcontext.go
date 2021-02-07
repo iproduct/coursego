@@ -62,7 +62,7 @@ func main() {
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
 	startDate, _ := time.ParseInLocation(shortForm, "2020-Jan-01", loc)
-	result, err := conn.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.1) WHERE start_date > ?;`, startDate)
+	result, err := conn.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.5) WHERE start_date > ?;`, startDate)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -88,11 +88,9 @@ func GetProjects(db *sql.DB) []entities.Project {
 	projects := []entities.Project{}
 	for rows.Next() {
 		p := entities.Project{}
-		var finished []byte
-		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &finished, &p.StartDate, &p.CompanyId); err != nil {
+		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId); err != nil {
 			log.Fatal(err)
 		}
-		p.Finished = utils.I2b[finished[0]]
 		userRows, err := db.Query("SELECT user_id FROM projects_users WHERE project_id = ?", p.Id)
 		if err != nil {
 			log.Fatal(err)

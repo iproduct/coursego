@@ -34,7 +34,7 @@ func main() {
 	//
 	// When used in long running service Ping may be part of the health
 	// checking system.
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
 	defer cancel()
 
 	status := "up"
@@ -63,7 +63,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	result, execErr := conn.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.1) WHERE start_date > ?;`, startDate)
+	result, execErr := conn.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 2) WHERE start_date > ?;`, startDate)
 	if execErr != nil {
 		if rollbackErr := tx.Rollback(); rollbackErr != nil {
 			log.Fatalf("update failed: %v, unable to rollback: %v\n", execErr, rollbackErr)
@@ -96,11 +96,9 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 	projects := []entities.Project{}
 	for rows.Next() {
 		p := entities.Project{}
-		var finished []byte
-		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &finished, &p.StartDate, &p.CompanyId); err != nil {
+		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId); err != nil {
 			log.Fatal(err)
 		}
-		p.Finished = utils.I2b[finished[0]]
 		projects = append(projects, p)
 	}
 

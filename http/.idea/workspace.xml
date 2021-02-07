@@ -2,49 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d231f4d1-75ce-44f0-a4ea-d5c11e83fa36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/08-databases.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-projects-batch/db-gorm-projects-batch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/entities/entities.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/sql/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/sqlutils/sqlutils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/utils/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/08-databases.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-prepare-insert/db-prepare-insert.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-prepare-select/db-prepare-select.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/entities/entities.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/sql/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/utils/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp/regexp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/coursego.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-nil-value/interfaces-nil-value.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-nil-value/interfaces-nil-value.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-writer/interfaces-writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-writer/interfaces-writer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-databases-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-databases-lab/utils/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-databases/golang_projects.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/db-select/db-select.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/db-select/db-select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/entities/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/entities/entities.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/db-prepare-insert/db-prepare-insert.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-prepare-insert/db-prepare-insert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url-params/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/url-params/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

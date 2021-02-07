@@ -81,7 +81,7 @@ func main() {
 		},
 		{
 			Name:        "gopher",
-			Description: "Linux mascot project",
+			Description: "Golang mascot project",
 			Budget:      1000,
 			StartDate:   t2,
 			Finished:    true,
@@ -147,7 +147,7 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		users[i].Password = string(hashedPassword)
+		users[i].Password = "{bcrypt}" + string(hashedPassword)
 		result, err := stmt.Exec(users[i].FirstName, users[i].LastName, users[i].Email, users[i].Username,
 			users[i].Password, users[i].Active, users[i].Created, users[i].Modified);
 		if err != nil {
@@ -185,4 +185,8 @@ func main() {
 			log.Fatal("Error inserting new relation Project_User", err)
 		}
 	}
+
+//	rows, err = db.Query("SELECT * FROM users")
+//	for rows.Next()
+//	PrintUsers()
 }
