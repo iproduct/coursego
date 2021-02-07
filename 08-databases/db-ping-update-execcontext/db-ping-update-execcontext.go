@@ -49,7 +49,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer conn.Close() 	// Return the connection to the pool.
+	defer conn.Close() // Return the connection to the pool.
 
 	// Print projects before update
 	projects := GetProjects(db)
@@ -77,7 +77,6 @@ func main() {
 	utils.PrintProjects(projects)
 }
 
-
 func GetProjects(db *sql.DB) []entities.Project {
 	rows, err := db.Query("SELECT * FROM projects")
 	if err != nil {
@@ -101,6 +100,13 @@ func GetProjects(db *sql.DB) []entities.Project {
 				log.Fatal(err)
 			}
 			p.UserIds = append(p.UserIds, userId)
+		}
+		err = userRows.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
+		if err = userRows.Err(); err != nil {
+			log.Fatal(err)
 		}
 		projects = append(projects, p)
 	}

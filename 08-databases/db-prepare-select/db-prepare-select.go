@@ -16,7 +16,6 @@ var (
 	db  *sql.DB
 )
 
-
 func main() {
 	db, err := sql.Open("mysql", "root:root@/golang_projects?parseTime=true")
 	if err != nil {
@@ -42,7 +41,7 @@ func main() {
 	for rows.Next() {
 		p := entities.Project{}
 		//var finished []byte
-		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId ); err != nil {
+		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId); err != nil {
 			log.Fatal(err)
 		}
 		//p.Finished = utils.I2b[finished[0]]
@@ -57,6 +56,13 @@ func main() {
 				log.Fatal(err)
 			}
 			p.UserIds = append(p.UserIds, userId)
+		}
+		err = userRows.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
+		if err = userRows.Err(); err != nil {
+			log.Fatal(err)
 		}
 		projects = append(projects, p)
 	}

@@ -91,7 +91,7 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//defer rows.Close()
+	defer rows.Close()
 
 	projects := []entities.Project{}
 	for rows.Next() {
@@ -100,6 +100,13 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 			log.Fatal(err)
 		}
 		projects = append(projects, p)
+	}
+	err = rows.Close()
+	if err != nil {
+		log.Fatal(err)
+	}
+	if err = rows.Err(); err != nil {
+		log.Fatal(err)
 	}
 
 	for i, p := range projects {
@@ -113,6 +120,13 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 				log.Fatal(err)
 			}
 			projects[i].UserIds = append(projects[i].UserIds, userId)
+		}
+		err = userRows.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
+		if err = userRows.Err(); err != nil {
+			log.Fatal(err)
 		}
 	}
 
