@@ -16,14 +16,14 @@ func init() {
 }
 
 func FindAllProjects(db *sql.DB) (projects []entities.Project, err error) {
-	stmt, err := db.Prepare("SELECT * FROM projects")
-	if err != nil {
-		return
-	}
-	defer stmt.Close()
-	//rows, err := db.Query("SELECT * FROM projects")
+	//stmt, err := db.Prepare("SELECT * FROM projects")
+	//if err != nil {
+	//	return
+	//}
+	//defer stmt.Close()
+	rows, err := db.Query("SELECT * FROM projects")
 
-	rows, err := stmt.Query()
+	//rows, err := stmt.Query()
 	if err != nil {
 		return
 	}
@@ -38,19 +38,36 @@ func FindAllProjects(db *sql.DB) (projects []entities.Project, err error) {
 		if err != nil {
 			return nil, err
 		}
-		defer userRows.Close()
 		for userRows.Next() {
 			var userId uint
 			if err = userRows.Scan(&userId); err != nil {
-				return nil, err
+				return
 			}
 			p.UserID = append(p.UserID, userId)
 		}
+		// If the database is being written to ensure to check for Close
+		// errors that may be returned from the driver. The query may
+		// encounter an auto-commit error and be forced to rollback changes.
+		err = userRows.Close()
+		if err != nil {
+			return
+		}
+
+		// Rows.Err will report the last error encountered by Rows.Scan.
 		if err = userRows.Err(); err != nil {
-			return nil, err
+			return
 		}
 		projects = append(projects, p)
 	}
+	// If the database is being written to ensure to check for Close
+	// errors that may be returned from the driver. The query may
+	// encounter an auto-commit error and be forced to rollback changes.
+	err = rows.Close()
+	if err != nil {
+		return
+	}
+
+	// Rows.Err will report the last error encountered by Rows.Scan.
 	if err = rows.Err(); err != nil {
 		return
 	}
