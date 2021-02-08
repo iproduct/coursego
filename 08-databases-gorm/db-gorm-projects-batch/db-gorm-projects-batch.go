@@ -63,7 +63,7 @@ func main() {
 
 	//Get number of projects
 	var projectsCount int64 = 0
-	result = db.Model(entities.Company{}).Count(&projectsCount) // SELECT * FROM users;
+	result = db.Model(entities.Project{}).Count(&projectsCount) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}

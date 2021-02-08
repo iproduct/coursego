@@ -6,6 +6,7 @@ import (
 	"github.com/iproduct/coursego/08-databases/utils"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"gorm.io/gorm/clause"
 	"log"
 	"time"
 )
@@ -20,6 +21,15 @@ func main() {
 	db.AutoMigrate(&entities.Company{})
 	db.AutoMigrate(&entities.Project{})
 
+	//Get number of users
+	var usersCount int64 = 0
+	result := db.Model(entities.User{}).Count(&usersCount) // SELECT * FROM users;
+	if result.Error != nil {
+		log.Fatal(result.Error) // returns error
+	}
+	fmt.Printf("Found %d users.\n", usersCount)
+
+	// Insert sample users if not existing
 	users := []entities.User{
 		{FirstName: "Linus", LastName: "Torvalds", Email: "linus@linux.com", Username: "linus", Password: "linus",
 			Active: true, Model: gorm.Model{CreatedAt: time.Now(), UpdatedAt: time.Now()}},
@@ -30,27 +40,24 @@ func main() {
 		{FirstName: "Kamel", LastName: "Founadi", Email: "kamel@docker.com", Username: "kamel", Password: "kamel",
 			Active: true, Model: gorm.Model{CreatedAt: time.Now(), UpdatedAt: time.Now()}},
 	}
-
-	result := db.Create(&users) // pass pointer of data to Create
-	// batch size 100
-	//db.CreateInBatches(users, 100)
-	if result.Error != nil {
-		log.Fatal(result.Error) // returns error
+	if usersCount == 0 {
+		fmt.Println("Creating sample users:")
+		result := db.Create(&users)
+		if result.Error != nil {
+			log.Fatal(result.Error) // returns error
+		}
+		fmt.Printf("New users created with IDs: ")
+		for _, user := range users {
+			fmt.Printf("%d, ", user.ID)
+		}
+		fmt.Println()
 	}
-	fmt.Printf("New users created with IDs: ")
-	for _, user := range users {
-		fmt.Printf("%d, ", user.ID)
-	}
-	fmt.Println()
-
-	utils.PrintUsers(users)
 
 	//Get all users
-	result = db.Find(&users) 	// SELECT * FROM users;
-
+	result = db.Preload(clause.Associations).Find(&users) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of users: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
+	fmt.Printf("Number of users: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintUsers(users)
 }
