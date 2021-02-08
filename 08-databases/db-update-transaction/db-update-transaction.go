@@ -64,7 +64,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	result, execErr := tx.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.2) WHERE start_date > ?;`, startDate)
+	result, execErr := tx.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * budget * 1.2/ budget) WHERE start_date > ?;`, startDate)
 	if execErr != nil { // ROLLBSACK IF ERROR
 		if rollbackErr := tx.Rollback(); rollbackErr != nil {
 			log.Fatalf("update failed: %v, unable to rollback: %v\n", execErr, rollbackErr)

@@ -11,7 +11,7 @@ USE `golang_projects`;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
  SET NAMES utf8 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+02:00' */;
+/*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
@@ -50,13 +50,14 @@ DROP TABLE IF EXISTS `projects`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `projects` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `name` varchar(60) DEFAULT NULL,
+  `name` varchar(60) NOT NULL,
   `description` varchar(1024) DEFAULT NULL,
   `budget` double NOT NULL,
-  `finished` boolean NOT NULL,
+  `finished` tinyint(1) NOT NULL,
   `start_date` date DEFAULT NULL,
   `company_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
+  UNIQUE KEY `name_UNIQUE` (`name`),
   KEY `FKrvpjk20pqyytvj6m5cutub6iq` (`company_id`),
   CONSTRAINT `FKrvpjk20pqyytvj6m5cutub6iq` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -68,7 +69,7 @@ CREATE TABLE `projects` (
 
 LOCK TABLES `projects` WRITE;
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
-INSERT INTO `projects` VALUES (1,'Build CI/CD Server','Build custom continuous integration server for our projects ...',70000,_binary '\0','2021-01-06',4),(2,'Create Furniture Web Site','Build web site for our client selling furniture ...',20000,_binary '\0','2021-01-06',1),(3,'Update SUSI with eLearning Functionality','Add eLearning functionality to SUSI ...',50000,_binary '\0','2021-01-06',3),(4,'Build IoT Control Access System','Build custom IoT system controlling acces to to FMI building ...',70000,_binary '\0','2021-01-06',3),(5,'Create Thymeleaf App','Create Thymeleaf App with Spring Boot and Spring Data',1200,_binary '\0','2021-01-12',2),(6,'Test Project','Angular challenge for everybody',1,_binary '\0','2021-01-12',2),(7,'Learn Golang DBs','Do homework to learn Golang database management',50,_binary '\0','2021-01-13',2);
+INSERT INTO `projects` VALUES (1,'Build CI/CD Server','Build custom continuous integration server for our projects ...',70000,0,'2021-01-06',4),(2,'Create Furniture Web Site','Build web site for our client selling furniture ...',20000,0,'2021-01-06',1),(3,'Update SUSI with eLearning Functionality','Add eLearning functionality to SUSI ...',50000,0,'2021-01-06',3),(4,'Build IoT Control Access System','Build custom IoT system controlling acces to to FMI building ...',70000,0,'2021-01-06',3),(5,'Create Thymeleaf App','Create Thymeleaf App with Spring Boot and Spring Data',1200,0,'2021-01-12',2),(6,'Test Project','Angular challenge for everybody',1,0,'2021-01-12',2),(7,'Learn Golang DBs','Do homework to learn Golang database management',50,0,'2021-01-13',2);
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,7 +139,7 @@ CREATE TABLE `users` (
   `email` varchar(255) DEFAULT NULL,
   `username` varchar(30) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `active` boolean NOT NULL,
+  `active` tinyint(1) NOT NULL,
   `created` datetime(6) DEFAULT NULL,
   `modified` datetime(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -153,7 +154,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Default','Admin','admin@gmail.com','admin','{bcrypt}$2a$10$wtZZE9untaIrJgR2P9klsuBVdVVxd0QM1Z..R1aE0YsucS.IkXIu.',_binary '','2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000'),(2,'Ivan','Petrov','ivan@gmail.com','ivan','{bcrypt}$2a$10$pm2OKA/ESO3rpGvI0YZOVOqrTvl1HUhyAAOi.ztUvK/K7xca1aKMy',_binary '','2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000'),(3,'Veronika','Dimitrova','vera@gmail.com','veronika','{bcrypt}$2a$10$ls9amuWqw39yXgX4s20DDecgCOEZXx1PPCPuINizF1rzTmG0vzPLG',_binary '','2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000');
+INSERT INTO `users` VALUES (1,'Default','Admin','admin@gmail.com','admin','{bcrypt}$2a$10$wtZZE9untaIrJgR2P9klsuBVdVVxd0QM1Z..R1aE0YsucS.IkXIu.',0,'2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000'),(2,'Ivan','Petrov','ivan@gmail.com','ivan','{bcrypt}$2a$10$pm2OKA/ESO3rpGvI0YZOVOqrTvl1HUhyAAOi.ztUvK/K7xca1aKMy',0,'2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000'),(3,'Veronika','Dimitrova','vera@gmail.com','veronika','{bcrypt}$2a$10$ls9amuWqw39yXgX4s20DDecgCOEZXx1PPCPuINizF1rzTmG0vzPLG',0,'2021-01-06 22:22:40.554000','2021-01-06 22:22:40.554000');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -166,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-07  3:43:04
+-- Dump completed on 2021-02-08 20:29:03

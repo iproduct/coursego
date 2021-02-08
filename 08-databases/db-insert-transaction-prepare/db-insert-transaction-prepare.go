@@ -106,6 +106,7 @@ func main() {
 		log.Println(err)
 		return
 	}
+	// DEFER ROLLBACK
 	defer tx.Rollback() // The rollback will be ignored if the tx has been committed later in the function.
 
 	stmt, err := tx.Prepare(`INSERT INTO projects(name, description , budget, start_date, finished, company_id) VALUES( ?, ?, ?, ?, ?, ? )`)
