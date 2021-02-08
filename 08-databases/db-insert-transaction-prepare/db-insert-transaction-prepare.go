@@ -100,7 +100,7 @@ func main() {
 		},
 	}
 
-	// Begin transaction
+	// BEGIN TRANSACTION
 	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
 		log.Println(err)
@@ -115,7 +115,7 @@ func main() {
 	}
 	defer stmt.Close() // Prepared statements take up server resources and should be closed after use.
 
-	for i, _ := range projects {
+	for i := range projects {
 		projects[i].Finished = true
 		result, err := stmt.Exec(projects[i].Name, projects[i].Description, projects[i].Budget, projects[i].StartDate,
 			projects[i].Finished, projects[i].CompanyId)
@@ -125,7 +125,7 @@ func main() {
 		}
 		numRows, err := result.RowsAffected()
 		if err != nil || numRows != 1 {
-			log.Fatalf("Error inserting Project: %s, %s", projects[i], err)
+			log.Printf("Error inserting Project: %v, %s\n", projects[i], err)
 		}
 		insId, err := result.LastInsertId()
 		if err != nil {
@@ -134,6 +134,7 @@ func main() {
 		projects[i].Id = insId
 	}
 
+	// COMMIT TRANSACTION
 	if err := tx.Commit(); err != nil {
 		log.Fatal(err)
 	}
@@ -151,7 +152,7 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 	}
 	//defer rows.Close()
 
-	projects := []entities.Project{}
+	var projects []entities.Project
 	for rows.Next() {
 		p := entities.Project{}
 		//var finished []byte
@@ -162,7 +163,7 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 		projects = append(projects, p)
 	}
 
-	for i, _ := range projects {
+	for i := range projects {
 		userRows, err := conn.QueryContext(ctx, "SELECT user_id FROM projects_users WHERE project_id = ?", projects[i].Id)
 		if err != nil {
 			log.Fatal(err)

@@ -59,12 +59,13 @@ func main() {
 	const shortForm = "2006-Jan-02"
 	startDate, _ := time.ParseInLocation(shortForm, "2020-Jan-01", loc)
 
+	// BEGIN TRANSACTION
 	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
 		log.Fatal(err)
 	}
 	result, execErr := tx.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.2) WHERE start_date > ?;`, startDate)
-	if execErr != nil {
+	if execErr != nil { // ROLLBSACK IF ERROR
 		if rollbackErr := tx.Rollback(); rollbackErr != nil {
 			log.Fatalf("update failed: %v, unable to rollback: %v\n", execErr, rollbackErr)
 		}
@@ -76,6 +77,7 @@ func main() {
 	}
 	log.Printf("Total budgets updated: %d\n", rows)
 
+	// COMMIT TRANSACTION
 	if err := tx.Commit(); err != nil {
 		log.Fatal(err)
 	}
