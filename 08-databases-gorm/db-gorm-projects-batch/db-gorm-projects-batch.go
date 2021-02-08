@@ -23,15 +23,15 @@ func main() {
 
 	//Get all users
 	users := []entities.User{}
-	result := db.Preload(clause.Associations).Find(&users) 	// SELECT * FROM users;
+	result := db.Preload(clause.Associations).Find(&users) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of users: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
+	fmt.Printf("Number of users: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintUsers(users)
 
 	// Insert companies
-	companies := []entities.Company {
+	companies := []entities.Company{
 		{Name: "Linux Foundation"},
 		{Name: "Sun Microsystems"},
 		{Name: "Google"},
@@ -39,22 +39,21 @@ func main() {
 	}
 	db.Create(&companies)
 	//Get all companies
-	result = db.Preload(clause.Associations).Find(&companies) 	// SELECT * FROM users;
+	result = db.Preload(clause.Associations).Find(&companies) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of users: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
+	fmt.Printf("Number of users: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintCompanies(companies)
-
 
 	// Insert projects
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
-	t0, _ := time.ParseInLocation(shortForm,"1991-Jan-01", loc)
-	t1, _ := time.ParseInLocation(shortForm,"1996-Jan-01", loc)
-	t2, _ := time.ParseInLocation(shortForm,"2009-Jan-01", loc)
-	t3, _ := time.ParseInLocation(shortForm,"2013-Jan-01", loc)
-	projects := []entities.Project {
+	t0, _ := time.ParseInLocation(shortForm, "1991-Jan-01", loc)
+	t1, _ := time.ParseInLocation(shortForm, "1996-Jan-01", loc)
+	t2, _ := time.ParseInLocation(shortForm, "2009-Jan-01", loc)
+	t3, _ := time.ParseInLocation(shortForm, "2013-Jan-01", loc)
+	projects := []entities.Project{
 		{
 			Name:        "tux",
 			Description: "Linux mascot project",
@@ -62,7 +61,7 @@ func main() {
 			StartDate:   t0,
 			Finished:    true,
 			CompanyID:   companies[0].ID,
-			Users:      users,
+			Users:       users,
 		},
 		{
 			Name:        "duke",
@@ -71,7 +70,7 @@ func main() {
 			StartDate:   t1,
 			Finished:    true,
 			CompanyID:   companies[1].ID,
-			Users:      users,
+			Users:       users,
 		},
 		{
 			Name:        "gopher",
@@ -80,7 +79,7 @@ func main() {
 			StartDate:   t2,
 			Finished:    true,
 			CompanyID:   companies[2].ID,
-			Users:      users,
+			Users:       users,
 		},
 		{
 			Name:        "moby dock",
@@ -89,7 +88,7 @@ func main() {
 			StartDate:   t3,
 			Finished:    true,
 			CompanyID:   companies[3].ID,
-			Users:      users,
+			Users:       users,
 		},
 	}
 	result = db.Create(&projects) // pass pointer of data to Create
@@ -109,24 +108,25 @@ func main() {
 	// Get all users
 	// db.Session(&gorm.Session{FullSaveAssociations: true}).Updates(&user)
 	// result = db.Joins("Users").Find(&projects)	// SELECT * FROM users;
-	result = db.Preload(clause.Associations).Find(&projects)	// SELECT * FROM users with associations
+	result = db.Preload(clause.Associations).Find(&projects) // SELECT * FROM users with associations
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
+	// Using association mode
 	err = db.Model(&(projects[0])).Association("Users").Find(&users)
 	if err != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of all projects: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
+	fmt.Printf("Number of all projects: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintProjects(projects)
 	fmt.Printf("Users in Project '%s': %v\n", projects[0].Name, users)
 
 	//Print all companies again - projects should be fetched too
-	result = db.Preload(clause.Associations).Find(&companies) 	// SELECT * FROM companies pre-fetching projects;
+	result = db.Preload(clause.Associations).Find(&companies) // SELECT * FROM companies pre-fetching projects;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of companies: %d\n", result.RowsAffected)// returns found records count, equals `len(users)`
+	fmt.Printf("Number of companies: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintCompanies(companies)
 
 }
