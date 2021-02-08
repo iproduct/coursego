@@ -109,8 +109,8 @@ func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
 		log.Fatal(err)
 	}
 
-	for i, p := range projects {
-		userRows, err := conn.QueryContext(ctx, "SELECT user_id FROM projects_users WHERE project_id = ?", p.Id)
+	for i := range projects {
+		userRows, err := conn.QueryContext(ctx, "SELECT user_id FROM projects_users WHERE project_id = ?", projects[i].Id)
 		if err != nil {
 			log.Fatal(err)
 		}

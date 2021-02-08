@@ -25,7 +25,7 @@ func main() {
 	defer db.Close()
 
 	// Insert companies
-	companies := []entities.Company {
+	companies := []entities.Company{
 		{Name: "Linux Foundation"},
 		{Name: "Sun Microsystems"},
 		{Name: "Google"},
@@ -43,7 +43,7 @@ func main() {
 			log.Fatal(err)
 		}
 		numRows, err := res.RowsAffected()
-		if err != nil ||  numRows != 1 {
+		if err != nil || numRows != 1 {
 			log.Fatal("Error inserting new Company", err)
 		}
 		insId, err := res.LastInsertId()
@@ -56,11 +56,11 @@ func main() {
 	// Insert projects
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
-	t0, _ := time.ParseInLocation(shortForm,"1991-Jan-01", loc)
-	t1, _ := time.ParseInLocation(shortForm,"1996-Jan-01", loc)
-	t2, _ := time.ParseInLocation(shortForm,"2009-Jan-01", loc)
-	t3, _ := time.ParseInLocation(shortForm,"2013-Jan-01", loc)
-	projects := []entities.Project {
+	t0, _ := time.ParseInLocation(shortForm, "1991-Jan-01", loc)
+	t1, _ := time.ParseInLocation(shortForm, "1996-Jan-01", loc)
+	t2, _ := time.ParseInLocation(shortForm, "2009-Jan-01", loc)
+	t3, _ := time.ParseInLocation(shortForm, "2013-Jan-01", loc)
+	projects := []entities.Project{
 		{
 			Name:        "tux",
 			Description: "Linux mascot project",
@@ -108,10 +108,12 @@ func main() {
 	for i, _ := range projects {
 		projects[i].Finished = true
 		result, err := stmt.Exec(projects[i].Name, projects[i].Description, projects[i].Budget, projects[i].StartDate,
-			projects[i].Finished, projects[i].CompanyId);
-		if err != nil {	log.Fatal(err) }
+			projects[i].Finished, projects[i].CompanyId)
+		if err != nil {
+			log.Fatal(err)
+		}
 		numRows, err := result.RowsAffected()
-		if err != nil ||  numRows != 1 {
+		if err != nil || numRows != 1 {
 			log.Fatal("Error inserting new Project", err)
 		}
 		insId, err := result.LastInsertId()
@@ -122,7 +124,7 @@ func main() {
 	}
 
 	// Insert users
-	users := []entities.User {
+	users := []entities.User{
 		{FirstName: "Linus", LastName: "Torvalds", Email: "linus@linux.com", Username: "linus", Password: "linus"},
 		{FirstName: "James", LastName: "Gosling", Email: "gosling@java.com", Username: "james", Password: "james"},
 		{FirstName: "Rob", LastName: "Pike", Email: "pike@golang.com", Username: "rob", Password: "rob"},
@@ -130,14 +132,14 @@ func main() {
 	}
 
 	stmt, err = db.Prepare(
-	`INSERT INTO users(first_name, last_name, email, username, password, active, created, modified) 
+		`INSERT INTO users(first_name, last_name, email, username, password, active, created, modified) 
 		VALUES( ?, ?, ?, ?, ?, ?, ?, ?)`)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer stmt.Close() // Prepared statements take up server resources and should be closed after use.
 
-	for i, _ := range users {
+	for i := range users {
 		users[i].Active = true
 		users[i].Created = time.Now()
 		users[i].Modified = time.Now()
@@ -147,12 +149,12 @@ func main() {
 		}
 		users[i].Password = "{bcrypt}" + string(hashedPassword)
 		result, err := stmt.Exec(users[i].FirstName, users[i].LastName, users[i].Email, users[i].Username,
-			users[i].Password, users[i].Active, users[i].Created, users[i].Modified);
+			users[i].Password, users[i].Active, users[i].Created, users[i].Modified)
 		if err != nil {
 			log.Fatal(err)
 		}
 		numRows, err := result.RowsAffected()
-		if err != nil ||  numRows != 1 {
+		if err != nil || numRows != 1 {
 			log.Fatal("Error inserting new User", err)
 		}
 		insId, err := result.LastInsertId()
@@ -173,18 +175,18 @@ func main() {
 	}
 	defer stmt.Close() // Prepared statements take up server resources and should be closed after use.
 
-	for i, _ := range projects {
-		result, err := stmt.Exec(projects[i].Id, users[i].Id);
+	for i := range projects {
+		result, err := stmt.Exec(projects[i].Id, users[i].Id)
 		if err != nil {
 			log.Fatal(err)
 		}
 		numRows, err := result.RowsAffected()
-		if err != nil ||  numRows != 1 {
+		if err != nil || numRows != 1 {
 			log.Fatal("Error inserting new relation Project_User", err)
 		}
 	}
 
-//	rows, err = db.Query("SELECT * FROM users")
-//	for rows.Next()
-//	PrintUsers()
+	//	rows, err = db.Query("SELECT * FROM users")
+	//	for rows.Next()
+	//	PrintUsers()
 }
