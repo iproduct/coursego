@@ -37,13 +37,27 @@ func main() {
 		{Name: "Google"},
 		{Name: "Docker Inc."},
 	}
-	db.Create(&companies)
+
+	//Get number of companies
+	var companiesCount int64 = 0
+	result = db.Model(entities.Company{}).Count(&companiesCount) // SELECT * FROM users;
+	if result.Error != nil {
+		log.Fatal(result.Error) // returns error
+	}
+	fmt.Printf("Found %d companies.\n", companiesCount)
+	if companiesCount == 0 {
+		fmt.Println("Creating sample companies:")
+		db.Create(&companies)
+		if result.Error != nil {
+			log.Fatal(result.Error) // returns error
+		}
+	}
 	//Get all companies
 	result = db.Preload(clause.Associations).Find(&companies) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of users: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
+	fmt.Printf("Number of companies: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintCompanies(companies)
 
 	// Insert projects
@@ -91,42 +105,38 @@ func main() {
 			Users:       users,
 		},
 	}
-	result = db.Create(&projects) // pass pointer of data to Create
-	// batch size 100
-	//db.CreateInBatches(users, 100)
+
+	var projectsCount int64 = 0
+	result = db.Model(entities.Company{}).Count(&projectsCount) // SELECT * FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("New projetcs created with IDs: ")
-	for _, user := range projects {
-		fmt.Printf("%d, ", user.ID)
+	fmt.Printf("Found %d projects.\n", projectsCount)
+	if projectsCount == 0 {
+		fmt.Println("Creating sample projects:")
+		result = db.Create(&projects) // pass pointer of data to Create
+		if result.Error != nil {
+			log.Fatal(result.Error) // returns error
+		}
+		fmt.Printf("New projetcs created with IDs: ")
+		for _, user := range projects {
+			fmt.Printf("%d, ", user.ID)
+		}
+		fmt.Println()
 	}
-	fmt.Println()
 
+	//Get all projects
+	result = db.Preload(clause.Associations).Find(&projects) // SELECT * FROM users;
+	if result.Error != nil {
+		log.Fatal(result.Error) // returns error
+	}
+	fmt.Printf("Number of projects: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintProjects(projects)
 
-	// Get all users
-	// db.Session(&gorm.Session{FullSaveAssociations: true}).Updates(&user)
-	// result = db.Joins("Users").Find(&projects)	// SELECT * FROM users;
-	result = db.Preload(clause.Associations).Find(&projects) // SELECT * FROM users with associations
-	if result.Error != nil {
-		log.Fatal(result.Error) // returns error
-	}
 	// Using association mode
 	err = db.Model(&(projects[0])).Association("Users").Find(&users)
 	if err != nil {
 		log.Fatal(result.Error) // returns error
 	}
-	fmt.Printf("Number of all projects: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
-	utils.PrintProjects(projects)
 	fmt.Printf("Users in Project '%s': %v\n", projects[0].Name, users)
-
-	//Print all companies again - projects should be fetched too
-	result = db.Preload(clause.Associations).Find(&companies) // SELECT * FROM companies pre-fetching projects;
-	if result.Error != nil {
-		log.Fatal(result.Error) // returns error
-	}
-	fmt.Printf("Number of companies: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
-	utils.PrintCompanies(companies)
-
 }
