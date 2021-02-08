@@ -30,14 +30,6 @@ func main() {
 	fmt.Printf("Number of users: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintUsers(users)
 
-	// Insert companies
-	companies := []entities.Company{
-		{Name: "Linux Foundation"},
-		{Name: "Sun Microsystems"},
-		{Name: "Google"},
-		{Name: "Docker Inc."},
-	}
-
 	//Get number of companies
 	var companiesCount int64 = 0
 	result = db.Model(entities.Company{}).Count(&companiesCount) // SELECT * FROM users;
@@ -45,6 +37,14 @@ func main() {
 		log.Fatal(result.Error) // returns error
 	}
 	fmt.Printf("Found %d companies.\n", companiesCount)
+
+	// Insert companies if not existing
+	companies := []entities.Company{
+		{Name: "Linux Foundation"},
+		{Name: "Sun Microsystems"},
+		{Name: "Google"},
+		{Name: "Docker Inc."},
+	}
 	if companiesCount == 0 {
 		fmt.Println("Creating sample companies:")
 		db.Create(&companies)
@@ -52,6 +52,7 @@ func main() {
 			log.Fatal(result.Error) // returns error
 		}
 	}
+
 	//Get all companies
 	result = db.Preload(clause.Associations).Find(&companies) // SELECT * FROM users;
 	if result.Error != nil {
@@ -60,7 +61,15 @@ func main() {
 	fmt.Printf("Number of companies: %d\n", result.RowsAffected) // returns found records count, equals `len(users)`
 	utils.PrintCompanies(companies)
 
-	// Insert projects
+	//Get number of projects
+	var projectsCount int64 = 0
+	result = db.Model(entities.Company{}).Count(&projectsCount) // SELECT * FROM users;
+	if result.Error != nil {
+		log.Fatal(result.Error) // returns error
+	}
+	fmt.Printf("Found %d projects.\n", projectsCount)
+
+	// Insert projects if not existing
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
 	t0, _ := time.ParseInLocation(shortForm, "1991-Jan-01", loc)
@@ -105,13 +114,6 @@ func main() {
 			Users:       users,
 		},
 	}
-
-	var projectsCount int64 = 0
-	result = db.Model(entities.Company{}).Count(&projectsCount) // SELECT * FROM users;
-	if result.Error != nil {
-		log.Fatal(result.Error) // returns error
-	}
-	fmt.Printf("Found %d projects.\n", projectsCount)
 	if projectsCount == 0 {
 		fmt.Println("Creating sample projects:")
 		result = db.Create(&projects) // pass pointer of data to Create
