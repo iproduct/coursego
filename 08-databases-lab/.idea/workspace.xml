@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b197c25b-3aa8-4d82-8ae6-7b54d193ccf6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/sql/create.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
