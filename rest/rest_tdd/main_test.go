@@ -1,11 +1,10 @@
-// main_test.go
-
 package main
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/iproduct/coursego/rest/rest_tdd/rest"
 	"log"
 	"net/http"
 	"net/http/httptest"
@@ -14,10 +13,10 @@ import (
 	"testing"
 )
 
-var a App
+var a rest.App
 
 func TestMain(m *testing.M) {
-	a = App{}
+	a = rest.App{}
 	a.Initialize("root", "root", "go_rest_api")
 
 	ensureTableExists()
@@ -36,6 +35,7 @@ func ensureTableExists() {
 }
 
 func clearTable() {
+	a.DB.Exec("CREATE DATABASE IF NOT EXISTS `go_rest_api`")
 	a.DB.Exec("DELETE FROM users")
 	a.DB.Exec("ALTER TABLE users AUTO_INCREMENT = 1")
 }

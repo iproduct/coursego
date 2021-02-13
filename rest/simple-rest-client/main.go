@@ -4,10 +4,11 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
+	"log"
 	"net/http"
 )
 
-const APIUrl = "http://localhost:8088/users"
+const APIURL = "http://localhost:8080/users"
 
 func PrintResponse(resp *http.Response) {
 	// Print the HTTP response status.
@@ -21,27 +22,30 @@ func PrintResponse(resp *http.Response) {
 	}
 
 	if err := scanner.Err(); err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 }
 
 func main() {
-	var resp *http.Response
-	var err error
-
 	// Post new User
-	resp, err = http.Post(APIUrl, "text/json", bytes.NewBuffer([]byte(`{"name":"admin", "email":"admin@gmail.com"}`)))
-	defer resp.Body.Close()
+	body := bytes.NewBuffer([]byte(
+		`{"name":"admin", "email":"admin@gmail.com", "password": "admin", "age": 27, "active": true}`))
+	resp, err := http.Post(APIURL, "application/json", body)
+	//req, err := http.NewRequest("POST", APIURL, body)
+	//req.Header.Add("Accept", `Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8`)
+	//req.Header.Add("Content-Type", `application/json`)
+	//resp, err := http.DefaultClient.Do(req)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
+	defer resp.Body.Close()
 	PrintResponse(resp)
 
 	// Get all Users
-	resp, err = http.Get(APIUrl)
+	resp, err = http.Get(APIURL)
 	defer resp.Body.Close()
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	PrintResponse(resp)
 }

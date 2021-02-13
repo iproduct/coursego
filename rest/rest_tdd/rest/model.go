@@ -1,6 +1,6 @@
 // model.go
 
-package main
+package rest
 
 import (
 	"database/sql"
@@ -8,9 +8,12 @@ import (
 )
 
 type user struct {
-	ID   int    `json:"id"`
-	Name string `json:"name"`
-	Age  int    `json:"age"`
+	ID   int    	`json:"id"`
+	Name string 	`json:"name,omitempty"`
+	Email string 	`json:"email,omitempty"`
+	Password string `json:"password,omitempty"`
+	Age  int    	`json:"age,omitempty"`
+	Active bool 	`json:"active,omitempty"`
 }
 
 func (u *user) getUser(db *sql.DB) error {

@@ -51,6 +51,10 @@ func (c *MongoStore) GetAll() ([]blog.Post, error) {
 		}
 		posts = append(posts, result)
 	}
+	err = cur.Close(ctx)
+	if err != nil {
+		return nil, fmt.Errorf("failed to close cursor: %w", err)
+	}
 	if err := cur.Err(); err != nil {
 		return nil, fmt.Errorf("error iterating posts: %w", err)
 	}

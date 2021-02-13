@@ -14,10 +14,7 @@ var templ = template.Must(template.New("qr").Parse(templateStr))
 func main() {
 	flag.Parse()
 	http.Handle("/", http.HandlerFunc(QR))
-	err := http.ListenAndServe(*addr, nil)
-	if err != nil {
-		log.Fatal("ListenAndServe:", err)
-	}
+	log.Fatal(http.ListenAndServe(*addr, nil))
 }
 
 // QR http handler function return the HTML template with QR code for the input link
@@ -38,9 +35,9 @@ const templateStr = `
 <br>
 <br>
 {{end}}
-<form action="/" name=f method="GET"><input maxLength=1024 size=70
-name=s value="" title="Text to QR Encode"><input type=submit
-value="Show QR" name=qr>
+<form action="/" name=f method="GET">
+<input maxLength=1024 size=70 name="s" value="" title="Text to QR Encode">
+<input type=submit value="Show QR" name=qr>
 </form>
 </body>
 </html>

@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b197c25b-3aa8-4d82-8ae6-7b54d193ccf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../blog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/blog/blog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/container/in-memory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/container/mongo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/container/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/templates/create.tmpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/templates/index.tmpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest/.idea/rest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

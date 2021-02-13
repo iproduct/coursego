@@ -12,6 +12,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer resp.Body.Close()
 
 	fmt.Println("Response status:", resp.Status)
 	scanner := bufio.NewScanner(resp.Body)
