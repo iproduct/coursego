@@ -1,0 +1,11 @@
+*.exe
+*.dll
+*.so
+*.dylib
+*.pb.go
+
+.vscode
+pkg
+bin
+vendor
+

@@ -1,0 +1,2 @@
+mkdir -p generated
+protoc --go_out=./generated --go-grpc_out=./generated --proto_path=proto  math.proto
