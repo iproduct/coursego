@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protobuf;
+
+option go_package = "github.com/iproduct/coursego/10-grpc-lab/helloworld";
+
+service HelloService {
+  rpc SayHello(NameRequest) returns (HelloResponse) {}
+}
+
+message NameRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
