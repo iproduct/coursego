@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protobuf;
+
+option go_package = "github.com/iproduct/coursego/10-grpc-lab/mathmax";
+
+service Math {
+  rpc Max(stream IntRequest) returns (stream IntResponse) {}
+}
+
+message IntRequest {
+  int32 num = 1;
+}
+
+message IntResponse {
+  int32 num = 1;
+}

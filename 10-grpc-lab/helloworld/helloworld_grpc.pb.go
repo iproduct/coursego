@@ -14,7 +14,7 @@ import (
 // Requires gRPC-Go v1.32.0 or later.
 const _ = grpc.SupportPackageIsVersion7
 
-// HelloServiceClient is the client API for HelloService service.
+// HelloServiceClient is the hello-bidi-streaming-client API for HelloService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type HelloServiceClient interface {
@@ -38,7 +38,7 @@ func (c *helloServiceClient) SayHello(ctx context.Context, in *NameRequest, opts
 	return out, nil
 }
 
-// HelloServiceServer is the server API for HelloService service.
+// HelloServiceServer is the hello-server API for HelloService service.
 // All implementations must embed UnimplementedHelloServiceServer
 // for forward compatibility
 type HelloServiceServer interface {

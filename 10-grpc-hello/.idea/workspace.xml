@@ -2,67 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40112966-50dc-4326-8d48-b352e34344d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/.idea/10-grpc-bidi-streaming.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/proto/math.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/10-grpc-hello.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greeter_client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greeter_server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helloworld/helloworld.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/10-grpc-route-guide.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/data/data.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/data/x509/ca_cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/data/x509/server_cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/data/x509/server_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-route-guide/testdata/route_guide_db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/.idea/10-grpc-todos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/api/proto/v1/todo_service_second.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/api/proto/v1/todo_service_third.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/api/swagger/v1/todo_service.swagger.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/server-grpc-rest-middleware/server-grpc-rest-middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/server-grpc-rest/server-grpc-rest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service_grpc.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/middleware/logger-grpc/logger-grpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/middleware/logger-rest/logger-rest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/middleware/middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/middleware/tracer-rest/tracer-rest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/server/rest-server/rest-server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/api/annotations.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/api/http.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/api/httpbody.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/rpc/code.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/rpc/error_details.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/google/rpc/status.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/protoc-gen-swagger/options/annotations.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/protoc-gen-swagger/options/openapiv2.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-grpc-todos/third_party/protoc-gen.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-server/bidi-streaming-server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/hello-client/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/hello-server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/helloworld/helloworld_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/helloworld/helloworld_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +41,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
