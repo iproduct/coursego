@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531bf2e3-ea97-44d7-b9ab-21c6ac5203d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../simple/regexp/regexp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader-using-context/downloader-using-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/downloader-using-context/downloader-using-context.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/downloader.go" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/downloader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,16 +59,6 @@
       <filePath value="$PROJECT_DIR$/downloader/downloader.go" />
       <package value="github.com/iproduct/coursego/06-coroutines-channels/downloader" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="06-goroutines-channels" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>

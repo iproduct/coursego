@@ -22,62 +22,57 @@ func main() {
 
 	// create stream
 	client := pb.NewMathClient(conn)
-	stream, err := client.Max(context.Background())
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+	stream, err := client.Max(ctx)
 	if err != nil {
 		log.Fatalf("openn stream error %v", err)
 	}
 
 	var max int32
-	ctx := stream.Context()
-	done := make(chan bool)
 
-	// first goroutine sends random increasing numbers to stream
-	// and closes int after 10 iterations
-	go func() {
-		for i := 1; i <= 100; i++ {
-			// generate random nummber and send it to stream
-			rnd := int32(rand.Intn(i))
-			req := pb.IntRequest{Num: rnd}
-			if err := stream.Send(&req); err != nil {
-				log.Fatalf("can not send %v", err)
-			}
-			log.Printf("%d sent", req.Num)
-			time.Sleep(time.Millisecond * 200)
-		}
-		if err := stream.CloseSend(); err != nil {
-			log.Println(err)
-		}
-	}()
-
-	// second goroutine receives data from stream
-	// and saves result in max variable
-	//
-	// if stream is finished it closes done channel
+	// start receiving goroutine
 	go func() {
 		for {
 			resp, err := stream.Recv()
 			if err == io.EOF {
-				close(done)
+				cancel()
 				return
 			}
 			if err != nil {
-				log.Fatalf("can not receive %v", err)
+				log.Printf("can not receive: %v", err)
+				return
 			}
 			max = resp.GetNum()
-			log.Printf("New max received: %d", max)
+			log.Printf("new max received: %d", max)
 		}
 	}()
 
-	// third goroutine closes done channel
-	// if context is done
-	go func() {
-		<-ctx.Done()
-		if err := ctx.Err(); err != nil {
-			log.Println(err)
-		}
-		close(done)
-	}()
+	// cancel the sending
+	//go func() {
+	//	<-time.After(time.Second * 2)
+	//	cancel()
+	//}()
 
-	<-done
+	sendFor:
+	for i := 1; i <= 100; i++ {
+		// generate random nummber and send it to stream
+		rnd := int32(rand.Intn(i))
+		req := pb.IntRequest{Num: rnd}
+		if err := stream.Send(&req); err != nil {
+			log.Fatalf("can not send %v", err)
+		}
+		log.Printf("%d sent", req.Num)
+		select {
+		case <-time.After(time.Millisecond * 200):
+		case <-stream.Context().Done():
+			log.Println("sending is canceled.")
+			break sendFor;
+		}
+	}
+	if err := stream.CloseSend(); err != nil {
+		log.Println(err)
+	}
+
 	log.Printf("finished with max=%d", max)
 }
