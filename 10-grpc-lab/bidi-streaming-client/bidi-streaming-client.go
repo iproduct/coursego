@@ -18,6 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("can not connect with server %v", err)
 	}
+	defer conn.Close()
 
 	// create stream
 	client := pb.NewMathClient(conn)
