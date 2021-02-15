@@ -30,7 +30,6 @@ func main() {
 	}
 
 	var max int32
-	ctx := stream.Context()
 	done := make(chan bool)
 
 	// first goroutine sends random increasing numbers to stream
@@ -68,16 +67,6 @@ func main() {
 			max = resp.Result
 			log.Printf("new max %d received", max)
 		}
-	}()
-
-	// third goroutine closes done channel
-	// if context is done
-	go func() {
-		<-ctx.Done()
-		if err := ctx.Err(); err != nil {
-			log.Println(err)
-		}
-		close(done)
 	}()
 
 	<-done
