@@ -96,5 +96,4 @@ var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 var TodoSchema, _ = graphql.NewSchema(graphql.SchemaConfig{
 	Query:    rootQuery,
 	Mutation: rootMutation,
-	//Types: []graphql.Type{todoType},
 })

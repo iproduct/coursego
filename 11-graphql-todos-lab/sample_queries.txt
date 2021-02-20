@@ -1,3 +1,5 @@
+// queries
+
 {
   todo(id: "b") {
     id
@@ -5,6 +7,9 @@
     done
   }
 }
+
+
+//mutations
 
 mutation _ {
   createTodo(text: "My+new+todo") {
@@ -14,14 +19,8 @@ mutation _ {
   }
 }
 
-query GetTypes{
-  __type(name:"Todo"){
-    fields {
-      name
-      description
-    }
-  }
-}
+
+// metadata queries
 
 query GetSchema {
   __schema {
@@ -51,3 +50,31 @@ query QueryAndMutationTypes{
     }
   }
 }
+
+query GetType{
+  __type(name:"Todo"){
+    fields {
+      name
+      description
+    }
+  }
+}
+
+
+query GetTypeDetails{
+  __type(name: "Todo") {
+    name
+    fields {
+      name
+      type {
+        name
+        kind
+        ofType {
+          name
+          kind
+        }
+      }
+    }
+  }
+}
+
