@@ -36,6 +36,7 @@ func main() {
 	h := gqhandler.New(&gqhandler.Config{
 		Schema: &Schema,
 		Pretty: true,
+		GraphiQL: true,
 	})
 
 	// serve a GraphQL endpoint at `/graphql`

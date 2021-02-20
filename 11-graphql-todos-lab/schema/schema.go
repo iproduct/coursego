@@ -32,8 +32,7 @@ var rootQuery = graphql.NewObject(graphql.ObjectConfig{
 			Description: "Get single todo.",
 			Args: graphql.FieldConfigArgument{
 				"id": &graphql.ArgumentConfig{
-					Type:         graphql.String,
-					DefaultValue: len(model.TodoList) - 1,
+					Type: graphql.NewNonNull(graphql.String),
 				},
 			},
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
@@ -45,7 +44,7 @@ var rootQuery = graphql.NewObject(graphql.ObjectConfig{
 						}
 					}
 				}
-				return model.Todo{}, nil
+				return nil, fmt.Errorf("TODO with id='%s' not found", idQuery)
 			},
 		},
 		"lastTodo": &graphql.Field{

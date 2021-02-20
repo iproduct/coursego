@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type.">
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-go/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-go/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
@@ -86,7 +87,8 @@
     <MESSAGE value="lab updated and bug removed - on line 70 in schema.go: 'Fields: &amp;graphql.Fields{ ...' -&gt;  'Fields: graphql.Fields{ ...' - changed to value type." />
     <MESSAGE value="sample_queries.txt updated with metadata queries" />
     <MESSAGE value="app.js updated with correct GrpahQL fields for list, create, and update, JSON.parse() removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="app.js updated with correct GrpahQL fields for list, create, and update, JSON.parse() removed" />
+    <MESSAGE value="todo GraphQL update completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo GraphQL update completed" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
