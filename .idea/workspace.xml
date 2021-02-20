@@ -2,90 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31465a6b-a36a-4921-a0c4-dd12177516a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-blog/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-http/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/rest_tdd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/rest_tdd/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/rest_tdd/rest/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/rest_tdd/rest/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/simple-rest-client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/simple-rest-service-apply/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/simple-rest-service-errorhandling/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/simple-rest-service-middleware/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-rest/simple-rest-service/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/.idea/09-blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/blog/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/container/in-memory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/container/mongo.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/container/mongo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/container/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/create.tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/templates/create.tmpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/index.tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-blog/templates/index.tmpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/.idea/http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/.idea/09-http.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/http/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore-simple/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore-simple/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore-simple/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore-simple/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.air.conf" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.air.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.idea/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.idea/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/.realize.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/.realize.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/books/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/books/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/static/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/static/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/static/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/static/css/materialize.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/static/js/materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/static/js/materialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/static/js/materialize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/static/js/materialize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/templates/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/templates/favs.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/templates/favs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/templates/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/bookstore/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/bookstore/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/json/books/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/json/books/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/server-web-page/server-web-page.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/server-web-page/server-web-page.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/simple-client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/simple-client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/simple-server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/simple-server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/templates-text/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/templates-text/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/templates-text/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/templates-text/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/url-params/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/url-params/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/dataSources/375f50fa-6e93-4660-962f-22de741ccb88.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/dataSources/375f50fa-6e93-4660-962f-22de741ccb88/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/rest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/rest_tdd/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/rest_tdd/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/rest_tdd/rest/app.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/rest_tdd/rest/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/simple-rest-client/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/simple-rest-service-apply/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/simple-rest-service-errorhandling/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/simple-rest-service-middleware/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/simple-rest-service/main.go" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/.idea/13-generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-generics/simple-generics/simple-generics.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

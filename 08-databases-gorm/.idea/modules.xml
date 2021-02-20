@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/08-databases.iml" filepath="$PROJECT_DIR$/.idea/08-databases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/08-databases-gorm.iml" filepath="$PROJECT_DIR$/.idea/08-databases-gorm.iml" />
     </modules>
   </component>
 </project>

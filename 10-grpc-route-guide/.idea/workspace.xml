@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="169d1cd0-20be-41d8-aa07-1768397c3529" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

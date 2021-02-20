@@ -1,0 +1,15 @@
+{
+  todo(id: "b") {
+    id
+    text
+    done
+  }
+}
+
+mutation _ {
+  createTodo(text: "My+new+todo") {
+    id
+    text
+    done
+  }
+}

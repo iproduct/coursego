@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531bf2e3-ea97-44d7-b9ab-21c6ac5203d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/13-generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/simple-generics/simple-generics.go2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/bidi-streaming-client/bidi-streaming-client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/client/client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

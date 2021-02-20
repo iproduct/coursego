@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/08-databases-gorm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/11-graphql-examples.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/concurrent-resolvers/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/context/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/crud/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/crud/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/custom-scalar-type/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/hello-world/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/http-post/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/http/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/http/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/httpdynamic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/httpdynamic/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/httpdynamic/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/modify-context/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/sample_queries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/sql-nullstring/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/sql-nullstring/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/schema/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-examples/todo/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/.idea/11-graphql-go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/posts/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/sample_queries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/11-graphql-mongodb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/environment/Connection.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/databaseConfiguration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/environmentConfiguration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_queries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/11-graphql-todos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/sample_queries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/schema/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/13-generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13-generics/simple-generics/simple-generics.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/08-databases.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1ok7Zb3VNyY1Y9EbuGenletic7w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseGO\git\coursego\11-graphql-mongodb" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/11-graphql-mongodb" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="11-graphql-mongodb" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/iproduct/coursego/11-graphql-mongodb" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/11-graphql-mongodb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

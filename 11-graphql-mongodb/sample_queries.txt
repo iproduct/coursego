@@ -1,0 +1,108 @@
+curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" -d "query Root{ latestPost }"
+curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" -d "query Root{ latestPost, postsCount }"
+
+
+
+--
+
+query RootQuery{ latestPost }
+
+{
+  latestPost,
+  postsCount
+}
+
+mutation _ {
+  createTodo(text: "My+new+todo") {
+    id
+    text
+    done
+  }
+}
+
+query all_todos{
+  todoList {
+    id
+    text
+    done
+  }
+}
+
+{
+  hero {
+    name
+  }
+}
+
+query HeroNameAndFriends {
+  hero {
+    name
+    friends {
+      name
+    }
+  }
+}
+
+{
+  hero {
+    name
+    # Queries can have comments!
+    friends {
+      name
+    }
+  }
+}
+
+{
+  human(id: "1000") {
+    name
+    homePlanet
+  }
+}
+
+
+{
+   __type(name:"Book") {
+      fields {
+         name
+         description
+      }
+   }
+}
+
+{
+  __schema {
+    types {
+      name
+      fields {
+        name
+        description
+      }
+    }
+  }
+}
+
+mutation {
+  create(name: "Book C", description: "Good Book", price: 35){
+    name
+    price
+    description
+  }
+}
+
+
+query {
+  list {
+    description
+    name
+    price
+  }
+}
+
+query {
+  book(name: "Book C") {
+    description
+    name
+    price
+  }
+}
