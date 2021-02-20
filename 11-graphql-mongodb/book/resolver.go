@@ -2,6 +2,7 @@ package book
 
 import (
 	"context"
+	"fmt"
 	"github.com/graphql-go/graphql"
 )
 
@@ -21,7 +22,6 @@ var productType = graphql.NewObject(
 			"price": &graphql.Field{
 				Type: graphql.Float,
 			},
-
 		},
 	},
 )
@@ -30,7 +30,25 @@ var queryType = graphql.NewObject(
 	graphql.ObjectConfig{
 		Name: "Query",
 		Fields: graphql.Fields{
-			"book": &graphql.Field{
+			"bookById": &graphql.Field{
+				Type:        productType,
+				Description: "Get book by id",
+				Args: graphql.FieldConfigArgument{
+					"id": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					var result interface{}
+					id, ok := p.Args["id"].(string)
+					if ok {
+						// Find product
+						result = GetBookByName(context.Background(), id)
+					}
+					return result, nil
+				},
+			},
+			"bookByName": &graphql.Field{
 				Type:        productType,
 				Description: "Get book by name",
 				Args: graphql.FieldConfigArgument{
@@ -82,7 +100,7 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 					Type: graphql.NewNonNull(graphql.Float),
 				},
 				"description": &graphql.ArgumentConfig{
-					Type: graphql.NewNonNull(graphql.String),
+					Type: graphql.String,
 				},
 			},
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
@@ -103,6 +121,9 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 			Type:        productType,
 			Description: "Update book by name",
 			Args: graphql.FieldConfigArgument{
+				"id": &graphql.ArgumentConfig{
+					Type: graphql.NewNonNull(graphql.String),
+				},
 				"name": &graphql.ArgumentConfig{
 					Type: graphql.NewNonNull(graphql.String),
 				},
@@ -114,7 +135,13 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 				},
 			},
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
-				book := Book{}
+				id, idOk := params.Args["id"].(string)
+				if !idOk {
+					return nil, fmt.Errorf("error updating book: ID is missing")
+				}
+				book := Book{
+					ID: id,
+				}
 				if name, nameOk := params.Args["name"].(string); nameOk {
 					book.Name = name
 				}
@@ -142,10 +169,7 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 			},
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
 				name, _ := params.Args["id"].(string)
-				if result, err := DeleteBook(context.Background(), name); err != nil {
-					return result.DeletedCount, err
-				}
-				return name, nil
+				return DeleteBook(context.Background(), name)
 			},
 		},
 	},

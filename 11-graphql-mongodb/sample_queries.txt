@@ -1,111 +1,65 @@
-curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" -d "query Root{ latestPost }"
-curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" -d "query Root{ latestPost, postsCount }"
+// New - named queries and mutations
 
-
-
---
-
-query RootQuery{ latestPost }
-
-{
-  latestPost,
-  postsCount
-}
-
-mutation _ {
-  createTodo(text: "My+new+todo") {
+query GetAllBooks{
+  list{
     id
-    text
-    done
+    name
+    description
+    price
   }
 }
 
-query all_todos{
-  todoList {
+query GetBookByID($id: String!){
+  bookById(id: $id){
     id
-    text
-    done
-  }
-}
-
-{
-  hero {
     name
-  }
-}
-
-query HeroNameAndFriends {
-  hero {
-    name
-    friends {
-      name
-    }
-  }
-}
-
-{
-  hero {
-    name
-    # Queries can have comments!
-    friends {
-      name
-    }
-  }
-}
-
-{
-  human(id: "1000") {
-    name
-    homePlanet
-  }
-}
-
-
-{
-   __type(name:"Book") {
-      fields {
-         name
-         description
-      }
-   }
-}
-
-{
-  __schema {
-    types {
-      name
-      fields {
-        name
-        description
-      }
-    }
-  }
-}
-
-mutation {
-  create(name: "Book C", description: "Good Book", price: 35){
-    name
-    price
     description
-  }
-}
-
-
-query {
-  list {
-    description
-    name
     price
   }
 }
 
-query {
-  book(name: "Book C") {
-    description
+mutation Create($name: String!, $description: String, $price: Float!){
+  create(name: $name, description: $description, price: $price) {
+    id
     name
+    description
     price
   }
 }
+
+mutation Update($id: String!, $name: String!, $description: String, $price: Float!){
+  update(id:$id, name: $name, description: $description, price: $price) {
+    id
+    name
+    description
+    price
+  }
+}
+
+mutation DeleteBookByID($id: String!){
+  delete(id:$id) {
+    id
+    name
+    description
+    price
+  }
+}
+
+
+
+
+// GraphQL variables for mutations
+
+{
+  "id": "51f21351-4066-475f-ad3e-51b40f5d7131",
+  "name": "GraphQL with Golang is Easy",
+  "description": "Implementing GraphQL endpoints in Go ...",
+  "price": 25.99
+}
+
+
+// OLD
+// old queries and mutations
 
 mutation {
   update(name: "GraphQL Basics 6", price: 120.5){
@@ -122,15 +76,13 @@ mutation {
   }
 }
 
-
 mutation {
-  create(name: "GraphQL Basics 6" description: "Good Book for GraphQL", price: 35){
+  create(name: "GraphQL Basics 6", description: "Good Book for GraphQL", price: 35){
     name
     price
     description
   }
 }
-
 
 query {
   list {

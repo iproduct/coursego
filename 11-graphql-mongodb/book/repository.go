@@ -2,8 +2,8 @@ package book
 
 import (
 	"context"
+	"fmt"
 	"github.com/google/uuid"
-	"go.mongodb.org/mongo-driver/mongo"
 	"log"
 
 	"github.com/iproduct/coursego/11-graphql-mongodb/infrastructure"
@@ -11,6 +11,13 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
+
+func GetBookByID(ctx context.Context, id string) (result interface{}) {
+	var book Book
+	data := infrastructure.Mongodb.Collection("booklist").FindOne(ctx, bson.M{"id": id})
+	data.Decode(&book)
+	return book
+}
 
 func GetBookByName(ctx context.Context, name string) (result interface{}) {
 	var book Book
@@ -47,17 +54,30 @@ func InsertBook(ctx context.Context, book Book) error {
 }
 
 func UpdateBook(ctx context.Context, book Book) error {
-	filter := bson.M{"name": book.Name}
+	filter := bson.M{"id": book.ID}
 	update := bson.M{"$set": book}
-	upsertBool := true
+	upsertBool := false
 	updateOption := options.UpdateOptions{
 		Upsert: &upsertBool,
 	}
-	_, err := infrastructure.Mongodb.Collection("booklist").UpdateOne(ctx, filter, update, &updateOption)
-	return err
+	updateResult, err := infrastructure.Mongodb.Collection("booklist").UpdateOne(ctx, filter, update, &updateOption)
+	if err != nil {
+		return err
+	}
+	if updateResult.MatchedCount != 1 {
+		return fmt.Errorf("error updating  book: %v: book not found", book)
+	}
+	if updateResult.ModifiedCount != 1 {
+		return fmt.Errorf("error updating  book: %v: book not updated", book)
+	}
+	return nil
 }
 
-func DeleteBook(ctx context.Context, ID string) (*mongo.DeleteResult, error) {
-	delResult, err := infrastructure.Mongodb.Collection("booklist").DeleteOne(ctx, bson.M{"id": ID})
-	return delResult, err
+func DeleteBook(ctx context.Context, id string) (Book, error) {
+	delResult := infrastructure.Mongodb.Collection("booklist").FindOneAndDelete(ctx, bson.M{"id": id})
+	var book Book
+	if delResult.Decode(&book); delResult.Err() != nil {
+		return book, fmt.Errorf("Error deleting book with ID='%s': %v", id, delResult.Err())
+	}
+	return book, nil
 }
