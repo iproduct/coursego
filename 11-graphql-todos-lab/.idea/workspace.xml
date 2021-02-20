@@ -4,7 +4,9 @@
     <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type.">
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/sample_queries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/sample_queries.txt" afterDir="false" />
     </list>
@@ -83,7 +85,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type." />
     <MESSAGE value="lab updated and bug removed - on line 70 in schema.go: 'Fields: &amp;graphql.Fields{ ...' -&gt;  'Fields: graphql.Fields{ ...' - changed to value type." />
-    <option name="LAST_COMMIT_MESSAGE" value="lab updated and bug removed - on line 70 in schema.go: 'Fields: &amp;graphql.Fields{ ...' -&gt;  'Fields: graphql.Fields{ ...' - changed to value type." />
+    <MESSAGE value="sample_queries.txt updated with metadata queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="sample_queries.txt updated with metadata queries" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

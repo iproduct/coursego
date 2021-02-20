@@ -1,10 +1,9 @@
 var updateTodo = function(id, isDone){
   $.ajax({
-    url: '/graphql?query=mutation+_{updateTodo(id:"' + id + '",done:' + isDone + '){id,text,done}}'
+    url: '/graphql?query=mutation+_{update(id:"' + id + '",done:' + isDone + '){id,text,done}}'
   }).done(function(data) {
     console.log(data);
-    var dataParsed = JSON.parse(data);
-    var updatedTodo = dataParsed.data.updateTodo;
+    var updatedTodo = data.data.update;
     if (updatedTodo.done) {
       $('#' + updatedTodo.id).parent().parent().parent().addClass('todo-done');
     } else {
@@ -13,9 +12,7 @@ var updateTodo = function(id, isDone){
   });
 };
 
-var handleTodoList = function(object) {
-  var todos = object;
-
+var handleTodoList = function(todos) {
   if (!todos.length) {
     $('.todo-list-container').append('<p>There are no tasks for you today</p>');
     return
@@ -41,11 +38,10 @@ var handleTodoList = function(object) {
 
 var loadTodos = function() {
   $.ajax({
-    url: "/graphql?query={todoList{id,text,done}}"
+    url: "/graphql?query={list{id,text,done}}"
   }).done(function(data) {
     console.log(data);
-    var dataParsed = JSON.parse(data);
-    handleTodoList(dataParsed.data.todoList);
+    handleTodoList(data.data.list);
   });
 };
 
@@ -56,11 +52,10 @@ var addTodo = function(todoText) {
   }
 
   $.ajax({
-    url: '/graphql?query=mutation+_{createTodo(text:"' + todoText + '"){id,text,done}}'
+    url: '/graphql?query=mutation+_{create(text:"' + todoText + '"){id,text,done}}'
   }).done(function(data) {
     console.log(data);
-    var dataParsed = JSON.parse(data);
-    var todoList = [dataParsed.data.createTodo];
+    var todoList = [data.data.create];
     handleTodoList(todoList);
   });
 };

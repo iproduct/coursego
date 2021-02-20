@@ -30,9 +30,8 @@ func executeQuery(query string, schema graphql.Schema) *graphql.Result {
 
 func main() {
 	http.Handle("/graphql", gqhandler.New(&gqhandler.Config{
-		Schema:   &schema.TodoSchema,
-		Pretty:   true,
-		GraphiQL: true,
+		Schema: &schema.TodoSchema,
+		Pretty: true,
 	}))
 	//http.HandleFunc("/graphql", func(writer http.ResponseWriter, request *http.Request) {
 	//	result := executeQuery(request.URL.Query().Get("query"), schema.TodoSchema)
@@ -40,8 +39,10 @@ func main() {
 	//})
 
 	fs := http.FileServer(http.Dir("static"))
-	http.Handle("/static", fs)
-	fmt.Printf("Server is running on port 8080\n")
+	http.Handle("/", fs)
+	fmt.Printf("Server is running on http://localhost:8080\n")
+
+	// demo sample query
 	fmt.Printf("TODOS: %v", executeQuery("{list{id text done}}", schema.TodoSchema))
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
