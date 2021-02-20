@@ -1,0 +1,53 @@
+{
+  todo(id: "b") {
+    id
+    text
+    done
+  }
+}
+
+mutation _ {
+  createTodo(text: "My+new+todo") {
+    id
+    text
+    done
+  }
+}
+
+query GetTypes{
+  __type(name:"Todo"){
+    fields {
+      name
+      description
+    }
+  }
+}
+
+query GetSchema {
+  __schema {
+    types {
+      name
+      fields{
+         name
+      	 description
+      }
+    }
+  }
+}
+
+query QueryAndMutationTypes{
+  __schema {
+    queryType {
+      name
+      fields {
+        name
+      }
+    }
+    mutationType {
+      name
+      fields {
+        name
+      }
+    }
+  }
+}

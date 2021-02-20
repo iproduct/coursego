@@ -30,8 +30,9 @@ func executeQuery(query string, schema graphql.Schema) *graphql.Result {
 
 func main() {
 	http.Handle("/graphql", gqhandler.New(&gqhandler.Config{
-		Schema: &schema.TodoSchema,
-		Pretty: true,
+		Schema:   &schema.TodoSchema,
+		Pretty:   true,
+		GraphiQL: true,
 	}))
 	//http.HandleFunc("/graphql", func(writer http.ResponseWriter, request *http.Request) {
 	//	result := executeQuery(request.URL.Query().Get("query"), schema.TodoSchema)

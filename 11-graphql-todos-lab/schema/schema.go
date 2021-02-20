@@ -67,7 +67,7 @@ var rootQuery = graphql.NewObject(graphql.ObjectConfig{
 
 var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 	Name: "RootMutation",
-	Fields: &graphql.Fields{
+	Fields: graphql.Fields{
 		"create": &graphql.Field{
 			Type:        todoType,
 			Description: "Create new todo.",
@@ -96,4 +96,5 @@ var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 var TodoSchema, _ = graphql.NewSchema(graphql.SchemaConfig{
 	Query:    rootQuery,
 	Mutation: rootMutation,
+	//Types: []graphql.Type{todoType},
 })
