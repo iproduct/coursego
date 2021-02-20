@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="056d1baa-8d77-421c-8c5b-87e5875dc338" name="Default Changelist" comment="graphql lab added">
-      <change afterPath="$PROJECT_DIR$/.idea/11-graphql-simple-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/11-graphql-todos-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/schema/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,17 +49,19 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1okOnZoG6vrYz7NiGy7PkMpjVZq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
@@ -86,8 +95,10 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="graphql lab added" />
-    <option name="LAST_COMMIT_MESSAGE" value="graphql lab added" />
+    <MESSAGE value="graphql simple demo added" />
+    <option name="LAST_COMMIT_MESSAGE" value="graphql simple demo added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

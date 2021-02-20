@@ -106,3 +106,37 @@ query {
     price
   }
 }
+
+mutation {
+  update(name: "GraphQL Basics 6", price: 120.5){
+    id
+    description
+    name
+    price
+  }
+}
+
+mutation {
+  delete(id: "e975fc2b-d4df-4acc-8d04-8d07e1cce3f1"){
+    name
+  }
+}
+
+
+mutation {
+  create(name: "GraphQL Basics 6" description: "Good Book for GraphQL", price: 35){
+    name
+    price
+    description
+  }
+}
+
+
+query {
+  list {
+    id
+    description
+    name
+    price
+  }
+}

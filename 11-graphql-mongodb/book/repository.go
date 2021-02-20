@@ -3,6 +3,7 @@ package book
 import (
 	"context"
 	"github.com/google/uuid"
+	"go.mongodb.org/mongo-driver/mongo"
 	"log"
 
 	"github.com/iproduct/coursego/11-graphql-mongodb/infrastructure"
@@ -56,7 +57,7 @@ func UpdateBook(ctx context.Context, book Book) error {
 	return err
 }
 
-func DeleteBook(ctx context.Context, name string) error {
-	_, err := infrastructure.Mongodb.Collection("booklist").DeleteOne(ctx, bson.M{"name": name})
-	return err
+func DeleteBook(ctx context.Context, ID string) (*mongo.DeleteResult, error) {
+	delResult, err := infrastructure.Mongodb.Collection("booklist").DeleteOne(ctx, bson.M{"id": ID})
+	return delResult, err
 }

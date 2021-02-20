@@ -136,14 +136,14 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 			Type:        productType,
 			Description: "Delete book by name",
 			Args: graphql.FieldConfigArgument{
-				"name": &graphql.ArgumentConfig{
+				"id": &graphql.ArgumentConfig{
 					Type: graphql.NewNonNull(graphql.String),
 				},
 			},
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
-				name, _ := params.Args["name"].(string)
-				if err := DeleteBook(context.Background(), name); err != nil {
-					return nil, err
+				name, _ := params.Args["id"].(string)
+				if result, err := DeleteBook(context.Background(), name); err != nil {
+					return result.DeletedCount, err
 				}
 				return name, nil
 			},
