@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/11-graphql-todos-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/book/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/book/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/book/resolver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/book/resolver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/book/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/book/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/sample_queries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/sample_queries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-simple-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-simple-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-simple-lab/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-simple-lab/schema/schema.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1okUuWl3eFGVZMkNg3wDstUCaPI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseGO\git\coursego\11-graphql-todos-lab\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CourseGO\git\coursego\11-graphql-todos-lab\model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/11-graphql-todos-lab" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="11-graphql-todos-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/iproduct/coursego/11-graphql-todos-lab" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/11-graphql-todos-lab" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/schema/schema.go</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
