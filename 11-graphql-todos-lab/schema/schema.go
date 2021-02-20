@@ -87,7 +87,34 @@ var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 					model.TodoList = append(model.TodoList, newTodo)
 					return newTodo, nil
 				}
-				return nil, fmt.Errorf("error cresating todo: %v", params.Args["text"])
+				return nil, fmt.Errorf("error updating todo: %v", params.Args["text"])
+			},
+		},
+		"update": &graphql.Field{
+			Type:        todoType,
+			Description: "Update todo done status.",
+			Args: graphql.FieldConfigArgument{
+				"id": &graphql.ArgumentConfig{
+					Type: graphql.NewNonNull(graphql.String),
+				},
+				"done": &graphql.ArgumentConfig{
+					Type: graphql.NewNonNull(graphql.Boolean),
+				},
+			},
+			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
+				id, ok1 := params.Args["id"].(string)
+				done, ok2 := params.Args["done"].(bool)
+				if ok1 && ok2 {
+					// Search list for todo with id and change the done status
+					for i := 0; i < len(model.TodoList); i++ {
+						if model.TodoList[i].ID == id {
+							model.TodoList[i].Done = done
+							return model.TodoList[i], nil
+						}
+					}
+					return nil, fmt.Errorf("error updating todo: id='%s' not found", id)
+				}
+				return nil, fmt.Errorf("error updating todo with id='%v'", params.Args["id"])
 			},
 		},
 	},

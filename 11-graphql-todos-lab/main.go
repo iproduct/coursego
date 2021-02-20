@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/google/uuid"
 	"github.com/graphql-go/graphql"
 	gqhandler "github.com/graphql-go/graphql-go-handler"
 	"github.com/iproduct/coursego/11-graphql-todos-lab/model"
@@ -11,9 +12,9 @@ import (
 )
 
 func init() {
-	todo1 := model.Todo{ID: "a", Text: "A todo not to forget", Done: false}
-	todo2 := model.Todo{ID: "b", Text: "This is the most important", Done: false}
-	todo3 := model.Todo{ID: "c", Text: "Please do this or else", Done: false}
+	todo1 := model.Todo{ID: uuid.New().String(), Text: "A todo not to forget", Done: false}
+	todo2 := model.Todo{ID: uuid.New().String(), Text: "This is the most important", Done: false}
+	todo3 := model.Todo{ID: uuid.New().String(), Text: "Please do this or else", Done: false}
 	model.TodoList = append(model.TodoList, todo1, todo2, todo3)
 }
 
