@@ -9,6 +9,7 @@ import (
 	en_translations "github.com/go-playground/validator/v10/translations/en"
 	"github.com/gorilla/mux"
 	"github.com/iproduct/coursego/moduleslab/dao"
+	"github.com/iproduct/coursego/moduleslab/daomysql"
 	"github.com/iproduct/coursego/moduleslab/model"
 	"golang.org/x/crypto/bcrypt"
 	"log"
@@ -17,14 +18,14 @@ import (
 )
 
 type App struct {
-	Router *mux.Router
-	Users  dao.UserRepo
-	Validator *validator.Validate
+	Router     *mux.Router
+	Users      dao.UserRepo
+	Validator  *validator.Validate
 	Translator ut.Translator
 }
 
 func (a *App) Init(user, password, dbname string) {
-	a.Users = dao.NewUserRepoMysql(user, password, dbname)
+	a.Users = daomysql.NewUserRepoMysql(user, password, dbname)
 
 	// Create and configure validator and translator
 	a.Validator = validator.New()
@@ -62,7 +63,7 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 	if count > 20 || count < 1 {
 		count = 20
 	}
-	if start < 0  {
+	if start < 0 {
 		start = 0
 	}
 	users, err := a.Users.Find(start, count)
@@ -109,6 +110,3 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 
 	respondWithJSON(w, http.StatusCreated, user)
 }
-
-
-

@@ -6,6 +6,7 @@ CREATE TABLE users (
     name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
     password VARCHAR(120) NOT NULL,
-    age INT NOT NULL
+    age INT NOT NULL,
+    active BOOL DEFAULT TRUE
 );
 CREATE UNIQUE INDEX uidx_email ON users (email);
