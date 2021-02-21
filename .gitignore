@@ -9,7 +9,14 @@
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
+*.cover
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# vendor library
+.idea
+.DS_Store
+logs/
+/vendor
+.vscode
+.vscode/launch.json
+.yo-rc.json

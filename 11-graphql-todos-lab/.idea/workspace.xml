@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type.">
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/11-graphql-subscriptions-mongodb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/dao/setup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/environment/Connection.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/infrastructure/databaseConfiguration.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/infrastructure/environmentConfiguration.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/infrastructure/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
