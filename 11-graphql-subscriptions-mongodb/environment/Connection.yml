@@ -1,0 +1,12 @@
+app:
+  name: "GraphQL Test"
+  debug: true
+  port: "8080"
+  host: "localhost"
+  service: "http"
+  context:
+    timeout: 2
+databases:
+  mongodb:
+    name: "graphql_subscriptions"
+    connection: "mongodb://localhost:27017"
