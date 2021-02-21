@@ -2,41 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70387350-aaff-4b0f-b95f-244f7c620645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/dao/dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/daomysql/dao-mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/model/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/rest/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/sql/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest/sql/insert_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/moduleslab.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/dao/dao.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/daomysql/dao-mysql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/model/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/rest/app.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/rest/utils.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/sql/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moduleslab/sql/insert_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

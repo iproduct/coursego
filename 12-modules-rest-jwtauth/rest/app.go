@@ -4,18 +4,20 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/go-playground/locales/en"
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	en_translations "github.com/go-playground/validator/v10/translations/en"
 	"github.com/gorilla/mux"
-	"github.com/iproduct/coursego/moduleslab/dao"
-	"github.com/iproduct/coursego/moduleslab/daomysql"
-	"github.com/iproduct/coursego/moduleslab/model"
+	"github.com/iproduct/coursego/12-modules-rest-jwtauth/dao"
+	"github.com/iproduct/coursego/12-modules-rest-jwtauth/daomysql"
+	"github.com/iproduct/coursego/12-modules-rest-jwtauth/model"
 	"golang.org/x/crypto/bcrypt"
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 type App struct {
@@ -58,20 +60,85 @@ func (a *App) initializeRoutes() {
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.getUser).Methods("GET")
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.updateUser).Methods("PUT")
 	a.Router.HandleFunc("/users/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
+	a.Router.HandleFunc("/login", a.login).Methods("POST")
+	// Auth route
+	s := a.Router.PathPrefix("/auth").Subrouter()
+	s.Use(JwtVerify)
+	s.HandleFunc("/users", a.getUsers).Methods(http.MethodGet)
+	s.HandleFunc("/users", a.createUser).Methods("POST")
+	s.HandleFunc("/users/{id:[0-9]+}", a.getUser).Methods("GET")
+	s.HandleFunc("/users/{id:[0-9]+}", a.updateUser).Methods("PUT")
+	s.HandleFunc("/users/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
+
 }
 
+func (a *App) login(w http.ResponseWriter, r *http.Request) {
+	userCredentials := &model.UserLogin{}
+	err := json.NewDecoder(r.Body).Decode(userCredentials)
+	if err != nil {
+		fmt.Printf("Error logging user %v: %v", userCredentials, err)
+		var resp = map[string]interface{}{"status": false, "message": "Invalid request"}
+		json.NewEncoder(w).Encode(resp)
+		return
+	}
+	resp, err := a.checkEmailPassword(w, userCredentials.Email, userCredentials.Password)
+	if err == nil {
+		json.NewEncoder(w).Encode(resp)
+	}
+}
+
+func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) (map[string]interface{}, error)  {
+	user, err := a.Users.FindByEmail(email)
+	if err != nil {
+		respondWithError(w, http.StatusUnauthorized, "Email address not found")
+		return nil, err
+	}
+	expiresAt := time.Now().Add(time.Minute * 100000).Unix()
+
+	err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
+	if err != nil && err == bcrypt.ErrMismatchedHashAndPassword { //Password does not match!
+		respondWithError(w, http.StatusUnauthorized, "Invalid login credentials. Please try again")
+		return nil, err
+	}
+
+	claims := &model.UserToken{
+		UserID: string(user.ID),
+		Name:   user.Name,
+		Email:  user.Email,
+		StandardClaims: jwt.StandardClaims{
+			ExpiresAt: expiresAt,
+			Issuer:    "test",
+		},
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+
+	tokenString, error := token.SignedString([]byte("secret"))
+	if error != nil {
+		fmt.Println(error)
+	}
+
+	var resp = map[string]interface{}{"status": false, "message": "logged in"}
+	resp["token"] = tokenString //Store the token in the response
+	// remove user password
+	user.Password = ""
+
+	resp["user"] = user
+	return resp, nil
+}
+
+// User handlers
 func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 	count, err := strconv.Atoi(r.FormValue("count"))
-	if err != nil {
+	if err != nil && r.FormValue("count") != "" {
 		respondWithError(w, http.StatusBadRequest, "Invalid request count parameter")
 		return
 	}
 	start, err := strconv.Atoi(r.FormValue("start"))
-	if err != nil {
+	if err != nil && r.FormValue("start") != "" {
 		respondWithError(w, http.StatusBadRequest, "Invalid request start parameter")
 		return
 	}
-
 	start--
 	if count > 20 || count < 1 {
 		count = 20
@@ -93,11 +160,14 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 
 func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 	user := &model.User{}
+
 	decoder := json.NewDecoder(r.Body)
 	if err := decoder.Decode(user); err != nil {
 		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
 		return
 	}
+
+
 	// Validate User struct
 	err := a.Validator.Struct(user)
 	if err != nil {
@@ -106,6 +176,7 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 		respondWithValidationError(errs.Translate(a.Translator), w)
 		return
 	}
+
 	// Hash the pasword with bcrypt
 	pass, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
 	if err != nil {
@@ -114,7 +185,7 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	user.Password = string(pass)
-	//Do create user
+
 	if user, err = a.Users.Create(user); err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return
