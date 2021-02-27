@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85bc304-85f0-446d-a34a-9e59724386a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../generation/interfaces2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../generation/interfaces3/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../generation/reflection-performance/invoc_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../generation/reflection-performance/reflection.performance.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../generation/stringer/testdata/pill_string.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../generation/stringer/testdata/pills.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../generationlab/genny/maps/concurrentmap.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../generationlab/genny/maps/concurrentmap_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
@@ -24,13 +18,30 @@
       <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12-modules-rest/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/interfaces/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/interfaces/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/reflection/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/reflection/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/stringer/endtoend_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/stringer/endtoend_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/stringer/golden_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/stringer/golden_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generation/stringer/testdata/day_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-generics/simple-generics.go2" beforeDir="false" afterPath="$PROJECT_DIR$/simple-generics/simple-generics.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/.idea/generation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/assertions/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/interfaces/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/interfaces2/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/interfaces3/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/reflection-performance/invoc_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/reflection-performance/reflection.performance.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/reflection/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/endtoend_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/golden_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/stringer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/testdata/day.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/testdata/pill_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/testdata/pills.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/util_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../generationlab/generate/endtoend_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/generate/endtoend_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../generationlab/generate/golden_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/generate/golden_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../generationlab/genny/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/genny/main.go" afterDir="false" />
@@ -109,6 +120,10 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="generics demo added" />
+    <option name="LAST_COMMIT_MESSAGE" value="generics demo added" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

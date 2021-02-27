@@ -1,6 +1,6 @@
 module github.com/iproduct/coursego/12-modules-rest-jwtauth
 
-go 1.13
+go 1.15
 
 require (
 	github.com/Pallinder/go-randomdata v1.2.0

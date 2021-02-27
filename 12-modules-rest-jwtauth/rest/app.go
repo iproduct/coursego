@@ -93,7 +93,7 @@ func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) 
 		respondWithError(w, http.StatusUnauthorized, "Email address not found")
 		return nil, err
 	}
-	expiresAt := time.Now().Add(time.Minute * 100000).Unix()
+	expiresAt := time.Now().Add(time.Minute * 10).Unix()
 
 	err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
 	if err != nil && err == bcrypt.ErrMismatchedHashAndPassword { //Password does not match!

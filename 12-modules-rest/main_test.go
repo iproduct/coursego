@@ -49,7 +49,7 @@ func TestEmptyTable(t *testing.T) {
 func TestCreateUser(t *testing.T) {
 	clearTable()
 
-	payload := []byte(`{"name":"test user","email":"test@gmail.com","password":"test123","age":30}`)
+	payload := []byte(`{"name":"test user","email":"test@gmail.com","password":"test123","age":30, "active": true}`)
 
 	req, _ := http.NewRequest("POST", "/users", bytes.NewBuffer(payload))
 	response := executeRequest(req)
@@ -109,7 +109,8 @@ CREATE TABLE IF NOT EXISTS users (
     name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
-    age INT NOT NULL
+    age INT NOT NULL,
+    active BOOL DEFAULT TRUE
 )`
 const emailIndexCreationQuery = `CREATE UNIQUE INDEX uidx_email ON users (email)`
 

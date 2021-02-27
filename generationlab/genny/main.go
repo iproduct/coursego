@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/iproduct/coursego/generationlab/genny/maps"
 	"github.com/iproduct/coursego/generationlab/genny/queue"
 )
 
@@ -24,5 +25,17 @@ func main(){
 
 	for i:= 0; i< 4 ; i++ {
 		fmt.Println(iq.Pop())
+	}
+
+	todos := map[int]string{
+		0: "Learn how to use genny",
+		1: "Write concurrent map code",
+		2: "Generate the typesafe concurrent map implemetations",
+	}
+
+	concurrentTodos := maps.ToConMapIntString(todos)
+
+	for k := 0;  k < concurrentTodos.Len(); k++ {
+		fmt.Printf("%v --> %v\n", k, concurrentTodos.Get(k))
 	}
 }

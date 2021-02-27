@@ -24,7 +24,7 @@ func JwtVerify(next http.Handler) http.Handler {
 
 		if token == "" {
 			//Token is missing, returns with error code 403 Unauthorized
-			respondWithError(w, http.StatusForbidden, "Missing auth token")
+			respondWithError(w, http.StatusUnauthorized, "Missing auth token")
 			return
 		}
 		claims := &model.UserToken{}

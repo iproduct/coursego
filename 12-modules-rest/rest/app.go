@@ -62,16 +62,15 @@ func (a *App) initializeRoutes() {
 
 func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 	count, err := strconv.Atoi(r.FormValue("count"))
-	if err != nil {
+	if err != nil && r.FormValue("count") != "" {
 		respondWithError(w, http.StatusBadRequest, "Invalid request count parameter")
 		return
 	}
 	start, err := strconv.Atoi(r.FormValue("start"))
-	if err != nil {
+	if err != nil && r.FormValue("start") != "" {
 		respondWithError(w, http.StatusBadRequest, "Invalid request start parameter")
 		return
 	}
-
 	start--
 	if count > 20 || count < 1 {
 		count = 20

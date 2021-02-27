@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="474d18de-d2a6-45fe-93b0-dbdbe9c6096e" name="Default Changelist" comment="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type.">
-      <change afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +37,15 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1okUuWl3eFGVZMkNg3wDstUCaPI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -84,6 +92,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="lab updated and bug removed - on line 21 in schema.go: 'Fields: graphql.Fields{ ...' - should not be pointer but value type." />
     <MESSAGE value="lab updated and bug removed - on line 70 in schema.go: 'Fields: &amp;graphql.Fields{ ...' -&gt;  'Fields: graphql.Fields{ ...' - changed to value type." />
     <MESSAGE value="sample_queries.txt updated with metadata queries" />
