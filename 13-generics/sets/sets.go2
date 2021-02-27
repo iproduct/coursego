@@ -54,6 +54,7 @@ func main() {
 	s.Add(1)
 	s.Add(5)
 	s.Add(7)
+	s.Add(11)
 
 	// Check that s does not contain the value 2.
 	if s.Contains(2) { panic("unexpected 2") }

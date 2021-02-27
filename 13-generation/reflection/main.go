@@ -41,7 +41,7 @@ func main() {
 	stack.Push(val)
 	stack.Push(3.14)
 	stack.Push(2.895)
-	stack.Push(42.0)
+	stack.Push(42)
 	stack.Push(135.5)
 	fmt.Println(stack.value.Index(0))
 	for result := stack.Pop(); result != nil; result = stack.Pop() {

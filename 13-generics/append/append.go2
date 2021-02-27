@@ -12,7 +12,7 @@ func Append[T any](s []T, t ...T) []T {
 		panic("Append: cap out of range")
 	}
 	if tot > cap(s) {
-		news := make([]T, tot, tot + tot/2)
+		news := make([]T, tot, 2 * tot)
 		copy(news, s)
 		s = news
 	}

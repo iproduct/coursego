@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 //go:generate stringer -type=Day
 type Day int
 
@@ -21,7 +19,7 @@ const (
 	Sunday
 )
 
-func main() {
-	fmt.Println(Monday)
-}
+//func main() {
+//	fmt.Println(Saturday)
+//}
 

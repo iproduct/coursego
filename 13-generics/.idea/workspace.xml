@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85bc304-85f0-446d-a34a-9e59724386a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/append/append.go2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/channels-maps/channels-maps.go2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map-keys/map-keys.go2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sets/sets.go2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/sort.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/assertions/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/assertions/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/interfaces/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/interfaces/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/reflection/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/reflection/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/stringer/testdata/day.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/stringer/testdata/day.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/stringer/testdata/day_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/stringer/testdata/pill_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generation/stringer/testdata/pills.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/stringer/testdata/pills.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/append/append.go2" beforeDir="false" afterPath="$PROJECT_DIR$/append/append.go2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map-filter-reduce/map-filter-reduce.go2" beforeDir="false" afterPath="$PROJECT_DIR$/map-filter-reduce/map-filter-reduce.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sets/sets.go2" beforeDir="false" afterPath="$PROJECT_DIR$/sets/sets.go2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

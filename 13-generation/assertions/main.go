@@ -16,7 +16,7 @@ func (c *MyContainer) Get() interface{} {
 
 func main() {
 	myIntContainer := &MyContainer{}
-	myIntContainer.Put(12)
+	myIntContainer.Put(12.0)
 	myIntContainer.Put(70)
 	elem, ok := myIntContainer.Get().(int)
 	if !ok {

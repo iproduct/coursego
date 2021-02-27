@@ -38,13 +38,13 @@ func Filter[T any](s []T, f func(T) bool) []T {
 }
 
 func main() {
-	s := []int{1, 2, 3}
+	s := []int{1, 2, 3, 4, 25}
 
-	floats := Map(s, func(i int) float64 { return float64(i) })
+	floats := Map(s, func(i int) float64 { return float64(i * i) })
 	fmt.Println(floats) // Now floats is []float64{1.0, 2.0, 3.0}.
 
 
-	sum := Reduce(s, 0, func(i, j int) int { return i + j })
+	sum := Reduce(floats, 0.0, func(i, j float64) float64 { return i + j })
 	fmt.Println(sum) // Now sum is 6.
 
 	evens := Filter(s, func(i int) bool { return i%2 == 0 })

@@ -21,10 +21,10 @@ func SortPeople(people []Person) {
 }
 func main() {
 	people := []Person{
+		{"Bob", 75},
 		{"Gopher", 7},
 		{"Alice", 55},
 		{"Vera", 24},
-		{"Bob", 75},
 	}
 	SortPeople(people)
 	fmt.Println("By age:", people)
