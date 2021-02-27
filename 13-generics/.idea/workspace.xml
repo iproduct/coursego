@@ -2,15 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85bc304-85f0-446d-a34a-9e59724386a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/13-generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-generics/simple-generics.go2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/interfaces2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/interfaces3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/reflection-performance/invoc_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/reflection-performance/reflection.performance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/stringer/testdata/pill_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generation/stringer/testdata/pills.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generationlab/genny/maps/concurrentmap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../generationlab/genny/maps/concurrentmap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/interfaces/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/interfaces/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/reflection/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/reflection/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/endtoend_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/stringer/endtoend_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/golden_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generation/stringer/golden_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generation/stringer/testdata/day_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/generate/endtoend_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/generate/endtoend_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/generate/golden_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/generate/golden_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/genny/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/genny/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/genny/queue/gen-queue.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generationlab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../generationlab/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +53,14 @@
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
