@@ -5,19 +5,27 @@ import (
 	"sort"
 )
 
+type Person struct {
+	Name string
+	Age  int
+}
+
+// ByAge implements sort.Interface for []Person based on the Age field.
+type ByAge []Person
+
+func (a ByAge) Len() int           { return len(a) }
+func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a ByAge) Less(i, j int) bool { return a[i].Age < a[j].Age }
+func SortPeople(people []Person) {
+	sort.Sort(ByAge(people))
+}
 func main() {
-	people := []struct {
-		Name string
-		Age  int
-	}{
+	people := []Person{
 		{"Gopher", 7},
 		{"Alice", 55},
 		{"Vera", 24},
 		{"Bob", 75},
 	}
-	sort.Slice(people, func(i, j int) bool { return people[i].Name < people[j].Name })
-	fmt.Println("By name:", people)
-
-	sort.Slice(people, func(i, j int) bool { return people[i].Age < people[j].Age })
+	SortPeople(people)
 	fmt.Println("By age:", people)
 }
