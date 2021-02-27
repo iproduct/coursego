@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+	"github.com/iproduct/coursego/13-generics/slices"
+)
+
+func main() {
+	s := []int{1, 2, 3}
+
+	floats := slices.Map(s, func(i int) float64 { return float64(i) })
+	fmt.Println(floats) // Now floats is []float64{1.0, 2.0, 3.0}.
+
+
+	sum := slices.Reduce(s, 0, func(i, j int) int { return i + j })
+	fmt.Println(sum) // Now sum is 6.
+
+	evens := slices.Filter(s, func(i int) bool { return i%2 == 0 })
+	fmt.Println(evens) // Now evens is []int{2}.
+}

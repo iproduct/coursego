@@ -1,4 +1,4 @@
-module github.com/iproduct/coursego/generation
+module github.com/iproduct/coursego/13-generation
 
 go 1.15
 
