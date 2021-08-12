@@ -6,7 +6,7 @@ import (
 	"database/sql"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/stoyaneft/blog/blog"
+	"github.com/iproduct/coursego/09-blog/blog"
 )
 
 type MySQLStore struct {

@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/iproduct/coursego/09-blog/blog"
+	"github.com/iproduct/coursego/09-blog/container"
 	"html/template"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/iproduct/coursego/09-blog/blog/container"
-	"github.com/stoyaneft/blog/blog"
 )
 
 type rest struct {

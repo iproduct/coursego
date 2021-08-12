@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../blog/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/.idea/blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/blog/blog.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/container/in-memory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/container/mongo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/container/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/templates/create.tmpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog/templates/index.tmpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest/.idea/rest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpclient/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpclient/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/books/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../http/bookstore/books/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive-demos/sse/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-demos/sse/sse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/simple-rest-client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/simple-rest-service/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-tdd/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/rest_tdd/rest/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-tdd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/rest_tdd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-tdd/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/rest_tdd/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-tdd/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rest/rest_tdd/rest/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/json/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/books/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/json/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/books/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +36,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
@@ -72,8 +55,8 @@
       <module name="01-hello-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/hello/hello.go" />
       <package value="github.com/iproduct/coursego/01-hello-lab/hello" />
+      <filePath value="$PROJECT_DIR$/hello/hello.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -81,8 +64,8 @@
       <module name="01-hello-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/httpclient/client.go" />
       <package value="github.com/iproduct/coursego/01-hello-lab/httpclient" />
+      <filePath value="$PROJECT_DIR$/httpclient/client.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>

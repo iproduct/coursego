@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/stoyaneft/blog/blog"
+	"github.com/iproduct/coursego/09-blog/blog"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="446a2694-7e55-41dd-96bc-5d1ae74ca844" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/in-memory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/container/mongo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/mongo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

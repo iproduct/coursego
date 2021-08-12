@@ -3,7 +3,7 @@ package container
 import (
 	"sync"
 
-	"github.com/stoyaneft/blog/blog"
+	"github.com/iproduct/coursego/09-blog/blog"
 )
 
 type InMemory struct {
