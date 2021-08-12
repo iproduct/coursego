@@ -3,11 +3,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"json/books"
 	"log"
-	"github.com/iproduct/coursego/http/json/books"
 )
 
-func main()  {
+func main() {
 	// Structs --> JSON
 	data, err := json.Marshal(books.GoBooks)
 	if err != nil {
