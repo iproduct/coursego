@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"json/books"
+	"github.com/iproduct/coursego/09-http/bookstore/books"
 	"log"
 )
 
