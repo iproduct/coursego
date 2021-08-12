@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/iproduct/coursego/09-blog/blog/container"
 	"github.com/stoyaneft/blog/blog"
-	"github.com/stoyaneft/blog/container"
 )
 
 type rest struct {
