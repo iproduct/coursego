@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/append/append.go2" beforeDir="false" afterPath="$PROJECT_DIR$/append/append.go2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map-filter-reduce/map-filter-reduce.go2" beforeDir="false" afterPath="$PROJECT_DIR$/map-filter-reduce/map-filter-reduce.go2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sets/sets.go2" beforeDir="false" afterPath="$PROJECT_DIR$/sets/sets.go2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/sort.go2" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort.go2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

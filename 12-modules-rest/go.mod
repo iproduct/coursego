@@ -1,6 +1,6 @@
 module github.com/iproduct/coursego/moduleslab
 
-go 1.15
+go 1.17
 
 require (
 	github.com/go-playground/locales v0.13.0
