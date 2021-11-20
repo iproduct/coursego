@@ -8,7 +8,7 @@ import (
 
 type Role int
 
-var myname string = "Trayan"
+var myname = "Trayan"
 
 func main() {
 	fmt.Println(os.Args)
