@@ -29,7 +29,7 @@ func main() {
 	var w int64 = 1.0<<33         // 1.0<<33 is a constant shift expression
 	fmt.Println(w)
 	a := []int{12, 15, 17}
-	var x = a[1.0<<1]             // 1.0 has type int; x == a[0] if ints are 32bits in size
+	var x = a[1.0<<1]             // 1.0 has type int; x == a[2] if ints are 32bits in size
 	fmt.Println(x)
 	var b = make([]byte, 1.0<<3)  // 1.0 has type int; len(a) == 0 if ints are 32bits in size
 	fmt.Printf("%#v -> len: %d, cap: %d", b, len(b), cap(b))

@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println(pi(5000))
+	fmt.Println(pi(50000))
+	fmt.Printf("%32.30f\n", math.Pi)
 }
 
 // pi launches n goroutines to compute an
@@ -23,6 +24,6 @@ func pi(n int) float64 {
 	return f
 }
 
-func term(ch chan float64, k float64) {
+func term(ch chan<- float64, k float64) {
 	ch <- 4 * math.Pow(-1, k) / (2*k + 1)
 }

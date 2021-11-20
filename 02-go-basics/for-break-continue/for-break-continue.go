@@ -7,7 +7,8 @@ import (
 
 func main() {
 	fmt.Println(pi(5000))
-	fmt.Println(piEpsilon(.0000001))
+	fmt.Println(piEpsilon(.000000001))
+	fmt.Printf("%#32.30f\n", math.Pi)
 }
 
 // pi launches n goroutines to compute an

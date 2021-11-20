@@ -4,15 +4,18 @@ import (
 	"fmt"
 	"math/rand"
 )
-const size = 10;
+const size = 5;
 
 func main() {
 	sum := 0
-	a := [size]int{}
-	for  i := 1; i < 10; i++ {
+	a := [size]int{1, 2, 3, 4, 5}
+	b := a
+	for  i := 1; i < 5; i++ {
 		a[i] = rand.Intn(100)
 	}
 	fmt.Printf("a = %v\n", a)
+	fmt.Printf("b = %v\n", b)
+	fmt.Printf("a == b: %v, &a == &b: %v, &a %p, &b %p, \n", a == b, &a == &b, &a, &b)
 
 	// 1)
 	for i := 1; i < size; i++ {
@@ -63,6 +66,11 @@ func main() {
 			fmt.Printf("       %s: %s,\n", k, v)
 		}
 		fmt.Println("      }")
+	}
+
+	// 7)
+	for i := 'a'; i < 'd'; i++ {
+		fmt.Println(string(i))
 	}
 
 

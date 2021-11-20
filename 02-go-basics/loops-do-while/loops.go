@@ -27,10 +27,12 @@ func main() {
 	// 2)
 	fmt.Println()
 	i = 0
-	label:	for {
+	for {
 		task(&i)
 		if !condition(i) {
-			break label
+			break
 		}
 	}
+
+
 }

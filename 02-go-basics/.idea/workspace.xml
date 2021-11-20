@@ -5,45 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/constants/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/constants2/constants2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-intro-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-intro-lab/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants2/constants2.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants2/constants2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions1/functions1.go" beforeDir="false" afterPath="$PROJECT_DIR$/functions1/functions1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops-do-while/loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-do-while/loops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops-for/loops-for.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-for/loops-for.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/operators/operators.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,6 +39,12 @@
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1nC2LqclWMdsck4SpRrNO3Hbb7E" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -95,19 +84,11 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build constants.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build for-break-continue.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="02-go-basics" />
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/constants/constants.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build for-break-continue.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="02-go-basics" />
-      <working_directory value="$PROJECT_DIR$/../../../out" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" />
+      <filePath value="$PROJECT_DIR$/for-break-continue-big/for-break-continue.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -124,6 +105,14 @@
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/functions1/functions1.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build loops-for.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="02-go-basics" />
+      <working_directory value="$PROJECT_DIR$/../../../out" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/loops-for/loops-for.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -148,14 +137,24 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build operators.go" />
-        <item itemvalue="Go Build.go build constants.go" />
         <item itemvalue="Go Build.go build functions1.go" />
-        <item itemvalue="Go Build.go build for-break-continue.go (1)" />
+        <item itemvalue="Go Build.go build loops-for.go" />
         <item itemvalue="Go Build.go build for-break-continue.go" />
+        <item itemvalue="Go Build.go build for-break-continue.go (2)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1637426275548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637426275548</updated>
+      <workItem from="1637426278931" duration="912000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
