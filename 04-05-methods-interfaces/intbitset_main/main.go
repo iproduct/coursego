@@ -1,4 +1,4 @@
-package intbitset_main
+package main
 
 import (
 	"fmt"

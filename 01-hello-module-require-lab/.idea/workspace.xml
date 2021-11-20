@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fcf813d-0551-4990-9593-7d1347bec3a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -36,6 +45,7 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>

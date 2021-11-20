@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="531bf2e3-ea97-44d7-b9ab-21c6ac5203d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -29,10 +57,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -46,8 +77,8 @@
       <module name="06-goroutines-channels" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/downloader-using-context/downloader-using-context.go" />
       <package value="github.com/iproduct/coursego/06-coroutines-channels/downloader-using-context" />
+      <filePath value="$PROJECT_DIR$/downloader-using-context/downloader-using-context.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -55,8 +86,8 @@
       <module name="06-goroutines-channels" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/downloader/downloader.go" />
       <package value="github.com/iproduct/coursego/06-coroutines-channels/downloader" />
+      <filePath value="$PROJECT_DIR$/downloader/downloader.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>

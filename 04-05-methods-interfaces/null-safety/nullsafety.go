@@ -15,7 +15,9 @@ type myNumber struct {
 }
 
 func (number *myNumber) plusOne() {
-	number.n++
+	if number!=nil {
+		number.n++
+	}
 }
 
 func main() {
@@ -23,14 +25,16 @@ func main() {
 		Name() string
 	}
 	greeting := func(thing Named) string {
-		//if thing == nil {
-		//	return "Hello Anonymous"
-		//}
+		if thing == nil {
+			return "Hello Anonymous"
+		}
 		return "Hello " + thing.Name()
 	}
 	fmt.Println(greeting(nil))
 
 	var n *myNumber
+	n.plusOne()
+	n.plusOne()
 	n.plusOne()
 	fmt.Println(n)
 }

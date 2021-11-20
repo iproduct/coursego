@@ -12,6 +12,12 @@ func main() {
 	b = b[1:]              // len(b)=4, cap(b)=4
 	printSlice("b", b)     // b len=4 cap=4 [0 0 0 0]
 
+	var c []int = nil
+	printSlice("c", c)
+
+	var m map[int]string = make(map[int]string)
+	m[42] = "The answer"
+	fmt.Printf("%#v, %[1]p\n", m)
 	//a := make([]int, 5, 10)
 	//printSlice("a", a) // a len=5 cap=10 [0 0 0 0 0]
 	//

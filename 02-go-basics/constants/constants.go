@@ -28,10 +28,10 @@ func (r Role) String() string {
 }
 
 func main() {
-	fmt.Printf("%s - %[1]d : %[1]V, Mask: %b\n", User, RoleMask)
-	fmt.Printf("%s - %[1]d: %[1]V, Mask: %b\n", Manager, RoleMask)
-	fmt.Printf("%s - %[1]d : %[1]V, Mask: %b\n", Admin, RoleMask)
-	fmt.Printf("%s - %[1]d : %[1]V, Mask: %b\n", Customer, RoleMask)
+	fmt.Printf("%s - %[1]d : %[1]T, Mask: %b\n", User, RoleMask)
+	fmt.Printf("%s - %[1]d: %[1]T, Mask: %b\n", Manager, RoleMask)
+	fmt.Printf("%s - %[1]d : %[1]T, Mask: %b\n", Admin, RoleMask)
+	fmt.Printf("%s - %[1]d : %[1]T, Mask: %b\n", Customer, RoleMask)
 }
 
 // fmt package defines interface Stringer as:

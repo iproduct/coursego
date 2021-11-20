@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var s uint = 64
+	var s uint = 33
 	var i = 1<<s                  // 1 has type int
-	fmt.Printf("%#V\n", i)
+	fmt.Printf("%#v\n", i)
 	var j int32 = 1<<s            // 1 has type int32; j == 0
 	fmt.Println(j)
 	var k = uint64(1<<s)          // 1 has type uint64; k == 1<<33
@@ -29,8 +29,8 @@ func main() {
 	var w int64 = 1.0<<33         // 1.0<<33 is a constant shift expression
 	fmt.Println(w)
 	a := []int{12, 15, 17}
-	var x = a[1.0<<s]             // 1.0 has type int; x == a[0] if ints are 32bits in size
+	var x = a[1.0<<1]             // 1.0 has type int; x == a[0] if ints are 32bits in size
 	fmt.Println(x)
-	var b = make([]byte, 1.0<<s)  // 1.0 has type int; len(a) == 0 if ints are 32bits in size
+	var b = make([]byte, 1.0<<3)  // 1.0 has type int; len(a) == 0 if ints are 32bits in size
 	fmt.Printf("%#v -> len: %d, cap: %d", b, len(b), cap(b))
 }

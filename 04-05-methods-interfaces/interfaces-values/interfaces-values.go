@@ -19,22 +19,23 @@ func (t *T) M() {
 
 type F float64
 
-func (f F) M() {
-	fmt.Println(f)
+func (f *F) M() {
+	fmt.Println(*f)
 }
 
 func main() {
 	var i I
 
 	i = &T{"Hello"}
-	describe(i) //(&{Hello}, *intbitset_main.T)
-	i.M()       //Hello
+	describe(i)
+	i.M()
 
-	i = F(math.Pi)
-	describe(i) //(3.141592653589793, intbitset_main.F)
-	i.M()       //3.141592653589793
+	x := F(math.Pi)
+	i = &x
+	describe(i)
+	i.M()
 }
 
 func describe(i I) {
-	fmt.Printf("(%v, %T)\n", i, i)
+	fmt.Printf("(%#v, %T)\n", i, i)
 }

@@ -41,9 +41,17 @@ func (p *Path) Distance() (dist float64) {
 	return
 }
 
+// Scale method scales the Vertex coordinates by a factor of f
+func (p *Path) Scale(f float64) {
+	for  i := 0; i < len(*p); i ++ {
+		(*p)[i].Scale(f)
+	}
+}
+
 func main() {
 	var path Path
 	path = Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
-	// path.Scale(10)
+	(&path).Scale(10)
+	fmt.Printf("Path: %#v\n", path)
 	fmt.Println("Perimeter = ", path.Distance())
 }

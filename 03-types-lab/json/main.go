@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github/iproduct/03-types-go/json/books"
+	"github.com/iproduct/coursego/03-types-lab/json/books"
 	"log"
 )
 

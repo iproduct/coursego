@@ -1,57 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/08-databases.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/dataSources/4de04175-bb24-4165-b9f7-94bc8db7464e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-projects-batch/db-gorm-projects-batch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/entities/entities.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/sql/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/sqlutils/sqlutils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases-gorm/utils/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/08-databases.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-insert-transaction-prepare/db-insert-transaction-prepare.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-prepare-insert/db-prepare-insert.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-prepare-select/db-prepare-select.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/entities/entities.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/sql/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../08-databases/utils/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp/regexp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/coursego.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intbitset_main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/intbitset_main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interfaces-values/interfaces-values.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces-values/interfaces-values.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces-writer/interfaces-writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces-writer/interfaces-writer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/intbitset_main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-expressions/method-expressions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/url-params/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../http/url-params/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/methods-nil/methods-nil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/null-safety/nullsafety.go" beforeDir="false" afterPath="$PROJECT_DIR$/null-safety/nullsafety.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -70,10 +58,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/intbitset_main">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -81,48 +72,58 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-empty" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/intbitset_main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/interfaces-empty/interfaces-empty.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-empty" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/intbitset_main" />
+      <filePath value="$PROJECT_DIR$/intbitset_main/main.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/null-safety" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/null-safety" />
+      <filePath value="$PROJECT_DIR$/null-safety/nullsafety.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/interfaces-nil/interfaces-nil.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" />
+      <filePath value="$PROJECT_DIR$/structs-methods/structs-methods.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/structures" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/interfaces-writer/interfaces-writer.go" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/structures" />
+      <filePath value="$PROJECT_DIR$/structures/structures.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/zero-value" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="04-05-methods-interfaces" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/zero-value" />
+      <filePath value="$PROJECT_DIR$/zero-value/zero-value.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-empty" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/intbitset_main" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/structs-methods" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/null-safety" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/zero-value" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/structures" />
       </list>
     </recent_temporary>
   </component>
@@ -132,5 +133,16 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/null-safety/nullsafety.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

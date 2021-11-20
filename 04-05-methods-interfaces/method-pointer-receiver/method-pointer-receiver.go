@@ -28,7 +28,7 @@ func main() {
 	v := Vertex{3, 4}
 	v.Scale(10)
 	fmt.Printf("After scaling by 10: %+v\n", v)
-	//Vertex.Scale(v, 10)
+	v = Vertex.ScaleVal(v, 10)
 	(*Vertex).Scale((&v), 10)
 	fmt.Println(v.Abs())
 	fmt.Println(Vertex.Abs(v))

@@ -22,6 +22,6 @@ func main() {
 		fmt.Printf("Invalid type: %T\n", e)
 	}
 	// This will panic at runtime
-	var example example = e.(example)
-	fmt.Printf("%v", example)
+	//var example example = e.(example)
+	//fmt.Printf("%v", example)
 }
