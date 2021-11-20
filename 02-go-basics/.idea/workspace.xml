@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/constants/constants.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/constants2/constants2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-intro-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-intro-lab/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants2/constants2.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants2/constants2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/for-break-continue-goroutines/for-break-continue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions1/functions1.go" beforeDir="false" afterPath="$PROJECT_DIR$/functions1/functions1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loops-do-while/loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-do-while/loops.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loops-for/loops-for.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-for/loops-for.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/operators/operators.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
