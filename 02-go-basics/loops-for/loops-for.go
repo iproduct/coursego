@@ -60,9 +60,12 @@ func main() {
 		{"name": "hristo", "email": "hristo@yahoo.com", "age": "25"},
 		{"name": "tsvetelina", "email": "tsveti@gmail.com", "age": "28"},
 	}
-	for i, person := range persons {
+	outer: for i, person := range persons {
 		fmt.Printf("6) %d: {\n", i)
 		for k, v := range person {
+			if(v == "hristo") {
+				break outer
+			}
 			fmt.Printf("       %s: %s,\n", k, v)
 		}
 		fmt.Println("      }")

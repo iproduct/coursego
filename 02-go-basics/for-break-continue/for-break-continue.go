@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println(pi(5000))
-	fmt.Println(piEpsilon(.000000001))
+	fmt.Println(piEpsilon(.0000001))
 	fmt.Printf("%#32.30f\n", math.Pi)
 }
 
@@ -24,11 +24,11 @@ func pi(n int) float64 {
 func piEpsilon(epsilon float64) float64 {
 	f, newTerm, oldTerm := 0.0, 0.0, 0.0
 	k := 0.0
-	for {
+	outer: for {
 		newTerm = term(k)
 		f += newTerm
 		if(math.Abs(newTerm-oldTerm) < epsilon) {
-			break
+			break outer
 		}
 		oldTerm = newTerm
 		k++

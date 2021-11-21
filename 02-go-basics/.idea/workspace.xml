@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab2/runes/runes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/operations/operations.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/sequence/sequence.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab2/sequencemain/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab2/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab2/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/for-break-continue/for-break-continue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions1/functions1.go" beforeDir="false" afterPath="$PROJECT_DIR$/functions1/functions1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops-for/loops-for.go" beforeDir="false" afterPath="$PROJECT_DIR$/loops-for/loops-for.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,7 @@
       <recent name="D:\CourseGO\git\coursego\02-go-basics\functions1" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build operators.go">
+  <component name="RunManager" selected="Go Build.go build loops-for.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -123,10 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build operators.go" />
-        <item itemvalue="Go Build.go build functions1.go" />
         <item itemvalue="Go Build.go build loops-for.go" />
         <item itemvalue="Go Build.go build for-break-continue.go" />
+        <item itemvalue="Go Build.go build operators.go" />
+        <item itemvalue="Go Build.go build functions1.go" />
         <item itemvalue="Go Build.go build for-break-continue.go (2)" />
       </list>
     </recent_temporary>
