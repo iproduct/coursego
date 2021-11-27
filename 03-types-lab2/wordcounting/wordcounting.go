@@ -20,12 +20,22 @@ var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, 
 	`which`, `those`, `i`, `after`, `few`, `whom`, `t`, `being`, `if`, `theirs`, `my`, `against`, `a`, `by`,
 	`doing`, `it`, `how`, `further`, `was`, `here`, `than`}
 
+type Entry struct {
+	word  string
+	count int
+}
+
 func main() {
 	files := os.Args[1:]
 	counts := make(map[string]int)
 	splitRegex := regexp.MustCompile(`[\s,\.!?\"\'\\/;\[\]\(\)\d\{\}*:-]+`)
+	stopSet := make(map[string]struct{}, len(stopwordsList))
+	for _, sw := range stopwordsList {
+		stopSet[sw] = struct{}{}
+	}
+	fmt.Println(stopSet)
 	for _, filename := range files {
-		err := processFile(filename, counts, splitRegex)
+		err := processFile(filename, counts, splitRegex, stopSet)
 		if err != nil {
 			log.Printf("Error processing %s : %v\n", filename, err)
 		}
@@ -35,7 +45,7 @@ func main() {
 	}
 }
 
-func processFile(filename string, counts map[string]int, splitRegex *regexp.Regexp) error {
+func processFile(filename string, counts map[string]int, splitRegex *regexp.Regexp, stopSet map[string]struct{}) error {
 	file, err := os.Open(filename)
 	if err != nil {
 		return err
@@ -44,9 +54,12 @@ func processFile(filename string, counts map[string]int, splitRegex *regexp.Rege
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		line := scanner.Text()
-		words := strings.Fields(line)
+		//words := strings.Fields(line)
+		words := splitRegex.Split(line, -1)
 		for _, w := range words {
-			counts[w] += 1
+			if _, ok := stopSet[strings.ToLower(w)]; !ok && len(w) > 1 {
+				counts[w] += 1
+			}
 		}
 	}
 	if scanner.Err() != nil {
