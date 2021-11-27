@@ -1,6 +1,12 @@
 package main
 
-import "os"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"strings"
+)
 
 var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
 	`during`, `out`, `very`, `having`, `with`, `they`, `own`, `an`, `be`, `some`, `for`, `do`, `its`, `yours`,
@@ -15,5 +21,34 @@ var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, 
 
 func main() {
 	files := os.Args[1:]
+	counts := make(map[string]int)
+	for _, filename := range files {
+		err := processFile(filename, counts)
+		if err != nil {
+			log.Printf("Error processing %s : %v\n", filename, err)
+		}
+	}
+	for w, c := range counts {
+		fmt.Printf("%-20.20s -> %5d\n", w, c)
+	}
+}
 
+func processFile(filename string, counts map[string]int) error {
+	file, err := os.Open(filename)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		words := strings.Fields(line)
+		for _, w := range words {
+			counts[w] += 1
+		}
+	}
+	if scanner.Err() != nil {
+		return scanner.Err()
+	}
+	return nil
 }
