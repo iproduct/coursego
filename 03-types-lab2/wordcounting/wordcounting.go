@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"regexp"
 	"strings"
 )
 
@@ -22,8 +23,9 @@ var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, 
 func main() {
 	files := os.Args[1:]
 	counts := make(map[string]int)
+	splitRegex := regexp.MustCompile(`[\s,\.!?\"\'\\/;\[\]\(\)\d\{\}*:-]+`)
 	for _, filename := range files {
-		err := processFile(filename, counts)
+		err := processFile(filename, counts, splitRegex)
 		if err != nil {
 			log.Printf("Error processing %s : %v\n", filename, err)
 		}
@@ -33,7 +35,7 @@ func main() {
 	}
 }
 
-func processFile(filename string, counts map[string]int) error {
+func processFile(filename string, counts map[string]int, splitRegex *regexp.Regexp) error {
 	file, err := os.Open(filename)
 	if err != nil {
 		return err
