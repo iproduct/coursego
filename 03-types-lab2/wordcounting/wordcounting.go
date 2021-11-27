@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"regexp"
+	"sort"
 	"strings"
 )
 
@@ -40,9 +41,19 @@ func main() {
 			log.Printf("Error processing %s : %v\n", filename, err)
 		}
 	}
+	words := make([]Entry, len(counts))
+	i := 0
 	for w, c := range counts {
-		fmt.Printf("%-20.20s -> %5d\n", w, c)
+		words[i] = Entry{w, c}
+		i++
 	}
+	sort.Slice(words, func(i, j int) bool {
+		return words[i].count > words[j].count
+	})
+	for _, e := range words[:20] {
+		fmt.Printf("%-20.20s -> %5d\n", e.word, e.count)
+	}
+
 }
 
 func processFile(filename string, counts map[string]int, splitRegex *regexp.Regexp, stopSet map[string]struct{}) error {
