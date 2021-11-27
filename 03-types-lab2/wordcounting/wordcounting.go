@@ -1,5 +1,7 @@
 package main
 
+import "os"
+
 var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
 	`during`, `out`, `very`, `having`, `with`, `they`, `own`, `an`, `be`, `some`, `for`, `do`, `its`, `yours`,
 	`such`, `into`, `of`, `most`, `itself`, `other`, `off`, `is`, `s`, `am`, `or`, `who`, `as`, `from`, `him`,
@@ -12,5 +14,6 @@ var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, 
 	`doing`, `it`, `how`, `further`, `was`, `here`, `than`}
 
 func main() {
+	files := os.Args[1:]
 
 }
