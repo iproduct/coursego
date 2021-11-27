@@ -7,10 +7,18 @@ import (
 
 func main() {
 	// Create a tic-tac-toe board.
-	board := [][]string{
-		[]string{"_", "_", "_"},
-		[]string{"_", "_", "_"},
-		[]string{"_", "_", "_"},
+	//board := [][]string{
+	//	[]string{"_", "_", "_"},
+	//	[]string{"_", "_", "_"},
+	//	[]string{"_", "_", "_"},
+	//}
+
+	board := make([][]string, 5)
+	for i, _:= range board {
+		board[i] = make([]string, 5)
+		for j, _ := range board[i] {
+			board[i][j] ="_"
+		}
 	}
 
 	// The players take turns.

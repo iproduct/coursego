@@ -56,14 +56,13 @@ func main() {
 	printSlice("c is ", c)
 	printSlice("sc3 is ", sc3)
 
-	var sc4 []interface{} // zero value
+	var sc4 []interface{} // zero value == nil
 	for _, v := range c {
 		sc4 = append(sc4, v)
 	}
 	printSlice("sc4", sc4)
 
-	var sc5 []int
-	sc5 = make([]int, 5)
+	sc5 := make([]int, 5)
 	copy(sc5, c)
 	printSlice("sc5", sc5)
 }
