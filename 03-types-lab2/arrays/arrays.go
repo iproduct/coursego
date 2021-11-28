@@ -25,6 +25,7 @@ func lengths(x [3]string) [3]int {
 	for i, v := range x {
 		results[i] += len(v)
 	}
+	fmt.Printf("%p\n", &results[0])
 	return results
 }
 
@@ -57,4 +58,5 @@ func main() {
 
 	c := lengths(a)
 	fmt.Println(c)
+	fmt.Printf("%p\n", &c[0])
 }
