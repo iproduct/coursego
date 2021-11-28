@@ -12,8 +12,6 @@ type Repo struct {
 	Name string `json:"name"`
 }
 
-const MAX_BUFFER = 1000000
-
 func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
 	//resp, err := http.Get("http://google.com")

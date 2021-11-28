@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739cce5c-0d80-4d1c-af76-5c08a0119967" name="Default Changelist" comment="polymorphism demo added">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices-image/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/slices/slices.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/zero-value-map/zero-value-map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/intbitset_main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/interfaces-values/interfaces-values.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/null-safety/nullsafety.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-types/map tests.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab2/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab2/arrays/arrays.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
