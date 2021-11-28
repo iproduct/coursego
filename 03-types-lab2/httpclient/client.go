@@ -17,8 +17,8 @@ func main() {
 	//resp, err := http.Get("http://google.com")
 	//req, err := http.NewRequest("GET", "http://localhost:8080/headers", nil)
 	req, err := http.NewRequest("GET", "https://api.github.com/users/iproduct/repos", nil)
-	req.Header.Add("Accept", `Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8`)
-	req.Header.Add("Custom-Header", `Custom Value`)
+	req.Header.Add("Accept", `Accept: application/json`)
+	//req.Header.Add("Custom-Header", `Custom Value`)
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		log.Fatal(err)
