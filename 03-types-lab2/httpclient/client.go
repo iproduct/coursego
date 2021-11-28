@@ -31,7 +31,22 @@ func main() {
 	// Results will be unmarshalled here
 	var repos []Repo
 
-	//// 1) Reading response.Body using bytes.Buffer
+	//// 1) Reading response.Body using bufio.NewScanner - not very efficient
+	//scanner := bufio.NewScanner(resp.Body)
+	//scanner.Split(bufio.ScanBytes)
+	//jsonBuilder := strings.Builder{}
+	//for scanner.Scan() {
+	//	jsonBuilder.Write(scanner.Bytes())
+	//}
+	//if err := scanner.Err(); err != nil {
+	//	log.Fatal(err)
+	//}
+	//err = json.Unmarshal([]byte(jsonBuilder.String()), &repos)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+
+	//// 2) Reading response.Body using bytes.Buffer
 	//buff:= bytes.Buffer{}
 	//_, err = buff.ReadFrom(resp.Body)
 	//if err != nil {
@@ -43,7 +58,7 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
-	//// 2) Reading response.Body using bufio.NewReader
+	//// 3) Reading response.Body using bufio.NewReader
 	//reader := bufio.NewReader(resp.Body)
 	//bodyBytes, err := reader.ReadBytes(0)
 	//if err != io.EOF {
@@ -54,7 +69,7 @@ func main() {
 	//	log.Fatal(err)
 	//}
 	//
-	//// 3) Reading response.Body using ioutil.ReadAll
+	//// 4) Reading response.Body using ioutil.ReadAll
 	//bodyBytes, err = ioutil.ReadAll(resp.Body)
 	//if err != nil {
 	//	log.Fatal(err)
@@ -64,7 +79,7 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
-	//// 4) Reading response.Body directly using json.Decoder - Preferred!
+	//// 5) Reading response.Body directly using json.Decoder - Preferred!
 	decoder := json.NewDecoder(resp.Body)
 	decoder.Decode(&repos)
 
@@ -80,4 +95,5 @@ func main() {
 	//if err := scanner.Err(); err != nil {
 	//	log.Fatal(err)
 	//}
+
 }
