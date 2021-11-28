@@ -37,6 +37,7 @@ func main() {
 	fmt.Println("\nUSING ENCODER:")
 	writer := &strings.Builder{}
 	encoder := json.NewEncoder(writer)
+	//encoder.SetIndent("", "    ")
 	err = encoder.Encode(books)
 	if err != nil {
 		log.Fatalf("JSON marshaling failed: %s", err)
