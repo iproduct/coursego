@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/iproduct/coursegopro/04-struct-methods-lab/json/books"
+	"github.com/iproduct/coursego/03-types-lab2/json/books"
 	"log"
 )
 
