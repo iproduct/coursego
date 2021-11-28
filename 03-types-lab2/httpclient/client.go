@@ -16,10 +16,12 @@ func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
 	//resp, err := http.Get("http://google.com")
 	//req, err := http.NewRequest("GET", "http://localhost:8080/headers", nil)
-	req, err := http.NewRequest("GET", "https://api.github.com/users/iproduct/repos", nil)
-	req.Header.Add("Accept", `Accept: application/json`)
+	//req, err := http.NewRequest("GET", "https://api.github.com/users/iproduct/repos", nil)
+	//req.Header.Add("Accept", `Accept: application/json`)
 	//req.Header.Add("Custom-Header", `Custom Value`)
-	resp, err := http.DefaultClient.Do(req)
+	//resp, err := http.DefaultClient.Do(req)
+
+	resp, err := http.Get("https://api.github.com/users/iproduct/repos")
 	if err != nil {
 		log.Fatal(err)
 	}
