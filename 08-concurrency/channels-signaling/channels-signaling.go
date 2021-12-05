@@ -11,10 +11,10 @@ func main() {
 		fmt.Println("Chef is preparing the pizza ...")
 		time.Sleep(3 * time.Second)
 		fmt.Println("Pizza is ready!")
-		orderReady <- struct{} {}
+		orderReady <- struct{}{}
 	}()
 	fmt.Println("Taking orders from clients")
-	<- orderReady
+	<-orderReady
 	fmt.Println("Pizza is served ...")
 	fmt.Println("Simulation complete.")
 }

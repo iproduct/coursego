@@ -1,7 +1,7 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 
 type Fetcher interface {
@@ -11,8 +11,8 @@ type Fetcher interface {
 }
 
 type Res struct {
-	url string
-	body string
+	url   string
+	body  string
 	found int // Number of new urls found
 }
 

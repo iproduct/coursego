@@ -25,7 +25,7 @@ func main() {
 			if ok {
 				fmt.Println("Channel 1 sent", x)
 			}
-		case y, ok:= <-ch2:
+		case y, ok := <-ch2:
 			ok2 = ok
 			if ok {
 				fmt.Println("Channel 2 sent", y)

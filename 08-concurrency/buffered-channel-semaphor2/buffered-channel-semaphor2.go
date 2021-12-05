@@ -10,7 +10,9 @@ import (
 	"sync/atomic"
 	"time"
 )
+
 const MAX_GOROUTINES = 10
+
 // Fake a long and difficult work.
 func DoWork(url string,
 	ctx context.Context,
@@ -18,7 +20,7 @@ func DoWork(url string,
 	numUrls *uint64,
 	urls chan<- string,
 	jobs *semaphor.Semaphor,
-	) {
+) {
 	fmt.Println("doing", url)
 	time.Sleep(500 * time.Millisecond)
 	fmt.Println("finished", url)

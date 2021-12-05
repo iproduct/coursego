@@ -9,6 +9,7 @@ type RPC struct {
 	result int
 	done   chan struct{}
 }
+
 func (rpc *RPC) compute() {
 	time.Sleep(time.Second) // strenuous computation intensifies
 	rpc.result = 42

@@ -17,4 +17,3 @@ func main() {
 	chA <- 1
 	fmt.Println("Demo complete")
 }
-
