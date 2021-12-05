@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -9,8 +8,9 @@ import (
 )
 
 type Repo struct {
-	Id   uint64 `json:"id"`
-	Name string `json:"name"`
+	Id          uint64 `json:"id"`
+	Name        string `json:"name"`
+	Notexisting string `json:"notexisting"`
 }
 
 func main() {
@@ -22,15 +22,16 @@ func main() {
 	//req.Header.Add("Custom-Header", `Custom Value`)
 	//resp, err := http.DefaultClient.Do(req)
 
-	resp, err := http.Get("https://api.github.com/users/iproduct/repos")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer resp.Body.Close()
-	fmt.Println("Response status:", resp.Status)
+	//resp, err := http.Get("https://api.github.com/users/iproduct/repos")
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//defer resp.Body.Close()
+	//fmt.Println("Response status:", resp.Status)
 
 	// Results will be unmarshalled here
 	var repos []Repo
+	//var repos []map[string]interface{}
 
 	//// 1) Reading response.Body using bufio.NewScanner - not very efficient
 	//scanner := bufio.NewScanner(resp.Body)
@@ -47,17 +48,17 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
-	// 2) Reading response.Body using bytes.Buffer
-	buff := bytes.Buffer{}
-	_, err = buff.ReadFrom(resp.Body)
-	if err != nil {
-		log.Fatal(err)
-	}
-	bodyBytes := buff.Bytes()
-	err = json.Unmarshal(bodyBytes, &repos)
-	if err != nil {
-		log.Fatal(err)
-	}
+	//// 2) Reading response.Body using bytes.Buffer
+	//buff := bytes.Buffer{}
+	//_, err = buff.ReadFrom(resp.Body)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//bodyBytes := buff.Bytes()
+	//err = json.Unmarshal(bodyBytes, &repos)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
 
 	//// 3) Reading response.Body using bufio.NewReader
 	//reader := bufio.NewReader(resp.Body)
@@ -71,7 +72,7 @@ func main() {
 	//}
 	//
 	//// 4) Reading response.Body using ioutil.ReadAll
-	//bodyBytes, err = ioutil.ReadAll(resp.Body)
+	//bodyBytes, err := ioutil.ReadAll(resp.Body)
 	//if err != nil {
 	//	log.Fatal(err)
 	//}
@@ -80,19 +81,29 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
-	//// 5) Reading response.Body directly using json.Decoder - Preferred!
+	// 5) Reading response.Body directly using json.Decoder - Preferred!
+	//bodyBytes, err := ioutil.ReadAll(resp.Body)
+	//fmt.Println(string(bodyBytes))
 	//decoder := json.NewDecoder(resp.Body)
 	//err = decoder.Decode(&repos)
-	//if err != nil {  log.Fatal(err) }
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
 
-	//
-	//err := getData("https://api.github.com/users/iproduct/repos", &repos)
-	//if err != nil {  log.Fatal(err) }
+	err := getData("https://api.github.com/users/iproduct/repos", &repos)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// Printing repos - information subset
 	for _, repo := range repos {
-		fmt.Printf("%v | %v\n", repo.Id, repo.Name)
+		fmt.Printf("%v: %v \n", repo.Id, repo.Name)
 	}
+	//if len(repos) > 0 {
+	//	for k, _ := range repos[0] {
+	//		fmt.Printf("%v \n", k)
+	//	}
+	//}
 
 	//scanner := bufio.NewScanner(resp.Body)
 	//for i := 0; scanner.Scan() && i < 10; i++ {
