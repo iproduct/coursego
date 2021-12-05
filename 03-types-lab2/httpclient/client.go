@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -46,17 +47,17 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
-	//// 2) Reading response.Body using bytes.Buffer
-	//buff:= bytes.Buffer{}
-	//_, err = buff.ReadFrom(resp.Body)
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-	//bodyBytes := buff.Bytes()
-	//err = json.Unmarshal(bodyBytes, &repos)
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
+	// 2) Reading response.Body using bytes.Buffer
+	buff := bytes.Buffer{}
+	_, err = buff.ReadFrom(resp.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	bodyBytes := buff.Bytes()
+	err = json.Unmarshal(bodyBytes, &repos)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	//// 3) Reading response.Body using bufio.NewReader
 	//reader := bufio.NewReader(resp.Body)
@@ -80,8 +81,13 @@ func main() {
 	//}
 
 	//// 5) Reading response.Body directly using json.Decoder - Preferred!
-	decoder := json.NewDecoder(resp.Body)
-	decoder.Decode(&repos)
+	//decoder := json.NewDecoder(resp.Body)
+	//err = decoder.Decode(&repos)
+	//if err != nil {  log.Fatal(err) }
+
+	//
+	//err := getData("https://api.github.com/users/iproduct/repos", &repos)
+	//if err != nil {  log.Fatal(err) }
 
 	// Printing repos - information subset
 	for _, repo := range repos {
@@ -96,4 +102,16 @@ func main() {
 	//	log.Fatal(err)
 	//}
 
+}
+
+func getData(uri string, dataPtr interface{}) error {
+	resp, err := http.Get(uri)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+	fmt.Println("Response status:", resp.Status)
+	decoder := json.NewDecoder(resp.Body)
+	err = decoder.Decode(&dataPtr)
+	return err
 }
