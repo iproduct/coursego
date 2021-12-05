@@ -46,10 +46,10 @@ func main() {
 				fmt.Println(body.Text()) // Println will add back the final '\n'
 				lineNum++
 			}
-			fmt.Println("\n---------------------------------------------------------------------------------------\n")
 			if err := body.Err(); err != nil {
 				log.Fatal(err)
 			}
+			fmt.Println("\n---------------------------------------------------------------------------------------\n")
 		}(url)
 	}
 	// Wait for all HTTP fetches to complete.

@@ -5,8 +5,8 @@ import (
 )
 
 func BenchmarkMain(b *testing.B) {
-	b.Run("BasicMutex-3-0", func(b *testing.B) {
-		BasicMutex_Load(b, 3, 0)
+	b.Run("BasicMutex-6-0", func(b *testing.B) {
+		BasicMutex_Load(b, 6, 0)
 	})
 	b.Run("BasicMutex-6-1", func(b *testing.B) {
 		BasicMutex_Load(b, 6, 1)
@@ -20,8 +20,8 @@ func BenchmarkMain(b *testing.B) {
 	b.Run("BasicMutex-0-6", func(b *testing.B) {
 		BasicMutex_Load(b, 0, 6)
 	})
-	b.Run("RWMutex-3-0", func(b *testing.B) {
-		RWMutex_Load(b, 3, 0)
+	b.Run("RWMutex-6-0", func(b *testing.B) {
+		RWMutex_Load(b, 6, 0)
 	})
 	b.Run("RWMutex-6-1", func(b *testing.B) {
 		RWMutex_Load(b, 6, 1)

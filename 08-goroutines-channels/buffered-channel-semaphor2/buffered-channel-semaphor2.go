@@ -10,21 +10,21 @@ import (
 	"sync/atomic"
 	"time"
 )
-
+const MAX_GOROUTINES = 10
 // Fake a long and difficult work.
 func DoWork(url string,
 	ctx context.Context,
 	visited *concurrentset.ConcurrentHashSet,
 	numUrls *uint64,
 	urls chan<- string,
-	jobs semaphor.Semaphor,
+	jobs *semaphor.Semaphor,
 	) {
 	fmt.Println("doing", url)
 	time.Sleep(500 * time.Millisecond)
 	fmt.Println("finished", url)
 	defer jobs.Release() // release the token
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < MAX_GOROUTINES; i++ {
 		newUrl := fmt.Sprintf("%s/%d", url, i)
 		num := atomic.AddUint64(numUrls, 1)
 		fmt.Printf("sending new URL %d: %s\n", num, newUrl)
@@ -56,7 +56,7 @@ func main() {
 			break
 		}
 		concurrentJobs.Acquire() // acquire a  token
-		go DoWork(url, ctx, visited, &numUrls, urls, concurrentJobs)
+		go DoWork(url, ctx, visited, &numUrls, urls, &concurrentJobs)
 		fmt.Printf("Current number of goroutines: %d\n", runtime.NumGoroutine())
 	}
 }
