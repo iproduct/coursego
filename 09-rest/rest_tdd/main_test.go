@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/iproduct/coursego/rest/rest_tdd/rest"
+	"github.com/iproduct/coursegopro/09-rest/rest_tdd/rest"
 	"log"
 	"net/http"
 	"net/http/httptest"

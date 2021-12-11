@@ -1,6 +1,6 @@
 package main
 
-import "github.com/iproduct/coursego/09-rest/rest_tdd/rest"
+import "github.com/iproduct/coursegopro/09-rest/rest_tdd/rest"
 
 func main() {
 	a := rest.App{}

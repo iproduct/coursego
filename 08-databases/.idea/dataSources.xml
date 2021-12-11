@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/golang_projects</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="golang_projects_2021@localhost" uuid="daa00b0a-9c84-4897-832a-f0f5fe65931b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/golang_projects_2021</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

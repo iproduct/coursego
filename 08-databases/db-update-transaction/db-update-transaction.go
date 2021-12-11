@@ -16,7 +16,7 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -43,28 +43,21 @@ func main() {
 	}
 	log.Println(status)
 
-	// A *DB is a pool of connections. Call Conn to reserve a connection for exclusive use.
-	conn, err := db.Conn(ctx)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer conn.Close() // Return the connection to the pool.
-
 	// Print projects before update
-	projects := GetProjects(ctx, conn)
+	projects := GetProjects(ctx, db)
 	utils.PrintProjects(projects)
 
 	// Update project budgets by 10% increase for project after 2020 in a single transaction
 	loc, _ := time.LoadLocation("Europe/Sofia")
 	const shortForm = "2006-Jan-02"
-	startDate, _ := time.ParseInLocation(shortForm, "2020-Jan-01", loc)
+	startDate, _ := time.ParseInLocation(shortForm, "1991-Jan-01", loc)
 
 	// BEGIN TRANSACTION
-	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
+	tx, err := db.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
 		log.Fatal(err)
 	}
-	result, execErr := tx.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * budget * 1.2/ budget) WHERE start_date > ?;`, startDate)
+	result, execErr := tx.ExecContext(ctx, `UPDATE projects SET budget = ROUND(budget * 1.2) WHERE start_date > ?;`, startDate)
 	if execErr != nil { // ROLLBSACK IF ERROR
 		if rollbackErr := tx.Rollback(); rollbackErr != nil {
 			log.Fatalf("update failed: %v, unable to rollback: %v\n", execErr, rollbackErr)
@@ -83,12 +76,12 @@ func main() {
 	}
 
 	// Print projects after update
-	projects = GetProjects(ctx, conn)
+	projects = GetProjects(ctx, db)
 	utils.PrintProjects(projects)
 }
 
 // Helper functions
-func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
+func GetProjects(ctx context.Context, conn *sql.DB) []entities.Project {
 	rows, err := conn.QueryContext(ctx, "SELECT * FROM projects")
 	if err != nil {
 		log.Fatal(err)

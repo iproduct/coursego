@@ -29,7 +29,7 @@ const templateStr = `
 </head>
 <body>
 {{if .}}
-<img src="09-http://chart.apis.google.com/chart?chs=300x300&cht=qr&choe=UTF-8&chl={{.}}" />
+<img src="http://chart.apis.google.com/chart?chs=300x300&cht=qr&choe=UTF-8&chl={{.}}" />
 <br>
 {{.}}
 <br>

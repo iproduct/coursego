@@ -16,7 +16,7 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -43,15 +43,8 @@ func main() {
 	}
 	log.Println(status)
 
-	// A *DB is a pool of connections. Call Conn to reserve a connection for exclusive use.
-	conn, err := db.Conn(ctx)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer conn.Close() // Return the connection to the pool.
-
 	// Print projects before update
-	projects := GetProjects(ctx, conn)
+	projects := GetProjects(ctx, db)
 	utils.PrintProjects(projects)
 
 	// Update project budgets by 10% increase for project after 2020 in a single transaction
@@ -63,8 +56,8 @@ func main() {
 	t3, _ := time.ParseInLocation(shortForm, "2013-Jan-01", loc)
 	projects = []entities.Project{
 		{
-			Name:        "tux",
-			Description: "Linux mascot project",
+			Name:        "tux2",
+			Description: sql.NullString{"Linux mascot project", true},
 			Budget:      1000,
 			StartDate:   t0,
 			Finished:    true,
@@ -72,8 +65,8 @@ func main() {
 			UserIds:     []int64{1, 2, 3},
 		},
 		{
-			Name:        "duke",
-			Description: "Java mascot project",
+			Name:        "duke2",
+			Description: sql.NullString{"Java mascot project", true},
 			Budget:      2000,
 			StartDate:   t1,
 			Finished:    true,
@@ -81,8 +74,8 @@ func main() {
 			UserIds:     []int64{1, 2, 3},
 		},
 		{
-			Name:        "gopher",
-			Description: "Linux mascot project",
+			Name:        "gopher2",
+			Description: sql.NullString{"Linux mascot project", true},
 			Budget:      1000,
 			StartDate:   t2,
 			Finished:    true,
@@ -90,8 +83,8 @@ func main() {
 			UserIds:     []int64{1, 2, 3},
 		},
 		{
-			Name:        "moby dock",
-			Description: "Docker mascot project",
+			Name:        "moby dock2",
+			Description: sql.NullString{"Docker mascot project", true},
 			Budget:      1500,
 			StartDate:   t3,
 			Finished:    true,
@@ -101,7 +94,7 @@ func main() {
 	}
 
 	// BEGIN TRANSACTION
-	tx, err := conn.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
+	tx, err := db.BeginTx(ctx, &sql.TxOptions{Isolation: sql.LevelSerializable}) // or db.BeginTx()
 	if err != nil {
 		log.Println(err)
 		return
@@ -141,12 +134,12 @@ func main() {
 	}
 
 	// Print projects after update
-	projects = GetProjects(ctx, conn)
+	projects = GetProjects(ctx, db)
 	utils.PrintProjects(projects)
 }
 
 // Helper functions
-func GetProjects(ctx context.Context, conn *sql.Conn) []entities.Project {
+func GetProjects(ctx context.Context, conn *sql.DB) []entities.Project {
 	rows, err := conn.QueryContext(ctx, "SELECT * FROM projects")
 	if err != nil {
 		log.Fatal(err)

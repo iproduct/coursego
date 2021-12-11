@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="golang_projects@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.23">
-    <root id="1">
-      <ServerVersion>8.0.16</ServerVersion>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>lower/lower</DefaultCasing>
-    </root>
+    <root id="1"/>
     <schema id="2" parent="1" name="account">
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>

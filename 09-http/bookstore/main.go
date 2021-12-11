@@ -7,25 +7,16 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
 	"path"
 	"sync"
 )
 
 // ResourcesPath ia basic path to the project in filesystem
-const ResourcesPath = "D:/CourseGO/git/coursego/09-http/bookstore"
+var workDir, _ = os.Getwd()
+var  ResourcesPath = path.Join(workDir, "bookstore")
 
-var tmplBase = template.New("base").Funcs(
-	template.FuncMap{
-		"urlSafe": func(url url.URL) template.HTML {
-			return template.HTML(url.String())
-		},
-	})
-
-var tmplAllBooks, _ = tmplBase.ParseFiles(
-	path.Join(ResourcesPath, "templates", "books.html"),
-	path.Join(ResourcesPath, "templates", "favs.html"),
-)
-
+var tmplAllBooks *template.Template
 //var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
 var db database = make(map[string]books.Book, 10) // books database is read only so no mutex is needed
 var favourites database = make(map[string]books.Book, 10)
@@ -33,6 +24,24 @@ var rwlock sync.RWMutex // Read-Write mutex defending access to favourites
 var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
 func init() {
+	var tmplBase = template.New("base").Funcs(
+		template.FuncMap{
+			"urlSafe": func(url url.URL) template.HTML {
+				return template.HTML(url.String())
+			},
+		})
+
+	var err error
+	tmplAllBooks, err = tmplBase.ParseFiles(
+		path.Join(ResourcesPath, "templates", "books.html"),
+		path.Join(ResourcesPath, "templates", "favs.html"),
+	)
+	if err != nil {
+		log.Println(err)
+	}
+
+	log.Println(tmplAllBooks)
+	log.Println(ResourcesPath)
 	for _, t := range tmplAllBooks.Templates() {
 		t.ParseFiles(
 			path.Join(ResourcesPath, "templates", "head.html"),
@@ -82,7 +91,9 @@ func showFavs(w http.ResponseWriter, req *http.Request) {
 		rwlock.Unlock()
 		log.Printf("Book ID=%s remove from favourites\n", removeFav)
 	}
+	rwlock.RLock()
 	err := tmplAllBooks.ExecuteTemplate(w, "favs.html", favourites)
+	rwlock.RUnlock()
 	if err != nil {
 		log.Printf("Error executing template: %v\n", err)
 	}

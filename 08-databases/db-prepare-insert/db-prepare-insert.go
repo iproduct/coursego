@@ -18,11 +18,14 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
 	defer db.Close()
+
+	dropDbs(db)
+	createDbs(db)
 
 	// Insert companies
 	companies := []entities.Company{
@@ -52,6 +55,8 @@ func main() {
 		}
 		companies[i].Id = insId
 	}
+	printer := tableprinter.New(os.Stdout)
+	printer.Print(companies)
 
 	// Insert projects
 	loc, _ := time.LoadLocation("Europe/Sofia")
@@ -63,7 +68,7 @@ func main() {
 	projects := []entities.Project{
 		{
 			Name:        "tux",
-			Description: "Linux mascot project",
+			Description: sql.NullString{"Linux mascot project", true},
 			Budget:      1000,
 			StartDate:   t0,
 			Finished:    true,
@@ -72,7 +77,7 @@ func main() {
 		},
 		{
 			Name:        "duke",
-			Description: "Java mascot project",
+			Description: sql.NullString{"Java mascot project", true},
 			Budget:      2000,
 			StartDate:   t1,
 			Finished:    true,
@@ -81,7 +86,7 @@ func main() {
 		},
 		{
 			Name:        "gopher",
-			Description: "Golang mascot project",
+			Description: sql.NullString{"Linux mascot project", true},
 			Budget:      1000,
 			StartDate:   t2,
 			Finished:    true,
@@ -90,7 +95,7 @@ func main() {
 		},
 		{
 			Name:        "moby dock",
-			Description: "Docker mascot project",
+			Description: sql.NullString{"Docker mascot project", true},
 			Budget:      1500,
 			StartDate:   t3,
 			Finished:    true,
@@ -122,6 +127,7 @@ func main() {
 		}
 		projects[i].Id = insId
 	}
+	printer.Print(projects)
 
 	// Insert users
 	users := []entities.User{
@@ -163,8 +169,6 @@ func main() {
 		}
 		users[i].Id = insId
 	}
-
-	printer := tableprinter.New(os.Stdout)
 	printer.Print(users)
 
 	// Connect users and projects
@@ -186,7 +190,102 @@ func main() {
 		}
 	}
 
+	rows, err := db.Query("SELECT * FROM projects_users")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer rows.Close()
+
+	projectsUsers := []entities.ProjectUser{}
+	for rows.Next() {
+		pu := entities.ProjectUser{}
+		if err := rows.Scan(&pu.ProjectId, &pu.UserId); err != nil {
+			log.Fatal(err)
+		}
+		projectsUsers = append(projectsUsers, pu)
+	}
+	if rows.Err() != nil {
+		log.Fatal(rows.Err())
+	}
+	printer.Print(users)
+
 	//	rows, err = db.Query("SELECT * FROM users")
 	//	for rows.Next()
 	//	PrintUsers()
+}
+
+func dropDbs(db *sql.DB) {
+	res, err := db.Exec("DROP TABLE IF EXISTS `projects_users`")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err := res.RowsAffected()
+	log.Printf("'projects_users' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("DROP TABLE IF EXISTS `user_roles`")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("'user_roles' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("DROP TABLE IF EXISTS `users`")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("'users' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("DROP TABLE IF EXISTS `projects`")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("projects - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("DROP TABLE IF EXISTS `companies`")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("comapnies - Rows Affected: %d %v", rowsAffected, err)
+
+}
+
+func createDbs(db *sql.DB) {
+	res, err := db.Exec("CREATE TABLE `companies` (  `id` bigint(20) NOT NULL AUTO_INCREMENT,  `name` varchar(60) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err := res.RowsAffected()
+	log.Printf("'companies' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("CREATE TABLE `projects` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `name` varchar(60) NOT NULL, `description` varchar(1024) DEFAULT NULL, `budget` double NOT NULL, `finished` tinyint(1) NOT NULL, `start_date` date DEFAULT NULL, `company_id` bigint(20) DEFAULT NULL, PRIMARY KEY (`id`), UNIQUE KEY `name_UNIQUE` (`name`), KEY `FKrvpjk20pqyytvj6m5cutub6iq` (`company_id`), CONSTRAINT `FKrvpjk20pqyytvj6m5cutub6iq` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("'projects' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("CREATE TABLE `users` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `first_name` varchar(20) DEFAULT NULL, `last_name` varchar(20) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `username` varchar(30) DEFAULT NULL, `password` varchar(255) DEFAULT NULL, `active` tinyint(1) NOT NULL, `created` datetime(6) DEFAULT NULL, `modified` datetime(6) DEFAULT NULL, PRIMARY KEY (`id`), UNIQUE KEY `UK_6dotkott2kjsp8vw4d0m25fb7` (`email`), UNIQUE KEY `UK_r43af9ap4edm43mmtq01oddj6` (`username`)) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("'users' - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("CREATE TABLE `user_roles` ( `user_id` bigint(20) NOT NULL, `role` varchar(255) DEFAULT NULL, KEY `FKhfh9dx7w3ubf1co1vdev94g3f` (`user_id`), CONSTRAINT `FKhfh9dx7w3ubf1co1vdev94g3f` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("user_roles - Rows Affected: %d %v", rowsAffected, err)
+
+	res, err = db.Exec("CREATE TABLE `projects_users` ( `project_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, PRIMARY KEY (`project_id`,`user_id`), KEY `FKq2sfpib7vt9mmqkmw4c9rvmca` (`user_id`), CONSTRAINT `FKq2sfpib7vt9mmqkmw4c9rvmca` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`), CONSTRAINT `FKqrnu3d0a4dnxhlpew7f7x90kh` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;")
+	if err != nil {
+		log.Fatal(err)
+	}
+	rowsAffected, err = res.RowsAffected()
+	log.Printf("projects_users - Rows Affected: %d %v", rowsAffected, err)
+
 }

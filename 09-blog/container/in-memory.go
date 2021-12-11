@@ -18,7 +18,7 @@ func NewInMemory() InMemory {
 	}
 }
 
-// GetAll implements 09-blog.Container.
+// GetAll implements blog.Container.
 func (c *InMemory) GetAll() ([]blog.Post, error) {
 	c.mutex.RLock()
 	defer c.mutex.RUnlock()

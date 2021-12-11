@@ -1,10 +1,10 @@
 package main
 
 import (
-	"os"
 	"bufio"
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	if len(os.Args) > 1 {
 		resp, err = http.Get(os.Args[1])
 	} else {
-		resp, err = http.Get("09-http://gobyexample.com")
+		resp, err = http.Get("http://gobyexample.com")
 	}
 	if err != nil {
 		panic(err)

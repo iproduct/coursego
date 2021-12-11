@@ -7,6 +7,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/google/uuid"
@@ -94,12 +95,12 @@ func main() {
 		Handler: mux,
 	}
 
-	// container := container.NewMySQLStore(container.MySQLOptions{
-	// 	URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/09-blog?parseTime=true", os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
-	// })
-	container := container.NewMongoStore(container.MongoOptions{
-		URI: "mongodb://localhost:27017",
+	container := container.NewMySQLStore(container.MySQLOptions{
+		URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/09-blog?parseTime=true", os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
 	})
+	//container := container.NewMongoStore(container.MongoOptions{
+	//	URI: "mongodb://localhost:27017",
+	//})
 	err := container.Init()
 	if err != nil {
 		log.Fatalf("failed to init store: %s", err)
