@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2ebcc8-44a5-4c6a-84ce-a5556c27a88e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../09-networking-rest-lab/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-networking-rest-lab/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-networking-rest-lab/http-tokenizer/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-networking-rest-lab/urlparse/urlparse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-websocket/chat.go" beforeDir="false" afterPath="$PROJECT_DIR$/chat-websocket/chat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09-networking-rest-lab/tcpserver/tcpserver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +140,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="go.mod file added" />
     <MESSAGE value="session demo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="session demo added" />
+    <MESSAGE value="demos updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos updated" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
