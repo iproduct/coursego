@@ -23,6 +23,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 }
 
 type MyHandler struct{}
+
 func (_ MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	// This handler does something a little more

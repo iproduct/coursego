@@ -14,13 +14,15 @@ import (
 
 // ResourcesPath ia basic path to the project in filesystem
 var workDir, _ = os.Getwd()
-var  ResourcesPath = path.Join(workDir, "bookstore")
+
+//var  ResourcesPath = path.Join(workDir, "bookstore")
 
 var tmplAllBooks *template.Template
+
 //var tmplAllBooks = template.Must(template.New("all-books").Parse(tmplAllBooksStr))
 var db database = make(map[string]books.Book, 10) // books database is read only so no mutex is needed
 var favourites database = make(map[string]books.Book, 10)
-var rwlock sync.RWMutex // Read-Write mutex defending access to favourites
+var rwlock sync.RWMutex                                         // Read-Write mutex defending access to favourites
 var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
 func init() {
@@ -33,19 +35,19 @@ func init() {
 
 	var err error
 	tmplAllBooks, err = tmplBase.ParseFiles(
-		path.Join(ResourcesPath, "templates", "books.html"),
-		path.Join(ResourcesPath, "templates", "favs.html"),
+		path.Join(workDir, "templates", "books.html"),
+		path.Join(workDir, "templates", "favs.html"),
 	)
 	if err != nil {
 		log.Println(err)
 	}
 
 	log.Println(tmplAllBooks)
-	log.Println(ResourcesPath)
+	log.Println(workDir)
 	for _, t := range tmplAllBooks.Templates() {
 		t.ParseFiles(
-			path.Join(ResourcesPath, "templates", "head.html"),
-			path.Join(ResourcesPath, "templates", "nav.html"),
+			path.Join(workDir, "templates", "head.html"),
+			path.Join(workDir, "templates", "nav.html"),
 		)
 	}
 	for _, book := range books.GoBooks {
@@ -67,7 +69,7 @@ func showBooks(w http.ResponseWriter, req *http.Request) {
 		favourites[addFav] = db[addFav]
 		rwlock.Unlock()
 		log.Printf("Book ID=%s aded to favourites\n", addFav)
-	}else if removeFav != "" {
+	} else if removeFav != "" {
 		rwlock.Lock()
 		delete(favourites, removeFav)
 		rwlock.Unlock()
@@ -99,12 +101,10 @@ func showFavs(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
-
-
 func main() {
 	http.HandleFunc("/", showBooks)
 	http.HandleFunc("/favs", showFavs)
-	fs := http.FileServer(http.Dir(path.Join(ResourcesPath, "static")))
+	fs := http.FileServer(http.Dir(path.Join(workDir, "static")))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	log.Println("Starting the HTTP server ...")
 	log.Fatal(http.ListenAndServe(*addr, nil))
