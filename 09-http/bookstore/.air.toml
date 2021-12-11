@@ -1,13 +1,14 @@
 root = "."
+testdata_dir = "testdata"
 tmp_dir = "tmp"
 
 [build]
   bin = "tmp\\main.exe"
   cmd = "go build -o ./tmp/main.exe ."
   delay = 1000
-  exclude_dir = ["assets", "tmp", "vendor"]
+  exclude_dir = ["assets", "tmp", "vendor", "testdata"]
   exclude_file = []
-  exclude_regex = []
+  exclude_regex = ["_test.go"]
   exclude_unchanged = false
   follow_symlink = false
   full_bin = ""
@@ -30,3 +31,6 @@ tmp_dir = "tmp"
 
 [misc]
   clean_on_exit = false
+
+[screen]
+  clear_on_rebuild = false

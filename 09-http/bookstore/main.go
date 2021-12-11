@@ -106,6 +106,6 @@ func main() {
 	http.HandleFunc("/favs", showFavs)
 	fs := http.FileServer(http.Dir(path.Join(workDir, "static")))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
-	log.Println("Starting the HTTP server ...")
+	log.Println("Starting the HTTP server...")
 	log.Fatal(http.ListenAndServe(*addr, nil))
 }
