@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"golang.org/x/net/context"
 	"log"
 	"net"
@@ -20,6 +21,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	fmt.Println("Accept connection on port: 8080")
+
 	// accept client connections
 	for {
 		conn, err := ln.Accept()
@@ -44,8 +47,9 @@ func handleConnection(ctx context.Context, conn net.Conn) {
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
 		message := scanner.Text()
+		log.Printf("Message received: %v\n", message)
 		if message == ":QUIT" {
-			log.Println("Client requested to the connection so closing.")
+			log.Println("Client requested to close the connection so closing.")
 			return
 		}
 		select {
@@ -53,13 +57,14 @@ func handleConnection(ctx context.Context, conn net.Conn) {
 			log.Printf("Connection canceled: %v\n", conn)
 			return
 		default:
-			newMessage := strings.ToUpper(message)
-			conn.Write([]byte(newMessage + ":1"))
-			conn.Write([]byte(newMessage + ":2"))
 		}
+		newMessage := strings.ToUpper(message)
+		conn.Write([]byte(newMessage + ":1\n"))
+		conn.Write([]byte(newMessage + ":2\n"))
 		if err := scanner.Err(); err != nil {
 			log.Printf("Error scanning client request: %v\n", err)
+			break
 		}
-		log.Printf("Closing client connection %v\n", conn)
 	}
+	log.Printf("Closing client connection %v\n", conn)
 }
