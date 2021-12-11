@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc186d3-e3f3-45f2-b199-7fb301a09e4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../09-http/bookstore/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-http/server-json/books/books.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-http/server-json/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/bookstore/.air.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.air.conf.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/bookstore/.air.conf123" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/bookstore/.air.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.air.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/bookstore/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/bookstore/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_tdd/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest_tdd/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_tdd/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest_tdd/rest/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_tdd/rest/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/rest_tdd/rest/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-rest-service-apply/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rest-service-apply/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-rest-service-errorhandling/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rest-service-errorhandling/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-rest-service-middleware/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rest-service-middleware/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-rest-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rest-service/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="ddc186d3-e3f3-45f2-b199-7fb301a09e4c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +125,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="blogs demo added to Chi demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="blogs demo added to Chi demo" />
+    <MESSAGE value="demos updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos updated" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
