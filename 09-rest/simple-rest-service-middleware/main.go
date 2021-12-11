@@ -34,7 +34,7 @@ func SendError(w http.ResponseWriter, status int, err error, message string) {
 	w.Header().Add("Content-Type", "application/json")
 	w.WriteHeader(status)
 	// http.Error() could be used as well
-	fmt.Fprintf(w,`{"error": "%s"}`, text)
+	fmt.Fprintf(w, `{"error": "%s"}`, text)
 }
 
 func users(w http.ResponseWriter, r *http.Request) {
@@ -43,7 +43,7 @@ func users(w http.ResponseWriter, r *http.Request) {
 		defer r.Body.Close()
 		user := User{}
 		if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
-			SendError(w, http.StatusBadRequest,  err, "JSON unmarshaling failed")
+			SendError(w, http.StatusBadRequest, err, "JSON unmarshaling failed")
 			return
 		}
 		fmt.Printf("AFTER UNMARSHAL:%#v\n", user)
@@ -56,7 +56,7 @@ func users(w http.ResponseWriter, r *http.Request) {
 
 		data, err := json.MarshalIndent(user, "", "    ")
 		if err != nil {
-			SendError(w, http.StatusBadRequest,  err, "JSON marshaling failed")
+			SendError(w, http.StatusBadRequest, err, "JSON marshaling failed")
 			return
 		}
 		w.Write(data)
@@ -96,12 +96,13 @@ func filterPOSTByContentType(handler http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Println("Middleware 1: Filtering JSON MIME type ...")
 		if r.Method == http.MethodPost && r.Header.Get("Content-type") != "application/json" {
-			SendError(w, http.StatusUnsupportedMediaType,  nil, "415 – Unsupported Media Type. Service accepts 'application/json' only.")
+			SendError(w, http.StatusUnsupportedMediaType, nil, "415 – Unsupported Media Type. Service accepts 'application/json' only.")
 			return
 		}
 		handler.ServeHTTP(w, r)
 	})
 }
+
 // Middleware: add server timestamp as response header
 func setServerTimeHeader(handler http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -116,7 +117,7 @@ func setServerTimeHeader(handler http.Handler) http.Handler {
 			}
 		}
 		// add new header
-		w.Header().Add("Server-Time(UTC)", strconv.FormatInt(time.Now().Unix(), 10))
+		w.Header().Add("Server-Time", strconv.FormatInt(time.Now().Unix(), 10))
 		w.WriteHeader(resp.StatusCode)
 		body, _ := ioutil.ReadAll(resp.Body)
 		defer resp.Body.Close()
@@ -132,5 +133,5 @@ func main() {
 	// HandlerFunc returns a HTTP Handler
 	myHandler := http.HandlerFunc(myHandlerFunc)
 	http.Handle("/my", myMiddleware(myHandler))
-	log.Fatal(http.ListenAndServe(":8088", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }

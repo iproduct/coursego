@@ -14,7 +14,7 @@ import (
 
 type User struct {
 	Id       int
-	Name     string
+	Username string
 	Email    string
 	Password string
 	Active   bool
@@ -64,6 +64,7 @@ func users(w http.ResponseWriter, r *http.Request) *AppError {
 		fmt.Printf("AFTER UNMARSHAL:%#v\n", user)
 		newID := int(atomic.AddUint64(&sequence, 1))
 		user.Id = newID
+		user.Active = true
 		database[newID] = user
 		w.Header().Add("Content-Type", "application/json")
 		w.Header().Add("Location", r.URL.String()+"/"+strconv.Itoa(newID))
@@ -126,6 +127,7 @@ func setServerTimeHeader(handler AppHandler) AppHandler {
 		// Providing wrapper instead of original response writer
 		handler.ServeHTTP(recorder, r)
 		resp := recorder.Result()
+
 		// copy original headers
 		for k, v := range resp.Header {
 			for _, h := range v {
@@ -133,8 +135,9 @@ func setServerTimeHeader(handler AppHandler) AppHandler {
 			}
 		}
 		// add new header
-		w.Header().Add("Server-Time(UTC)", strconv.FormatInt(time.Now().Unix(), 10))
+		w.Header().Add("Server-Time", strconv.FormatInt(time.Now().Unix(), 10))
 		w.WriteHeader(resp.StatusCode)
+
 		body, _ := ioutil.ReadAll(resp.Body)
 		w.Write(body)
 		// Setting Server-Time header for all responses
@@ -154,5 +157,5 @@ func Apply(h AppHandler, adapters ...Adapter) http.Handler {
 
 func main() {
 	http.Handle("/users", Apply(users, setServerTimeHeader, filterPOSTByContentType, myMiddleware))
-	log.Fatal(http.ListenAndServe(":8088", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }

@@ -131,7 +131,7 @@ func setServerTimeHeader(handler http.Handler) http.Handler {
 			}
 		}
 		// add new header
-		w.Header().Add("Server-Time(UTC)", strconv.FormatInt(time.Now().Unix(), 10))
+		w.Header().Add("Server-Time", strconv.FormatInt(time.Now().Unix(), 10))
 		w.WriteHeader(resp.StatusCode)
 		body, _ := ioutil.ReadAll(resp.Body)
 		w.Write(body)
@@ -145,5 +145,5 @@ func main() {
 	// HandlerFunc returns a HTTP Handler
 	myHandler := http.HandlerFunc(myHandlerFunc)
 	http.Handle("/my", myMiddleware(myHandler))
-	log.Fatal(http.ListenAndServe(":8088", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
