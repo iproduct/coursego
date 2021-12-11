@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 )
@@ -19,7 +20,7 @@ func main() {
 	if len(os.Args) > 1 {
 		resp, err = http.Get(os.Args[1])
 	} else {
-		resp, err = http.Get("http://gobyexample.com")
+		resp, err = http.Get("http://localhost:8080/headers")
 	}
 	if err != nil {
 		panic(err)
@@ -36,6 +37,6 @@ func main() {
 	}
 
 	if err := scanner.Err(); err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 }

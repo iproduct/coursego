@@ -1,5 +1,8 @@
-module github.com/iproduct/coursegopro/09-http
+module github.com/iproduct/coursego/09-http
 
-go 1.15
+go 1.17
 
 
+require (
+	github.com/gorilla/sessions latest
+)

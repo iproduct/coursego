@@ -19,22 +19,29 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	// arguments. The response writer is used to fill in the
 	// HTTP response. Here our simple response is just
 	// "hello\n".
-	fmt.Fprintf(w, "hello\n")
+	fmt.Fprintf(w, "hello from golang!\n")
 }
 
 func headers(w http.ResponseWriter, r *http.Request) {
-
+	w.Header().Add("Content-Type", "application/json")
 	// This handler does something a little more
 	// sophisticated by reading all the HTTP request
 	// headers and echoing them into the response body.
-	fmt.Fprintf(w, "%s %s %s\n", r.Method, r.URL, r.Proto)
-	fmt.Fprintf(w, "Host = %q\n", r.Host)
-	fmt.Fprintf(w, "RemoteAddr = %q\n\n", r.RemoteAddr)
+	fmt.Fprintln(w, "{")
+	//fmt.Fprintf(w, "%s %s %s\n", r.Method, r.URL, r.Proto)
+	fmt.Fprintf(w, "\"Host\" : %q,\n", r.Host)
+	fmt.Fprintf(w, "\"RemoteAddr\" : %q,\n", r.RemoteAddr)
+	i := 0
 	for name, headers := range r.Header {
-		for _, h := range headers {
-			fmt.Fprintf(w, "%v: %v\n", name, h)
+		for j, h := range headers {
+			fmt.Fprintf(w, "%q: %q", name, h)
+			if  i < len(r.Header) - 1 || j < len(headers) - 1 {
+				fmt.Fprintln(w, ",")
+			}
 		}
+		i++
 	}
+	fmt.Fprintln(w, "\n}")
 }
 
 func main() {
