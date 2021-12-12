@@ -6,6 +6,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"github.com/iproduct/coursegopro/09-rest/rest_tdd/model"
 	"log"
 	"net/http"
 	"strconv"
@@ -55,7 +56,7 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 		start = 0
 	}
 
-	users, err := getUsers(a.DB, start, count)
+	users, err := model.getUsers(a.DB, start, count)
 	if err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return
@@ -65,7 +66,7 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 }
 
 func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
-	var u User
+	var u model.User
 	decoder := json.NewDecoder(r.Body)
 	if err := decoder.Decode(&u); err != nil {
 		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
@@ -89,7 +90,7 @@ func (a *App) getUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	u := User{ID: id}
+	u := model.User{ID: id}
 	if err := u.getUser(a.DB); err != nil {
 		switch err {
 		case sql.ErrNoRows:
@@ -111,7 +112,7 @@ func (a *App) updateUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var u User
+	var u model.User
 	decoder := json.NewDecoder(r.Body)
 	if err := decoder.Decode(&u); err != nil {
 		respondWithError(w, http.StatusBadRequest, "Invalid resquest payload")
@@ -136,7 +137,7 @@ func (a *App) deleteUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	u := User{ID: id}
+	u := model.User{ID: id}
 	if err := u.deleteUser(a.DB); err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return

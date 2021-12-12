@@ -15,8 +15,9 @@ github.com/go-sql-driver/mysql v1.5.0 h1:ozyZYNQW3x3HtqT1jira07DN2PArx2v7/mN66gG
 github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
 github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
-github.com/iproduct/coursego/12-modules-rest-jwtauth v0.0.0-20210812120102-00795c8151e7 h1:tr/mR71J6XGF23cj93/ji9cm67FdnQVcky4pUEaPBzo=
 github.com/iproduct/coursego/12-modules-rest-jwtauth v0.0.0-20210812120102-00795c8151e7/go.mod h1:gJP9Tj87cjaGzReaSA76NZwBSyU8015NmJ1JVKvt9z0=
+github.com/iproduct/coursegopro/10-modules-rest-jwtauth v0.0.0-20211114172739-54db4b9e03d8 h1:6hivlNdp85uWrj/fM2pZFDGTsoO4hibXL8DIAt9WQks=
+github.com/iproduct/coursegopro/10-modules-rest-jwtauth v0.0.0-20211114172739-54db4b9e03d8/go.mod h1:+0ZkPb+JDKDvCM950nyovHnwtf5YHiE3KJWrDHBb+gs=
 github.com/leodido/go-urn v1.2.0 h1:hpXL4XnriNwQ/ABnpepYM/1vCLWNDfUNts8dX3xTG6Y=
 github.com/leodido/go-urn v1.2.0/go.mod h1:+8+nEpDfqqsY+g338gtMEUOtuK+4dEMhiQEgxpxOKII=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

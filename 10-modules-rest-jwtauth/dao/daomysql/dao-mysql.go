@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/iproduct/coursego/moduleslab/model"
+	"github.com/iproduct/coursego/10-modules-rest-jwtauth/model"
 	"log"
 )
 
@@ -12,7 +12,7 @@ type UserRepoMysql struct {
 	db *sql.DB
 }
 
-func (u UserRepoMysql) Find(start, count int) ([]model.User, error) {
+func (u UserRepoMysql) FindAll(start, count int) ([]model.User, error) {
 	statement := "SELECT id, name, email, password, age, active FROM users LIMIT ? OFFSET ?"
 	rows, err := u.db.Query(statement, count, start)
 	if err != nil {
@@ -88,6 +88,17 @@ func (u *UserRepoMysql) DeleteByID(id int) (*model.User, error) {
 	statement := fmt.Sprintf("DELETE FROM users WHERE id=%d", id)
 	_, err = u.db.Exec(statement)
 	return user, err
+}
+
+//Count returns the count of users in DB
+func (u *UserRepoMysql) Count() (int, error) {
+	var count int
+	err := u.db.QueryRow("SELECT COUNT(*) FROM users").Scan(&count)
+	if err != nil {
+		return 0, err
+	}
+	return count, nil
+
 }
 
 func NewUserRepoMysql(user, password, dbname string) *UserRepoMysql {

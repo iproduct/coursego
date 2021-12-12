@@ -1,6 +1,6 @@
 // model.go
 
-package rest
+package model
 
 import (
 	"database/sql"
@@ -8,7 +8,7 @@ import (
 )
 
 type User struct {
-	ID       int    `json:"id"`
+	ID       int64  `json:"id"`
 	Name     string `json:"name,omitempty"`
 	Email    string `json:"email,omitempty"`
 	Password string `json:"password,omitempty"`
@@ -52,8 +52,8 @@ func (u *User) createUser(db *sql.DB) error {
 }
 
 func getUsers(db *sql.DB, start, count int) ([]User, error) {
-	statement := fmt.Sprintf("SELECT id, name, age FROM users LIMIT %d OFFSET %d", count, start)
-	rows, err := db.Query(statement)
+	rows, err := db.Query("SELECT id, name, email, password, age FROM users LIMIT ? OFFSET ?", count, start)
+	defer rows.Close()
 
 	if err != nil {
 		return nil, err
@@ -65,7 +65,7 @@ func getUsers(db *sql.DB, start, count int) ([]User, error) {
 
 	for rows.Next() {
 		var u User
-		if err := rows.Scan(&u.ID, &u.Name, &u.Age); err != nil {
+		if err := rows.Scan(&u.ID, &u.Name, &u.Email, &u.Password, &u.Age); err != nil {
 			return nil, err
 		}
 		users = append(users, u)

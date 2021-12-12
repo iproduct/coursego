@@ -10,9 +10,9 @@ import (
 	"github.com/go-playground/validator/v10"
 	en_translations "github.com/go-playground/validator/v10/translations/en"
 	"github.com/gorilla/mux"
-	"github.com/iproduct/coursegopro/10-modules-rest-jwtauth/dao"
-	"github.com/iproduct/coursegopro/10-modules-rest-jwtauth/daomysql"
-	"github.com/iproduct/coursegopro/10-modules-rest-jwtauth/model"
+	"github.com/iproduct/coursego/10-modules-rest-jwtauth/dao"
+	"github.com/iproduct/coursego/10-modules-rest-jwtauth/dao/daomysql"
+	"github.com/iproduct/coursego/10-modules-rest-jwtauth/model"
 	"golang.org/x/crypto/bcrypt"
 	"log"
 	"net/http"
@@ -87,7 +87,7 @@ func (a *App) login(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) (map[string]interface{}, error)  {
+func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) (map[string]interface{}, error) {
 	user, err := a.Users.FindByEmail(email)
 	if err != nil {
 		respondWithError(w, http.StatusUnauthorized, "Email address not found")
@@ -102,7 +102,7 @@ func (a *App) checkEmailPassword(w http.ResponseWriter, email, password string) 
 	}
 
 	claims := &model.UserToken{
-		UserID: string(user.ID),
+		UserID: user.ID,
 		Name:   user.Name,
 		Email:  user.Email,
 		StandardClaims: jwt.StandardClaims{
@@ -146,7 +146,7 @@ func (a *App) getUsers(w http.ResponseWriter, r *http.Request) {
 	if start < 0 {
 		start = 0
 	}
-	users, err := a.Users.Find(start, count)
+	users, err := a.Users.FindAll(start, count)
 	if err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return
@@ -166,7 +166,6 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
 		return
 	}
-
 
 	// Validate User struct
 	err := a.Validator.Struct(user)
@@ -249,7 +248,7 @@ func (a *App) updateUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Find if user exists in DB
-	oldUser, err := a.Users.FindByID(id);
+	oldUser, err := a.Users.FindByID(id)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			respondWithError(w, http.StatusNotFound, fmt.Sprintf("user with ID='%d' does not exist", id))
@@ -306,4 +305,3 @@ func (a *App) deleteUser(w http.ResponseWriter, r *http.Request) {
 
 	respondWithJSON(w, http.StatusOK, user)
 }
-

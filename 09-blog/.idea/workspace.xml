@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="" />
+    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/dao/daomysql/dao-mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/dao/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/model/model.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

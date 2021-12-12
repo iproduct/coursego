@@ -12,14 +12,13 @@ type User struct {
 }
 
 type UserToken struct {
-	UserID string `json:"id"`
+	UserID int    `json:"id"`
 	Name   string `json:"name"`
 	Email  string `json:"email"`
 	jwt.StandardClaims
 }
 
 type UserLogin struct {
-	Email  string `json:"email"`
+	Email    string `json:"email"`
 	Password string `json:"password"`
 }
-

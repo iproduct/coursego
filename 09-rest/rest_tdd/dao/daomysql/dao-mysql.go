@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/iproduct/coursegopro/10-modules-rest-jwtauth/model"
+	"github.com/iproduct/coursegopro/09-rest/rest_tdd/model"
 	"log"
 )
 
@@ -12,7 +12,7 @@ type UserRepoMysql struct {
 	db *sql.DB
 }
 
-func (u UserRepoMysql) Find(start, count int) ([]model.User, error) {
+func (u UserRepoMysql) FindAll(start, count int) ([]model.User, error) {
 	statement := "SELECT id, name, email, password, age, active FROM users LIMIT ? OFFSET ?"
 	rows, err := u.db.Query(statement, count, start)
 	if err != nil {
@@ -36,7 +36,7 @@ func (u UserRepoMysql) Find(start, count int) ([]model.User, error) {
 }
 
 //FindById return users by user ID or error otherwise
-func (u *UserRepoMysql) FindByID(id int) (*model.User, error) {
+func (u *UserRepoMysql) FindByID(id int64) (*model.User, error) {
 	user := &model.User{}
 	statement := "SELECT id, name, email, password, age, active FROM users WHERE id= ?"
 	err := u.db.QueryRow(statement, id).Scan(&user.ID, &user.Name, &user.Email, &user.Password, &user.Age, &user.Active)
@@ -80,7 +80,18 @@ func (u *UserRepoMysql) Update(user *model.User) (*model.User, error) {
 }
 
 //DeleteById removes and returns user with specified ID or error otherwise
-func (u *UserRepoMysql) DeleteByID(id int) (*model.User, error) {
+func (u *UserRepoMysql) DeleteByID(id int64) (*model.User, error) {
+	user, err := u.FindByID(id)
+	if err != nil {
+		return nil, err
+	}
+	statement := fmt.Sprintf("DELETE FROM users WHERE id=%d", id)
+	_, err = u.db.Exec(statement)
+	return user, err
+}
+
+//DeleteById removes and returns user with specified ID or error otherwise
+func (u *UserRepoMysql) Count(id int64) (*model.User, error) {
 	user, err := u.FindByID(id)
 	if err != nil {
 		return nil, err
