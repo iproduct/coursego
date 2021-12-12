@@ -19,7 +19,7 @@ var a rest.App
 var db *sql.DB
 
 func init() {
-	connectionString := fmt.Sprintf("%s:%s@/%s", "root", "root", "go_rest_api")
+	connectionString := fmt.Sprintf("%s:%s@/%s", "root", "root", "go_rest_api_test")
 	var err error
 	db, err = sql.Open("mysql", connectionString)
 	if err != nil {
@@ -29,7 +29,7 @@ func init() {
 
 func TestMain(m *testing.M) {
 	a = rest.App{}
-	a.Init("root", "root", "go_rest_api")
+	a.Init("root", "root", "go_rest_api_test")
 	ensureTableExists()
 	code := m.Run()
 	clearTable()
@@ -220,6 +220,9 @@ func ensureTableExists() {
 	if _, err := db.Exec(databaseCreationQuery); err != nil {
 		log.Fatal(err)
 	}
+	if _, err := db.Exec(tableDropSql); err != nil {
+		log.Fatal(err)
+	}
 	if _, err := db.Exec(tableCreationQuery); err != nil {
 		log.Fatal(err)
 	}
@@ -236,15 +239,17 @@ func clearTable() {
 	db.Exec("ALTER TABLE users AUTO_INCREMENT = 1")
 }
 
-const databaseCreationQuery = "CREATE DATABASE IF NOT EXISTS `go_rest_api` "
+const databaseCreationQuery = "CREATE DATABASE IF NOT EXISTS `go_rest_api_test` "
 
+const tableDropSql = `DROP TABLE IF EXISTS users `
 const tableCreationQuery = `
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
-    age INT NOT NULL
+    password VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    active BOOLEAN                           
 )`
 
 const emailIndexDropQuery = `DROP INDEX uidx_email ON users `

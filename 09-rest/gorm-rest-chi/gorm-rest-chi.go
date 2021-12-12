@@ -13,7 +13,6 @@ import (
 	"gorm.io/gorm/clause"
 	"log"
 	"net/http"
-	"os"
 	"time"
 )
 
@@ -35,7 +34,7 @@ func main() {
 	//})
 	//2) postsRepo = container.NewInMemory()
 	postsRepo = container.NewMySQLStore(container.MySQLOptions{
-		URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/golang_projects_2021?parseTime=true", os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
+		URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/golang_projects_2021?parseTime=true", "root", "root"), //os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
 	})
 	if postsRepo.Init() != nil {
 		log.Fatal(err)
@@ -53,16 +52,21 @@ func main() {
 	r := chi.NewRouter()
 	r.Use(SetDBMiddleware)
 
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/users", func(w http.ResponseWriter, r *http.Request) {
 		db, _ := r.Context().Value("DB").(*gorm.DB)
 
 		var users []entities.User
 		db.Find(&users)
 
-		// lots of db operations
+		w.Header().Add("Content Type", "application/json")
+		data, err := json.MarshalIndent(users, "", "    ")
+		if err != nil {
+			log.Printf("JSON marshaling failed: %s", err)
+		}
+		w.Write(data)
 	})
 
-	r.Get("/users", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/posts", func(w http.ResponseWriter, r *http.Request) {
 		db, _ := r.Context().Value("DB").(*gorm.DB)
 		postsRepository, _ := r.Context().Value("postsRepo").(blog.PostContainer)
 
@@ -84,5 +88,5 @@ func main() {
 		}
 		w.Write(data)
 	})
-	http.ListenAndServe(":3100", r)
+	http.ListenAndServe(":8080", r)
 }

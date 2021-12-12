@@ -1,6 +1,7 @@
 package rest
 
 import (
+	"context"
 	"database/sql"
 	"encoding/json"
 	"fmt"
@@ -25,6 +26,7 @@ type App struct {
 	Users      dao.UserRepo
 	Validator  *validator.Validate
 	Translator ut.Translator
+	Server     *http.Server
 }
 
 func (a *App) Init(user, password, dbname string) {
@@ -51,7 +53,21 @@ func (a *App) Init(user, password, dbname string) {
 }
 
 func (a *App) Run(addr string) {
-	log.Fatal(http.ListenAndServe(addr, a.Router))
+	a.Server = & http.Server{
+		Addr: addr,
+		Handler: a.Router,
+	}
+	go func() {
+		log.Println("Starting HTTP server on", addr)
+		log.Println("Press Ctrl+C to stop the server ...")
+		if err := a.Server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+			log.Fatalf("Error server listen: %v\n", err)
+		}
+	}()
+}
+
+func (a *App) Shutdown(ctx context.Context) error {
+	return a.Server.Shutdown(ctx)
 }
 
 func (a *App) initializeRoutes() {
