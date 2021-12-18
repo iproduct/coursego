@@ -43,9 +43,9 @@ func main() {
 	projects := GetProjects(ctx, db)
 	utils.PrintProjects(projects)
 
-	// Update project budgets by subtracting $10000 from old projects and adding money to new projects after 01.01.2000
+	// Update project budgets by subtracting $1000 from old projects and adding money to new projects after 01.01.2000
 	startDate, _ := time.Parse("2006-Jan-01", "1996-Jan-01")
-	err = UpdateProjectBudgets(ctx, db, 100, startDate)
+	err = UpdateProjectBudgets(ctx, db, 900, startDate)
 	if err != nil {
 		log.Println(err)
 	}
@@ -124,33 +124,6 @@ func UpdateProjectBudgets(ctx context.Context, db *sql.DB, amount float64, newPr
 	}
 	return nil
 }
-
-//// Update the album inventory to remove the quantity in the order.
-//_, err = tx.ExecContext(ctx, "UPDATE album SET quantity = quantity - ? WHERE id = ?",
-//	quantity, albumID)
-//if err != nil {
-//	return fail(err)
-//}
-//
-//// Create a new row in the album_order table.
-//result, err := tx.ExecContext(ctx, "INSERT INTO album_order (album_id, cust_id, quantity, date) VALUES (?, ?, ?, ?)",
-//	albumID, custID, quantity, time.Now())
-//if err != nil {
-//	return fail(err)
-//}
-//// Get the ID of the order item just created.
-//orderID, err := result.LastInsertId()
-//if err != nil {
-//	return fail(err)
-//}
-//
-//// Commit the transaction.
-//if err = tx.Commit(); err != nil {
-//	return fail(err)
-//}
-//
-//// Return the order ID.
-//return orderID, nil
 
 // Create a helper function for preparing failure results.
 func fail(err error) error {

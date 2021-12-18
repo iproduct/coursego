@@ -52,7 +52,10 @@ func main() {
 	defer conn.Close() // Return the connection to the pool.
 
 	// Print projects before update
-	projects := GetProjects(db)
+	projects, err := GetProjects(db)
+	if err != nil {
+		log.Fatal(err)
+	}
 	utils.PrintProjects(projects)
 	//for i, proj := range projects {
 	//	log.Printf("%d: %v\n", i+1, proj)
@@ -73,14 +76,17 @@ func main() {
 	log.Printf("Toatal budgets updated: %d\n", rows)
 
 	// Print projects after update
-	projects = GetProjects(db)
+	projects, err = GetProjects(db)
+	if err != nil {
+		log.Fatal(err)
+	}
 	utils.PrintProjects(projects)
 }
 
-func GetProjects(db *sql.DB) []entities.Project {
+func GetProjects(db *sql.DB) ([]entities.Project, error) {
 	rows, err := db.Query("SELECT * FROM projects")
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	defer rows.Close()
 
@@ -88,27 +94,34 @@ func GetProjects(db *sql.DB) []entities.Project {
 	for rows.Next() {
 		p := entities.Project{}
 		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId); err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
-		userRows, err := db.Query("SELECT user_id FROM projects_users WHERE project_id = ?", p.Id)
-		if err != nil {
-			log.Fatal(err)
-		}
+
+		projects = append(projects, p)
+	}
+	err1 := rows.Close()
+	if err = rows.Err(); err1 != nil || err != nil {
+		return nil, err
+	}
+
+	// fill-in the project user IDs for each project
+	projectUsersQuery, err := db.Prepare("SELECT user_id FROM projects_users WHERE project_id = ?")
+	if err != nil {
+		return nil, err
+	}
+	for _, p := range projects {
+		userRows, err := projectUsersQuery.Query(p.Id)
 		var userId int64
 		for userRows.Next() {
 			if err := userRows.Scan(&userId); err != nil {
-				log.Fatal(err)
+				return nil, err
 			}
 			p.UserIds = append(p.UserIds, userId)
 		}
-		err = userRows.Close()
-		if err != nil {
-			log.Fatal(err)
+		err1 := userRows.Close()
+		if err = userRows.Err(); err1 != nil || err != nil {
+			return nil, err
 		}
-		if err = userRows.Err(); err != nil {
-			log.Fatal(err)
-		}
-		projects = append(projects, p)
 	}
-	return projects
+	return projects, nil
 }

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="03c3d5d4-e486-40dc-b4d3-5d12a29b9b79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction/db-update-transaction.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld_grpc.pb.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
