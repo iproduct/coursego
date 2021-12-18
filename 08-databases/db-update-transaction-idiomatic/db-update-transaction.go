@@ -67,7 +67,7 @@ func UpdateProjectBudgets(ctx context.Context, db *sql.DB, amount float64, newPr
 		return fail(err)
 	}
 	// Defer a rollback in case anything fails.
-	defer tx.Rollback()
+	defer tx.Rollback() // noop if already commited
 
 	// Selecting all projects with start dates and budgets
 	rows, err := tx.QueryContext(ctx, "SELECT id, name, start_date, budget from projects")
@@ -93,7 +93,9 @@ func UpdateProjectBudgets(ctx context.Context, db *sql.DB, amount float64, newPr
 		results = append(results, r)
 	}
 	log.Printf("Project results: %v\n", results)
-
+	if err = rows.Err(); err != nil {
+		return err
+	}
 	sum := 0.0
 	for _, pd := range results {
 		if pd.StartDate.Before(newProjectsStart) {

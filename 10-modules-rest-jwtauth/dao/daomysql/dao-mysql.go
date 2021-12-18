@@ -76,7 +76,10 @@ func (u *UserRepoMysql) Create(user *model.User) (*model.User, error) {
 func (u *UserRepoMysql) Update(user *model.User) (*model.User, error) {
 	statement := "UPDATE users SET name=?, password=?, age=?, active=? WHERE id=? "
 	_, err := u.db.Exec(statement, user.Name, user.Password, user.Age, user.Active, user.ID)
-	return user, err
+	if err != nil {
+		return nil, err
+	}
+	return u.FindByID(user.ID)
 }
 
 //DeleteById removes and returns user with specified ID or error otherwise
@@ -85,8 +88,7 @@ func (u *UserRepoMysql) DeleteByID(id int) (*model.User, error) {
 	if err != nil {
 		return nil, err
 	}
-	statement := fmt.Sprintf("DELETE FROM users WHERE id=%d", id)
-	_, err = u.db.Exec(statement)
+	_, err = u.db.Exec("DELETE FROM users WHERE id=?", id)
 	return user, err
 }
 

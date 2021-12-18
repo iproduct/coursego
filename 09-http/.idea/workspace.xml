@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2690ee5d-4379-4166-8e30-cc075bcd6dad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/dao/daomysql/dao-mysql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/dao/repository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/model/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/app.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/rest/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/rest_test/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/rest_test/app_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/dao/daomysql/dao-mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/dao/daomysql/dao-mysql.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <recent name="D:\CourseGO\git\coursego\09-http\simple-server-mux" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/09-http/server-json">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/09-http/bookstore">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -117,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/server-json" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/templates-text" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/bookstore" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/templates-text" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/server-json" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/bookstore-simple" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/sesssion" />
       </list>
