@@ -207,7 +207,7 @@ func main() {
 	if rows.Err() != nil {
 		log.Fatal(rows.Err())
 	}
-	printer.Print(users)
+	printer.Print(projectsUsers)
 
 	//	rows, err = db.Query("SELECT * FROM users")
 	//	for rows.Next()

@@ -44,7 +44,10 @@ func main() {
 	log.Println(status)
 
 	// Print projects before update
-	projects := GetProjects(ctx, db)
+	projects, err := GetProjects(ctx, db)
+	if err != nil {
+		log.Fatal(err)
+	}
 	utils.PrintProjects(projects)
 
 	// Update project budgets by 10% increase for project after 2020 in a single transaction
@@ -76,15 +79,18 @@ func main() {
 	}
 
 	// Print projects after update
-	projects = GetProjects(ctx, db)
+	projects, err = GetProjects(ctx, db)
+	if err != nil {
+		log.Fatal(err)
+	}
 	utils.PrintProjects(projects)
 }
 
 // Helper functions
-func GetProjects(ctx context.Context, conn *sql.DB) []entities.Project {
+func GetProjects(ctx context.Context, conn *sql.DB) ([]entities.Project, error) {
 	rows, err := conn.QueryContext(ctx, "SELECT * FROM projects")
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	defer rows.Close()
 
@@ -92,38 +98,38 @@ func GetProjects(ctx context.Context, conn *sql.DB) []entities.Project {
 	for rows.Next() {
 		p := entities.Project{}
 		if err := rows.Scan(&p.Id, &p.Name, &p.Description, &p.Budget, &p.Finished, &p.StartDate, &p.CompanyId); err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
 		projects = append(projects, p)
 	}
 	err = rows.Close()
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	if err = rows.Err(); err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 
 	for i := range projects {
 		userRows, err := conn.QueryContext(ctx, "SELECT user_id FROM projects_users WHERE project_id = ?", projects[i].Id)
 		if err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
 		var userId int64
 		for userRows.Next() {
 			if err := userRows.Scan(&userId); err != nil {
-				log.Fatal(err)
+				return nil, err
 			}
 			projects[i].UserIds = append(projects[i].UserIds, userId)
 		}
 		err = userRows.Close()
 		if err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
 		if err = userRows.Err(); err != nil {
-			log.Fatal(err)
+			return nil, err
 		}
 	}
 
-	return projects
+	return projects, nil
 }
