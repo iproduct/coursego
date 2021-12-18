@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c3d5d4-e486-40dc-b4d3-5d12a29b9b79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../09-http/chat-websocket/chat.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-struct-methods-lab/copymap/copymap.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-struct-methods-lab/copymap/copymap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-struct-methods-lab/maps/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-struct-methods-lab/maps/maps.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-struct-methods-lab/wordcount/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-struct-methods-lab/wordcount/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/simple-rest-client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/simple-rest-client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/simple-rest-service-middleware/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service-middleware/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/simple-rest-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/dao/daomysql/dao-mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/dao/daomysql/dao-mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/validation-demo/validation-demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/validation-demo/validation-demo.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

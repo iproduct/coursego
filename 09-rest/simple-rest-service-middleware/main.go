@@ -129,7 +129,7 @@ func setServerTimeHeader(handler http.Handler) http.Handler {
 
 func main() {
 	usersHandler := http.HandlerFunc(users)
-	http.Handle("/users", filterPOSTByContentType(setServerTimeHeader(usersHandler)))
+	http.Handle("/users", myMiddleware(filterPOSTByContentType(setServerTimeHeader(usersHandler))))
 	// HandlerFunc returns a HTTP Handler
 	myHandler := http.HandlerFunc(myHandlerFunc)
 	http.Handle("/my", myMiddleware(myHandler))

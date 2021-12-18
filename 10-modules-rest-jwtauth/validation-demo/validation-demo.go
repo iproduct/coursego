@@ -39,7 +39,7 @@ func validateStruct() {
 	address := &Address{
 		Street: "Eavesdown Docks",
 		Planet: "Persphone",
-		Phone:  "none",
+		Phone:  "",
 	}
 
 	user := &User{

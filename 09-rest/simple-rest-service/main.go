@@ -16,7 +16,7 @@ type User struct {
 	Name     string    `json:"name"`
 	Email    string    `json:"email"`
 	Password string    `json:"password"`
-	Active   bool      `json:"active,omitempty"`
+	Active   bool      `json:"active"`
 	Created  time.Time `json:"created"`
 	Modified time.Time `json:"modified"`
 }
@@ -51,7 +51,7 @@ func users(w http.ResponseWriter, r *http.Request) {
 			SendError(w, http.StatusBadRequest, err, "JSON unmarshaling failed")
 			return
 		}
-		fmt.Printf("AFTER UNMARSHAL:%#v\n", user)
+		log.Printf("AFTER UNMARSHAL:%#v\n", user)
 		newID := int(atomic.AddUint64(&sequence, 1))
 		user.Id = newID
 		user.Created = time.Now()
@@ -85,6 +85,8 @@ func users(w http.ResponseWriter, r *http.Request) {
 		//data, err := json.MarshalIndent(users, "", "    ")
 		if err != nil {
 			log.Printf("JSON marshaling failed: %s", err)
+			SendError(w, http.StatusInternalServerError, err, "JSON marshaling failed")
+			return
 		}
 		//w.Write(data)
 	}
