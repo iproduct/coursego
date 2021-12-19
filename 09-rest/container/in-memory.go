@@ -26,7 +26,7 @@ func (c *InMemory) Init() error {
 		Author:    "Trayan Iliev",
 		Content:   "Generics ...",
 		Likes:     5,
-		Comments:  []blog.Comment{{"GP", "Nice ..."}},
+		Comments:  []blog.Comment{{"GP", "Nice", "..."}},
 	})
 	return err
 }

@@ -3,7 +3,7 @@ package blog
 import "time"
 
 type Post struct {
-	ID        string
+	ID        string `gorm "size:24"`
 	CreatedAt time.Time
 	Heading   string
 	Author    string
@@ -15,9 +15,10 @@ type Post struct {
 type Comment struct {
 	Author  string
 	Content string
+	PostID  string `gorm "size:24"`
 }
 
-type PostContainer interface {
+type PostRepository interface {
 	Init() error
 	GetAll() ([]Post, error)
 	Insert(*Post) error
@@ -25,10 +26,10 @@ type PostContainer interface {
 }
 
 type Blog struct {
-	posts PostContainer
+	posts PostRepository
 }
 
-func New(posts PostContainer) *Blog {
+func New(posts PostRepository) *Blog {
 	return &Blog{
 		posts: posts,
 	}

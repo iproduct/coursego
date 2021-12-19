@@ -10,7 +10,10 @@ import (
 
 func main() {
 	dsn := "root:root@tcp(127.0.0.1:3306)/golang_projects_gorm?charset=utf8mb4&parseTime=True&loc=Local"
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
+		DisableAutomaticPing :    false,
+		DisableForeignKeyConstraintWhenMigrating: true,
+	})
 	//db, err := gorm.Open(mysql.New(mysql.Config{
 	//	DSN:                       "root:root@tcp(127.0.0.1:3306)/golang_projects_gorm?charset=utf8&parseTime=True&loc=Local", // data source name
 	//	DefaultStringSize:         256,                                                                                        // default size for string fields

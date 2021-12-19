@@ -45,7 +45,7 @@ func main() {
 
 	// Update project budgets by subtracting $1000 from old projects and adding money to new projects after 01.01.2000
 	startDate, _ := time.Parse("2006-Jan-01", "1996-Jan-01")
-	err = UpdateProjectBudgets(ctx, db, 900, startDate)
+	err = UpdateProjectBudgets(ctx, db, 50, startDate)
 	if err != nil {
 		log.Println(err)
 	}

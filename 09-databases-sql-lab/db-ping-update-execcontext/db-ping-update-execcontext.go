@@ -30,22 +30,22 @@ func main() {
 	}
 
 	log.Printf("Database status: %s\n", status)
-	conn, err := db.Conn(ctx) // EXCLUSIVE USE
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer conn.Close() // returns connection to connection pool
-	projects, err := GetProjects(ctx, conn)
+	//conn, err := db.Conn(ctx) // EXCLUSIVE USE
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//defer conn.Close() // returns connection to connection pool
+	projects, err := GetProjects(ctx, db)
 	if err != nil {
 		log.Fatal(err)
 	}
 	utils.PrintProjects(projects)
 }
 
-func GetProjects(ctx context.Context, conn *sql.Conn) ([]entities.Project, error) {
-	rows, err := conn.QueryContext(ctx, "SELECT * FROM projects")
+func GetProjects(ctx context.Context, db *sql.DB) ([]entities.Project, error) {
+	rows, err := db.QueryContext(ctx, "SELECT * FROM projects")
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	defer rows.Close()
 	projects := []entities.Project{}

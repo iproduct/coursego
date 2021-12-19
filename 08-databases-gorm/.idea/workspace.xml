@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="03c3d5d4-e486-40dc-b4d3-5d12a29b9b79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-gorm-users-batch/db-gorm-users-batch.go" beforeDir="false" afterPath="$PROJECT_DIR$/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-gorm-users/db-gorm-users.go" beforeDir="false" afterPath="$PROJECT_DIR$/db-gorm-users/db-gorm-users.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/blog/blog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/container/in-memory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/container/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +38,15 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1oi7rHGobzhrKa18kDHRCZfgs2c" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -109,6 +118,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="db updated to golang_projects_gorm" />
     <MESSAGE value="presentation updated" />
     <MESSAGE value="chi + gorm demo added" />

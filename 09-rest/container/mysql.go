@@ -9,7 +9,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-type MySQLStore struct {
+type mySQLStore struct {
 	opts   MySQLOptions
 	client *sql.DB
 }
@@ -18,31 +18,32 @@ type MySQLOptions struct {
 	URI string
 }
 
-func NewMySQLStore(opts MySQLOptions) *MySQLStore {
-	return &MySQLStore{client: nil, opts: opts}
+func NewMySQLStore(opts MySQLOptions) *mySQLStore {
+	return &mySQLStore{client: nil, opts: opts}
 }
 
-func (c *MySQLStore) Init() error {
+func (c *mySQLStore) Init() error {
 	var err error
 	c.client, err = sql.Open("mysql", c.opts.URI)
 	return err
 }
 
 // GetAll implements 09-blog.Container.
-func (c *MySQLStore) GetAll() ([]blog.Post, error) {
+func (c *mySQLStore) GetAll() ([]blog.Post, error) {
 	if c.client == nil {
 		return nil, fmt.Errorf("mysql store is not initialized")
 	}
 
 	posts := []blog.Post{}
-	rows, err := c.client.Query("select id, heading, created_at, author, content, likes from posts")
+	rows, err := c.client.Query("select id, heading, created_at, author, content, likes, comments from posts")
 	if err != nil {
 		return nil, fmt.Errorf("failed to obtains posts from mysql: %w", err)
 	}
 	defer rows.Close()
 	for rows.Next() {
 		var result blog.Post
-		err := rows.Scan(&result.ID, &result.Heading, &result.CreatedAt, &result.Author, &result.Content, &result.Likes)
+		err := rows.Scan(&result.ID, &result.Heading, &result.CreatedAt, &result.Author,
+			&result.Content, &result.Likes, &result.Comments)
 		if err != nil {
 			return nil, fmt.Errorf("failed to scan post: %w", err)
 		}
@@ -55,7 +56,7 @@ func (c *MySQLStore) GetAll() ([]blog.Post, error) {
 }
 
 // Insert implements 09-blog.Container.
-func (c *MySQLStore) Insert(post *blog.Post) error {
+func (c *mySQLStore) Insert(post *blog.Post) error {
 	if c.client == nil {
 		return fmt.Errorf("mysql store is not initialized")
 	}
@@ -66,7 +67,7 @@ func (c *MySQLStore) Insert(post *blog.Post) error {
 }
 
 // Delete implements 09-blog.Container.
-func (c *MySQLStore) Delete(id string) error {
+func (c *mySQLStore) Delete(id string) error {
 	if c.client == nil {
 		return fmt.Errorf("mysql store is not initialized")
 	}

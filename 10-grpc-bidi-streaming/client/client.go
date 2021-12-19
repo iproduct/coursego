@@ -35,7 +35,7 @@ func main() {
 	// first goroutine sends random increasing numbers to stream
 	// and closes int after 10 iterations
 	go func() {
-		for i := 1; i <= 20; i++ {
+		for i := 1; i <=1000000; i++ {
 			// generate random nummber and send it to stream
 			rnd := int32(rand.Intn(i))
 			req := pm.Request{Num: rnd}
@@ -43,7 +43,7 @@ func main() {
 				log.Fatalf("can not send %v", err)
 			}
 			log.Printf("%d sent", req.Num)
-			time.Sleep(time.Millisecond * 200)
+			//time.Sleep(time.Millisecond * 200)
 		}
 		if err := stream.CloseSend(); err != nil {
 			log.Println(err)

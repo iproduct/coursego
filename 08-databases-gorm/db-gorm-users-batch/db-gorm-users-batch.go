@@ -17,9 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	db.AutoMigrate(&entities.User{})
-	db.AutoMigrate(&entities.Company{})
-	db.AutoMigrate(&entities.Project{})
+	db.AutoMigrate(&entities.User{}, &entities.Company{}, &entities.Project{})
 
 	//Get number of users
 	var usersCount int64 = 0

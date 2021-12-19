@@ -4,8 +4,8 @@
     "title": "ToDo service",
     "version": "1.0",
     "contact": {
-      "name": "go-grpc-http-rest-microservice-tutorial project",
-      "url": "https://github.com/amsokol/go-grpc-http-rest-microservice-tutorial",
+      "name": "go-grpc-http-rest-server-microservice-tutorial project",
+      "url": "https://github.com/amsokol/go-grpc-http-rest-server-microservice-tutorial",
       "email": "medium@amsokol.com"
     }
   },

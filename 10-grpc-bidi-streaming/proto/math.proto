@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package protobuf;
 
-option go_package = "./protomath";
+option go_package = "github.com/iproduct/coursego/10-grpc-bidi-streaming/protomath";
 
 service Math {
   rpc Max (stream Request) returns (stream Response) {}

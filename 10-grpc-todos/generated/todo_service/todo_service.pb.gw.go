@@ -568,7 +568,7 @@ func RegisterToDoServiceHandler(ctx context.Context, mux *runtime.ServeMux, conn
 // RegisterToDoServiceHandlerClient registers the http handlers for service ToDoService
 // to "mux". The handlers forward requests to the grpc endpoint over the given implementation of "ToDoServiceClient".
 // Note: the gRPC framework executes interceptors within the gRPC handler. If the passed in "ToDoServiceClient"
-// doesn't go through the normal gRPC flow (creating a gRPC client-grpc etc.) then it will be up to the passed in
+// doesn't go through the normal gRPC flow (creating a gRPC client etc.) then it will be up to the passed in
 // "ToDoServiceClient" to call the correct interceptors.
 func RegisterToDoServiceHandlerClient(ctx context.Context, mux *runtime.ServeMux, client ToDoServiceClient) error {
 
