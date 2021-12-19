@@ -35,7 +35,7 @@ func (c *mySQLStore) GetAll() ([]blog.Post, error) {
 	}
 
 	posts := []blog.Post{}
-	rows, err := c.client.Query("select id, heading, created_at, author, content, likes, comments from posts")
+	rows, err := c.client.Query("select id, heading, created_at, author, content, likes from posts")
 	if err != nil {
 		return nil, fmt.Errorf("failed to obtains posts from mysql: %w", err)
 	}
@@ -43,7 +43,7 @@ func (c *mySQLStore) GetAll() ([]blog.Post, error) {
 	for rows.Next() {
 		var result blog.Post
 		err := rows.Scan(&result.ID, &result.Heading, &result.CreatedAt, &result.Author,
-			&result.Content, &result.Likes, &result.Comments)
+			&result.Content, &result.Likes)
 		if err != nil {
 			return nil, fmt.Errorf("failed to scan post: %w", err)
 		}

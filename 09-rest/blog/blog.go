@@ -3,7 +3,7 @@ package blog
 import "time"
 
 type Post struct {
-	ID        string `gorm "size:24"`
+	ID        string `gorm:"size:24"`
 	CreatedAt time.Time
 	Heading   string
 	Author    string
@@ -15,7 +15,7 @@ type Post struct {
 type Comment struct {
 	Author  string
 	Content string
-	PostID  string `gorm "size:24"`
+	PostID  string
 }
 
 type PostRepository interface {
