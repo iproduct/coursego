@@ -1,3 +1,7 @@
+GET http://localhost:8080/graphql?query={latestPost,postsCount}
+Accept: application/json
+
+###
 
 POST http://localhost:8080/graphql
 Content-Type: application/json

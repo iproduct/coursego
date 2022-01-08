@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47bdb6fe-5450-4381-a168-131c1a92956a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../11-graphql-mongodb/test-queries/test-queries.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-go/test-queries/test-queries.http" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-go/test-queries/test-queries.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

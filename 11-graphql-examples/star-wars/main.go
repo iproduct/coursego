@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	gqhandler "github.com/graphql-go/graphql-go-handler"
@@ -20,6 +21,8 @@ func main() {
 	http.Handle("/graphql", h)
 
 	// and serve!
+	fmt.Println("Now server is running on port 8080")
+	fmt.Println("Test with Get      : curl -g 'http://localhost:8080/graphql?query={hero{name}}'")
 	http.ListenAndServe(":8080", nil)
 
 	//http.HandleFunc("/graphql", func(w http.ResponseWriter, r *http.Request) {
