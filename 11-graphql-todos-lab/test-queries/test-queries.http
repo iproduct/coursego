@@ -1,0 +1,50 @@
+
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "{list{id,text,done}}"
+}
+
+###
+
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+query {list{id,text,done}}
+
+###
+
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+query {todo(id:"f135761e-b1df-4e2d-a3f3-8904756a93b8"){id,text,done}}
+
+###
+
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+mutation {create(text:"Run all queries5"){id,text,done}}
+
+###
+
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+query GetTypeDetails{
+  __type(name: "RootQuery") {
+    name
+    fields {
+      name
+      type {
+        name
+        kind
+        ofType {
+          name
+          kind
+        }
+      }
+    }
+  }
+}
