@@ -20,7 +20,7 @@ func main() {
 func init() {
 	val := url.Values{}
 	val.Add("parseTime", "1")
-	val.Add("loc", "Asia/Jakarta")
+	val.Add("loc", "Europe/Sofia")
 	env := infrastructure.Environment{}
 	env.SetEnvironment()
 	env.LoadConfig()

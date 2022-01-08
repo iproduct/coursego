@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test-queries/test-queries.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/model/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/rest/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -44,7 +45,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
@@ -53,7 +57,7 @@
       <recent name="D:\CourseGO\git\coursego\11-graphql-mongodb" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.test-queries#4">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -65,13 +69,25 @@
       <module name="11-graphql-mongodb" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/iproduct/coursego/11-graphql-mongodb" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-queries#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test-queries/test-queries.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test-queries#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test-queries/test-queries.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test-queries#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test-queries/test-queries.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test-queries#4" />
+        <item itemvalue="HTTP Request.test-queries#3" />
+        <item itemvalue="HTTP Request.test-queries#1" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/11-graphql-mongodb" />
       </list>
     </recent_temporary>

@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c3a22c-8456-424e-b463-c3e4f33d623c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../11-graphql-mongodb/test-queries/test-queries.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest-jwtauth/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../12-modules-rest/rest/app.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -50,7 +54,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
