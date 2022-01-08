@@ -2,11 +2,76 @@ curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" 
 curl -XPOST http://localhost:8080/graphql -H "Content-Type:application/graphql" -d "query Root{ latestPost, postsCount }"
 
 
-
 --
+#queries
+
 query RootQuery{ latestPost }
 
 {
   latestPost,
   postsCount
 }
+
+query LatestPost {
+  latestPost
+  postsCount
+}
+
+# metadata queries
+
+query GetSchema {
+  __schema {
+    types {
+      name
+      fields{
+         name
+      	 description
+      }
+    }
+  }
+}
+
+query QueryAndMutationTypes{
+  __schema {
+    queryType {
+      name
+      fields {
+        name
+      }
+    }
+    mutationType {
+      name
+      fields {
+        name
+      }
+    }
+  }
+}
+
+query GetType{
+  __type(name:"RootQuery"){
+    fields {
+      name
+      description
+    }
+  }
+}
+
+query GetTypeDetails{
+  __type(name: "RootQuery") {
+    name
+    fields {
+      name
+      type {
+        name
+        kind
+        ofType {
+          name
+          kind
+        }
+      }
+    }
+  }
+}
+
+--
