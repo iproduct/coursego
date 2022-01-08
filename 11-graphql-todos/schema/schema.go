@@ -48,7 +48,7 @@ var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 	Name: "RootMutation",
 	Fields: graphql.Fields{
 		/*
-			curl -g 'http://localhost:8080/graphql?query=mutation+_{createTodo(text:"My+new+todo"){id,text,done}}'
+			curl -g "http://localhost:8080/graphql?query=mutation+_{createTodo(text:"My+new+todo"){id,text,done}}"
 		*/
 		"createTodo": &graphql.Field{
 			Type:        todoType, // the return type for this field

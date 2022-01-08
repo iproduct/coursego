@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc186d3-e3f3-45f2-b199-7fb301a09e4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ddc186d3-e3f3-45f2-b199-7fb301a09e4c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +142,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="blogs demo added to Chi demo" />
     <MESSAGE value="demos updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="demos updated" />
+    <MESSAGE value="post with comments one-to-many relationship completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="post with comments one-to-many relationship completed" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

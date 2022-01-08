@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47bdb6fe-5450-4381-a168-131c1a92956a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/db-update-transaction-idiomatic/db-update-transaction.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-go/test-queries/test-queries.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/test-queries/test-queries.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/blog/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/container/in-memory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/container/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/gorm-rest-chi/gorm-rest-chi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-bidi-streaming/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-bidi-streaming/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-bidi-streaming/proto/math.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-bidi-streaming/proto/math.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/greeter_client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/greeter_client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-go/test-queries/simple-queries.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/schema/schema.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
