@@ -1,4 +1,2 @@
-github.com/iproduct/coursego v0.0.0-20210215085827-74400262c7b4 h1:5KYbizOu5CEX7KqAde2/0p2E/Rt7gQT5ec16G9Vu5iM=
-github.com/iproduct/coursego v0.0.0-20210221114438-19d60f910261 h1:UN2ZUdN/remLkZrXBVodDZVDYzYl36o/x4az8qczhvo=
-github.com/iproduct/coursego v0.0.0-20210227105100-d8164c9760bc h1:CIJJ0nIeZFmYmbmd8kRiOXw0smUbIX1MOxE0v1p5aX4=
-github.com/iproduct/coursego v0.0.0-20210227121106-7ce8299b0686 h1:rtwxzVHRnIGeRcGLUjLIR0SVvxjI6LqiBTwvD6Og0+U=
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=

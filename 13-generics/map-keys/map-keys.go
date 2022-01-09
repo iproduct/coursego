@@ -16,6 +16,6 @@ func Keys[K comparable, V any](m map[K]V) []K {
 }
 
 func main() {
-	k := Keys(map[int]int{1:1, 2:4, 3:9, 4:16}) // Now k is either []int{1, 2} or []int{2, 1}.
-	fmt.Printf("Keys: %v\n", k)
+	k := Keys(map[int]int{1: 1, 2: 4, 3: 9, 4: 16}) // Now k is either []int{1, 2, 3, 4} or a permutation of it.
+	fmt.Printf("Keys (%T): %[1]v\n", k)
 }

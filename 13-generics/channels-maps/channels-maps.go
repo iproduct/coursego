@@ -1,8 +1,7 @@
 package main
 
 import (
-	"runtime"
-	"strings"
+	"fmt"
 )
 
 // Drain drains any elements remaining on the channel.
@@ -51,7 +50,7 @@ func Ranger[T any]() (*Sender[T], *Receiver[T]) {
 	r := &Receiver[T]{values: c, done: d}
 	// The finalizer on the receiver will tell the sender
 	// if the receiver stops listening.
-	runtime.SetFinalizer(r, r.finalize)
+	//runtime.SetFinalizer(r, r.finalize)
 	return s, r
 }
 
@@ -82,7 +81,7 @@ func (s *Sender[T]) Close() {
 // A Receiver receives values from a Sender.
 type Receiver[T any] struct {
 	values <-chan T
-	done  chan<- bool
+	done   chan<- bool
 }
 
 // Next returns the next value from the channel. The bool result
@@ -99,10 +98,9 @@ func (r *Receiver[T]) finalize() {
 	close(r.done)
 }
 
-
 // Generic OderedMap, implemented as a binary tree.
 // Map is an ordered map.
-type Map[K, V any] struct {
+type Map[K comparable, V any] struct {
 	root    *node[K, V]
 	compare func(K, K) int
 }
@@ -118,7 +116,7 @@ type node[K, V any] struct {
 // Since the type parameter V is only used for the result,
 // type inference does not work, and calls to New must always
 // pass explicit type arguments.
-func New[K, V any](compare func(K, K) int) *Map[K, V] {
+func New[K comparable, V any](compare func(K, K) int) *Map[K, V] {
 	return &Map[K, V]{compare: compare}
 }
 
@@ -172,8 +170,7 @@ type keyValue[K, V any] struct {
 
 // InOrder returns an iterator that does an in-order traversal of the map.
 func (m *Map[K, V]) InOrder() *Iterator[K, V] {
-	type kv = keyValue[K, V] // convenient shorthand
-	sender, receiver := Ranger[kv]()
+	sender, receiver := Ranger[keyValue[K, V]]()
 	var f func(*node[K, V]) bool
 	f = func(n *node[K, V]) bool {
 		if n == nil {
@@ -182,7 +179,7 @@ func (m *Map[K, V]) InOrder() *Iterator[K, V] {
 		// Stop sending values if sender.Send returns false,
 		// meaning that nothing is listening at the receiver end.
 		return f(n.left) &&
-			sender.Send(kv{n.k, n.v}) &&
+			sender.Send(keyValue[K, V]{n.k, n.v}) &&
 			f(n.right)
 	}
 	go func() {
@@ -206,13 +203,12 @@ func (it *Iterator[K, V]) Next() (K, V, bool) {
 }
 
 // Test ordered map
-var m = New[string, string](strings.Compare)
+var m = New[int, string](func(i, j int) int { return i - j })
 
 // Add adds the pair a, b to m.
-func Add(a, b string) {
+func Add(a int, b string) {
 	m.Insert(a, b)
 }
-
 
 func main() {
 	// Set m to an ordered map from string to string,
@@ -221,5 +217,9 @@ func main() {
 	Add(1, "one")
 	Add(4, "four")
 	Add(2, "two")
+	iter := m.InOrder()
+	for _, v, ok := iter.Next(); ok; _, v, ok = iter.Next() {
+		fmt.Println(v)
+	}
 
 }

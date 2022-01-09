@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/star-wars/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-go/test-queries/test-queries.http" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-go/test-queries/test-queries.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-subscriptions-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +86,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="book update and delete refactored, more named queries and mutations with variable arguments added to sample_queries.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="book update and delete refactored, more named queries and mutations with variable arguments added to sample_queries.txt" />
+    <MESSAGE value="presentation and graphql demos updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="presentation and graphql demos updated" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

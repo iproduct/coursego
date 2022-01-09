@@ -14,10 +14,7 @@ type MyInt struct {
 // In practice this type constraint would likely be defined in
 // a standard library package.
 type Ordered interface {
-	type int, int8, int16, int32, int64,
-		uint, uint8, uint16, uint32, uint64, uintptr,
-		float32, float64,
-		string, MyInt
+	int | int8 | int16 | int32 | int64 | uint | uint8 | uint16 | uint32 | uint64 | uintptr | float32 | float64 | string
 }
 
 // orderedSlice is an internal type that implements sort.Interface.
@@ -42,11 +39,11 @@ func OrderedSlice[T Ordered](s []T) {
 }
 
 func main() {
-	s1 := []int32{3, 5, 2}
+	s1 := []int32{12, 3, 5, 4, 2}
 	OrderedSlice(s1)
 	fmt.Println(s1) // Now s1 is []int32{2, 3, 5}
 
-	s2 := []string{"a", "c", "b"}
+	s2 := []string{"x", "a", "y", "c", "b"}
 	OrderedSlice(s2)
 	fmt.Println(s2) // Now s2 is []string{"a", "b", "c"}
 }

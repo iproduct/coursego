@@ -9,7 +9,7 @@ func Append[T any](s []T, t ...T) []T {
 	lens := len(s)
 	tot := lens + len(t)
 	if tot < 0 {
-		panic("Append: cap out of range")
+		panic(any("Append: cap out of range"))
 	}
 	if tot > cap(s) {
 		news := make([]T, tot, 2 * tot)
