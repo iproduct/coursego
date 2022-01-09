@@ -7,12 +7,6 @@ import (
 	"time"
 )
 
-func panicOnErr(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
-
 func timeFunc(f func(map[uint64]string), p map[uint64]string) {
 	s := time.Now()
 	f(p)
