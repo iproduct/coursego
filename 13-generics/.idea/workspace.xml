@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec0603e-ccf1-41c9-9af2-ff7259542ac1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/concurrent-map/gen_map.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/queue/gen_queue.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channels-maps/channels-maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/channels-maps/channels-maps.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-keys/map-keys.go" beforeDir="false" afterPath="$PROJECT_DIR$/map-keys/map-keys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/slices/slices.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Go Build.go build 13-generics2/channels-maps">
+  <component name="RunManager" selected="Go Build.go build 13-generics2/sort">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -93,6 +86,15 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 13-generics2/sort" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="13-generics" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="13-generics2/sort" />
+      <filePath value="$PROJECT_DIR$/sort/sort.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
@@ -105,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 13-generics2/sort" />
         <item itemvalue="Go Build.go build 13-generics2/channels-maps" />
         <item itemvalue="Go Build.go build 13-generics2/map-keys" />
         <item itemvalue="Go Build.go build 13-generics2/slices" />
