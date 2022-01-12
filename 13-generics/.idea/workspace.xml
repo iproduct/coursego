@@ -4,37 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9043947c-cfca-4b96-8a80-1e6f7a82a4da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-examples/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aec0603e-ccf1-41c9-9af2-ff7259542ac1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/13-generics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/concurrent-map/gen_map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/queue/gen_queue.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/append/append.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/channels-maps/channels-maps.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-filter-reduce/map-filter-reduce.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map-keys/map-keys.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sets/sets.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-generics/simple-generics.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices/slices.go2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sort.go2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/channels-maps/channels-maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/channels-maps/channels-maps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map-keys/map-keys.go" beforeDir="false" afterPath="$PROJECT_DIR$/map-keys/map-keys.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/slices/slices.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
@@ -46,14 +30,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="23Qc6c5PHCyN38C2gXbXM7KzrtQ" />
+  <component name="ProjectId" id="23T27B3tSlyYV9zJYAwnpFP7iKt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -61,14 +44,10 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="advanced.settings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CourseGO\git\coursego\13-generics2" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager" selected="Go Build.go build 13-generics2/channels-maps">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -79,7 +58,7 @@
       <method v="2" />
     </configuration>
     <configuration name="go build 13-generics2/channels-maps" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="13-generics2" />
+      <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <package value="13-generics2/channels-maps" />
@@ -87,8 +66,17 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 13-generics2/hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="13-generics" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="13-generics2/hello" />
+      <filePath value="$PROJECT_DIR$/hello/hello.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build 13-generics2/map-keys" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="13-generics2" />
+      <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <package value="13-generics2/map-keys" />
@@ -96,17 +84,8 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 13-generics2/sets" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="13-generics2" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="13-generics2/sets" />
-      <filePath value="$PROJECT_DIR$/sets/sets.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build 13-generics2/slices" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="13-generics2" />
+      <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <package value="13-generics2/slices" />
@@ -114,22 +93,22 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 13-generics2/sort" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="13-generics2" />
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="13-generics2/sort" />
-      <filePath value="$PROJECT_DIR$/sort/sort.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build 13-generics2/channels-maps" />
-        <item itemvalue="Go Build.go build 13-generics2/sort" />
-        <item itemvalue="Go Build.go build 13-generics2/slices" />
-        <item itemvalue="Go Build.go build 13-generics2/sets" />
         <item itemvalue="Go Build.go build 13-generics2/map-keys" />
+        <item itemvalue="Go Build.go build 13-generics2/slices" />
+        <item itemvalue="Go Build.go build 13-generics2/hello" />
       </list>
     </recent_temporary>
   </component>
@@ -139,16 +118,5 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/channels-maps/channels-maps.go</url>
-          <line>128</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

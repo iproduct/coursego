@@ -218,8 +218,8 @@ func main() {
 	Add(4, "four")
 	Add(2, "two")
 	iter := m.InOrder()
-	for _, v, ok := iter.Next(); ok; _, v, ok = iter.Next() {
-		fmt.Println(v)
+	for k, v, ok := iter.Next(); ok; k, v, ok = iter.Next() {
+		fmt.Println(k, " --> ", v)
 	}
 
 }

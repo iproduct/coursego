@@ -15,7 +15,17 @@ func Keys[K comparable, V any](m map[K]V) []K {
 	return r
 }
 
+func Values[K comparable, V any](m map[K]V) []V {
+	r := make([]V, 0, len(m))
+	for k := range m {
+		r = append(r, m[k])
+	}
+	return r
+}
+
 func main() {
-	k := Keys(map[int]int{1: 1, 2: 4, 3: 9, 4: 16}) // Now k is either []int{1, 2, 3, 4} or a permutation of it.
-	fmt.Printf("Keys (%T): %[1]v\n", k)
+	m := map[int]string{1: "a", 2: "b", 3: "c", 4: "d"}
+	// Now k is either []int{1, 2, 3, 4} or a permutation of it.
+	fmt.Printf("Keys (%T): %[1]v\n", Keys(m))
+	fmt.Printf("Values (%T): %[1]v\n", Values(m))
 }

@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest-jwtauth/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest-jwtauth/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-generation-lab/go2go/hello/hellogo2go.go2" beforeDir="false" afterPath="$PROJECT_DIR$/../12-generation-lab/go2go/hello/hellogo2go.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13-generation/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13-generation/reflection-performance/reflection.performance.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/reflection-performance/reflection.performance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13-generation/reflection/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generation/reflection/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/concurrent-map/gen_map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/queue/gen_queue.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,7 +1,10 @@
 // Package slices implements various slice algorithms.
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Map turns a []T1 to a []T2 using a mapping function.
 // This function has two type parameters, T1 and T2.
@@ -46,6 +49,11 @@ func main() {
 	fmt.Println(floats) // Now floats is []float64{1, 9, 625}.
 
 	sum := Reduce(floats, 0.0, func(i, j float64) float64 { return i + j })
-	fmt.Println(sum) // Now sum is 635.
+	fmt.Println(sum) // Now sum is 635.0
 
+	s2 := []string{"hello", "golang", "world", "with", "generics"}
+	r := Map(s2, strings.ToUpper)
+	//r = Filter(r, func(v string) bool { return strings.Contains(v, "G") })
+	result := Reduce(r, "", func(acc, el string) string { return acc + " " + el })
+	fmt.Println(result)
 }
