@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmi-2023-01-intro-lab/stringutil"
 	"fmt"
+	"github.com/iproduct/coursego/fmi-2023-01-intro-lab/stringutil"
 	"rsc.io/quote"
 )
 
