@@ -10,7 +10,7 @@ import (
 func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
 	//resp, err := http.Get("http://google.com")
-	req, err := http.NewRequest("POST", "http://localhost:3000/headers", nil)
+	req, err := http.NewRequest("POST", "http://localhost:8080/headers", nil)
 	//if err != nil {
 	//	log.Fatal(err)
 	//}
