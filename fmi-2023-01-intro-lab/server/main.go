@@ -6,14 +6,17 @@ import (
 	"net/http"
 )
 
-func hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello from Golang")
+func hello(w http.ResponseWriter, _ *http.Request) {
+	_, err := fmt.Fprintf(w, "Hello from Golang")
+	if err != nil {
+		return
+	}
 }
 
 func headers(w http.ResponseWriter, r *http.Request) {
 	for name, value := range r.Header {
 		for _, hval := range value {
-			fmt.Fprintf(w, "%v: %v\n", name, hval)
+			_, _ = fmt.Fprintf(w, "%v: %v\n", name, hval)
 		}
 	}
 }
