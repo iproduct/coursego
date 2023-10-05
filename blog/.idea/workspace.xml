@@ -1,102 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="21ecd8d2-9e6d-4fb2-89a0-04d1d194cf8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-http/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/rest_tdd/rest/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/simple-rest-client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service-apply/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service-errorhandling/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service-middleware/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-rest/simple-rest-service/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/blog/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/in-memory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/mongo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/mongo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/container/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/create.tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/templates/create.tmpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/templates/index.tmpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/09-http.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../http/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore-simple/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore-simple/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore-simple/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore-simple/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.air.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.air.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.idea/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.idea/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/.realize.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/.realize.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/books/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/books/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/static/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/static/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/static/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/static/css/materialize.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/static/js/materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/static/js/materialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/static/js/materialize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/static/js/materialize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/templates/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/templates/favs.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/templates/favs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/templates/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/bookstore/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/bookstore/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/json/books/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/books/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/server-web-page/server-web-page.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/server-web-page/server-web-page.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/simple-client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/simple-client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/simple-server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/simple-server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/templates-text/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/templates-text/books.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/templates-text/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/templates-text/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../http/url-params/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/url-params/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/dataSources/375f50fa-6e93-4660-962f-22de741ccb88.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/dataSources/375f50fa-6e93-4660-962f-22de741ccb88/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/rest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/rest_tdd/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/rest_tdd/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/rest_tdd/rest/app.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/rest_tdd/rest/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-client/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-service-apply/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-service-errorhandling/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-service-middleware/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest/simple-rest-service/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../13-generics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1oF47yLAHlOJgWopPs90vM3etXj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -112,9 +38,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../09-blog" />
   </component>
   <component name="RunManager">
@@ -129,8 +58,8 @@
       <module name="09-blog" />
       <working_directory value="$PROJECT_DIR$/../09-blog" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/stoyaneft/blog" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -138,11 +67,11 @@
       <module name="09-blog" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
       <kind value="DIRECTORY" />
       <package value="github.com/stoyaneft/blog" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
