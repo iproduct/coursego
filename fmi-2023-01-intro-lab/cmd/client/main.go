@@ -21,6 +21,7 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println("Response status:", resp.Status)
+	defer resp.Body.Close()
 	scanner := bufio.NewScanner(resp.Body)
 	for i := 0; scanner.Scan() && i < 15; i++ {
 		fmt.Println(scanner.Text())

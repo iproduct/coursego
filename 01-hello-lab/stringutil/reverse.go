@@ -29,6 +29,8 @@ func Reverse(s string) string {
 	}
 	result := string(r)
 	resultStringHeader := (*StringHeader)(unsafe.Pointer(&result))
-	fmt.Printf("%#v, %p\n", resultStringHeader, unsafe.Pointer(&result))
+	resultStringHeader.Data = unsafe.Pointer(uintptr(resultStringHeader.Data) + 9)
+	resultStringHeader.Len = 3
+	fmt.Printf("%#v, %p, %s\n", resultStringHeader, unsafe.Pointer(&result), result)
 	return result
 }

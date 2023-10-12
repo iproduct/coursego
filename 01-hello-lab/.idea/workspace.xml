@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-intro-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-intro-lab/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/for-break-continue/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/for-break-continue/for-break-continue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/stringutil/reverse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test123/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test123/hello.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +98,10 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="demos updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos updated" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
