@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df800abf-e29a-4b85-b859-815a23c0e033" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bullscows/bullscows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-intro-lab/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-intro-lab/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/for-break-continue/for-break-continue.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/for-break-continue/for-break-continue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/stringutil/reverse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test123/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test123/hello.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,30 +31,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/variables/variables.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/game/game.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/bullscows/bullscows.go" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="1nCUFZSaU5ENnpdKL4Hw7g2CbPX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RunManager" selected="Go Build.go build variables.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
@@ -95,5 +94,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
