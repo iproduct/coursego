@@ -20,5 +20,8 @@ func main() {
 		{11, false},
 		{13, true},
 	}
-	fmt.Println(s) // [{2 true} {3 false} {5 true} {7 true} {11 false} {13 true}]
+	for i, v := range s {
+		fmt.Printf("%d -> (%v, %v)\n", i, v.i, v.b) // [{2 true} {3 false} {5 true} {7 true} {11 false} {13 true}]
+	}
+
 }

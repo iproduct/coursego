@@ -12,6 +12,7 @@ func main() {
 
 	// The slice grows as needed.
 	s3 := append(s2, 1)
+	s3 = append(s3, 2)
 	printSlice(s3)                                   // len=2 cap=2 [0 1]
 	fmt.Printf("Same array: %t\n", &s3[0] == &s2[0]) // Same array: false
 
