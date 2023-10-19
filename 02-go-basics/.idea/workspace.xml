@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-02-basics-lab/cmd/stackorheap/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-02-basics-lab/docs/go_commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-02-basics-lab/cmd/stackorheap/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-02-basics-lab/cmd/stackorheap/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +42,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="1nC2LqclWMdsck4SpRrNO3Hbb7E" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,18 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/office27",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/office27&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\02-go-basics" />

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stringutil/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/stringutil/reverse.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
     </list>

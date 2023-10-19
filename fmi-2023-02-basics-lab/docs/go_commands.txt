@@ -1,0 +1,2 @@
+go build -gcflags="-m -l"
+go test -bench . -benchmem

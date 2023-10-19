@@ -11,12 +11,13 @@ func f() {
 }
 
 func g() {
-	var y = 42
-	fmt.Printf("%d", y)
+	y := new(int)
+	*y = 15
+	//global = y
 }
 
 func main() {
 	f()
 	fmt.Printf("%d", *global)
-
+	g()
 }
