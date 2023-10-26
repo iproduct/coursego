@@ -12,6 +12,6 @@ func main() {
 	m = make(map[string]Vertex, 10)
 	fmt.Printf("%+v, len=%d\n", m, len(m))
 	m["Bell Labs"] = Vertex{40.68433, 74.39967}
-	fmt.Printf("%v, len=%d\n", m, len(m))
-	fmt.Println(m["Bell"])
+	fmt.Printf("%+v, len=%d\n", m, len(m))
+	fmt.Printf("%+v\n", m["Bell"])
 }

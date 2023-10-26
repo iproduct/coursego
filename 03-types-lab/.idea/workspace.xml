@@ -5,26 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="446a2694-7e55-41dd-96bc-5d1ae74ca844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/copymap/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/wordcount1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/keywords/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/keywords/sample01.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/slices/slices.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/zero-value-map/zero-value-map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/maps/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/maps/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +25,9 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="1nmamkNFdcZW0tVuoDEcRvfLYa7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,26 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/countdups" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\03-types-lab\countdups" />
       <recent name="D:\CourseGO\git\coursego\03-types-lab" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices-image">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/03-types-lab/panic">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -73,12 +63,21 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/03-types-lab/json" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/03-types-lab/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="03-types-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/03-types-lab/json" />
-      <filePath value="$PROJECT_DIR$/json/main.go" />
+      <package value="github.com/iproduct/coursego/03-types-lab/defer" />
+      <filePath value="$PROJECT_DIR$/defer/defer.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/03-types-lab/panic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="03-types-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/03-types-lab/panic" />
+      <filePath value="$PROJECT_DIR$/panic/panic.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -97,15 +96,6 @@
       <kind value="PACKAGE" />
       <package value="github.com/iproduct/coursego/03-types-lab/slices-image" />
       <filePath value="$PROJECT_DIR$/slices-image/slices-image.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/03-types-lab/slices" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="03-types-lab" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/03-types-lab/slices" />
-      <filePath value="$PROJECT_DIR$/slices/slices.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -129,19 +119,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices" />
-      <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/json" />
+      <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/defer" />
+      <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/panic" />
       <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/zero-value-map" />
       <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slice-copy" />
       <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices-image" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/panic" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/defer" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/zero-value-map" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices-image" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slice-copy" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/zero-value-map" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/json" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/03-types-lab/slices" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +147,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="more examples added" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
