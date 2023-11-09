@@ -14,4 +14,5 @@ func main() {
 	fmt.Println(goquote)
 	fmt.Println(stringutil.Reverse(goquote))
 	set := intbitset.New()
+	fmt.Println(set)
 }
