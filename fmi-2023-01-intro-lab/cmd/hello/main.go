@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/iproduct/coursego/fmi-2023-01-intro-lab/stringutil"
-	"github.com/iproduct/coursego/fmi-2023-03-methods-interfaces-lab/intbitset"
+	"github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab/intbitset"
 	"rsc.io/quote"
 )
 
