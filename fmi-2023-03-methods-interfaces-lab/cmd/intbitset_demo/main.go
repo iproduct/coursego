@@ -13,4 +13,7 @@ func main() {
 	set.Add(95)
 	fmt.Println(set.String())
 	fmt.Println(set.BitString())
+	fmt.Println(set.Has(129))
+	fmt.Println(set.Has(135))
+	fmt.Println(set.Has(1240))
 }
