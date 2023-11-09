@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmi-2023-03-methods-interfaces-lab/intbitset"
 	"fmt"
+	"github.com/iproduct/coursego/fmi-2023-03-methods-interfaces-lab/intbitset"
 )
 
 func main() {

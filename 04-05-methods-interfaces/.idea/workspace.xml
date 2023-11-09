@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interfaces_demo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-methods-interfaces-lab/cmd/intbitset_demo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-methods-interfaces-lab/intbitset/intbitset.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-methods-interfaces-lab/stringutil/reverse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/errors/errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/panic/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/panic/panic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goframe-chart/goframe-chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/goframe-chart/goframe-chart.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/interfaces.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-expressions/method-expressions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/method-pointer-receiver/method-pointer-receiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/methods-nil/methods-nil.go" afterDir="false" />
-    </list>
+    <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
