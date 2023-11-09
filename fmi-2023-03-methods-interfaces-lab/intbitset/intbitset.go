@@ -3,7 +3,7 @@ package intbitset
 import (
 	"bytes"
 	"fmt"
-	"github.com/iproduct/coursego/fmi-2023-03-methods-interfaces-lab/stringutil"
+	"github.com/iproduct/coursego/fmi-2023-01-intro-lab/stringutil"
 	"strconv"
 )
 
