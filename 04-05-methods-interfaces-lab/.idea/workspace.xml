@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739cce5c-0d80-4d1c-af76-5c08a0119967" name="Default Changelist" comment="polymorphism demo added">
-      <change afterPath="$PROJECT_DIR$/../03-types/map tests.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types-lab2/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab2/arrays/arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/errors/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/json/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/panic/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/panic/panic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/goframe-chart/goframe-chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/goframe-chart/goframe-chart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/method-expressions/method-expressions.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,25 +34,28 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="1nnKpVwL764kqbfbEO6ykqGVNPK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\04-05-methods-interfaces-lab" />
@@ -98,6 +108,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="polymorphism demo refactored - redundant struct types in composite literal removed" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
