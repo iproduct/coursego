@@ -26,13 +26,15 @@ func (v Vertex) ScaleVal(f float64) Vertex {
 
 func main() {
 	v := Vertex{3, 4}
-	v.Scale(10)
+	(&v).Scale(10)
 	fmt.Printf("After scaling by 10: %+v\n", v)
 	v = Vertex.ScaleVal(v, 10)
-	(*Vertex).Scale((&v), 10)
+	fScale := (*Vertex).Scale
+	fScale(&v, 10)
 	fmt.Println(v.Abs())
 	fmt.Println(Vertex.Abs(v))
-
+	//
 	fmt.Println((&v).Abs())
-	fmt.Println((*Vertex).Abs(&v))
+	fAbs := (*Vertex).Abs
+	fmt.Println(fAbs(&v))
 }

@@ -38,7 +38,7 @@ func (p CartesianPoint) Print() {
 
 // Print a polar point
 func (p PolarPoint) Print() {
-	fmt.Printf("(%f, %f◦)", p.R, p.A)
+	fmt.Printf("(Angle [rad]: %f, Radius: %f)", p.A, p.R)
 }
 
 // Point interface represents a 2D point

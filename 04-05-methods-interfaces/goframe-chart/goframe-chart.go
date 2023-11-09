@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	sales := dataframe.NewSeriesFloat64("sales", nil, 50.3, nil, 23.4, 56.2, 89, 32, 84.2, 72, 89)
+	sales := dataframe.NewSeriesFloat64("sales", nil, 50.3, 40, 23.4, 56.2, 89, 32, 84.2, 72, 89)
 	ctx := context.Background()
 	cs, _ := wc.S(ctx, sales, nil, nil)
 

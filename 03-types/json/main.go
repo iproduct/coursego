@@ -29,6 +29,6 @@ func main() {
 	}
 	fmt.Println("AFTER UNMARSHAL:\n")
 	for i, book := range books {
-		fmt.Printf("%d: %#v\n", i, book)
+		fmt.Printf("%d: %+v\n", i, book)
 	}
 }

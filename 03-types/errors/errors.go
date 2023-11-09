@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"syscall"
 	"time"
 )
 
@@ -38,24 +40,35 @@ func run() error {
 
 func main() {
 
-	if err := run(); err != nil {
-		fmt.Println(err)
-	}
+	//if err := run(); err != nil {
+	//	fmt.Println(err)
+	//	if myErr, ok := err.(*MyError); ok {
+	//		fmt.Printf("When: %v, What: %v\n", myErr.When, myErr.What)
+	//	}
+	//
+	//}
+	fileError()
 }
 
-//var deleteTempFiles func()
-//filename := "myfile.txt"
+var deleteTempFiles func()
 
-//for try := 0; try < 2; try++ {
-//	file, err := os.Create(filename)
-//	if err == nil {
-//		return
-//	}
-//	if e, ok := err.(*os.PathError); ok && e.Err == syscall.ENOSPC {
-//		deleteTempFiles()  // Recover some space.
-//		continue
-//	}
-//	fmt.Println(file)
-//	return
-//}
-//}
+func fileError() {
+	filename := "myfile.txt"
+	var (
+		file *os.File
+		err  error
+	)
+	for try := 0; try < 2; try++ {
+		file, err = os.Create(filename)
+		if err == nil {
+			break
+		}
+		if e, ok := err.(*os.PathError); ok && e.Err == syscall.ENOSPC {
+			deleteTempFiles() // Recover some space.
+			continue
+		} else {
+			return
+		}
+	}
+	fmt.Println(file.Name())
+}

@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="446a2694-7e55-41dd-96bc-5d1ae74ca844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/copymap/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/wordcount1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/keywords/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/keywords/sample01.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-value-map/zero-value-map.go" beforeDir="false" afterPath="$PROJECT_DIR$/zero-value-map/zero-value-map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/maps/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-03-type-funcs-errors/cmd/maps/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

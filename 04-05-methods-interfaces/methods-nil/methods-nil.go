@@ -28,7 +28,7 @@ type Path []Vertex
 // Distance method calculates distance over the path
 func (p *Path) Distance() (dist float64) {
 	dist = 0
-	if *p == nil || len(*p) == 0 {
+	if p == nil || *p == nil || len(*p) == 0 {
 		return 0
 	}
 	v1 := (*p)[0]
@@ -43,15 +43,16 @@ func (p *Path) Distance() (dist float64) {
 
 // Scale method scales the Vertex coordinates by a factor of f
 func (p *Path) Scale(f float64) {
-	for  i := 0; i < len(*p); i ++ {
+	for i := 0; p != nil && i < len(*p); i++ {
 		(*p)[i].Scale(f)
 	}
 }
 
 func main() {
-	var path Path
-	path = Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
-	(&path).Scale(10)
-	fmt.Printf("Path: %#v\n", path)
+	var path *Path
+	fmt.Printf("%+v\n", path)
+	path = &Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
+	path.Scale(10)
+	fmt.Printf("Path: %+v\n", path)
 	fmt.Println("Perimeter = ", path.Distance())
 }

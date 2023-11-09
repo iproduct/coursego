@@ -31,17 +31,17 @@ func badFunction() {
 func main() {
 	defer func() {
 		if pan := recover(); pan != nil {
-			//err := pan.(MyError)
-			//fmt.Printf("Function panicked with an error: %s\n", err)
-			//fmt.Printf("Timestamp: %v", err.Time)
+			err := pan.(MyError)
+			fmt.Printf("Function panicked with an error: %s\n", err)
+			fmt.Printf("Timestamp: %v", err.Time)
 
-			switch err := pan.(type) {
-			default:
-				panic(pan)
-			case MyError:
-				fmt.Printf("Function panicked with an error: %s\n", err)
-				fmt.Printf("Timestamp: %v", err.Time)
-			}
+			//switch err := pan.(type) {
+			//default:
+			//	panic(pan)
+			//case MyError:
+			//	fmt.Printf("Function panicked with an error: %s\n", err)
+			//	fmt.Printf("Timestamp: %v", err.Time)
+			//}
 		}
 	}()
 	badFunction()
