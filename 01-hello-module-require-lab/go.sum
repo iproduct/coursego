@@ -1,5 +1,9 @@
 github.com/iproduct/coursego/01-hello-lab v0.0.0-20210117045544-a64504132343 h1:2HQcddp7pyVkyYrPxhiMIwrqViY+Mjoa/RFZHTb/4GA=
 github.com/iproduct/coursego/01-hello-lab v0.0.0-20210117045544-a64504132343/go.mod h1:NiCcmBpUZ6NJyFyoK6q6V6owz6CFkhKyWVnRG5hoKik=
+github.com/iproduct/coursego/fmi-2023-01-intro-lab v0.0.0-20231109190024-8a5ee2c4952e h1:Na2gZsaeZRZtwYDHdlAvCW3Y446pr1BMcmQV6gWFslQ=
+github.com/iproduct/coursego/fmi-2023-01-intro-lab v0.0.0-20231109190024-8a5ee2c4952e/go.mod h1:MtqdtPo5aegIVQWi1DnX/wzojM6AGmdGji+Ovght470=
+github.com/iproduct/coursego/fmi-2023-03-methods-interfaces-lab v0.0.0-20231109195728-6dcad317249b h1:/MPWjhWIgFjvrch/A7hCKGWIIbtq+g+YgdoTugCUlSc=
+github.com/iproduct/coursego/fmi-2023-03-methods-interfaces-lab v0.0.0-20231109195728-6dcad317249b/go.mod h1:s4ZqLCZaK+eVo8Tb1xvuWEb7psYKLDi/TiC3bPahjKQ=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c h1:qgOY6WgZOaTkIIMiVjBQcw93ERBE4m30iBm00nkL0i8=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 rsc.io/quote v1.5.2 h1:w5fcysjrx7yqtD/aO+QwRjYZOKnaM9Uh2b40tElTs3Y=
