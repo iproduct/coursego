@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-lab/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/hello/hello.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/hello/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/hello/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" afterDir="false" />
