@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fcf813d-0551-4990-9593-7d1347bec3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-hello-lab/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/bullscows/bullscows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-go-basics-lab/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple/regexp-split/regexp-split.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/constants/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/operators/operators.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/.idea/simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/.idea/simple.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/arrays/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple/casting/casting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/casting/casting.go" afterDir="false" />
-    </list>
+    <list default="true" id="1fcf813d-0551-4990-9593-7d1347bec3a1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,25 +14,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="1n9sBoLSodrcT6zK9qvDl9gS2zQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\awesomeProject" />
@@ -92,7 +80,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="import path added to intbitset package" />
+    <option name="LAST_COMMIT_MESSAGE" value="import path added to intbitset package" />
+  </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

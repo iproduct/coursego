@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/hello/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/cmd/hello/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-01-intro-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
