@@ -3,7 +3,7 @@ module github.com/iproduct/coursego/fmi-2023-01-intro-lab
 go 1.21.1
 
 require (
-	github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231109202918-2a562ce7cb76
+	github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231116192816-08a7cea9ae89
 	rsc.io/quote v1.5.2
 )
 

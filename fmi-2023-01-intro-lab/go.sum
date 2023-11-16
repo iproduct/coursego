@@ -1,5 +1,5 @@
-github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231109202918-2a562ce7cb76 h1:8NVC4txHF+HX0JQ7eoXnZh4n5q8W7AIUQiK++JtW8vY=
-github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231109202918-2a562ce7cb76/go.mod h1:Zw/dlNtzoiA+XhpAIlRSRVBhZH4uv2ZYmdf/7nhTy2Y=
+github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231116192816-08a7cea9ae89 h1:jbO4EW5h5CUWO5V/tWYRxu+XQ5OJ8Q567u8yu2g9n2U=
+github.com/iproduct/coursego/fmi-2023-04-methods-interfaces-lab v0.0.0-20231116192816-08a7cea9ae89/go.mod h1:Zw/dlNtzoiA+XhpAIlRSRVBhZH4uv2ZYmdf/7nhTy2Y=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c h1:qgOY6WgZOaTkIIMiVjBQcw93ERBE4m30iBm00nkL0i8=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 rsc.io/quote v1.5.2 h1:w5fcysjrx7yqtD/aO+QwRjYZOKnaM9Uh2b40tElTs3Y=
