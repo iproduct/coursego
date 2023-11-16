@@ -1,0 +1,747 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 379,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "ba4IEAAAQBAJ",
+      "etag": "JMP/G4wkncY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ba4IEAAAQBAJ",
+      "volumeInfo": {
+        "title": "GO Programming in easy steps",
+        "subtitle": "Discover Google’s Go language (golang)",
+        "authors": [
+          "Mike McGrath"
+        ],
+        "publisher": "In Easy Steps Limited",
+        "publishedDate": "2020-11-13",
+        "description": "GO Programming in easy steps has an easy-to-follow style that will appeal to anyone who wants to begin coding computer programs with Google’s Go programming language. The code in the listed steps within the book is color-coded making it easier for beginners to grasp. You need have no previous knowledge of any computer programming language so it's ideal for the newcomer. GO Programming in easy steps instructs you how to write code to create your own computer programs. It contains separate chapters demonstrating how to store information in data structures, how to control program flow using control structures, and how to create re-usable blocks of code in program functions. There are complete step-by-step example programs that demonstrate each aspect of coding, together with screenshots that illustrate the actual output when each program is executed. GO Programming in easy steps begins by explaining how to easily create a programming environment on your own computer, so you can quickly begin to create your own working programs by copying the book's examples. After demonstrating the essential building blocks of computer programming it describes how to use data abstraction for object-oriented programming and demonstrates how to code goroutines and channels for concurrency in your programs. Table of Contents 1. Get Started 2. Store Values 3. Perform Operations 4. Control Flow 5. Produce Functions 6. Build Structures 7. Create Arrays 8. Harness Time 9. Manage Data 10. Handle Input 11. Employ Concurrency 12. Request Responses",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781840789270"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1840789271"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 337,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ba4IEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ba4IEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ba4IEAAAQBAJ&printsec=frontcover&dq=golang&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ba4IEAAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/GO_Programming_in_easy_steps.html?hl=&id=ba4IEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/GO_Programming_in_easy_steps-sample-epub.acsm?id=ba4IEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/GO_Programming_in_easy_steps-sample-pdf.acsm?id=ba4IEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ba4IEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "GO Programming in easy steps begins by explaining how to easily create a programming environment on your own computer, so you can quickly begin to create your own working programs by copying the book&#39;s examples."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "jvGaswEACAAJ",
+      "etag": "CJ+pXDiLvuM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/jvGaswEACAAJ",
+      "volumeInfo": {
+        "title": "Mastering Go",
+        "subtitle": "Create Golang Production Applications Using Network Libraries, Concurrency, and Advanced Go Data Structures",
+        "authors": [
+          "Mihalis Tsoukalos"
+        ],
+        "publisher": "Packt Publishing",
+        "publishedDate": "2018-04-30",
+        "description": "Exploring the major features and packages of Go, along with its types and data-structures, enabling the reader to write threadsafe, concurrent cloud, and network applications Key Features Not your typical introduction to the Golang programming language Exploring Golang cradle to grave, completes the developer's Golang education A thorough exploration into the core libraries and Golang features, that usually are taken for granted In depth explanation, detailing the rationale behind composite data types, Golang concurrency, and the Golang networking library Book Description The Go programming language, often referred to as Golang (albeit wrongly), is really making strides, with some masterclass developments, architected by the greatest programming minds. Tobias Lutke, CEO of Shopify, recently quoted as saying \"Go will be the server language of the future\", powerful words, with much ambition. Go programmers are in high demand, but more controversially, Go takes the stage, where C and Unix programmers previously led the way. The growth of the Go language has seen it become the means by which systems, networking, web, and cloud applications are implemented. Comfortable with syntax, you'll benefit by mastering the use of the libraries and utilise its features, speed, and efficiency, for which the Go ecology is justly famous. You already know a little Go syntax and you've written some small projects, most Go programmers face the difficulty of having to integrate their Golang skills with production code. Typical introductions to Go programming, often stop short of this transition, the author continue on, showing you just how to tackle this. Offering a compendium of Go, the book begins with an account of how Go has been implemented, also, the reader will benefit from a dedicated chapter, an in-depth account of concurrency, systems and network programming, imperative for modern-day native cloud development. What you will learn Understand the design choices of Golang syntax Know enough Go internals to be able to optimize Golang code Appreciate concurrency models available in Golang Understand the interplay of systems and networking code Write server-level code that plays well in all environments Understand the context and appropriate use of Go data types and data structures Who this book is for This book is for Golang programmers. You should have previously read an introductory book on Go, or to have worked through the Tour of Go or an equivalent online course. This book will definitely help to remember the basic concepts of concurrency, but network programming will be explained. A certain amount of previous coding and production experience would be helpful.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1788626540"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788626545"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 606,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=jvGaswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=jvGaswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=jvGaswEACAAJ&dq=golang&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=jvGaswEACAAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mastering_Go.html?hl=&id=jvGaswEACAAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=jvGaswEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book will definitely help to remember the basic concepts of concurrency, but network programming will be explained. A certain amount of previous coding and production experience would be helpful."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fmd-DwAAQBAJ",
+      "etag": "xKp/xzZljuw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fmd-DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Hands-On Software Architecture with Golang",
+        "subtitle": "Design and architect highly scalable and robust applications using Go",
+        "authors": [
+          "Jyotiswarup Raiturkar"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2018-12-07",
+        "description": "Understand the principles of software architecture with coverage on SOA, distributed and messaging systems, and database modeling Key FeaturesGain knowledge of architectural approaches on SOA and microservices for architectural decisionsExplore different architectural patterns for building distributed applicationsMigrate applications written in Java or Python to the Go languageBook Description Building software requires careful planning and architectural considerations; Golang was developed with a fresh perspective on building next-generation applications on the cloud with distributed and concurrent computing concerns. Hands-On Software Architecture with Golang starts with a brief introduction to architectural elements, Go, and a case study to demonstrate architectural principles. You'll then move on to look at code-level aspects such as modularity, class design, and constructs specific to Golang and implementation of design patterns. As you make your way through the chapters, you'll explore the core objectives of architecture such as effectively managing complexity, scalability, and reliability of software systems. You'll also work through creating distributed systems and their communication before moving on to modeling and scaling of data. In the concluding chapters, you'll learn to deploy architectures and plan the migration of applications from other languages. By the end of this book, you will have gained insight into various design and architectural patterns, which will enable you to create robust, scalable architecture using Golang. What you will learnUnderstand architectural paradigms and deep dive into MicroservicesDesign parallelism/concurrency patterns and learn object-oriented design patterns in GoExplore API-driven systems architecture with introduction to REST and GraphQL standardsBuild event-driven architectures and make your architectures anti-fragileEngineer scalability and learn how to migrate to Go from other languagesGet to grips with deployment considerations with CICD pipeline, cloud deployments, and so onBuild an end-to-end e-commerce (travel) application backend in GoWho this book is for Hands-On Software Architecture with Golang is for software developers, architects, and CTOs looking to use Go in their software architecture to build enterprise-grade applications. Programming knowledge of Golang is assumed.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788625104"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1788625102"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 716,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fmd-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fmd-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=fmd-DwAAQBAJ&printsec=frontcover&dq=golang&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=fmd-DwAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Hands_On_Software_Architecture_with_Gola.html?hl=&id=fmd-DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fmd-DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "What you will learnUnderstand architectural paradigms and deep dive into MicroservicesDesign parallelism/concurrency patterns and learn object-oriented design patterns in GoExplore API-driven systems architecture with introduction to REST ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "o86PDwAAQBAJ",
+      "etag": "zSovRoRBepw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/o86PDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Learn Data Structures and Algorithms with Golang",
+        "subtitle": "Level up your Go programming skills to develop faster and more efficient code",
+        "authors": [
+          "Bhagvan Kommadi"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2019-03-30",
+        "description": "Explore Golang's data structures and algorithms to design, implement, and analyze code in the professional setting Key FeaturesLearn the basics of data structures and algorithms and implement them efficientlyUse data structures such as arrays, stacks, trees, lists and graphs in real-world scenariosCompare the complexity of different algorithms and data structures for improved code performanceBook Description Golang is one of the fastest growing programming languages in the software industry. Its speed, simplicity, and reliability make it the perfect choice for building robust applications. This brings the need to have a solid foundation in data structures and algorithms with Go so as to build scalable applications. Complete with hands-on tutorials, this book will guide you in using the best data structures and algorithms for problem solving. The book begins with an introduction to Go data structures and algorithms. You'll learn how to store data using linked lists, arrays, stacks, and queues. Moving ahead, you'll discover how to implement sorting and searching algorithms, followed by binary search trees. This book will also help you improve the performance of your applications by stringing data types and implementing hash structures in algorithm design. Finally, you'll be able to apply traditional data structures to solve real-world problems. By the end of the book, you'll have become adept at implementing classic data structures and algorithms in Go, propelling you to become a confident Go programmer. What you will learnImprove application performance using the most suitable data structure and algorithmExplore the wide range of classic algorithms such as recursion and hashing algorithmsWork with algorithms such as garbage collection for efficient memory management Analyze the cost and benefit trade-off to identify algorithms and data structures for problem solvingExplore techniques for writing pseudocode algorithm and ace whiteboard coding in interviewsDiscover the pitfalls in selecting data structures and algorithms by predicting their speed and efficiencyWho this book is for This book is for developers who want to understand how to select the best data structures and algorithms that will help solve coding problems. Basic Go programming experience will be an added advantage.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781789618419"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "178961841X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 324,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=o86PDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=o86PDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=o86PDwAAQBAJ&printsec=frontcover&dq=golang&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=o86PDwAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Learn_Data_Structures_and_Algorithms_wit.html?hl=&id=o86PDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=o86PDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Complete with hands-on tutorials, this book will guide you in using the best data structures and algorithms for problem solving. The book begins with an introduction to Go data structures and algorithms."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-3ezEAAAQBAJ",
+      "etag": "QGRsTaYzE3k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-3ezEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Functional Programming in Go",
+        "subtitle": "Apply functional techniques in Golang to improve the testability, readability, and security of your code",
+        "authors": [
+          "Dylan Meeus"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2023-03-10",
+        "description": "Leverage core functional programming (FP) concepts to write more maintainable and testable code in Go Purchase of the print or Kindle book includes a free PDF eBook Key FeaturesLearn functional programming techniques at the architectural level and use them to solve real-world problemsUnderstand how to think about code functionallyLearn about the trade-offs of functional programming and object-oriented programming (OOP) in GoBook Description While Go is a multi-paradigm language that gives you the option to choose whichever paradigm works best for the particular problem you aim to solve, it supports features that enable you to apply functional principles in your code. In this book, you'll learn about concepts central to the functional programming paradigm and how and when to apply functional programming techniques in Go. Starting with the basic concepts of functional programming, this Golang book will help you develop a deeper understanding of first-class functions. In the subsequent chapters, you'll gain a more comprehensive view of the techniques and methods used in functional languages, such as function currying, partial application, and higher-order functions. You'll then be able to apply functional design patterns for solving common programming challenges and explore how to apply concurrency mechanisms to functional programming. By the end of this book, you'll be ready to improve your code bases by applying functional programming techniques in Go to write cleaner, safer, and bug-free code. What you will learnGain a deeper understanding of functional programming through practical examplesBuild a solid foundation in core FP concepts and see how they apply to Go codeDiscover how FP can improve the testability of your code baseApply functional design patterns for problem solvingUnderstand when to choose and not choose FP conceptsDiscover the benefits of functional programming when dealing with concurrent codeWho this book is for If you are a Go engineer with a background in traditionally object-oriented languages such as Java or C++ and want to broaden your knowledge of functional programming, this book is for you.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781801814300"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1801814309"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 248,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.5.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-3ezEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-3ezEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=-3ezEAAAQBAJ&printsec=frontcover&dq=golang&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=-3ezEAAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Functional_Programming_in_Go.html?hl=&id=-3ezEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=-3ezEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In this book, you&#39;ll learn about concepts central to the functional programming paradigm and how and when to apply functional programming techniques in Go. Starting with the basic concepts of functional programming, this Golang book will ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "zQnFEAAAQBAJ",
+      "etag": "yGS7sX5POxM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zQnFEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Golang for Jobseekers",
+        "subtitle": "Unleash the power of Go programming for career advancement (English Edition)",
+        "authors": [
+          "Hairizuan Bin Noorazman"
+        ],
+        "publisher": "BPB Publications",
+        "publishedDate": "2023-06-14",
+        "description": "A comprehensive guide to mastering Golang and boosting your career prospects KEY FEATURES ● Gain a solid foundation in Golang application development, covering essential concepts and techniques. ● Explore the complete lifecycle of Golang applications, from development to successful deployment in production environments. ● Get a roadmap for further learning and skill enhancement after mastering the concepts in the book. DESCRIPTION Golang holds significance because of its emphasis on simplicity, readability, impressive performance, and built-in support for concurrency. If you want to elevate your Golang programming skills and become a more proficient developer, then this book is for you. “Golang for Jobseekers” starts by providing a comprehensive introduction to Go, covering its syntax, fundamental concepts, and unique features that make it an efficient language for development. It delves deeply into data structures and algorithms, equipping you with techniques to optimize your code and solve complex problems with elegance and speed. Furthermore, the book explores the art of building robust RESTful API applications in Go. It teaches you industry best practices and architectural patterns for creating scalable, secure, and maintainable APIs. The book then takes you through a step-by-step journey from development to production, demonstrating how to deploy Go applications in different environments, ranging from virtual machines to containers on Kubernetes. Lastly, it helps you understand essential concepts like monitoring and logging, enabling you to ensure the performance and health of your applications in real-world scenarios. By the end of the book, you will be equipped to confidently showcase your expertise during interviews, giving you a competitive edge in the job market. WHAT YOU WILL LEARN ● Gain proficiency in data structures and algorithms using Golang. ● Learn how to develop a RESTful API application using Golang. ● Acquire the knowledge and skills required to deploy an application to a virtual machine. ● Explore the process of deploying an application in a containerized environment. ● Understand the essential concepts and practices for making applications \"production ready”. WHO THIS BOOK IS FOR Ideal for newcomers to the industry, this book explores the entire journey of application development, from concept to production-ready deployment. TABLE OF CONTENTS 1. Understanding Golang and its Potential 2. Golang Fundamentals 3. Exploring Data Structures 4. Understanding Algorithms 5. Getting Comfortable with Go Proverbs 6. Building REST APIs 7. Testing in Golang 8. Deploying a Golang Application in a Virtual Machine 9. Deploying a Containerized Golang Application 10. Microservices with Golang Applications 11. Introduction to Monitoring and Logging 12. Adding Concurrency in Golang Application 13. What is Next?",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9789355518538"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "9355518536"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 415,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zQnFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zQnFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=zQnFEAAAQBAJ&pg=PA230&dq=golang&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=zQnFEAAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Golang_for_Jobseekers.html?hl=&id=zQnFEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Golang_for_Jobseekers-sample-pdf.acsm?id=zQnFEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zQnFEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003egolang\u003c/b\u003e-app:\u003cb\u003egolang\u003c/b\u003e-app /usr/local/bin/\u003cb\u003egolang\u003c/b\u003e-app It is assumed that you already have the Systemd configuration in place from preceding in the /etc/systemd/system/\u003cb\u003egolang\u003c/b\u003e-app.service. If you have not done it, it might be good to do so now&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "pSZKDwAAQBAJ",
+      "etag": "bINuuSXnOvw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/pSZKDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Security with Go",
+        "subtitle": "Explore the power of Golang to secure host, web, and cloud services",
+        "authors": [
+          "John Daniel Leon"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2018-01-31",
+        "description": "The first stop for your security needs when using Go, covering host, network, and cloud security for ethical hackers and defense against intrusion Key Features First introduction to Security with Golang Adopting a Blue Team/Red Team approach Take advantage of speed and inherent safety of Golang Works as an introduction to security for Golang developers Works as a guide to Golang security packages for recent Golang beginners Book Description Go is becoming more and more popular as a language for security experts. Its wide use in server and cloud environments, its speed and ease of use, and its evident capabilities for data analysis, have made it a prime choice for developers who need to think about security. Security with Go is the first Golang security book, and it is useful for both blue team and red team applications. With this book, you will learn how to write secure software, monitor your systems, secure your data, attack systems, and extract information. Defensive topics include cryptography, forensics, packet capturing, and building secure web applications. Offensive topics include brute force, port scanning, packet injection, web scraping, social engineering, and post exploitation techniques. What you will learn Learn the basic concepts and principles of secure programming Write secure Golang programs and applications Understand classic patterns of attack Write Golang scripts to defend against network-level attacks Learn how to use Golang security packages Apply and explore cryptographic methods and packages Learn the art of defending against brute force attacks Secure web and cloud applications Who this book is for Security with Go is aimed at developers with basics in Go to the level that they can write their own scripts and small programs without difficulty. Readers should be familiar with security concepts, and familiarity with Python security applications and libraries is an advantage, but not a necessity.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788622257"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1788622251"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 334,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=pSZKDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=pSZKDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=pSZKDwAAQBAJ&printsec=frontcover&dq=golang&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=pSZKDwAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Security_with_Go.html?hl=&id=pSZKDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=pSZKDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "What you will learn Learn the basic concepts and principles of secure programming Write secure Golang programs and applications Understand classic patterns of attack Write Golang scripts to defend against network-level attacks Learn how to ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NjTZEAAAQBAJ",
+      "etag": "T82y/AavhfE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NjTZEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Mastering Go (Golang)",
+        "authors": [
+          "Cybellium Ltd"
+        ],
+        "publisher": "Cybellium Ltd",
+        "publishedDate": "2023-09-26",
+        "description": "\"Mastering Go (Golang)\" is your ultimate guide to mastering the intricacies of the Go programming language. Whether you're a seasoned developer or a newcomer to the world of programming, this book will equip you with the knowledge and tools you need to create high-performance applications and elevate your coding expertise. Key Features: 1. Comprehensive Exploration: Dive deep into the fundamentals of Go programming, from variables and data types to control structures and functions. Build a solid foundation that will empower you to tackle complex coding challenges. 2. Concurrent and Parallel Programming: Harness the power of Go's concurrent programming capabilities. Learn how to create lightweight Goroutines and utilize Channels to design highly efficient, concurrent programs that can handle multiple tasks seamlessly. 3. Data Structures and Algorithms: Elevate your coding proficiency by mastering essential data structures and algorithms in Go. From arrays and slices to maps and linked lists, you'll gain insights into choosing the right data structure for the job and implementing optimal algorithms. 4. Building Robust Applications: Discover best practices for structuring and organizing your Go projects. Develop a deep understanding of error handling, testing, and writing clean, maintainable code that stands up to real-world demands. 5. Leveraging the Standard Library: Maximize your productivity by exploring the wealth of tools offered by Go's standard library. From handling I/O operations to managing concurrency, you'll learn to leverage these components to streamline your development process. 6. Web Development Mastery: Create dynamic web applications with Go's versatile web frameworks. Dive into the world of routing, middleware, and template engines, and build web solutions that are both performant and scalable. 7. Advanced Topics Unveiled: Expand your horizons by delving into advanced Go topics such as reflection, interfaces, and design patterns. Learn how to write elegant, idiomatic code that adheres to the principles of the language. 8. Optimization Techniques: Fine-tune your Go applications for optimal performance. Explore memory management, benchmarking, and profiling, and ensure that your software runs at its peak efficiency. 9. Deployment and DevOps: Gain practical insights into deploying Go applications across various platforms. Discover how to integrate containerization into your workflow and adopt DevOps practices that accelerate your development-to-production cycle. Who This Book Is For: \"Mastering Go (Golang)\" is a valuable resource for developers of all experience levels who are passionate about mastering the Go programming language. Whether you're a novice programmer or an experienced developer seeking to harness Go's capabilities, this book will guide you through the language's intricacies and empower you to create robust, high-performance applications.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9798860956353"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 274,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NjTZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NjTZEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=NjTZEAAAQBAJ&pg=PA271&dq=golang&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=NjTZEAAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mastering_Go_Golang.html?hl=&id=NjTZEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Mastering_Go_Golang-sample-pdf.acsm?id=NjTZEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NjTZEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eGolang\u003c/b\u003e Google Group: This is the primary discussion forum for Go. It&#39;s a great place to ask questions and participate in the larger Go community. 2. /r/\u003cb\u003egolang\u003c/b\u003e: The Go subreddit is an active community where you can find discussions about&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Ix2gEAAAQBAJ",
+      "etag": "MpweIQHE1bE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Ix2gEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Domain-Driven Design with Golang",
+        "subtitle": "Use Golang to create simple, maintainable systems to solve complex business problems",
+        "authors": [
+          "Matthew Boyle"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2022-12-16",
+        "description": "Understand the concept of Domain-driven design and build two DDD systems from scratch that can be showcased as part of your portfolio Key Features Explore Domain-driven design as a timeless concept and learn how to apply it with Go Build a domain-driven monolithic application and a microservice from scratch Leverage patterns to make systems scalable, resilient, and maintainable Book Description Domain-driven design (DDD) is one of the most sought-after skills in the industry. This book provides you with step-by-step explanations of essential concepts and practical examples that will see you introducing DDD in your Go projects in no time. Domain-Driven Design with Golang starts by helping you gain a basic understanding of DDD, and then covers all the important patterns, such as bounded context, ubiquitous language, and aggregates. The latter half of the book deals with the real-world implementation of DDD patterns and teaches you how to build two systems while applying DDD principles, which will be a valuable addition to your portfolio. Finally, you'll find out how to build a microservice, along with learning how DDD-based microservices can be part of a greater distributed system. Although the focus of this book is Golang, by the end of this book you'll be able to confidently use DDD patterns outside of Go and apply them to other languages and even distributed systems. What you will learn Get to grips with domains and the evolution of Domain-driven design Work with stakeholders to manage complex business needs Gain a clear understanding of bounded context, services, and value objects Get up and running with aggregates, factories, repositories, and services Find out how to apply DDD to monolithic applications and microservices Discover how to implement DDD patterns on distributed systems Understand how Test-driven development and Behavior-driven development can work with DDD Who this book is for This book is for intermediate-level Go developers who are looking to ensure that they not only write maintainable code, but also deliver great business value. If you have a basic understanding of Go and are interested in learning about Domain-driven design, or you've explored Domain-driven design before but never in the context of Go, then this book will be helpful.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781804619261"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1804619264"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 205,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Ix2gEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Ix2gEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Ix2gEAAAQBAJ&pg=PR11&dq=golang&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Ix2gEAAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Domain_Driven_Design_with_Golang.html?hl=&id=Ix2gEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Ix2gEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Use \u003cb\u003eGolang\u003c/b\u003e to create simple, maintainable systems to solve complex business problems Matthew Boyle. Preface. Welcome to this book on Domain-driven design with \u003cb\u003eGolang\u003c/b\u003e! DDD is one of the most sought-after skills in the industry. This book&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "mWbMDwAAQBAJ",
+      "etag": "nrJalu+dR+8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mWbMDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Hands-On Software Engineering with Golang",
+        "subtitle": "Move beyond basic programming to design and build reliable software with clean code",
+        "authors": [
+          "Achilleas Anagnostopoulos"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2020-01-24",
+        "description": "Explore software engineering methodologies, techniques, and best practices in Go programming to build easy-to-maintain software that can effortlessly scale on demand Key FeaturesApply best practices to produce lean, testable, and maintainable Go code to avoid accumulating technical debtExplore Go’s built-in support for concurrency and message passing to build high-performance applicationsScale your Go programs across machines and manage their life cycle using KubernetesBook Description Over the last few years, Go has become one of the favorite languages for building scalable and distributed systems. Its opinionated design and built-in concurrency features make it easy for engineers to author code that efficiently utilizes all available CPU cores. This Golang book distills industry best practices for writing lean Go code that is easy to test and maintain, and helps you to explore its practical implementation by creating a multi-tier application called Links ‘R’ Us from scratch. You’ll be guided through all the steps involved in designing, implementing, testing, deploying, and scaling an application. Starting with a monolithic architecture, you’ll iteratively transform the project into a service-oriented architecture (SOA) that supports the efficient out-of-core processing of large link graphs. You’ll learn about various cutting-edge and advanced software engineering techniques such as building extensible data processing pipelines, designing APIs using gRPC, and running distributed graph processing algorithms at scale. Finally, you’ll learn how to compile and package your Go services using Docker and automate their deployment to a Kubernetes cluster. By the end of this book, you’ll know how to think like a professional software developer or engineer and write lean and efficient Go code. What you will learnUnderstand different stages of the software development life cycle and the role of a software engineerCreate APIs using gRPC and leverage the middleware offered by the gRPC ecosystemDiscover various approaches to managing package dependencies for your projectsBuild an end-to-end project from scratch and explore different strategies for scaling itDevelop a graph processing system and extend it to run in a distributed mannerDeploy Go services on Kubernetes and monitor their health using PrometheusWho this book is for This Golang programming book is for developers and software engineers looking to use Go to design and build scalable distributed systems effectively. Knowledge of Go programming and basic networking principles is required.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781838550240"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1838550240"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 625,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mWbMDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mWbMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=mWbMDwAAQBAJ&pg=PA74&dq=golang&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=mWbMDwAAQBAJ&dq=golang&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Hands_On_Software_Engineering_with_Golan.html?hl=&id=mWbMDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mWbMDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003egolang\u003c/b\u003e.org/cmd/gofmt/. goimports: Update Go import lines by adding missing ones and removing unreferenced ones. URL: https://godoc.org/\u003cb\u003egolang\u003c/b\u003e.org/x/tools/cmd/ goimports. golangci-lint: Linter runner. URL: https://github.com/golangci&nbsp;..."
+      }
+    }
+  ]
+}

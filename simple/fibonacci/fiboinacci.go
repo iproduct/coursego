@@ -7,7 +7,10 @@ func main() {
 	var n int
 	fmt.Printf("Compute how many Fibonacci numbers?: ")
 
-	fmt.Scanf("%d", &n)
+	_, err := fmt.Scanf("%d", &n)
+	if err != nil {
+		return
+	}
 	last := big.NewInt(1)
 	current := big.NewInt(1)
 	for i := 0; (i < n) && (i < 2); i++ {

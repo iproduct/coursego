@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hello-module-require-lab/hello/hello.go" afterDir="false" />
-    </list>
+    <list default="true" id="d810493f-a398-444e-b0f7-e0a41b2c365d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
