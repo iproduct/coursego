@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"html/template"
+	"log"
 	"net/http"
 )
 
@@ -13,6 +14,7 @@ var templ = template.Must(template.New("qr").Parse(templateStr))
 func main() {
 	flag.Parse()
 	http.Handle("/", http.HandlerFunc(QR))
+	log.Fatal(http.ListenAndServe(*addr, nil))
 }
 
 func QR(w http.ResponseWriter, r *http.Request) {
