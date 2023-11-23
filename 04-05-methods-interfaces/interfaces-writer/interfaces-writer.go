@@ -48,7 +48,7 @@ func (o *OtherFile) Read(b []byte) (n int, err error)  { return /*...*/ }
 func (o *OtherFile) Write(b []byte) (n int, err error) { return /*...*/ }
 func (o *OtherFile) Close() error                      { return nil }
 
-//package io
+// package io
 type Reader interface {
 	Read(p []byte) (n int, err error)
 }
@@ -145,11 +145,13 @@ func main() {
 	//f2 = w  // !!! compile time error: w has no methods Read() and Close()
 
 	// Maps of interfaces
-	m := map[*Writer]struct{ x, y float64 } {&w: {5,3}}
+	m := map[*Writer]struct{ x, y float64 }{&w: {5, 3}}
 	var _ map[string]interface{}
 	fmt.Printf("%+v\n", m)
 
 	// Interfaces embedding
-	fb := Football{Ball{Radius: 5, Material: "leather"}}
-	fb.Bounce()
+	var bouncer Bouncer
+	bouncer = Football{Ball{Radius: 5, Material: "leather"}}
+	bouncer = Ball{Radius: 5, Material: "leather"}
+	bouncer.Bounce()
 }

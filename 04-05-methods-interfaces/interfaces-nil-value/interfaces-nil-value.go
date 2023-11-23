@@ -20,6 +20,8 @@ func (t *T) M() {
 
 func main() {
 	var i I
+	//i.M() // Error
+	describe(i)
 
 	var t *T
 	i = t
