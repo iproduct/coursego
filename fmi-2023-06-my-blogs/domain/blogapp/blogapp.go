@@ -22,7 +22,7 @@ func (b *BlogApp) GetAll() ([]model.Post, error) {
 	return b.posts.GetAll()
 }
 
-func (b *BlogApp) Insert(post *model.Post) error {
+func (b *BlogApp) Add(post *model.Post) error {
 	return b.posts.Insert(post)
 }
 
