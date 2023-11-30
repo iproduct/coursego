@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/google/uuid"
-	"github.com/iproduct/coursego/fmi-2023-05-my-blogs/dao/inmemory"
+	"github.com/iproduct/coursego/fmi-2023-05-my-blogs/dao/mysql"
 	"github.com/iproduct/coursego/fmi-2023-05-my-blogs/domain/blogapp"
 	"github.com/iproduct/coursego/fmi-2023-05-my-blogs/model"
 	"html/template"
@@ -97,7 +97,12 @@ func main() {
 		Handler: mux,
 	}
 
-	blogRepo := inmemory.New()
+	//blogRepo := inmemory.New()
+	blogRepo := mysql.New(mysql.MySQLOptions{
+		URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/my-blogs-go2023?parseTime=true",
+			"root", "root"),
+	})
+	blogRepo.Init()
 	blog := blogapp.New(blogRepo)
 	app := webapp{
 		server: server,

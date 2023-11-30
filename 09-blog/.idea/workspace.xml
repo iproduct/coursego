@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="" />
+    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/mysql/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/inmemory/inmemory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/inmemory/inmemory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

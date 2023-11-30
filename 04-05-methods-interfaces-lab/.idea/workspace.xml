@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739cce5c-0d80-4d1c-af76-5c08a0119967" name="Default Changelist" comment="polymorphism demo added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/mysql/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/inmemory/inmemory.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/dao/inmemory/inmemory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2023-06-my-blogs/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
