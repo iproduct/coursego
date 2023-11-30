@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create post</title>
+    <style>
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .btn {
+            margin: 10px 10px;
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        input {
+            margin: 5px;
+            padding: 10px;
+        }
+        textarea {
+            margin: 5px;
+            padding: 10px;
+            height: 300px;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Golang Blog</h2>
+        </div>
+        <form action="/post" method="POST" id="post-form">
+            <div><input type="text" name="author" placeholder="Author"/></div>
+            <div><input type="text" name="heading" placeholder="Heading"/></div>
+            <div><textarea class="form-control" placeholder="Enter Post" name="content"></textarea></div>
+            <input type="submit" class="btn" value="Post">
+        </form>
+    </div>
+</body>
+
+</html>
