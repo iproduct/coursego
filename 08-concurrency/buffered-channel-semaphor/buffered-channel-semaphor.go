@@ -23,9 +23,9 @@ const MAX_URLS = 300
 func main() {
 	// concurrentJobs is a buffered channel implemting semaphore that blocks
 	// if more than 20 goroutines are started at once
-	var concurrentJobs = semaphor.New(10000)
+	var concurrentJobs = semaphor.New(5)
 	visited := concurrentset.New()
-	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 15*time.Second)
 	for url := range UrlGenerator(ctx, MAX_URLS, visited) {
 		concurrentJobs.Acquire() // acquire a  token
 		go DoWork(url, concurrentJobs)

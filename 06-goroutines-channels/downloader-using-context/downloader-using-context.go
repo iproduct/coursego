@@ -77,15 +77,6 @@ func DownloadResources(ctx context.Context, cancel context.CancelFunc, urls <-ch
 	return resources
 }
 
-func IsClosed(ch <-chan struct{}) bool {
-	select {
-	case <-ch:
-		return true //already closed - return true
-	default:
-		return false // not yet closed - return false
-	}
-}
-
 func download(ctx context.Context, urlStr string) Resource {
 	random := rand.Float64()
 	fmt.Printf("Downloading URL: %s\n", urlStr)

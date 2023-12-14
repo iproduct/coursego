@@ -31,7 +31,7 @@ func main() {
 				fmt.Println("Channel 2 sent", y)
 			}
 		}
-		if !(ok1 || ok2) {
+		if !ok1 && !ok2 {
 			break
 		}
 	}

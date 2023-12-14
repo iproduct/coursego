@@ -5,7 +5,7 @@ import (
 )
 
 func sendTo(c chan<- int, iter int) {
-	for i := 0; i <= iter; i++ {
+	for i := 1; i <= iter; i++ {
 		c <- i
 	}
 
@@ -33,8 +33,8 @@ func main() {
 			} else {
 				ch2 = nil
 			}
-			//default:
-			//	fmt.Println("Not active ...",)
+		default:
+			fmt.Println("Not active ...")
 		}
 		if ch1 == nil && ch2 == nil {
 			break
