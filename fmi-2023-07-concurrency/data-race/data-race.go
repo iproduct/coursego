@@ -13,6 +13,7 @@ type RPC struct {
 func (rpc *RPC) compute() {
 	time.Sleep(time.Second) // strenuous computation intensifies
 	rpc.result = 42
+	//rpc.done <- struct{}{}
 	close(rpc.done)
 }
 
@@ -25,7 +26,8 @@ func main() {
 
 	go rpc.compute()         // kick off computation in the background
 	version := rpc.version() // grab some other information while we're waiting
-	<-rpc.done               // wait for computation to finish
+	//val, ok := <-rpc.done    // wait for computation to finish
+	//fmt.Printf("%#v, %T, ok = %#v\n", val, val, ok)
 	result := rpc.result
 
 	fmt.Printf("RPC computation complete, result: %d, version: %d\n", result, version)

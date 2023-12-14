@@ -13,7 +13,7 @@ func main() {
 	chA := make(chan int)
 	chB := make(chan int)
 	go myfunc(chA, chB)
-	<-chB
 	chA <- 1
+	<-chB
 	fmt.Println("Demo complete")
 }
