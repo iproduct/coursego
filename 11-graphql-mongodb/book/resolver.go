@@ -109,7 +109,7 @@ var mutationType = graphql.NewObject(graphql.ObjectConfig{
 					Description: params.Args["description"].(string),
 					Price:       params.Args["price"].(float64),
 				}
-				if err := InsertBook(context.Background(), book); err != nil {
+				if err := InsertBook(context.Background(), &book); err != nil {
 					return nil, err
 				}
 

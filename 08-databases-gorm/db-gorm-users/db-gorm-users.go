@@ -11,7 +11,7 @@ import (
 func main() {
 	dsn := "root:root@tcp(127.0.0.1:3306)/golang_projects_gorm?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
-		DisableAutomaticPing :    false,
+		DisableAutomaticPing:                     false,
 		DisableForeignKeyConstraintWhenMigrating: true,
 	})
 	//db, err := gorm.Open(mysql.New(mysql.Config{
@@ -29,7 +29,7 @@ func main() {
 
 	db.AutoMigrate(&entities.User{})
 
-	user := entities.User{FirstName: "Rob", LastName: "Pike", Email: "pike2@golang.com", Username: "rob2", Password: "rob",
+	user := entities.User{FirstName: "Hristo", LastName: "Dimitrov", Email: "hristo@golang.com", Username: "rob2", Password: "rob",
 		Active: true, Model: gorm.Model{}}
 
 	result := db.Create(&user) // pass pointer of data to Create

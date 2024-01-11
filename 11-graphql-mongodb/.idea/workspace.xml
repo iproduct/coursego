@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654d4957-fbff-472f-a571-582e6746e0e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/concurrent-map/gen_map.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-generation-lab/genny/queue/gen_queue.go" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/db-prepare-insert/db-prepare-insert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/db-update-transaction-idiomatic/db-update-transaction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users/db-gorm-users.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/gorm-rest-chi/gorm-rest-chi.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/gorm-rest-chi/gorm-rest-chi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/book/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/resolver.go" beforeDir="false" afterPath="$PROJECT_DIR$/book/resolver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_queries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_queries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/entities/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/entities/entities.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/ping-update-execcontext/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/ping-update-execcontext/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +35,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="1ok7Zb3VNyY1Y9EbuGenletic7w" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -32,22 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.format.on.save.advertiser.fired" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\11-graphql-mongodb" />
@@ -99,6 +110,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="presentation and graphql demos updated" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

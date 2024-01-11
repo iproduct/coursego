@@ -26,6 +26,13 @@ mutation Create($name: String!, $description: String, $price: Float!){
     price
   }
 }
+-- QUERY VARS:
+{
+  "name":"Go Distilled",
+  "description": "Entry-level book about Golang.",
+  "price": 123.50
+}
+
 
 mutation Update($id: String!, $name: String!, $description: String, $price: Float!){
   update(id:$id, name: $name, description: $description, price: $price) {

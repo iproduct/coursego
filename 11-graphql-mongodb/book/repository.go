@@ -45,7 +45,7 @@ func GetBookList(ctx context.Context, limit int) (result interface{}) {
 	return books
 }
 
-func InsertBook(ctx context.Context, book Book) error {
+func InsertBook(ctx context.Context, book *Book) error {
 	if book.ID == "" {
 		book.ID = uuid.New().String()
 	}

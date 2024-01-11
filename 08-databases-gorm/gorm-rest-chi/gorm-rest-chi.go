@@ -36,14 +36,14 @@ func main() {
 	r := chi.NewRouter()
 	r.Use(SetDBMiddleware)
 
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		db, _ := r.Context().Value("DB").(*gorm.DB)
-
-		var users []entities.User
-		db.Find(&users)
-
-		// lots of db operations
-	})
+	//r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+	//	db, _ := r.Context().Value("DB").(*gorm.DB)
+	//
+	//	var users []entities.User
+	//	db.Find(&users)
+	//
+	//	// lots of db operations
+	//})
 
 	r.Get("/users", func(w http.ResponseWriter, r *http.Request) {
 		db, _ := r.Context().Value("DB").(*gorm.DB)
