@@ -18,6 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer resp.Body.Close()
 	fmt.Printf("Response Status: %v\n", resp.Status)
 	scanner := bufio.NewScanner(resp.Body)
 	for i := 0; scanner.Scan() && i < 20; i++ {
