@@ -5,12 +5,12 @@ import (
 	"time"
 )
 
-func counter() {
+func main() {
 	count := 0
 
 	for i := 0; i < 1000; i++ {
 		go func() {
-			count++ // Wrong!
+			count++
 		}()
 	}
 

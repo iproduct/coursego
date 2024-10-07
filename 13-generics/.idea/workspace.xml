@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec0603e-ccf1-41c9-9af2-ff7259542ac1" name="Changes" comment="" />
+    <list default="true" id="aec0603e-ccf1-41c9-9af2-ff7259542ac1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/select/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,26 +36,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="23T27B3tSlyYV9zJYAwnpFP7iKt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.format.on.save.advertiser.fired" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../out" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-  </component>
-  <component name="RunManager" selected="Go Build.go build 13-generics2/sort">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Go Build.go build 13-generics2/hello">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -65,12 +84,12 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 13-generics2/map-keys" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 13-generics2/simple-generics" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="13-generics" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="13-generics2/map-keys" />
-      <filePath value="$PROJECT_DIR$/map-keys/map-keys.go" />
+      <package value="13-generics2/simple-generics" />
+      <filePath value="$PROJECT_DIR$/simple-generics/simple-generics.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -104,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build 13-generics2/sort" />
-        <item itemvalue="Go Build.go build 13-generics2/channels-maps" />
-        <item itemvalue="Go Build.go build 13-generics2/map-keys" />
-        <item itemvalue="Go Build.go build 13-generics2/slices" />
         <item itemvalue="Go Build.go build 13-generics2/hello" />
+        <item itemvalue="Go Build.go build 13-generics2/slices" />
+        <item itemvalue="Go Build.go build 13-generics2/channels-maps" />
+        <item itemvalue="Go Build.go build 13-generics2/sort" />
+        <item itemvalue="Go Build.go build 13-generics2/simple-generics" />
       </list>
     </recent_temporary>
   </component>
@@ -117,6 +136,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

@@ -29,7 +29,7 @@ func Stringify(s any) (string, error) {
 	}
 }
 
-func Join[E Stringer](things []E, separator string) string {
+func Join[S ~[]E, E Stringer](things S, separator string) string {
 	result := ""
 	lastIndex := len(things) - 1
 	for i, v := range things {
@@ -45,10 +45,7 @@ func main() {
 	Print("Hello!")
 	Print(42)
 	Print(true)
-	//output, err := Join([]string{"a", "b", "c"}, ", ")
-	//if err != nil {
-	//	log.Fatalln(err)
-	//}
+	//output := Join([]string{"a", "b", "c"}, ", ")
 	//Print(output)
 
 	users := []User{

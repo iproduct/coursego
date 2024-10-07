@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	s := "Hello Go World"
+	s := "Hello Go World - 你好，围棋世界"
 	fmt.Println(s)
 	goquote := quote.Go()
 	fmt.Println(goquote)

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55f986e-0293-4a33-a738-8be9319daf74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types-lab/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/select/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

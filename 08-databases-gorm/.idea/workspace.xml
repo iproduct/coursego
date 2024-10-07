@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c3d5d4-e486-40dc-b4d3-5d12a29b9b79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/db-prepare-insert/db-prepare-insert.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/db-update-transaction-idiomatic/db-update-transaction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/utils/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/select/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-gorm-users/db-gorm-users.go" beforeDir="false" afterPath="$PROJECT_DIR$/db-gorm-users/db-gorm-users.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gorm-rest-chi/gorm-rest-chi.go" beforeDir="false" afterPath="$PROJECT_DIR$/gorm-rest-chi/gorm-rest-chi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/entities/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/entities/entities.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-10-database-lab/ping-update-execcontext/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-10-database-lab/ping-update-execcontext/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="1oi7rHGobzhrKa18kDHRCZfgs2c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,19 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/office27",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/office27&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/08-databases/gorm-rest-chi">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
