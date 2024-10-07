@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmi-2024-01-intro-go/stringutil"
 	"fmt"
+	"github.com/iproduct/coursego/fmi-2024-01-intro-go/stringutil"
 )
 
 func main() {
