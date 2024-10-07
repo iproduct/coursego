@@ -1,6 +1,8 @@
 package stringutil
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func ExampleReverse() {
 	reversed := Reverse("queue")
