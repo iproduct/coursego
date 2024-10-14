@@ -5,11 +5,20 @@ import (
 	"math"
 )
 
-func Sqrt(x float64) (float64, int) {
-	z, iter, epsilon := 1.0, 0, 1e-10
-	epsilon += 0 // just to compile
+func Sqrt(x float64) (z float64, iter int) {
+	z, iter, epsilon := 1.0, 0, 1e-15
 	// TODO implement sqrt using newton formula z -= (z*z - x)/ (2 * z)
-	return z, iter
+	//for math.Abs(z*z-x) > epsilon { // while loop
+	//	z -= (z*z - x) / (2 * z)
+	//	iter++
+	//}
+	for { // do-while loop
+		z -= (z*z - x) / (2 * z)
+		iter++
+		if math.Abs(z*z-x) < epsilon {
+			return
+		}
+	}
 }
 
 func main() {
