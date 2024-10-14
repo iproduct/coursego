@@ -13,6 +13,7 @@ func Sqrt(x float64) (float64, int) {
 }
 
 func main() {
-	fmt.Println(Sqrt(2))
-	fmt.Println(math.Sqrt(2))
+	sqr, iter := Sqrt(2)
+	fmt.Printf("%22.20f, %d iterations\n", sqr, iter)
+	fmt.Printf("%22.20f\n", math.Sqrt(2))
 }
