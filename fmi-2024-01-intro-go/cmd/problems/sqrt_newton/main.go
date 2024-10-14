@@ -6,7 +6,8 @@ import (
 )
 
 func Sqrt(x float64) (float64, int) {
-	z, iter := 1.0, 0
+	z, iter, epsilon := 1.0, 0, 1e-10
+	epsilon += 0 // just to compile
 	// TODO implement sqrt using newton formula z -= (z*z - x)/ (2 * z)
 	return z, iter
 }
