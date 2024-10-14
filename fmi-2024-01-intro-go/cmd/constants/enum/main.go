@@ -28,5 +28,5 @@ func (r Status) String() string {
 
 func main() {
 	status := Registered
-	fmt.Println(status + 4)
+	fmt.Println(byte(status + 1))
 }
