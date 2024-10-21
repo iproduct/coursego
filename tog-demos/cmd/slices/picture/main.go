@@ -4,6 +4,7 @@ import (
 	"image"
 	"image/png"
 	"log"
+	"math"
 	"os"
 )
 
@@ -14,7 +15,7 @@ func Pic(dx, dy int) [][]uint8 {
 	}
 	for y := 0; y < dy; y++ {
 		for x := 0; x < dx; x++ {
-			result[y][x] = uint8(x * y)
+			result[y][x] = uint8(math.Exp((2 * float64(x^y) / math.Abs(float64(x-y)))))
 		}
 	}
 	return result
