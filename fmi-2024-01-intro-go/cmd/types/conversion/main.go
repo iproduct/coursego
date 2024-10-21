@@ -2,22 +2,24 @@ package main
 
 import "fmt"
 
-type MyString []rune
+type MyString struct {
+	Data []rune
+}
 
-func (mystring *MyString) String() string {
-	return string(*mystring)
+func (mystring MyString) String() string {
+	return string(mystring.Data)
 }
 
 func (mystring *MyString) Append(value string) {
-	*mystring = append(*mystring, []rune(value)...)
+	(*mystring).Data = append((*mystring).Data, []rune(value)...)
 }
 
 func (mystring *MyString) Prepend(value string) {
-	*mystring = append([]rune(value), *mystring...)
+	(*mystring).Data = append([]rune(value), (*mystring).Data...)
 }
 
 func (mystring *MyString) Len() int {
-	return len(*mystring)
+	return len((*mystring).Data)
 }
 
 func main() {
@@ -25,7 +27,7 @@ func main() {
 	for i := 0; i < 26; i++ {
 		ms.Prepend(string(i + 'A'))
 	}
-	fmt.Println(string(ms))
+	fmt.Printf("%s\n", ms)
 	fmt.Println(ms.Len())
 
 }

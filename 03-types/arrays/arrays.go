@@ -26,6 +26,11 @@ func main() {
 	// a2[0] = 3
 	// fmt.Printf("%v, %v, %t, %t\n", a1, a2, a1 == a2, &a1 == &a2)
 
+	//const c = len([10]float64{imag(3 + 2i)})
+	//fmt.Printf("%v %T\n", c, c)
+	c := [10]float64{imag(3 + 2i)}
+	fmt.Printf("%v, %d, %d\n", c, len(c), cap(c))
+
 	var a3 [20]int
 	firstHalf := a3[:10]
 	secondHalf := a3[10:]
