@@ -8,7 +8,7 @@ import (
 )
 
 func Pic(dx, dy int) [][]uint8 {
-	return make([][]uint8, dy)
+	return make([][]uint8, dy) //TODO draw the picture
 }
 
 func main() {
