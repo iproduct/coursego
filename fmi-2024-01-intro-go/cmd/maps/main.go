@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math"
 )
 
@@ -29,8 +30,18 @@ func CalcualteDistance(places map[string]Vertex, from string, to string) (float6
 
 func main() {
 	places := make(map[string]Vertex, 10)
-	places["Bell Labs"] = Vertex{40.68433, -74.39967}
+	places["Bell Labs"] = Vertex{X: 40.68433, Y: -74.39967}
 	places["Microsoft"] = Vertex{60.68433, -84.39967}
 	places["Vitosha Soft"] = Vertex{Y: 23.32415, X: 42.69751}
 
+	// test
+	//from := "Bell Labs"
+	//from := "Vitosha Soft"
+	from := "ACME Ltd."
+	to := "Microsoft"
+	dist, err := CalcualteDistance(places, from, to)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Distance from %s to %s is %f\n", from, to, dist)
 }
