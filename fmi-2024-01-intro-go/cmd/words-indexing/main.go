@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"regexp"
+	"strings"
 )
 
 func WordCount(s string, counts map[string]int) map[string]int {
@@ -17,16 +20,20 @@ func WordCount(s string, counts map[string]int) map[string]int {
 
 func main() {
 	counts := make(map[string]int)
-	var str string
+	reader := bufio.NewReader(os.Stdin)
 	for {
-		n, err := fmt.Scanf("%s", &str)
+		str, err := reader.ReadString('\n')
+		//var str string
+		//n, err := fmt.Scanf("%s", &str)
 		if err != nil {
 			fmt.Println("Error: ", err)
+			break
+		}
+		str = strings.TrimSpace(str)
+		if str == "" {
+			break
 		} else {
 			WordCount(str, counts)
-		}
-		if n == 0 {
-			break
 		}
 	}
 	fmt.Printf("%v\n", counts)
