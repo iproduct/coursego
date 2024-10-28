@@ -25,9 +25,9 @@ func main() {
 	counts := make(map[string]int)
 	reader := bufio.NewReader(os.Stdin)
 	for {
-		str, err := reader.ReadString('\n')
+		str, err := reader.ReadString('\n') //reading a whole line from os.Stdin
 		//var str string
-		//n, err := fmt.Scanf("%s", &str)
+		//n, err := fmt.Scanf("%s", &str) // reading single word from os.Stdin
 		if err != nil {
 			fmt.Println("Error: ", err)
 			break
