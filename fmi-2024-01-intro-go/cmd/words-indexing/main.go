@@ -12,8 +12,11 @@ func WordCount(s string, counts map[string]int) map[string]int {
 	//words := strings.Fields(s)
 	re := regexp.MustCompile(`\W+`)
 	words := re.Split(s, -1)
+	fmt.Println(s, words)
 	for _, word := range words {
-		counts[word]++
+		if word != "" {
+			counts[word]++
+		}
 	}
 	return counts
 }
