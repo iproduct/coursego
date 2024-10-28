@@ -45,6 +45,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Distance between %s and %s is %f\n", from, to, dist)
+	fmt.Printf("Distance between %s and %s is %f using map %#v\n", from, to, dist, places)
 
 }
