@@ -9,7 +9,7 @@ import (
 	"sort"
 )
 
-var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
+var stopWordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
 	`during`, `out`, `very`, `having`, `with`, `they`, `own`, `an`, `be`, `some`, `for`, `do`, `its`, `yours`,
 	`such`, `into`, `of`, `most`, `itself`, `other`, `off`, `is`, `s`, `am`, `or`, `who`, `as`, `from`, `him`,
 	`each`, `the`, `themselves`, `until`, `below`, `are`, `we`, `these`, `your`, `his`, `through`, `don`, `nor`,
@@ -20,9 +20,17 @@ var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, 
 	`which`, `those`, `i`, `after`, `few`, `whom`, `t`, `being`, `if`, `theirs`, `my`, `against`, `a`, `by`,
 	`doing`, `it`, `how`, `further`, `was`, `here`, `than`}
 
+var stopWordsMap = make(map[string]struct{}, len(stopWordsList))
+
 type WordCount = struct {
 	Word  string
 	Count int
+}
+
+func init() {
+	for _, w := range stopWordsList {
+		stopWordsMap[w] = struct{}{}
+	}
 }
 
 func CountWords(f *os.File) map[string]int {
@@ -33,7 +41,7 @@ func CountWords(f *os.File) map[string]int {
 	for input.Scan() {
 		words := split.Split(input.Text(), -1)
 		for _, word := range words {
-			if letter.MatchString(word) {
+			if _, isStopWord := stopWordsMap[word]; !isStopWord && letter.MatchString(word) {
 				counts[word]++
 			}
 		}
@@ -66,7 +74,7 @@ func main() {
 			sort.Slice(wcslice, func(i, j int) bool {
 				return wcslice[i].Count > wcslice[j].Count
 			})
-			fmt.Printf("%v\n", wcslice)
+			fmt.Printf("%v\n", wcslice[:15])
 		}
 	}
 }
