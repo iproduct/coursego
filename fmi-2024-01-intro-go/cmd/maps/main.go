@@ -20,10 +20,10 @@ func CalcualteDistance(places map[string]Vertex, from string, to string) (float6
 		ok     bool
 	)
 	if v1, ok = places[from]; !ok {
-		return 0, fmt.Errorf("Cannot find %s in places %v", from, places)
+		return 0, fmt.Errorf("Cannot find %s in places %#v", from, places)
 	}
 	if v2, ok = places[to]; !ok {
-		return 0, fmt.Errorf("Cannot find %s in places %v", to, places)
+		return 0, fmt.Errorf("Cannot find %s in places %#v", to, places)
 	}
 	return v1.Distance(v2), nil
 }
