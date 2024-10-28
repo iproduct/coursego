@@ -1,0 +1,57 @@
+Coroutines are computer program components that allow execution to be suspended and resumed, generalizing subroutines for cooperative multitasking. Coroutines are well-suited for implementing familiar program components such as cooperative tasks, exceptions, event loops, iterators, infinite lists and pipes.
+
+They have been described as "functions whose execution you can pause".[1]
+
+Melvin Conway coined the term coroutine in 1958 when he applied it to the construction of an assembly program.[2] The first published explanation of the coroutine appeared later, in 1963.[3]
+
+Definition and types
+There is no single precise definition of coroutine. In 1980 Christopher D. Marlin[4] summarized two widely-acknowledged fundamental characteristics of a coroutine:
+
+the values of data local to a coroutine persist between successive calls;
+the execution of a coroutine is suspended as control leaves it, only to carry on where it left off when control re-enters the coroutine at some later stage.
+Besides that, a coroutine implementation has 3 features:
+
+the control-transfer mechanism. Asymmetric coroutines usually provide keywords like yield and resume. Programmers cannot freely choose which frame to yield to. The runtime only yields to the nearest caller of the current coroutine. On the other hand, in symmetric coroutines, programmers must specify a yield destination.
+whether coroutines are provided in the language as first-class objects, which can be freely manipulated by the programmer, or as constrained constructs;
+whether a coroutine is able to suspend its execution from within nested function calls. Such a coroutine is a stackful coroutine. One to the contrary is called stackless coroutines, where unless marked as coroutine, a regular function can't use the keyword yield.
+The paper "Revisiting Coroutines"[5] published in 2009 proposed term full coroutine to denote one that supports first-class coroutine and is stackful. Full Coroutines deserve their own name in that they have the same expressive power as one-shot continuations and delimited continuations. Full coroutines are either symmetric or asymmetric. Importantly, whether a coroutine is symmetric or asymmetric has no bearing on how expressive it can be as they are equally as expressive, though full coroutines are more expressive than non-full coroutines. While their expressive power is the same, asymmetrical coroutines more closely resemble routine based control structures in the sense that control is always passed back to the invoker, which programmers may find more familiar.
+
+Comparison with
+Subroutines
+Subroutines are special cases of coroutines.[6] When subroutines are invoked, execution begins at the start, and once a subroutine exits, it is finished; an instance of a subroutine only returns once, and does not hold state between invocations. By contrast, coroutines can exit by calling other coroutines, which may later return to the point where they were invoked in the original coroutine; from the coroutine's point of view, it is not exiting but calling another coroutine.[6] Thus, a coroutine instance holds state, and varies between invocations; there can be multiple instances of a given coroutine at once. The difference between calling another coroutine by means of "yielding" to it and simply calling another routine (which then, also, would return to the original point), is that the relationship between two coroutines which yield to each other is not that of caller-callee, but instead symmetric.
+
+Any subroutine can be translated to a coroutine which does not call yield.[7]
+
+Here is a simple example of how coroutines can be useful. Suppose you have a consumer-producer relationship where one routine creates items and adds them to a queue and another removes items from the queue and uses them. For reasons of efficiency, you want to add and remove several items at once. The code might look like this:
+
+var q := new queue
+
+coroutine produce
+    loop
+        while q is not full
+            create some new items
+            add the items to q
+        yield to consume
+
+coroutine consume
+    loop
+        while q is not empty
+            remove some items from q
+            use the items
+        yield to produce
+
+call produce
+The queue is then completely filled or emptied before yielding control to the other coroutine using the yield command. The further coroutines calls are starting right after the yield, in the outer coroutine loop.
+
+Although this example is often used as an introduction to multithreading, two threads are not needed for this: the yield statement can be implemented by a jump directly from one routine into the other.
+
+Threads
+Coroutines are very similar to threads. However, coroutines are cooperatively multitasked, whereas threads are typically preemptively multitasked. Coroutines provide concurrency, because they allow tasks to be performed out of order or in a changeable order, without changing the overall outcome, but they do not provide parallelism, because they do not execute multiple tasks simultaneously. The advantages of coroutines over threads are that they may be used in a hard-realtime context (switching between coroutines need not involve any system calls or any blocking calls whatsoever), there is no need for synchronization primitives such as mutexes, semaphores, etc. in order to guard critical sections, and there is no need for support from the operating system.
+
+It is possible to implement coroutines using preemptively-scheduled threads, in a way that will be transparent to the calling code, but some of the advantages (particularly the suitability for hard-realtime operation and relative cheapness of switching between them) will be lost.
+
+Generators
+Main article: Generator (computer programming)
+Generators, also known as semicoroutines,[8] are a subset of coroutines. Specifically, while both can yield multiple times, suspending their execution and allowing re-entry at multiple entry points, they differ in coroutines' ability to control where execution continues immediately after they yield, while generators cannot, instead transferring control back to the generator's caller.[9] That is, since generators are primarily used to simplify the writing of iterators, the yield statement in a generator does not specify a coroutine to jump to, but rather passes a value back to a parent routine.
+
+However, it is still possible to implement coroutines on top of a generator facility, with the aid of a top-level dispatcher routine (a trampoline, essentially) that passes control explicitly to child generators identified by tokens passed back from the generators

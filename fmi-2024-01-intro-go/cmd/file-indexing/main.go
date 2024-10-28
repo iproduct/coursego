@@ -7,6 +7,7 @@ import (
 	"os"
 	"regexp"
 	"sort"
+	"strings"
 )
 
 var stopWordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
@@ -41,6 +42,7 @@ func CountWords(f *os.File) map[string]int {
 	for input.Scan() {
 		words := split.Split(input.Text(), -1)
 		for _, word := range words {
+			word = strings.ToLower(word)
 			if _, isStopWord := stopWordsMap[word]; !isStopWord && letter.MatchString(word) {
 				counts[word]++
 			}
@@ -74,7 +76,7 @@ func main() {
 			sort.Slice(wcslice, func(i, j int) bool {
 				return wcslice[i].Count > wcslice[j].Count
 			})
-			fmt.Printf("%v\n", wcslice[:15])
+			fmt.Printf("%s: %v\n", file, wcslice[:20])
 		}
 	}
 }
