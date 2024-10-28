@@ -6,9 +6,26 @@ import (
 	"log"
 	"os"
 	"regexp"
+	"sort"
 )
 
-func WordCount(f *os.File) map[string]int {
+var stopwordsList = []string{`ourselves`, `hers`, `between`, `yourself`, `but`, `again`, `there`, `about`, `once`,
+	`during`, `out`, `very`, `having`, `with`, `they`, `own`, `an`, `be`, `some`, `for`, `do`, `its`, `yours`,
+	`such`, `into`, `of`, `most`, `itself`, `other`, `off`, `is`, `s`, `am`, `or`, `who`, `as`, `from`, `him`,
+	`each`, `the`, `themselves`, `until`, `below`, `are`, `we`, `these`, `your`, `his`, `through`, `don`, `nor`,
+	`me`, `were`, `her`, `more`, `himself`, `this`, `down`, `should`, `our`, `their`, `while`, `above`, `both`,
+	`up`, `to`, `ours`, `had`, `she`, `all`, `no`, `when`, `at`, `any`, `before`, `them`, `same`, `and`, `been`,
+	`have`, `in`, `will`, `on`, `does`, `yourselves`, `then`, `that`, `because`, `what`, `over`, `why`, `so`,
+	`can`, `did`, `not`, `now`, `under`, `he`, `you`, `herself`, `has`, `just`, `where`, `too`, `only`, `myself`,
+	`which`, `those`, `i`, `after`, `few`, `whom`, `t`, `being`, `if`, `theirs`, `my`, `against`, `a`, `by`,
+	`doing`, `it`, `how`, `further`, `was`, `here`, `than`}
+
+type WordCount = struct {
+	Word  string
+	Count int
+}
+
+func CountWords(f *os.File) map[string]int {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(f)
 	split := regexp.MustCompile(`\W+`)
@@ -41,8 +58,15 @@ func main() {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 			}
 			defer f.Close()
-			counts := WordCount(f)
-			fmt.Printf("%v\n", counts)
+			counts := CountWords(f)
+			wcslice := make([]WordCount, 0, len(counts))
+			for word, count := range counts {
+				wcslice = append(wcslice, WordCount{word, count})
+			}
+			sort.Slice(wcslice, func(i, j int) bool {
+				return wcslice[i].Count > wcslice[j].Count
+			})
+			fmt.Printf("%v\n", wcslice)
 		}
 	}
 }
