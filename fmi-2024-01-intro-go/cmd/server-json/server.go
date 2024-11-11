@@ -5,7 +5,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"github.com/iproduct/coursego/fmi-2024-01-intro-go/server-json/books"
+	"github.com/iproduct/coursego/fmi-2024-01-intro-go/cmd/server-json/books"
 	"log"
 	"net/http"
 )

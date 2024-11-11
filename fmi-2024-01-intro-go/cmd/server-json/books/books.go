@@ -148,5 +148,4 @@ var GoBooks = []Book{
 		BuyLink:             parseURL("https://play.google.com/store/books/details?id=NvNFDwAAQBAJ&rdid=book-NvNFDwAAQBAJ&rdot=1&source=gbs_api"),
 		TextSnippet:         "<b>Golang</b>. Copyright © 2017 Packt Publishing All rights reserved. No part of this <br> book may be reproduced, stored in a retrieval system, or transmitted in any form <br> or by any means, without the prior written permission of the publisher, except in <br> the&nbsp;...",
 	},
-
 }
