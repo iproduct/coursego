@@ -19,6 +19,7 @@ func main() {
 
 // QR 09-http handler function return the HTML template with QR code for the input link
 func QR(w http.ResponseWriter, req *http.Request) {
+	log.Println("s = ", req.FormValue("s"))
 	templ.Execute(w, req.FormValue("s"))
 }
 
@@ -29,7 +30,7 @@ const templateStr = `
 </head>
 <body>
 {{if .}}
-<img src="http://chart.apis.google.com/chart?chs=300x300&cht=qr&choe=UTF-8&chl={{.}}" />
+<img src="https://qrcode.tec-it.com/API/QRCode?data={{.}}" />
 <br>
 {{.}}
 <br>

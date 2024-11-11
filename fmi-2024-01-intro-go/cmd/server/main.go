@@ -11,6 +11,7 @@ func hello(w http.ResponseWriter, _ *http.Request) {
 }
 
 func headers(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "%s %s %s\n", r.Method, r.URL, r.Proto)
 	for key, value := range r.Header {
 		fmt.Fprintf(w, "%v: %v\n", key, value)
 	}

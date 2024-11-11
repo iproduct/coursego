@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/iproduct/coursego/09-http/server-json/books"
+	"github.com/iproduct/coursego/fmi-2024-01-intro-go/server-json/books"
 	"log"
 	"net/http"
 	"os"
@@ -18,13 +18,20 @@ func main() {
 	// settings.
 	var resp *http.Response
 	var err error
+	var url string
 	if len(os.Args) > 1 {
-		resp, err = http.Get(os.Args[1])
+		url = os.Args[1]
 	} else {
-		resp, err = http.Get("http://localhost:8080/books")
+		url = "http://localhost:8080/books"
 	}
+	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
+	}
+	req.Header.Add("Accept", "application/json")
+	resp, err = http.DefaultClient.Do(req)
+	if err != nil {
+		log.Fatal(err)
 	}
 	defer resp.Body.Close()
 
@@ -52,7 +59,7 @@ func main() {
 	}
 	fmt.Println("AFTER UNMARSHAL:\n")
 	for i, book := range books {
-		fmt.Printf("%d: %+v\n", i, book.Title)
+		fmt.Printf("%d: %v: %+v\n", i, book.ID, book.Title)
 	}
 
 }

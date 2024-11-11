@@ -50,8 +50,9 @@ func (p *Path) Scale(f float64) {
 
 func main() {
 	var path *Path
-	fmt.Printf("%+v\n", path)
-	path = &Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
+	//path = &Path{}
+	//fmt.Printf("%+v\n", path)
+	//path = &Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
 	path.Scale(10)
 	fmt.Printf("Path: %+v\n", path)
 	fmt.Println("Perimeter = ", path.Distance())

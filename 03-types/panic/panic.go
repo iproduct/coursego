@@ -29,43 +29,51 @@ func badFunction() {
 }
 
 func main() {
-	defer func() {
-		if pan := recover(); pan != nil {
-			err := pan.(MyError)
-			fmt.Printf("Function panicked with an error: %s\n", err)
-			fmt.Printf("Timestamp: %v", err.Time)
-
-			//switch err := pan.(type) {
-			//default:
-			//	panic(pan)
-			//case MyError:
-			//	fmt.Printf("Function panicked with an error: %s\n", err)
-			//	fmt.Printf("Timestamp: %v", err.Time)
-			//}
-		}
-	}()
-	badFunction()
-	fmt.Printf("Program exited normally\n")
+	//defer func() {
+	//	if pan := recover(); pan != nil {
+	//		err := pan.(MyError)
+	//		fmt.Printf("Function panicked with an error: %s\n", err)
+	//		fmt.Printf("Timestamp: %v", err.Time)
+	//
+	//		//switch err := pan.(type) {
+	//		//default:
+	//		//	panic(pan)
+	//		//case MyError:
+	//		//	fmt.Printf("Function panicked with an error: %s\n", err)
+	//		//	fmt.Printf("Timestamp: %v", err.Time)
+	//		//}
+	//	}
+	//}()
+	//badFunction()
+	//fmt.Printf("Program exited normally\n")
+	server()
 }
 
 // More examples:
 type Work interface{}
 
-var do func(work Work)
-
-func server(workChan <-chan *Work) {
-	for work := range workChan {
-		go safelyDo(work)
-	}
+var do = func() {
+	panic(&MyError{time.Now(), "Work task error"})
 }
 
-func safelyDo(work *Work) {
+func server() {
+	//for work := range workChan {
+	err := safelyDo()
+	if err != nil {
+		log.Println("Work failed:", err)
+	}
+	//}
+}
+
+func safelyDo() (myErr error) {
 	defer func() {
 		if err := recover(); err != nil {
-			log.Println("work failed:", err)
+			myErr = err.(error)
+			return
 		}
 	}()
-	do(work)
+	do()
+	return
 }
 
 // Error is the type of a parse error; it satisfies the error interface.

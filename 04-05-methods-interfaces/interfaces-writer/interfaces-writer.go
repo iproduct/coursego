@@ -25,6 +25,10 @@ func (c *ByteCounter) Write(p []byte) (int, error) {
 	return len(p), nil
 }
 
+func (slice ByteSlice) String() string { // implements fmt.Stringer
+	return string(slice)
+}
+
 // A simple File interface.
 //type File interface {
 //	Read([]byte) (int, error)
@@ -150,8 +154,8 @@ func main() {
 	fmt.Printf("%+v\n", m)
 
 	// Interfaces embedding
-	var bouncer Bouncer
-	bouncer = Football{Ball{Radius: 5, Material: "leather"}}
-	bouncer = Ball{Radius: 5, Material: "leather"}
-	bouncer.Bounce()
+	var fb Football
+	fb = Football{Ball{Radius: 5, Material: "leather"}}
+	//bouncer = Ball{Radius: 5, Material: "leather"}
+	fb.Bounce()
 }

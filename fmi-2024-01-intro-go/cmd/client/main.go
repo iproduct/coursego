@@ -10,7 +10,8 @@ import (
 func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
 	//req, err := http.NewRequest("GET", "http://localhost:8080/headers", nil)
-	req, err := http.NewRequest("GET", "https://www.googleapis.com/books/v1/volumes?q=golang", nil)
+	//req, err := http.NewRequest("GET", "https://www.googleapis.com/books/v1/volumes?q=golang", nil)
+	req, err := http.NewRequest("GET", "http://localhost:8080/headers", nil)
 	if err != nil {
 		log.Fatal(err)
 	}

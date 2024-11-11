@@ -1,12 +1,16 @@
 package main
 
-import ("html/template"; "log";	"os")
+import (
+	"html/template"
+	"log"
+	"os"
+)
 
-const textTempl =
-`{{len .}} books:
+const textTempl = `{{len .}} books:
 {{range .}}----------------------------------------
 ID: {{.ID}}
 Title: {{.Title | printf "%.64s"}}
+Subtitle: {{.Subtitle | printf "%.128s"}}
 {{end}}`
 
 func main() {

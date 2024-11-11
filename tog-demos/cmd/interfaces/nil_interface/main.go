@@ -9,7 +9,7 @@ type I interface {
 func main() {
 	var i I
 	describe(i)
-	//i.M()
+	i.M()
 }
 
 func describe(i I) {
