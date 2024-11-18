@@ -1,0 +1,28 @@
+settings:
+  legacy:
+    force: true
+    interval: 100ms
+server:
+  status: true               // server status
+  open: false                 // open browser at start
+  host: localhost             // server host
+  port: 8080                  // server port
+schema:
+- name: bookstore
+  path: .
+  commands:
+    install:
+      status: true
+    run:
+      status: true
+  watcher:
+    extensions:
+    - go
+    - html
+    paths:
+    - /
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
+

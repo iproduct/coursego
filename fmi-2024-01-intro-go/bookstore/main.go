@@ -32,30 +32,26 @@ var rwlock sync.RWMutex                                         // Read-Write mu
 var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
 
 func init() {
-	var tmplBase = template.New("base").Funcs(
+	tmplAllBooks = template.New("allBooks").Funcs(
 		template.FuncMap{
 			"urlSafe": func(url url.URL) template.HTML {
 				return template.HTML(url.String())
 			},
 		})
 
-	var err error
-	tmplAllBooks, err = tmplBase.ParseFiles(
+	tmplAllBooks, err := tmplAllBooks.ParseFiles(
+		path.Join(workDir, "templates", "head.html"),
+		path.Join(workDir, "templates", "nav.html"),
 		path.Join(workDir, "templates", "books.html"),
 		path.Join(workDir, "templates", "favs.html"),
 	)
 	if err != nil {
-		log.Println(err)
+		log.Fatalln(err)
 	}
 
 	log.Println(tmplAllBooks)
 	log.Println(workDir)
-	for _, t := range tmplAllBooks.Templates() {
-		t.ParseFiles(
-			path.Join(workDir, "templates", "head.html"),
-			path.Join(workDir, "templates", "nav.html"),
-		)
-	}
+
 	for _, book := range books.GoBooks {
 		db[book.ID] = book
 	}
