@@ -22,9 +22,12 @@ func main() {
 		//c <- m1p
 		close(c)
 	}()
+	results := make([]mutable, 0)
 	for m := range c {
 		fmt.Printf("%#v\n", m)
 		//m[0] = 512
 		fmt.Printf("In main: %#v: %p\n", m, &m)
+		results = append(results, m)
 	}
+	fmt.Printf("%#v\n", results)
 }

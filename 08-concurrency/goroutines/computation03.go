@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	go compute3("compute!")
+	go compute3("compute1!")
+	go compute3("compute2!")
 	time.Sleep(5 * time.Second)
 }
 func compute3(msg string) {

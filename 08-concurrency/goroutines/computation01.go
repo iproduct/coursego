@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	compute("compute!")
+	compute("compute1!")
+	//compute("compute2!")
 }
 
 func compute(msg string) {

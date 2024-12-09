@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	ch := make(chan string, 20)
+	ch := make(chan string, 9)
 	done := make(chan struct{})
 	go func() {
 		for i := 0; i < 10; i++ {
@@ -12,7 +12,8 @@ func main() {
 		close(ch)
 		close(done)
 	}()
-	<-done
+	//v, ok := <-done
+	//fmt.Printf("%T %v, %t\n", v, v, ok)
 	var val string
 	for ok := true; ok; {
 		val, ok = <-ch
