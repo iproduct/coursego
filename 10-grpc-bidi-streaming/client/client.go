@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	pm "github.com/iproduct/coursego/10-grpc-bidi-streaming/generated/protomath"
+	"google.golang.org/grpc/credentials/insecure"
 	"io"
 	"log"
 	"math/rand"
@@ -16,7 +17,7 @@ func main() {
 	rand.Seed(time.Now().Unix())
 
 	// dail server
-	conn, err := grpc.Dial(":50005", grpc.WithInsecure())
+	conn, err := grpc.Dial(":50005", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalf("can not connect with server %v", err)
 	}
@@ -35,7 +36,7 @@ func main() {
 	// first goroutine sends random increasing numbers to stream
 	// and closes int after 10 iterations
 	go func() {
-		for i := 1; i <=1000000; i++ {
+		for i := 1; i <= 1000000; i++ {
 			// generate random nummber and send it to stream
 			rnd := int32(rand.Intn(i))
 			req := pm.Request{Num: rnd}

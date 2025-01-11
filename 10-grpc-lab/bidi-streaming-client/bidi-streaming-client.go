@@ -4,6 +4,7 @@ import (
 	"context"
 	pb "github.com/iproduct/coursego/10-grpc-lab/mathmax"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
 	"io"
 	"log"
 	"math/rand"
@@ -14,7 +15,7 @@ func main() {
 	rand.Seed(time.Now().Unix())
 
 	// dail server
-	conn, err := grpc.Dial(":50051", grpc.WithInsecure(), grpc.WithBlock())
+	conn, err := grpc.Dial(":50051", grpc.WithTransportCredentials(insecure.NewCredentials()), grpc.WithBlock())
 	if err != nil {
 		log.Fatalf("can not connect with server %v", err)
 	}
@@ -54,7 +55,7 @@ func main() {
 	//	cancel()
 	//}()
 
-	sendFor:
+sendFor:
 	for i := 1; i <= 100; i++ {
 		// generate random nummber and send it to stream
 		rnd := int32(rand.Intn(i))
@@ -67,7 +68,7 @@ func main() {
 		case <-time.After(time.Millisecond * 200):
 		case <-stream.Context().Done():
 			log.Println("sending is canceled.")
-			break sendFor;
+			break sendFor
 		}
 	}
 	if err := stream.CloseSend(); err != nil {

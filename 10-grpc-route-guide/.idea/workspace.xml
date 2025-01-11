@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="169d1cd0-20be-41d8-aa07-1768397c3529" name="Default Changelist" comment="" />
+    <list default="true" id="169d1cd0-20be-41d8-aa07-1768397c3529" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/api/swagger/v1/todo_service.swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service_grpc.pb.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,8 +77,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-route-guide/server" />
       <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-route-guide/client" />
+      <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-route-guide/server" />
     </list>
     <recent_temporary>
       <list>
@@ -83,8 +93,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
   </component>
 </project>

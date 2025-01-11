@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb308b21-a2b2-41a2-8d8b-b6bef6c935ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/api/swagger/v1/todo_service.swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service_grpc.pb.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +78,8 @@
       <module name="10-grpc-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/bidi-streaming-client/client.go" />
       <package value="github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-client" />
+      <filePath value="$PROJECT_DIR$/bidi-streaming-client/client.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -77,8 +87,8 @@
       <module name="10-grpc-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/bidi-streaming-server/bidi-streaming-server.go" />
       <package value="github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-server" />
+      <filePath value="$PROJECT_DIR$/bidi-streaming-server/bidi-streaming-server.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -86,8 +96,8 @@
       <module name="10-grpc-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/client/client.go" />
       <package value="github.com/iproduct/coursego/10-grpc-lab/client" />
+      <filePath value="$PROJECT_DIR$/client/client.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -95,8 +105,8 @@
       <module name="10-grpc-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/server/server.go" />
       <package value="github.com/iproduct/coursego/10-grpc-lab/server" />
+      <filePath value="$PROJECT_DIR$/server/server.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -117,8 +127,5 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="protobuf file created + commands.txt" />
     <option name="LAST_COMMIT_MESSAGE" value="protobuf file created + commands.txt" />
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
   </component>
 </project>
