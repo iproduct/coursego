@@ -8,12 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/api/swagger/v1/todo_service.swagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/cmd/client-grpc-rest/client-grpc-rest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service.pb.gw.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-todos/generated/todo_service/todo_service_grpc.pb.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
