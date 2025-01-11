@@ -34,12 +34,13 @@ func (s server) Max(srv pb.Math_MaxServer) error {
 			continue
 		}
 
-		if req.GetNum() > max{
+		if req.GetNum() > max {
 			max = req.GetNum()
 			if err := srv.Send(&pb.IntResponse{Num: max}); err != nil {
 				log.Printf("Send error: %v", err)
+			} else {
+				log.Printf("Sent new max: %v", max)
 			}
-			log.Printf("Sent new max: %v", max)
 		}
 
 	}
