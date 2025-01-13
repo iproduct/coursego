@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056d1baa-8d77-421c-8c5b-87e5875dc338" name="Default Changelist" comment="graphql lab added">
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="056d1baa-8d77-421c-8c5b-87e5875dc338" name="Default Changelist" comment="demos dependencies updated">
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/test-queries/test-queries.http" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/test-queries/test-queries.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="graphql lab added" />
     <MESSAGE value="graphql simple demo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="graphql simple demo added" />
+    <MESSAGE value="demos dependencies updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos dependencies updated" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

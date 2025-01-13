@@ -31,7 +31,7 @@ query {
 POST http://localhost:8080/graphql
 Content-Type: application/graphql
 
-query {todo(id:"f135761e-b1df-4e2d-a3f3-8904756a93b8"){id,text,done}}
+query {todo(id:"964886e9-9e0c-4356-a775-b9085a8b53e4"){id,text,done}}
 
 ###
 
