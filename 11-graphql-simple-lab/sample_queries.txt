@@ -1,0 +1,55 @@
+query GetSchema {
+  __schema {
+    types {
+      name
+      fields{
+         name
+      	 description
+      }
+    }
+  }
+}
+
+query QueryAndMutationTypes{
+  __schema {
+    queryType {
+      name
+      fields {
+        name
+        type {
+          name
+          description
+        }
+        description
+
+      }
+    }
+    mutationType {
+      name
+      fields {
+        name
+      }
+    }
+  }
+}
+
+query GetTypeDetails{
+  __type(name: "Query") {
+    name
+    fields {
+      name
+      type {
+        name
+        kind
+        ofType {
+          name
+          kind
+        }
+      }
+    }
+  }
+}
+
+query latestPost {latestPost}
+
+query postsCount {postsCount}

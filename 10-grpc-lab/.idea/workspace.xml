@@ -6,19 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bb308b21-a2b2-41a2-8d8b-b6bef6c935ae" name="Default Changelist" comment="small refactoring">
       <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello-server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/helloworld_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/helloworld_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mathmax/mathmax.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/mathmax/mathmax.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mathmax/mathmax_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/mathmax/mathmax_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

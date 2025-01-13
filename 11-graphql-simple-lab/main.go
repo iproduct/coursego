@@ -9,8 +9,9 @@ import (
 
 func main() {
 	handler := gqhandler.New(&gqhandler.Config{
-		Schema: &schema.Schema,
-		Pretty: true,
+		Schema:   &schema.Schema,
+		GraphiQL: true,
+		Pretty:   true,
 	})
 
 	http.Handle("/graphql", handler)
