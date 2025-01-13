@@ -30,19 +30,16 @@ import (
 	"github.com/iproduct/coursego/10-grpc-route-guide/data"
 	pb "github.com/iproduct/coursego/10-grpc-route-guide/routeguide"
 	"io"
-	"io/ioutil"
 	"log"
 	"math"
 	"net"
+	"os"
 	"sync"
 	"time"
 
 	"google.golang.org/grpc"
-
 	"google.golang.org/grpc/credentials"
-
-	"github.com/golang/protobuf/proto"
-
+	"google.golang.org/protobuf/proto"
 )
 
 var (
@@ -155,7 +152,7 @@ func (s *routeGuideServer) loadFeatures(filePath string) {
 	var data []byte
 	if filePath != "" {
 		var err error
-		data, err = ioutil.ReadFile(filePath)
+		data, err = os.ReadFile(filePath)
 		if err != nil {
 			log.Fatalf("Failed to load default features: %v", err)
 		}

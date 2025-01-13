@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb308b21-a2b2-41a2-8d8b-b6bef6c935ae" name="Default Changelist" comment="">
+    <list default="true" id="bb308b21-a2b2-41a2-8d8b-b6bef6c935ae" name="Default Changelist" comment="small refactoring">
       <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello-server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld/helloworld_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/helloworld_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mathmax/mathmax.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/mathmax/mathmax.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mathmax/mathmax_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/mathmax/mathmax_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +33,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -37,6 +48,9 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="1oTZAGwqMfuYhzEU1q5xsRLY8vD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,16 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Go Build.go build github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-client.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-server.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/10-grpc-lab/hello-client.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/10-grpc-lab/hello-server.executor": "Run",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.vgo"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\10-grpc-lab" />
@@ -95,12 +116,21 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/10-grpc-lab/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/10-grpc-lab/hello-client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="10-grpc-lab" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/10-grpc-lab/server" />
-      <filePath value="$PROJECT_DIR$/server/server.go" />
+      <package value="github.com/iproduct/coursego/10-grpc-lab/hello-client" />
+      <filePath value="$PROJECT_DIR$/hello-client/client.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/10-grpc-lab/hello-server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="10-grpc-lab" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/10-grpc-lab/hello-server" />
+      <filePath value="$PROJECT_DIR$/hello-server/server.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -108,10 +138,19 @@
       <list>
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-client" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/bidi-streaming-server" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/hello-client" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/hello-server" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/client" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/10-grpc-lab/server" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.17011.92" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.17011.92" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +159,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="protobuf file created + commands.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="protobuf file created + commands.txt" />
+    <MESSAGE value="small refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactoring" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

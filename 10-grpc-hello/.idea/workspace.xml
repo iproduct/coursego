@@ -6,15 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="40112966-50dc-4326-8d48-b352e34344d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/hello-server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/hello-server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/helloworld/helloworld_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/helloworld/helloworld_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-lab/mathmax/mathmax_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/routeguide/route_guide.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -32,20 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CourseGO/git/coursego/fmi-2023-01-intro-lab&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/CourseGO/git/coursego/fmi-2023-01-intro-lab",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\10-grpc-hello" />

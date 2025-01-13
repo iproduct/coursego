@@ -14,7 +14,7 @@ type server struct {
 	pb.UnimplementedHelloServiceServer
 }
 
-func (s *server) SayHello(ctx context.Context, in *pb.NameRequest) (* pb.HelloResponse, error) {
+func (s *server) SayHello(ctx context.Context, in *pb.NameRequest) (*pb.HelloResponse, error) {
 	log.Printf("Received: %v", in.GetName())
 	return &pb.HelloResponse{Message: "Hello " + in.GetName()}, nil
 }
