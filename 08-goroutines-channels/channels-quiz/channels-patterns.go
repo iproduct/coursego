@@ -7,7 +7,10 @@ import (
 
 func main() {
 	ch := make(chan string)
-	go func() { ch <- "hi" }()
+	go func() {
+		fmt.Printf("Sending: %s\n", "hi")
+		ch <- "hi"
+	}()
 	select {
 	case case1 := <-ch:
 		fmt.Printf("case1: %s\n", case1)

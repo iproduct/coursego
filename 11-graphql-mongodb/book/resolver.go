@@ -43,7 +43,7 @@ var queryType = graphql.NewObject(
 					id, ok := p.Args["id"].(string)
 					if ok {
 						// Find product
-						result = GetBookByName(context.Background(), id)
+						result = GetBookByID(context.Background(), id)
 					}
 					return result, nil
 				},

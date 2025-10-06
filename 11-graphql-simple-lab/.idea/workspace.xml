@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="056d1baa-8d77-421c-8c5b-87e5875dc338" name="Default Changelist" comment="demos dependencies updated">
       <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-mongodb/test-queries/test-queries.http" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-mongodb/test-queries/test-queries.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/test-queries/test-queries.http" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/test-queries/test-queries.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/sample_queries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/sample_queries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-graphql-todos-lab/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11-graphql-todos-lab/schema/schema.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

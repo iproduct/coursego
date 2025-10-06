@@ -9,10 +9,10 @@
 }
 
 
-//mutations
+# mutations
 
-mutation _ {
-  createTodo(text: "My+new+todo") {
+mutation createTodo{
+  create(text: "My+new+todo") {
     id
     text
     done
@@ -20,7 +20,7 @@ mutation _ {
 }
 
 
-// metadata queries
+# metadata queries
 
 query GetSchema {
   __schema {
@@ -55,6 +55,13 @@ query GetType{
   __type(name:"Todo"){
     fields {
       name
+      type {
+        name
+        description
+        ofType {
+          name
+        }
+      }
       description
     }
   }

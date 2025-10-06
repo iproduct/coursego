@@ -3,7 +3,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8080/graphql?query={list{id,text,done}}
+GET http://localhost:8080/graphql?query={list{id,name,price, description}}
 Accept: application/json
 
 ###

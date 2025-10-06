@@ -13,10 +13,10 @@ var todoType = graphql.NewObject(graphql.ObjectConfig{
 	Name: "Todo",
 	Fields: graphql.Fields{
 		"id": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewNonNull(graphql.String),
 		},
 		"text": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewNonNull(graphql.String),
 		},
 		"done": &graphql.Field{
 			Type: graphql.Boolean,
@@ -25,8 +25,8 @@ var todoType = graphql.NewObject(graphql.ObjectConfig{
 })
 
 /*
-   curl -g "http://localhost:8080/graphql?query={todo(id:\"f135761e-b1df-4e2d-a3f3-8904756a93b8\"){id,text,done}}"
-   curl -g "http://localhost:8080/graphql?query={list{id,text,done}}"
+curl -g "http://localhost:8080/graphql?query={todo(id:\"f135761e-b1df-4e2d-a3f3-8904756a93b8\"){id,text,done}}"
+curl -g "http://localhost:8080/graphql?query={list{id,text,done}}"
 */
 var rootQuery = graphql.NewObject(graphql.ObjectConfig{
 	Name: "RootQuery",
@@ -69,7 +69,7 @@ var rootQuery = graphql.NewObject(graphql.ObjectConfig{
 })
 
 /*
-	curl -g "http://localhost:8080/graphql?query=mutation+_{create(text:\"My+new+todo\"){id,text,done}}"
+curl -g "http://localhost:8080/graphql?query=mutation+_{create(text:\"My+new+todo\"){id,text,done}}"
 */
 var rootMutation = graphql.NewObject(graphql.ObjectConfig{
 	Name: "RootMutation",
