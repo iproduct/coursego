@@ -1,1 +1,1 @@
-module fmi-2025-01-intro
+module github.com/iproduct/coursego/fmi-2025-01-intro

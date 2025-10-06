@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	strutil "github.com/iproduct/coursego/fmi-2025-01-intro/stringutil"
+)
 
 func main() {
 	s := "Hello Go World - 你好，围棋世界!"
@@ -12,5 +15,6 @@ func main() {
 		fmt.Printf("%c", r)
 	}
 	fmt.Println()
-	fmt.Println(s)
+	result := strutil.Reverse(s)
+	fmt.Println(result)
 }
