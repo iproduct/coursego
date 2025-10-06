@@ -9,7 +9,7 @@ import (
 
 func main() {
 	//resp, err := http.Get("http://localhost:8080/headers")
-	req, err := http.NewRequest("GET", "http://localhost:8080/headers", nil)
+	req, err := http.NewRequest("GET", "http://localhost:8080/books", nil)
 	req.Header.Add("Accept", "text/html,application/json")
 	req.Header.Add("Custom-Header", "Custom Value")
 	resp, err := http.DefaultClient.Do(req)
@@ -21,7 +21,7 @@ func main() {
 	fmt.Println("response Headers:", resp.Header)
 	scanner := bufio.NewScanner(resp.Body)
 
-	for i := 0; scanner.Scan() && i < 10; i++ {
+	for i := 0; scanner.Scan(); i++ {
 		fmt.Println(scanner.Text())
 	}
 	if err := scanner.Err(); err != nil {
