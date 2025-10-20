@@ -1,13 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"os"
 )
 
 func countLines(f *os.File, counts map[string]int) {
-	input := bufio.NewScanner(f)
+	input := f.ReadAll() //bufio.NewScanner(f)
 	for input.Scan() {
 		counts[input.Text()]++
 	}
