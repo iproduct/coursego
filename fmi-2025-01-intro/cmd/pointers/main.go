@@ -15,5 +15,5 @@ func main() {
 	fmt.Println("zeroval:", i)
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
-	fmt.Println("pointer:", &i)
+	fmt.Printf("pointer:%p", &i)
 }
