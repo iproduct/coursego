@@ -39,5 +39,5 @@ func main() {
 	fmt.Println(String(seq))
 	byteslice := byteslice.New(10)
 	byteslice.AppendPointer([]byte{1, 2, 3})
-	fmt.Println(String(byteslice))
+	fmt.Println(byteslice)
 }

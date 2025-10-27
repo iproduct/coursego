@@ -195,7 +195,20 @@ func swapRef(x, y *string) {
 // 	fmt.Println(a, b)
 // }
 
+func Concat1(a string, b int) string {
+	if a == "" {
+		a = "default-a"
+	}
+	if b == 0 {
+		b = 5
+	}
+
+	return fmt.Sprintf("%s%d", a, b)
+}
+
+
 func main() {
+	fmt.Println(Concat1("abc", 0))
 	// fmt.Println(myString(mystringer{"abcd"}))
 	// fmt.Println(myString("xyz"))
 	// s := Sequence{1, 5, 7, 2, 9, 3}
