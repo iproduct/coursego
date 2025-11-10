@@ -28,6 +28,15 @@ type ColorVertex struct {
 	Color color.RGBA
 }
 
+type ColorVertexP struct {
+	*Vertex
+	Color color.RGBA
+}
+
+func (cv *ColorVertexP) Distance(other ColorVertexP) float64 {
+	return cv.Vertex.Distance(*other.Vertex)
+}
+
 func main() {
 	green := color.RGBA{0, 255, 0, 255}
 	yellow := color.RGBA{255, 255, 0, 255}
@@ -42,8 +51,8 @@ func main() {
 	a := Vertex{2, 7}
 	b := Vertex{5, 3}
 
-	distance := Vertex.Distance // method expression
-	fmt.Println(distance(a, b)) // 5
+	distance := Vertex.Distance  // method expression
+	fmt.Println(distance(a, b))  // 5
 	fmt.Printf("%T\n", distance) // func(main.Vertex, main.Vertex) float64
 
 	scale := (*Vertex).Scale // method expression
@@ -51,23 +60,18 @@ func main() {
 	fmt.Println(a)            // {4 14}
 	fmt.Printf("%T\n", scale) // func(*main.Vertex, float64)
 
-	scaleB := (&b).Scale  // method value
+	scaleB := (&b).Scale       // method value
 	fmt.Printf("%T\n", scaleB) // func(float64)
 	scaleB(2)
 	fmt.Printf("Sacling b with factor 2: b now is %f\n", b) //{10 6}
 
-	distanceFromA := a.Distance // method value
-	fmt.Printf("%T\n", distanceFromA) // func(*Vertex, float64)
+	distanceFromA := a.Distance                                  // method value
+	fmt.Printf("%T\n", distanceFromA)                            // func(*Vertex, float64)
 	fmt.Printf("Distance from A of B is %f\n", distanceFromA(b)) //10
-
-	type ColorVertexP struct {
-		*Vertex
-		Color color.RGBA
-	}
 
 	cvp1 := ColorVertexP{&Vertex{2, 7}, green}
 	cvp2 := ColorVertexP{&Vertex{5, 3}, yellow}
-	fmt.Println(cvp1.Distance(*cvp2.Vertex)) // "5"
+	fmt.Println(cvp1.Distance(cvp2)) // "5"
 	cvp1.Vertex = cvp2.Vertex
 	cvp1.Scale(3)
 	fmt.Println(*cvp1.Vertex, *cvp2.Vertex) // {15 9} {15 9}

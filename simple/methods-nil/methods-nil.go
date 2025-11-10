@@ -41,9 +41,18 @@ func (p *Path) Distance() (dist float64) {
 	return
 }
 
+func (p *Path) Scale(factor float64) {
+	if *p == nil || len(*p) == 0 {
+		return
+	}
+	for i := 0; i < len(*p); i++ {
+		(*p)[i].Scale(factor)
+	}
+}
+
 func main() {
 	var path Path
 	path = Path{{1, 1}, {4, 5}, {4, 1}, {1, 1}}
-	// path.Scale(10)
+	path.Scale(10)
 	fmt.Println("Perimeter = ", path.Distance())
 }
