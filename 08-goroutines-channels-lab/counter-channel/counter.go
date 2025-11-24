@@ -8,7 +8,7 @@ import (
 func main() {
 	counterChannel := make(chan int)
 	go func() {
-		for counter := 0; ; counter++ {
+		for counter := 1; ; counter++ {
 			counterChannel <- counter
 		}
 	}()

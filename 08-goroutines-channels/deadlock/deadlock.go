@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func myfunc(chA, chB chan int) {
+func goroutine2(chA, chB chan int) {
 	<-chA
 	chB <- 1
 }
@@ -12,7 +12,7 @@ func myfunc(chA, chB chan int) {
 func main() {
 	chA := make(chan int)
 	chB := make(chan int)
-	go myfunc(chA, chB)
+	go goroutine2(chA, chB)
 	<-chB
 	chA <- 1
 	fmt.Println("Demo complete")

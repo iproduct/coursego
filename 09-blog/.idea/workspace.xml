@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/in-memory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="demo updated + create.sql" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="go version and packages updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="go version and packages updated" />
+    <MESSAGE value="demo updated + create.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo updated + create.sql" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -13,6 +13,6 @@ func main() {
 			fmt.Printf("goroutine %d Counter = %d\n", i, counter)
 		}()
 	}
-	time.Sleep(time.Second)
+	time.Sleep(2 * time.Second)
 	fmt.Printf("Counter = %d\n", counter)
 }
