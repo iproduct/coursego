@@ -16,7 +16,9 @@ type MongoStore struct {
 }
 
 type MongoOptions struct {
-	URI string
+	URI        string
+	Database   string
+	Collection string
 }
 
 func NewMongoStore(opts MongoOptions) MongoStore {
@@ -81,8 +83,5 @@ func (c *MongoStore) Delete(id string) error {
 }
 
 func (c *MongoStore) collection() *mongo.Collection {
-	return c.client.Database(database).Collection(collection)
+	return c.client.Database(c.opts.Database).Collection(c.opts.Collection)
 }
-
-var database string = "blog"
-var collection string = "posts"

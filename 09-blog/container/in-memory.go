@@ -6,20 +6,24 @@ import (
 	"github.com/iproduct/coursego/09-blog/blog"
 )
 
-type InMemory struct {
+type InMemoryStore struct {
 	posts map[string]blog.Post
 	mutex sync.RWMutex
 }
 
-func NewInMemory() InMemory {
-	return InMemory{
+func NewInMemory() InMemoryStore {
+	return InMemoryStore{
 		posts: map[string]blog.Post{},
 		mutex: sync.RWMutex{},
 	}
 }
 
+func (c *InMemoryStore) Init() error {
+	return nil
+}
+
 // GetAll implements blog.Container.
-func (c *InMemory) GetAll() ([]blog.Post, error) {
+func (c *InMemoryStore) GetAll() ([]blog.Post, error) {
 	c.mutex.RLock()
 	defer c.mutex.RUnlock()
 
@@ -31,7 +35,7 @@ func (c *InMemory) GetAll() ([]blog.Post, error) {
 }
 
 // Insert implements 09-blog.Container.
-func (c *InMemory) Insert(post *blog.Post) error {
+func (c *InMemoryStore) Insert(post *blog.Post) error {
 	c.mutex.Lock()
 	defer c.mutex.Unlock()
 
@@ -40,7 +44,7 @@ func (c *InMemory) Insert(post *blog.Post) error {
 }
 
 // Delete implements 09-blog.Container.
-func (c *InMemory) Delete(id string) error {
+func (c *InMemoryStore) Delete(id string) error {
 	c.mutex.Lock()
 	defer c.mutex.Unlock()
 

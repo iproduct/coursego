@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d4b04d-ab86-4bc4-acca-56a092e50605" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../03-types/defer/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/defer/defer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/panic/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/panic/panic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/../04-05-methods-interfaces/methods-nil/methods-nil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tog-demos/cmd/interfaces/nil_interface/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tog-demos/cmd/interfaces/nil_interface/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tog-demos/cmd/methods/pointer_receiver_1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tog-demos/cmd/methods/pointer_receiver_1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/in-memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/in-memory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Go Build.go build github.com/iproduct/coursego/09-blog.executor": "Run",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",

@@ -9,7 +9,7 @@ type Post struct {
 	Author    string
 	Content   string
 	Likes     int64
-	Comments  []Comment
+	//Comments  []Comment
 }
 
 type Comment struct {

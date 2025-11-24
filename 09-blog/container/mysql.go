@@ -56,6 +56,7 @@ func (c *MySQLStore) GetAll() ([]blog.Post, error) {
 
 // Insert implements 09-blog.Container.
 func (c *MySQLStore) Insert(post *blog.Post) error {
+	fmt.Println(post)
 	if c.client == nil {
 		return fmt.Errorf("mysql store is not initialized")
 	}

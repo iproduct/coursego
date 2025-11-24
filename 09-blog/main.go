@@ -7,19 +7,18 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"os"
 	"time"
 
 	"github.com/google/uuid"
 )
 
-type rest struct {
+type app struct {
 	server *http.Server
 	mux    *http.ServeMux
 	blog   *blog.Blog
 }
 
-func (s *rest) Run() error {
+func (s *app) Run() error {
 	s.mux.HandleFunc("/", s.handleMain)
 	s.mux.HandleFunc("/create", s.handleCreate)
 	s.mux.HandleFunc("/post", s.createPost)
@@ -33,7 +32,7 @@ func (s *rest) Run() error {
 	return nil
 }
 
-func (s *rest) handleMain(w http.ResponseWriter, r *http.Request) {
+func (s *app) handleMain(w http.ResponseWriter, r *http.Request) {
 	posts, err := s.blog.GetAll()
 	if err != nil {
 		log.Panicln("failed to get posts: %w", err)
@@ -46,12 +45,12 @@ func (s *rest) handleMain(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, posts)
 }
 
-func (s *rest) handleCreate(w http.ResponseWriter, r *http.Request) {
+func (s *app) handleCreate(w http.ResponseWriter, r *http.Request) {
 	t := template.Must(template.ParseFiles("./templates/create.tmpl.html"))
 	t.Execute(w, struct{}{})
 }
 
-func (s *rest) createPost(w http.ResponseWriter, r *http.Request) {
+func (s *app) createPost(w http.ResponseWriter, r *http.Request) {
 	defer http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 
 	r.ParseForm()
@@ -71,7 +70,7 @@ func (s *rest) createPost(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (s *rest) deletePost(w http.ResponseWriter, r *http.Request) {
+func (s *app) deletePost(w http.ResponseWriter, r *http.Request) {
 	defer http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 
 	idParams, ok := r.URL.Query()["id"]
@@ -95,12 +94,15 @@ func main() {
 		Handler: mux,
 	}
 
-	container := container.NewMySQLStore(container.MySQLOptions{
-		URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/09-blog?parseTime=true", os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
-	})
-	//container := container.NewMongoStore(container.MongoOptions{
-	//	URI: "mongodb://localhost:27017",
+	//container := container.NewInMemory()
+	//container := container.NewMySQLStore(container.MySQLOptions{
+	//	URI: fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/09-blog?parseTime=true", "root", "root"), //os.Getenv("DB_USER"), os.Getenv("DB_PASS")),
 	//})
+	container := container.NewMongoStore(container.MongoOptions{
+		URI:        "mongodb://localhost:27017",
+		Database:   "09-blog",
+		Collection: "posts",
+	})
 	err := container.Init()
 	if err != nil {
 		log.Fatalf("failed to init store: %s", err)
@@ -108,7 +110,7 @@ func main() {
 	// container := container.NewInMemory()
 	blog := blog.New(&container)
 
-	rest := rest{
+	rest := app{
 		server: server,
 		mux:    mux,
 		blog:   blog,
