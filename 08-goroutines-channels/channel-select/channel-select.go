@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"runtime"
+	"sync"
 	"time"
 )
 
-func fibonacci(quit <-chan struct{}) <-chan int {
+func fibonacci(quit <-chan struct{}, wg *sync.WaitGroup) <-chan int {
 	fibChannel := make(chan int)
+	wg.Add(1)
 	go func() {
+		defer wg.Done()
 		defer close(fibChannel)
 		fmt.Println("Generating fibonacci numbers ...")
 		a, b := 0, 1
@@ -30,20 +33,22 @@ func fibonacci(quit <-chan struct{}) <-chan int {
 }
 
 func main() {
-
+	wg := sync.WaitGroup{}
 	quitChannel := make(chan struct{})
-	fibChannel := fibonacci(quitChannel)
+	fibChannel := fibonacci(quitChannel, &wg)
 	fmt.Println("Fibonacci consumer goroutine started ...")
 	for i := 0; i < 10; i++ {
 		value := <-fibChannel
 		fmt.Printf("Consuming Fibonacci [%d] = %d\n", i, value)
 	}
-	quitChannel <- struct{}{}
+	//quitChannel <- struct{}{}
 	close(quitChannel)
 	fmt.Println("Starting fibonacci generator ...")
-	fmt.Printf("Final number of goroutines: %d\n", runtime.NumGoroutine())
+	wg.Wait()
+
 	// Make a copy of MemStats
 	var m0 runtime.MemStats
 	runtime.ReadMemStats(&m0)
 	fmt.Printf("Memstats: %#v\n", m0)
+	fmt.Printf("Final number of goroutines: %d\n", runtime.NumGoroutine())
 }

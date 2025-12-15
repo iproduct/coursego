@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"runtime"
 	"sync"
 	"time"
 )
@@ -46,4 +47,6 @@ func main() {
 	for msg := range out {
 		fmt.Println(msg)
 	}
+	fmt.Println("Done. Num goroutines = ", runtime.NumGoroutine())
+
 }

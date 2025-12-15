@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2025?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -45,7 +45,7 @@ func main() {
 
 	// Update project budgets by subtracting $1000 from old projects and adding money to new projects after 01.01.2000
 	startDate, _ := time.Parse("2006-Jan-01", "1996-Jan-01")
-	err = UpdateProjectBudgets(ctx, db, 50, startDate)
+	err = UpdateProjectBudgets(ctx, db, 500, startDate)
 	if err != nil {
 		log.Println(err)
 	}

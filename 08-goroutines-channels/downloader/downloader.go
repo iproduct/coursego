@@ -9,14 +9,14 @@ import (
 	"runtime"
 	"strconv"
 	"sync"
-	"time"
 )
 
 func main() {
 	quit := make(chan struct{})
-	urlGen := UrlGenerator(5, quit)
-
-	resources := DownloadResources(urlGen, quit)
+	var mainWg sync.WaitGroup
+	mainWg.Add(2)
+	urlGen := UrlGenerator(5, quit, &mainWg)
+	resources := DownloadResources(urlGen, quit, &mainWg)
 	//for res := range resources {
 	//	fmt.Printf("Url: %+v\n", res)
 	//}
@@ -26,13 +26,14 @@ func main() {
 	} else {
 		fmt.Printf("Download success. Totaly downloaded: %d bytes\n", total)
 	}
+	mainWg.Wait()
 	fmt.Printf("Final number of goroutines: %d\n", runtime.NumGoroutine())
 }
 
-func UrlGenerator(maxNumber int, quit <-chan struct{}) <-chan string {
-	rand.Seed(time.Now().Unix())
+func UrlGenerator(maxNumber int, quit <-chan struct{}, mainWg *sync.WaitGroup) <-chan string {
 	out := make(chan string)
 	go func() {
+		defer mainWg.Done()
 		defer close(out)
 		for i := 0; i < maxNumber; i++ {
 			url := fmt.Sprintf("http://example.com/resource/%d/%d", i, rand.Intn(100)*100)
@@ -40,6 +41,7 @@ func UrlGenerator(maxNumber int, quit <-chan struct{}) <-chan string {
 			case out <- url:
 				fmt.Printf("Generating URL: %s\n", url)
 			case <-quit:
+				fmt.Printf("!!! Exiting UrlGenerator\n")
 				return
 			}
 		}
@@ -52,9 +54,10 @@ type Resource struct {
 	err  error
 }
 
-func DownloadResources(urls <-chan string, quit chan struct{}) <-chan Resource {
+func DownloadResources(urls <-chan string, quit chan struct{}, mainWg *sync.WaitGroup) <-chan Resource {
 	resources := make(chan Resource)
 	go func() {
+		defer mainWg.Done()
 		defer close(resources)
 		var wg sync.WaitGroup
 		for u := range urls {
@@ -63,6 +66,7 @@ func DownloadResources(urls <-chan string, quit chan struct{}) <-chan Resource {
 			}
 			wg.Add(1)
 			go func(url string) {
+				fmt.Printf("!!! Processor for: '%v \n", url)
 				defer wg.Done()
 				if IsClosed(quit) {
 					fmt.Printf("Quiting goroutine for url: %s\n", url)
@@ -77,9 +81,11 @@ func DownloadResources(urls <-chan string, quit chan struct{}) <-chan Resource {
 				if resource.err != nil && !IsClosed(quit) { // guard not to close quit channel twice, resulting in panic
 					close(quit) // not yet closed - close it now
 				}
+				fmt.Printf("!!! Closing processor for: '%v \n", url)
 			}(u)
 		}
 		wg.Wait()
+		fmt.Printf("!!! Exiting DownloadResources\n")
 	}()
 	return resources
 }

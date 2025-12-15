@@ -17,7 +17,7 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2025?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}

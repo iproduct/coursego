@@ -12,12 +12,17 @@ import (
 )
 
 // Fake a long and difficult work.
-func DoWork(url string, jobs semaphor.Semaphor, wg *sync.WaitGroup) {
+func DoWork(ctx context.Context, url string, jobs semaphor.Semaphor, wg *sync.WaitGroup) {
+	defer wg.Done()
+	defer jobs.Release() // release the token
 	fmt.Println("doing", url)
-	time.Sleep(500 * time.Millisecond)
+	//time.Sleep(500 * time.Millisecond)
+	select {
+	case <-time.After(500 * time.Millisecond):
+	case <-ctx.Done():
+	}
 	fmt.Println("finished", url, ", goroutines: ", runtime.NumGoroutine())
-	wg.Done()
-	jobs.Release() // release the token
+
 }
 
 const MAX_URLS = 300
@@ -30,11 +35,17 @@ func main() {
 	visited := concurrentset.New()
 	ctx, _ := context.WithTimeout(context.Background(), 50*time.Second)
 	ctx, cancel := context.WithCancel(ctx)
-	go time.AfterFunc(5*time.Second, cancel)
+	go func() {
+		select {
+		case <-time.After(5 * time.Second):
+			cancel()
+		}
+	}()
+	//go time.AfterFunc(5*time.Second, cancel)
 	for url := range UrlGenerator(ctx, MAX_URLS, visited) {
 		concurrentJobs.Acquire() // acquire a  token
 		wg.Add(1)
-		go DoWork(url, concurrentJobs, &wg)
+		go DoWork(ctx, url, concurrentJobs, &wg)
 		fmt.Printf("Current number of goroutines: %d\n", runtime.NumGoroutine())
 	}
 	wg.Wait()

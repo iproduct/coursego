@@ -12,13 +12,13 @@ import (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2025?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
 	defer db.Close()
 	// See "Important settings" section.
-	db.SetConnMaxLifetime(time.Minute * 3)
+	db.SetConnMaxLifetime(time.Minute * 5)
 	db.SetMaxOpenConns(10)
 	db.SetMaxIdleConns(10)
 	db.SetConnMaxIdleTime(time.Minute * 3)

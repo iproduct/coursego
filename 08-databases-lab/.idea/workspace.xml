@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b197c25b-3aa8-4d82-8ae6-7b54d193ccf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../06-goroutines-channels/select/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-go-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/type-switch/type-switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06-goroutines-channels/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/deadlock-simple/deadlock-simple.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-concurrency/goroutines/counter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-goroutines-channels-lab/blocking-queue/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-goroutines-channels/singleton/singleton.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-goroutines-channels/singleton/singleton_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea10d579-be56-4c4c-87d4-050240854e1d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases/.idea/dataSources/8fe080a3-6162-48fb-a110-e13400f806f2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels-lab/producer-multiple3/producer-multiple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels-lab/producer-multiple3/producer-multiple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels/buffered-channel-semaphor/buffered-channel-semaphor.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels/buffered-channel-semaphor/buffered-channel-semaphor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels/channel-select/channel-select.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels/channel-select/channel-select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels/deadlock-simple/deadlock-simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels/deadlock-simple/deadlock-simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels/downloader-using-context/downloader-using-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels/downloader-using-context/downloader-using-context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-goroutines-channels/downloader/downloader.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-goroutines-channels/downloader/downloader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-databases-sql-lab/db-ping-update-execcontext/db-ping-update-execcontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-databases-sql-lab/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../09-databases-sql-lab/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-rest/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +35,16 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1o9qTEAjybzL5Us9xiCRc4of47U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,9 +59,11 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
     "last_opened_file_path": "C:/Users/office27",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -107,6 +116,14 @@
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/08-databases-lab/db-select" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.17011.92" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.17011.92" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">

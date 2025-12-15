@@ -14,7 +14,7 @@ import (
 
 func main() {
 	//ctx, cancel := context.WithCancel(context.Background())
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	urlGen := UrlGenerator(ctx, 5000)
 	resources := DownloadResources(ctx, cancel, urlGen)
 	//for res := range resources {
@@ -23,6 +23,7 @@ func main() {
 	total, err := CalculateTotalSize(resources)
 	if err != nil {
 		fmt.Printf("In main() error: %s\n", err)
+		fmt.Printf("Download canceled. Totaly downloaded so far: %d bytes\n", total)
 	} else {
 		fmt.Printf("Download success. Totaly downloaded: %d bytes\n", total)
 	}

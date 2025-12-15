@@ -16,7 +16,7 @@ var (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@/golang_projects_2021?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@/golang_projects_2025?parseTime=true")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -71,12 +71,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("Total budgets updated: %d\n", rows)
 
 	// COMMIT TRANSACTION
 	if err := tx.Commit(); err != nil {
 		log.Fatal(err)
 	}
+
+	log.Printf("Total budgets updated: %d\n", rows)
 
 	// Print projects after update
 	projects, err = GetProjects(ctx, db)
