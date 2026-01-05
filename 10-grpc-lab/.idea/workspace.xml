@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb308b21-a2b2-41a2-8d8b-b6bef6c935ae" name="Default Changelist" comment="small refactoring">
-      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2026-02-grpc-lab/cmd/bidi-streaming-server/bidi-streaming-server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2026-02-grpc-lab/mathmax/mathmax.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2026-02-grpc-lab/mathmax/mathmax.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fmi-2026-02-grpc-lab/mathmax/mathmax_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-hello/helloworld/helloworld_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-grpc-route-guide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -19,7 +19,44 @@
     "application/json"
   ],
   "paths": {
-    "/v1/todo": {
+    "/v1/todos": {
+      "get": {
+        "summary": "Read all todo tasks",
+        "operationId": "ToDoService_ReadAll",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ReadAllResponse"
+            }
+          },
+          "404": {
+            "description": "Returned when the resource does not exist.",
+            "schema": {
+              "type": "string",
+              "format": "string"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "api",
+            "description": "API versioning: it is my best practice to specify version explicitly.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ToDoService"
+        ]
+      },
       "post": {
         "summary": "Create new todo task",
         "operationId": "ToDoService_Create",
@@ -59,46 +96,7 @@
         ]
       }
     },
-    "/v1/todo/all": {
-      "get": {
-        "summary": "Read all todo tasks",
-        "operationId": "ToDoService_ReadAll",
-        "responses": {
-          "200": {
-            "description": "A successful response.",
-            "schema": {
-              "$ref": "#/definitions/v1ReadAllResponse"
-            }
-          },
-          "404": {
-            "description": "Returned when the resource does not exist.",
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          },
-          "default": {
-            "description": "An unexpected error response.",
-            "schema": {
-              "$ref": "#/definitions/runtimeError"
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "api",
-            "description": "API versioning: it is my best practice to specify version explicitly.",
-            "in": "query",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "tags": [
-          "ToDoService"
-        ]
-      }
-    },
-    "/v1/todo/{id}": {
+    "/v1/todos/{id}": {
       "get": {
         "summary": "Read todo task",
         "operationId": "ToDoService_Read",
@@ -190,7 +188,7 @@
         ]
       }
     },
-    "/v1/todo/{toDo.id}": {
+    "/v1/todos/{toDo.id}": {
       "put": {
         "summary": "Update todo task",
         "operationId": "ToDoService_Update",

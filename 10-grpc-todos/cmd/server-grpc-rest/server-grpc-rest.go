@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"flag"
 	"fmt"
+	logger_grpc "github.com/iproduct/coursego/10-grpc-todos/middleware/logger-grpc"
 	"github.com/iproduct/coursego/10-grpc-todos/server/grpc-server"
 	rest_server "github.com/iproduct/coursego/10-grpc-todos/server/rest-server"
 	"github.com/iproduct/coursego/10-grpc-todos/service"
@@ -33,6 +34,12 @@ type Config struct {
 	DatastoreDBPassword string
 	// DatastoreDBSchema is schema of database
 	DatastoreDBSchema string
+
+	// Log parameters section
+	// LogLevel is global log level: Debug(-1), Info(0), Warn(1), Error(2), DPanic(3), Panic(4), Fatal(5)
+	LogLevel int
+	// LogTimeFormat is print time format for logger-grpc e.g. 2006-01-02T15:04:05Z07:00
+	LogTimeFormat string
 }
 
 // RunServer runs gRPC grpc-server and HTTP gateway
@@ -47,7 +54,15 @@ func RunServer() error {
 	flag.StringVar(&cfg.DatastoreDBUser, "db-user", "root", "Database user")
 	flag.StringVar(&cfg.DatastoreDBPassword, "db-password", "root", "Database password")
 	flag.StringVar(&cfg.DatastoreDBSchema, "db-schema", "grpc-demo", "Database schema")
+	flag.IntVar(&cfg.LogLevel, "log-level", -1, "Global log level")
+	flag.StringVar(&cfg.LogTimeFormat, "log-time-format", "2006-01-02T15:04:05.999999999Z07:00",
+		"Print time format for logger-grpc e.g. 2006-01-02T15:04:05Z07:00")
 	flag.Parse()
+
+	// initialize logger-grpc
+	if err := logger_grpc.Init(cfg.LogLevel, cfg.LogTimeFormat); err != nil {
+		return fmt.Errorf("failed to initialize logger-grpc: %v", err)
+	}
 
 	if len(cfg.GRPCPort) == 0 {
 		return fmt.Errorf("invalid TCP port for gRPC grpc-server: '%s'", cfg.GRPCPort)
@@ -73,6 +88,7 @@ func RunServer() error {
 	defer db.Close()
 
 	API := service.NewToDoServiceServer(db)
+
 	// run HTTP gateway
 	go func() {
 		_ = rest_server.RunServer(ctx, cfg.GRPCPort, cfg.HTTPPort)

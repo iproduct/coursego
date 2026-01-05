@@ -84,6 +84,7 @@ func runRecordRoute(client pb.RouteGuideClient) {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	pointCount := int(r.Int31n(100)) + 2 // Traverse at least two points
 	var points []*pb.Point
+	points = append(points, &pb.Point{Latitude: 416560744, Longitude: -746721964})
 	for i := 0; i < pointCount; i++ {
 		points = append(points, randomPoint(r))
 	}
@@ -168,8 +169,8 @@ func main() {
 		opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	}
 
-	opts = append(opts, grpc.WithBlock())
-	conn, err := grpc.Dial(*serverAddr, opts...)
+	opts = append(opts)
+	conn, err := grpc.NewClient(*serverAddr, opts...)
 	if err != nil {
 		log.Fatalf("fail to dial: %v", err)
 	}

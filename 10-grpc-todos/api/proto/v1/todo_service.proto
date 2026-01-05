@@ -142,14 +142,14 @@ service ToDoService {
   // Read all todo tasks
   rpc ReadAll(ReadAllRequest) returns (ReadAllResponse){
     option (google.api.http) = {
-      get: "/v1/todo/all"
+      get: "/v1/todos"
     };
   }
 
   // Create new todo task
   rpc Create(CreateRequest) returns (CreateResponse){
     option (google.api.http) = {
-      post: "/v1/todo"
+      post: "/v1/todos"
       body: "*"
     };
   }
@@ -157,18 +157,18 @@ service ToDoService {
   // Read todo task
   rpc Read(ReadRequest) returns (ReadResponse){
     option (google.api.http) = {
-      get: "/v1/todo/{id}"
+      get: "/v1/todos/{id}"
     };
   }
 
   // Update todo task
   rpc Update(UpdateRequest) returns (UpdateResponse){
     option (google.api.http) = {
-      put: "/v1/todo/{toDo.id}"
+      put: "/v1/todos/{toDo.id}"
       body: "*"
 
       additional_bindings {
-        patch: "/v1/todo/{toDo.id}"
+        patch: "/v1/todos/{toDo.id}"
         body: "*"
       }
     };
@@ -177,7 +177,7 @@ service ToDoService {
   // Delete todo task
   rpc Delete(DeleteRequest) returns (DeleteResponse){
     option (google.api.http) = {
-      delete: "/v1/todo/{id}"
+      delete: "/v1/todos/{id}"
     };
   }
 }

@@ -232,6 +232,7 @@ func main() {
 		if err != nil {
 			log.Fatalf("Failed to generate credentials %v", err)
 		}
+		log.Printf("TLS enabled: %v, %v", *certFile, *keyFile)
 		opts = []grpc.ServerOption{grpc.Creds(creds)}
 	}
 	grpcServer := grpc.NewServer(opts...)

@@ -696,17 +696,17 @@ func RegisterToDoServiceHandlerClient(ctx context.Context, mux *runtime.ServeMux
 }
 
 var (
-	pattern_ToDoService_ReadAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2}, []string{"v1", "todo", "all"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_ReadAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"v1", "todos"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_ToDoService_Create_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"v1", "todo"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_Create_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1}, []string{"v1", "todos"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_ToDoService_Read_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todo", "id"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_Read_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todos", "id"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_ToDoService_Update_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todo", "toDo.id"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_Update_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todos", "toDo.id"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_ToDoService_Update_1 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todo", "toDo.id"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_Update_1 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todos", "toDo.id"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_ToDoService_Delete_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todo", "id"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_ToDoService_Delete_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 1, 0, 4, 1, 5, 2}, []string{"v1", "todos", "id"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

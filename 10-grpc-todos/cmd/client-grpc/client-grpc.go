@@ -85,7 +85,7 @@ func main() {
 		Api: apiVersion,
 		ToDo: &todo_service.ToDo{
 			Id:          res3.ToDo.Id,
-			Title:       res3.ToDo.Title,
+			Title:       res3.ToDo.Title + " + updated",
 			Description: res3.ToDo.Description + " + updated",
 			Reminder:    res3.ToDo.Reminder,
 		},
