@@ -21,7 +21,7 @@ func main() {
 
 	//Get number of users
 	var usersCount int64 = 0
-	result := db.Model(entities.User{}).Count(&usersCount) // SELECT * FROM users;
+	result := db.Model(entities.User{}).Count(&usersCount) // SELECT COUNT(*) FROM users;
 	if result.Error != nil {
 		log.Fatal(result.Error) // returns error
 	}

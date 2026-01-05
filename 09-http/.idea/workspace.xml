@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2690ee5d-4379-4166-8e30-cc075bcd6dad" name="Changes" comment="examples updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/server-web-page/server-web-page.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/server-web-page/server-web-page.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../08-databases-gorm/db-gorm-users-batch/db-gorm-users-batch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-modules-rest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-modules-rest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../10-modules-rest/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +35,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Go Build.go build github.com/iproduct/coursego/09-http/bookstore.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build github.com/iproduct/coursego/09-http/server-json.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build github.com/iproduct/coursego/09-http/server-web-page.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build github.com/iproduct/coursego/09-http/simple-client.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build github.com/iproduct/coursego/09-http/templates-text.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/office27&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Go Build.go build github.com/iproduct/coursego/09-http/bookstore.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/09-http/server-json.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/09-http/server-web-page.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/09-http/sesssion.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/09-http/simple-client.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/09-http/templates-text.executor": "Run",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/office27",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseGO\git\coursego\09-http" />
@@ -64,7 +65,7 @@
       <recent name="D:\CourseGO\git\coursego\09-http\simple-server-mux" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/09-http/bookstore">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/09-http/sesssion">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -81,21 +82,21 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/09-http/server-json" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="09-http" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/09-http/server-json" />
-      <filePath value="$PROJECT_DIR$/server-json/server.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build github.com/iproduct/coursego/09-http/server-web-page" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="09-http" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <package value="github.com/iproduct/coursego/09-http/server-web-page" />
       <filePath value="$PROJECT_DIR$/server-web-page/server-web-page.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/09-http/sesssion" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="09-http" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/09-http/sesssion" />
+      <filePath value="$PROJECT_DIR$/sesssion/session.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/sesssion" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/bookstore" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/server-web-page" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/templates-text" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/simple-client" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/09-http/server-json" />
       </list>
     </recent_temporary>
   </component>
