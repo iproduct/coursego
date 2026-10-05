@@ -19,6 +19,7 @@ func main() {
 
 	goquote := quote.Go()
 	fmt.Println(goquote)
-	stringutil.Reverse()
+	fmt.Println(stringutil.Reverse(goquote))
+	fmt.Println(stringutil.Reverse(s))
 
 }
