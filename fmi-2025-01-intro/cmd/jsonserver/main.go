@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-var addr = flag.String("addr", ":8080", "server -addr :8080")
+var addr = flag.String("addr", ":8008", "server -addr :8008")
 
 func getBooks(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")

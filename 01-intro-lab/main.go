@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/iproduct/coursegopro/01-intro-lab/stringutil"
+	"rsc.io/quote"
 )
 
 func main() {
@@ -20,10 +22,10 @@ func main() {
 	for index, runeVal := range s {
 		fmt.Printf("%#U starts at byte position %d\n", runeVal, index)
 	}
-	//
-	//fmt.Println(s)
-	//
-	//var goquote string = quote.Go()
-	//fmt.Println(goquote)
-	//fmt.Println(stringutil.Reverse(goquote))
+
+	fmt.Println(s)
+
+	var goquote string = quote.Go()
+	fmt.Println(goquote)
+	fmt.Println(stringutil.Reverse(goquote))
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Embed Demo</title>
+    <!-- Tailwind CSS for clean, rapid styling -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-center items-center p-4">
+
+<!-- Main Container (Slimmer footprint) -->
+<div class="max-w-xs w-full bg-white rounded-xl shadow-md p-4 border border-slate-100 transition-all hover:shadow-lg">
+
+    <!-- Header Area (Micro-sized layout) -->
+    <div class="flex items-center space-x-2 mb-1">
+        <!-- Micro Gopher SVG Container (w-4 h-4) -->
+        <div class="bg-cyan-50 p-0.5 rounded flex-shrink-0">
+            <svg class="w-2 h-2 text-cyan-600" viewBox="0 0 64 64" fill="currentColor" xmlns="http://w3.org" style="height:200px">
+                <!-- Gopher Body / Head Shape -->
+                <path d="M16 32C16 20 22 14 32 14C42 14 48 20 48 32C48 44 45 48 32 48C19 48 16 44 16 32Z" fill="#7FD5EA" />
+                <!-- Left Ear -->
+                <ellipse cx="18" cy="18" rx="4" ry="6" fill="#7FD5EA" transform="rotate(-15 18 18)" />
+                <!-- Right Ear -->
+                <ellipse cx="46" cy="18" rx="4" ry="6" fill="#7FD5EA" transform="rotate(15 46 18)" />
+                <!-- Left Eye White -->
+                <circle cx="25" cy="26" r="6" fill="white" />
+                <!-- Left Pupil -->
+                <circle cx="26" cy="26" r="2.5" fill="black" />
+                <!-- Right Eye White -->
+                <circle cx="39" cy="26" r="6" fill="white" />
+                <!-- Right Pupil -->
+                <circle cx="38" cy="26" r="2.5" fill="black" />
+                <!-- Snout / Nose Background -->
+                <ellipse cx="32" cy="33" rx="5" ry="3.5" fill="#FAD1AF" />
+                <!-- Nose -->
+                <ellipse cx="32" cy="32" rx="2.5" ry="1.5" fill="#333" />
+                <!-- Buck Teeth -->
+                <rect x="29.5" y="36.5" width="2" height="3" fill="white" rx="0.5" />
+                <rect x="32.5" y="36.5" width="2" height="3" fill="white" rx="0.5" />
+            </svg>
+        </div>
+        <div>
+            <h1 class="text-sm font-bold tracking-tight text-slate-900 leading-none">Go Binary Server</h1>
+            <p class="text-[9px] font-semibold uppercase tracking-wider text-cyan-600 mt-0.5">Static Embed Demo</p>
+        </div>
+    </div>
+
+    <!-- Content Splitter Line -->
+    <hr class="border-slate-100 my-2" />
+
+    <!-- Status Card -->
+    <div class="space-y-2">
+        <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2 flex items-start space-x-1.5">
+                <span class="flex h-1.5 w-1.5 mt-1 relative flex-shrink-0">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                </span>
+            <div>
+                <h3 class="font-medium text-emerald-900 text-[10px] leading-none">Status: Live</h3>
+                <p class="text-emerald-700 text-[9px] mt-0.5 leading-tight">Asset embedded directly within the compiler binary.</p>
+            </div>
+        </div>
+
+        <!-- Features Quick-List -->
+        <div class="text-[10px] text-slate-600 bg-slate-50 rounded-lg p-2 space-y-1">
+            <div class="flex items-center space-x-1.5">
+                <span class="text-cyan-600 font-bold">✓</span>
+                <span>Zero external asset overhead</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+                <span class="text-cyan-600 font-bold">✓</span>
+                <span>Single artifact deployment</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-3 text-center text-[8px] text-slate-400">
+        Powered by <code class="bg-slate-100 text-slate-600 px-1 py-0.5 rounded font-mono text-[8px]">//go:embed</code>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
-module github.com/iproduct/coursegopro/01-intro-lab
+module github.com/iproduct/coursego/fmi-2026-01-intro
 
-go 1.17
+go 1.27.1
 
 require (
 	golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c // indirect
