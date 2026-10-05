@@ -15,7 +15,8 @@ func main() {
 		"name": "Trayan",
 		"age":  "25",
 	})
-	body := bytes.NewBuffer(bodyJson)
+	//body := bytes.NewBuffer(bodyJson)
+	body := bytes.NewReader(bodyJson)
 	req, err := http.NewRequest("POST", "http://localhost:8001/headers", body)
 
 	if err != nil {
