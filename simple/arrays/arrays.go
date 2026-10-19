@@ -24,7 +24,7 @@ func main() {
 	a1 := [...]int{1, 2}
 	a2 := a1
 	for i, e := range a1 {
-		fmt.Println(i,"->", e)
+		fmt.Println(i, "->", e)
 	}
 	//a2[0] = 3
 	fmt.Printf("%v, %v, %t, %t\n", a1, a2, a1 == a2, &a1 == &a2)
@@ -35,10 +35,11 @@ func main() {
 	middle := a3[5:15]
 	all := a3[:]
 	all2 := all[:]
+	all2[0] = 42
 	appended := append(secondHalf, 17)
 	appended[0] = 42
-	fmt.Printf("%v, cap: %d\n", firstHalf, cap(firstHalf))
-	fmt.Printf("%v, cap: %d\n", secondHalf, cap(secondHalf))
+	fmt.Printf("%v, len: %v, cap: %d\n", firstHalf, len(firstHalf), cap(firstHalf))
+	fmt.Printf("%v, len: %v, cap: %d\n", secondHalf, len(secondHalf), cap(secondHalf))
 	fmt.Printf("%v, cap: %d\n", middle, cap(middle))
 	fmt.Printf("%v, cap: %d\n", all, cap(all))
 	fmt.Printf("%v, cap: %d\n", all2, cap(all2))
@@ -46,12 +47,11 @@ func main() {
 	fmt.Printf("%v, len: %d, cap: %d\n", a3, len(a3), cap(a3))
 	//  %v, %v, %v\n", firstHalf, secondHalf, middle, all)
 
-	var slice []int = []int{2, 3, 5, 7, 11, 13}
+	var slice = []int{2, 3, 5, 7, 11, 13}
 	fmt.Println(slice) // [2 3 5 7 11 13]
 	reslice := slice[2:4:5]
 	reslice2 := reslice[1:2:3]
-	fmt.Println(reslice, len(reslice), cap(reslice)) // [5 7 11]
-	fmt.Println(reslice2, len(reslice2), cap(reslice2)) // 
+	fmt.Println(reslice, len(reslice), cap(reslice))    // [5 7 11]
+	fmt.Println(reslice2, len(reslice2), cap(reslice2)) //
 
 }
-

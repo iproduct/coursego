@@ -43,6 +43,8 @@ func myString(value interface{}) (string, error) {
 		return str, nil
 	case Stringer:
 		return str.String(), nil
+	default:
+		return "", fmt.Errorf("Value %v is not stringable", value)
 	}
 
 	if str, ok := value.(string); ok {
@@ -206,11 +208,11 @@ func Concat1(a string, b int) string {
 	return fmt.Sprintf("%s%d", a, b)
 }
 
-
 func main() {
 	fmt.Println(Concat1("abc", 0))
-	// fmt.Println(myString(mystringer{"abcd"}))
-	// fmt.Println(myString("xyz"))
+	fmt.Println(myString(mystringer{"abcd"}))
+	fmt.Println(myString("xyz"))
+	fmt.Println(myString([...]int{42, 54}))
 	// s := Sequence{1, 5, 7, 2, 9, 3}
 	// fmt.Println(s.String())
 	// fmt.Println(s.Get(1))
@@ -236,21 +238,21 @@ func main() {
 	//	a = "world123"
 	//	fmt.Printf("%#v\n", (*reflect.StringHeader)(unsafe.Pointer(&a)))
 
-	str := "hello"
-	// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str)).Data)
-	str = "hello" + "1"
-	// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str2)).Data)
-	// header := (*reflect.StringHeader)(unsafe.Pointer(&str))
-	// *header.Data = *header.Data + 1
-	slice := strToBytes(str)
-	fmt.Println(string(slice), len(slice), cap(slice))
-	// sliceHeader := (*reflect.SliceHeader)(unsafe.Pointer(&slice))
-	// sliceHeader.Len = 100
-	// sliceHeader.Cap = 100
-	fmt.Println(string(slice), len(slice), cap(slice))
-	// fmt.Println(header.Data, sliceHeader.Data)
-	// slice[1] = byte(100)
-	fmt.Println(str)
+	//str := "hello"
+	//// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str)).Data)
+	//str = "hello" + "1"
+	//// fmt.Println((*reflect.StringHeader)(unsafe.Pointer(&str2)).Data)
+	//// header := (*reflect.StringHeader)(unsafe.Pointer(&str))
+	//// *header.Data = *header.Data + 1
+	//slice := strToBytes(str)
+	//fmt.Println(string(slice), len(slice), cap(slice))
+	//// sliceHeader := (*reflect.SliceHeader)(unsafe.Pointer(&slice))
+	//// sliceHeader.Len = 100
+	//// sliceHeader.Cap = 100
+	//fmt.Println(string(slice), len(slice), cap(slice))
+	//// fmt.Println(header.Data, sliceHeader.Data)
+	//// slice[1] = byte(100)
+	//fmt.Println(str)
 
 	//	//b := strToBytes("hello")
 	//	//b[0] = 100

@@ -1,6 +1,12 @@
 package main
 
-import ("fmt"; "github.com/iproduct/coursego/simple/mypic"; "log"; "os"; "path")
+import (
+	"fmt"
+	"github.com/iproduct/coursego/simple/mypic"
+	"log"
+	"os"
+	"path/filepath"
+)
 
 const baseDir = "d:/CourseGO/workspace/src/github.com/iproduct/coursego/simple/slices-image"
 
@@ -27,8 +33,18 @@ func main() {
 	// fmt.Println(programPath)
 	// dir := path.Dir(programPath)
 	// fmt.Println(dir)
-	
-	imageFile := path.Join(baseDir, "image.png")
+
+	baseDir := "./images" // Relative path works fine!
+	filename := "image.png"
+
+	// 1. Get the absolute path of your intended base directory
+	absBase, err := filepath.Abs(baseDir)
+	if err != nil {
+		panic(err)
+	}
+	// 2. Join the path
+	imageFile := filepath.Join(absBase, filename)
+
 	fmt.Println(imageFile)
 	file, err := os.Create(imageFile)
 	defer file.Close()
