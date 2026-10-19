@@ -6,8 +6,11 @@ import (
 	"rsc.io/quote"
 )
 
+var s string = "Hello Go World! 你好世界"
+
 func main() {
-	s := "Hello Go World! 你好世界"
+	//var s string = "Hello Go World! 你好世界"
+	//s := "Hello Go World! 你好世界"
 	fmt.Println(s)
 	for i := 0; i < len(s); i++ {
 		fmt.Printf("%c -> %d\n", s[i], i)

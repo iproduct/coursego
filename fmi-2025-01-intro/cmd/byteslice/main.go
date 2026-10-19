@@ -5,6 +5,7 @@ import "github.com/iproduct/coursego/fmi-2025-01-intro/byteslice"
 
 func main() {
 	var b byteslice.ByteSlice
+	//fmt.Printf("%p\n", &b)
 	fmt.Fprintf(&b, "This week has %d days\n", 7)
 	fmt.Printf("%v, %p\n", b, &b)
 	b.Write([]byte{42})

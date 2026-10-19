@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // Role type
-type Role int
+type Role byte
 
 // Roles enum
 const (
@@ -29,7 +29,7 @@ func (r Role) String() string {
 }
 
 // Status type
-type Status int
+type Status byte
 
 // User statuses enum
 const (

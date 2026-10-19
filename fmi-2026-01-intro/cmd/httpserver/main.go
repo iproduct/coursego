@@ -25,7 +25,7 @@ func headers(w http.ResponseWriter, req *http.Request) {
 			fmt.Fprintf(w, "%v: %v <br>\n", name, value)
 		}
 	}
-	fmt.Fprintf(w, "%s\n", text)
+	fmt.Fprintf(w, "%s", text)
 
 }
 

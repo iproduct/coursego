@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 )
@@ -20,7 +21,7 @@ func main() {
 	req, err := http.NewRequest("POST", "http://localhost:8001/headers", body)
 
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	req.Header.Add("Accept", "text/html,application/json")
 	req.Header.Add("Custom-Header", "Custom value")
@@ -32,11 +33,10 @@ func main() {
 	fmt.Println("response Status:", resp.Status)
 	scanner := bufio.NewScanner(resp.Body)
 	fmt.Println("response:")
-	for i := 0; scanner.Scan(); i++ {
-		fmt.Printf("%d: %s\n", i, scanner.Text())
+	for scanner.Scan() {
+		fmt.Printf("%s\n", scanner.Text())
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	}
-
 }

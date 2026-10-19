@@ -20,9 +20,8 @@ var (
 func countLinesFile(f *os.File) (int, error) {
 	scanner := bufio.NewScanner(f)
 	count := 0
-	for scanner.Scan() {
-		//log.Println(scanner.Text())
-		count++
+	for ; scanner.Scan(); count++ {
+		log.Println(scanner.Text())
 	}
 	if err := scanner.Err(); err != nil {
 		return -1, err
@@ -64,21 +63,21 @@ func main() {
 		}
 	}(global)
 
-	//for ok := true; ok; {
-	//	var result interface{}
-	//	result, ok = <-chan2
-	//	if ok {
-	//		fmt.Println(result)
-	//	} else {
-	//		fmt.Println("channel closed")
-	//	}
-	//}
-
-	chan2 := (<-chan interface{})(channel)
-	for result := range chan2 {
-		fmt.Println(result.(string))
+	for ok := true; ok; {
+		var result interface{}
+		result, ok = <-channel
+		if ok {
+			fmt.Println(result)
+		} else {
+			fmt.Println("channel closed")
+		}
 	}
 
-	// Count lines in own sorce file
-	fmt.Printf("Number of  lines: %v\n", CountLines("cmd/variables/main.go"))
+	//chan2 := (<-chan interface{})(channel)
+	//for result := range chan2 {
+	//	fmt.Println(result.(string))
+	//}
+	//
+	//// Count lines in own sorce file
+	//fmt.Printf("Number of  lines: %v\n", CountLines("cmd/variables/main.go"))
 }
