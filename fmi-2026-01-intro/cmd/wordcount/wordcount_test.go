@@ -1,4 +1,4 @@
-package wordcount
+package main
 
 import (
 	"fmt"
