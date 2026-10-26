@@ -7,7 +7,7 @@ type Vertex struct {
 }
 
 var m = map[string]Vertex{
-	"Bell Labs": Vertex{40.68433, -74.39967},
+	"Bell Labs": Vertex{Lat: 40.68433, Long: -74.39967},
 	"Google":    Vertex{37.42202, -122.08408},
 }
 
@@ -16,7 +16,17 @@ var m2 = map[string]Vertex{
 	"Google":    {37.42202, -122.08408},
 }
 
-func main() {
-	fmt.Println(m2)
+var s1 = [...]Vertex{
+	{40.68433, -74.39967},
+	{37.42202, -122.08408},
+}
+var s2 = [...]Vertex{
+	{40.68433, -74.39967},
+	{37.42202, -122.08408},
 }
 
+func main() {
+	fmt.Println(m2)
+	fmt.Printf("%T, equal-> %t\n", m2, m["Bell Labs"] == m2["Bell Labs"])
+	fmt.Printf("%T, equal-> %t\n", s1, s1 == s2)
+}
