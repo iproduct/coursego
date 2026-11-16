@@ -33,20 +33,22 @@ func (c *ByteCounter) Write(p []byte) (int, error) {
 //}
 
 // Implementation of File interface
-type MyFile struct{ /*...*/ }
+type MyFile struct { /*...*/
+}
 
 func (p MyFile) Read(b []byte) (n int, err error)  { return /*...*/ }
 func (p MyFile) Write(b []byte) (n int, err error) { return /*...*/ }
 func (p MyFile) Close() error                      { return nil }
 
 // Another implementation of File interface
-type OtherFile struct{ /*...*/ }
+type OtherFile struct { /*...*/
+}
 
 func (o *OtherFile) Read(b []byte) (n int, err error)  { return /*...*/ }
 func (o *OtherFile) Write(b []byte) (n int, err error) { return /*...*/ }
 func (o *OtherFile) Close() error                      { return nil }
 
-//package io
+// package io
 type Reader interface {
 	Read(p []byte) (n int, err error)
 }
@@ -54,34 +56,35 @@ type Closer interface {
 	Close() error
 }
 
-type ReadWriter interface {
-	Reader
-	Writer
-}
-type File interface {
-	Reader
-	Writer
-	Closer
-}
-
 //type ReadWriter interface {
-//	Read(b Buffer) bool
-//	Write(b Buffer) bool
-//}
-//type Locker interface {
-//	Lock()
-//	Unlock()
+//	Reader
+//	Writer
 //}
 //type File interface {
-//	ReadWriter  // same as adding the methods of ReadWriter
-//	Locker      // same as adding the methods of Locker
-//	Close()
+//	Reader
+//	Writer
+//	Closer
 //}
-//type LockedFile interface {
-//	Locker
-//	File        // illegal: Lock, Unlock not unique
-//	Lock()      // illegal: Lock not unique
-//}
+
+type ReadWriter interface {
+	Read(b bytes.Buffer) bool
+	Write(b bytes.Buffer) bool
+}
+type Locker interface {
+	Lock()
+	Unlock()
+}
+type File interface {
+	ReadWriter // same as adding the methods of ReadWriter
+	Locker     // same as adding the methods of Locker
+	Close()
+}
+type LockedFile interface {
+	Locker
+	File
+	Lock()
+	//Reader
+}
 
 // illegal: Bad cannot embed itself
 //type Bad interface {
@@ -108,6 +111,7 @@ type Ball struct {
 	Radius   int
 	Material string
 }
+
 func (b Ball) Bounce() {
 	fmt.Printf("Ball bouncing ... %v\n", b)
 }
@@ -116,18 +120,18 @@ func (b Ball) Bounce() {
 var _ io.Writer = (*bytes.Buffer)(nil)
 
 func main() {
-	var b ByteSlice
-	fmt.Fprintf(&b, "Interfaces in Go are %s\n", "useful")
-	fmt.Printf("%v\n", b)
-	var c ByteCounter
-	fmt.Fprintf(&c, "Interfaces in Go are %s\n", "useful")
-	fmt.Printf("%v\n", c)
-
-	var f File
-	f = MyFile{} //or &MyFile{}
-	fmt.Printf("%T\n", f.Close())
-	f = &OtherFile{}
-	fmt.Printf("%T\n", f.Close())
+	//var b ByteSlice
+	//fmt.Fprintf(&b, "Interfaces in Go are %s\n", "useful")
+	//fmt.Printf("%v\n", string(b))
+	//var c ByteCounter
+	//fmt.Fprintf(&c, "Interfaces in Go are %s\n", "useful")
+	//fmt.Printf("%v\n", c)
+	//
+	//var f File
+	//f = MyFile{} //or &MyFile{}
+	//fmt.Printf("%T\n", f.Close())
+	//f = &OtherFile{}
+	//fmt.Printf("%T\n", f.Close())
 
 	// Interface satisfaction
 	var w Writer
@@ -136,9 +140,9 @@ func main() {
 	//w = time.Hour         // !!! compile time error: no method Write()
 	w.Write([]byte("abcd"))
 
-	var f2 File
-	f2 = os.Stdout
-	w = f2
+	//var f2 File
+	//f2 = os.Stdout
+	//w = f2
 	//f2 = w  // !!! compile time error: w has no methods Read() and Close()
 
 	// Maps of interfaces

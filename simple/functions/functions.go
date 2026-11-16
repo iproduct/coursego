@@ -9,23 +9,29 @@ func printf(format string, args ...interface{}) int {
 	return len(args)
 }
 
+func report(printFunc func(string, ...interface{}) int, format string, data ...interface{}) int {
+	return printFunc(format, data)
+}
+
+var count int
+
 func main() {
-	argsLen := printf("%v, %v\n", "abcd", 15, []int{1, 2, 3, 4})
+	argsLen := report(printf, "%v, %v\n", "abcd", 15, []int{1, 2, 3, 4})
 	printf("Number args: %d\n", argsLen)
 
-	// closure demo
-	//count := 0
-	//inc := func() int {
-	//	count++
-	//	return count
-	//}
-	//
-	//incBy := func(n int) int {
-	//	count += n
-	//	return count
-	//}
-	//
-	//printf("%d\n", inc())
-	//printf("%d\n", incBy(10))
+	//closure demo
+	count = 0
+	inc := func() int {
+		count++
+		return count
+	}
+
+	incBy := func(n int) int {
+		count += n
+		return count
+	}
+
+	fmt.Printf("%d\n", inc())
+	fmt.Printf("%d\n", incBy(10))
 
 }

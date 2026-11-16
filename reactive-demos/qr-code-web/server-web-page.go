@@ -7,14 +7,14 @@ import (
 	"net/http"
 )
 
-var addr = flag.String("addr", ":8080", "http service address") // Q=17, R=18
+var addr = flag.String("addr", ":9000", "http service address") // Q=17, R=18
 
 var templ = template.Must(template.New("qr").Parse(templateStr))
 
 func main() {
 	flag.Parse()
 	http.Handle("/", http.HandlerFunc(QR))
-	err := http.ListenAndServe(*addr, nil)
+	err := http.ListenAndServe("localhost:9000", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe:", err)
 	}
@@ -22,6 +22,9 @@ func main() {
 
 // QR http handler function return the HTML template with QR code for the input link
 func QR(w http.ResponseWriter, req *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
 	templ.Execute(w, req.FormValue("s"))
 }
 
@@ -32,7 +35,7 @@ const templateStr = `
 </head>
 <body>
 {{if .}}
-<img src="http://chart.apis.google.com/chart?chs=300x300&cht=qr&choe=UTF-8&chl={{.}}" />
+<img src="https://qrcode.tec-it.com/API/QRCode?data={{.}}" />
 <br>
 {{.}}
 <br>

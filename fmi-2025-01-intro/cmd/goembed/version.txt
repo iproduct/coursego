@@ -1,1 +1,1 @@
-go version go1.27.1 windows/amd64
+go my-version go1.27.1 windows/amd64

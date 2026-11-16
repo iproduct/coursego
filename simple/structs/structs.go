@@ -13,7 +13,7 @@ var gl Line = Line{&gv, &gv2}
 func test(l Line) {
 	fmt.Printf("%v, Lines same=%v\n", l, &l == &gl)
 	fmt.Printf("%v, Point same=%v\n", l, &l.A.X == &gl.A.X)
-	l.B.X = 42
+	(*l.B).X = 42
 	fmt.Printf("%v, %v\n", *l.A, *l.B)
 }
 

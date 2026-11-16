@@ -31,12 +31,12 @@ type ColorVertex struct {
 func main() {
 	green := color.RGBA{0, 255, 0, 255}
 	yellow := color.RGBA{255, 255, 0, 255}
-	cv1 := &ColorVertex{Vertex{2, 3}, green}
+	pcv1 := &ColorVertex{Vertex{2, 3}, green}
 	cv2 := ColorVertex{Vertex{6, 6}, yellow}
-	fmt.Printf("%+v, %+v -> Distance: %f\n", cv1, cv2, cv2.Distance(cv1.Vertex)) // 5
-	cv1.Scale(4)
+	fmt.Printf("%+v, %+v -> Distance: %f\n", pcv1, cv2, cv2.Distance(pcv1.Vertex)) // 5
+	pcv1.Scale(4)
 	cv2.Scale(4)
-	fmt.Printf("%+v, %+v -> Distance: %f\n", cv1, cv2, cv1.Distance(cv2.Vertex)) // 20
+	fmt.Printf("%+v, %+v -> Distance: %f\n", pcv1, cv2, pcv1.Distance(cv2.Vertex)) // 20
 	//cv1.Distance(cv2) // no method cv1.Distance(ColorVertex)
 
 	a := Vertex{2, 7}

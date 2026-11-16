@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecab5fd6-7574-4653-8c70-ae3113ed58ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/client-json/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/server-json/books/books.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/server-json/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/defer/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/defer/defer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-types/panic/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/../03-types/panic/panic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple/errors/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces-writer/interfaces-writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces-writer/interfaces-writer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods-nil/methods-nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/methods-nil/methods-nil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-blog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/simple-client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/simple-client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-http/templates-text/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../09-http/templates-text/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2024-01-intro-go/cmd/server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tog-demos/cmd/interfaces/nil_interface/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tog-demos/cmd/interfaces/nil_interface/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tog-demos/cmd/methods/pointer_receiver_1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tog-demos/cmd/methods/pointer_receiver_1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enums/enums.go" beforeDir="false" afterPath="$PROJECT_DIR$/enums/enums.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fmi-2025-01-intro/cmd/goembed/version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../fmi-2025-01-intro/cmd/goembed/version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/defer/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/defer/defer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/errors/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/functions/functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/functions/functions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple/structs/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../simple/structs/structs.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +49,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go Application",
+    "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/enums.executor": "Run",
     "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value.executor": "Run",
     "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil.executor": "Run",
     "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer.executor": "Run",
     "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-nil.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-not-struct.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods.executor": "Run",
+    "Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/types.executor": "Run",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
@@ -78,7 +75,7 @@
       <recent name="D:\CourseGO\git\coursego\04-05-methods-interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer">
+  <component name="RunManager" selected="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/types">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$/../../../out" />
       <go_parameters value="-i" />
@@ -93,12 +90,12 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/enums" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" />
-      <filePath value="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/enums" />
+      <filePath value="$PROJECT_DIR$/enums/enums.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -108,24 +105,6 @@
       <kind value="PACKAGE" />
       <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" />
       <filePath value="$PROJECT_DIR$/interfaces-nil-value/interfaces-nil-value.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" />
-      <filePath value="$PROJECT_DIR$/interfaces-nil/interfaces-nil.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-sort" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-sort" />
-      <filePath value="$PROJECT_DIR$/interfaces-sort/interfaces-sort.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
@@ -147,15 +126,6 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/method-expressions" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="04-05-methods-interfaces" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/method-expressions" />
-      <filePath value="$PROJECT_DIR$/method-expressions/method-expressions.go" />
-      <output_directory value="$PROJECT_DIR$/../../../out" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-nil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
@@ -165,22 +135,40 @@
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-nil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-not-struct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="04-05-methods-interfaces" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/methods-nil" />
-      <filePath value="$PROJECT_DIR$/methods-nil/methods-nil.go" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/methods-not-struct" />
+      <filePath value="$PROJECT_DIR$/methods-not-struct/methods-not-struct.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/methods" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="04-05-methods-interfaces" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/methods" />
+      <filePath value="$PROJECT_DIR$/methods/methods.go" />
+      <output_directory value="$PROJECT_DIR$/../../../out" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/iproduct/coursego/04-05-methods-interfaces/types" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="04-05-methods-interfaces" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/iproduct/coursego/04-05-methods-interfaces/types" />
+      <filePath value="$PROJECT_DIR$/types/types.go" />
       <output_directory value="$PROJECT_DIR$/../../../out" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/types" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/enums" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-not-struct" />
+        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods" />
         <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-writer" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil-value" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-nil" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/methods-nil" />
-        <item itemvalue="Go Build.go build github.com/iproduct/coursego/04-05-methods-interfaces/interfaces-sort" />
       </list>
     </recent_temporary>
   </component>
